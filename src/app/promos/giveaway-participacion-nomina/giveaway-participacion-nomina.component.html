@@ -1,0 +1,759 @@
+<section class="hey-hero-image bgimage-hero-giveaway hey-generales">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-sm-6 offset-sm-1 col-md-5 offset-md-1 col-lg-6 offset-lg-1">
+                <div class="vertical-center">
+                    <h1>Llévate 1 año de tu sueldo* con Hey</h1>
+                    <p class="texto-parrafo">*Monto máximo de $500,000 pesos.
+                    </p>
+                </div>
+            </div>
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-5 offset-lg-0 text-center">
+                <img loading="lazy" class="nomina-img-hero" [src]="environment.assetsUrl + 'img/P810-Giveaways/P810-4-img-nomina.png'" alt="¿Cómo ganar un año de mi sueldo con Hey?">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-giveaway bg-03">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-10 offset-lg-1 text-center">
+                <h2>
+                    Canjea tu código
+                </h2>
+                <p class="parrafo">Da clic en el botón para generar tu registro dígital
+                </p>
+                <br>
+                <button class="btn btn-primary-white" role="button" type="button" (click)="participar()" [disabled]="busy" data-toggle="modal" data-target="#exampleModal">Participar</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hey-giveaway bg-01">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-5 offset-md-1 col-lg-5 offset-lg-1">
+                <h3>Mantente al pendiente y espera el gran anuncio</h3><br><br>
+
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P810-Giveaways/P810-15-ic-ig.svg'" class="align-self-start" alt="¿Cómo ganar dinero con hey banco?">
+
+                    <div class="media-body">
+                        <h4>El cliente seleccionado</h4>
+
+                        <p class="texto-bullets">Se dará a conocer la tercer semana del mes vía instagram</p>
+                    </div>
+                </div>
+                <br>
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P810-Giveaways/P810-16-ic-mail.svg'" class="align-self-start" alt="¿Cómo ganar dinero con hey banco?">
+
+                    <div class="media-body">
+                        <h4>Correo de confirmación</h4>
+
+                        <p class="texto-bullets">Si fuiste seleccionado, recibirás un correo con la información necesaria para poder recibir tu año de sueldo*.</p>
+                        <p style="color: black; font-size: medium;">*Monto máximo de $500,000 pesos.</p>
+
+                    </div>
+                </div>
+
+
+                <br>
+            </div>
+
+            <div class="col-12 col-md-6 offset-md-0 col-lg-4 offset-lg-1">
+                <p class="participantes">{{conteo}}<br><br>
+                    <span class="texto-participantes">Clientes registrados<br> al día de hoy</span>
+                </p>
+
+                <img loading="lazy" class="img-participantes" [src]="environment.assetsUrl + 'img/giveaway/giveaway-contador.png'" alt="Participa en el giveaway">
+            </div>
+
+            <span style="color: black; font-size: 10px;">Vigencia del 01 de agosto a 31 de diciembre de 2022. Los resultados serán publicados en nuestra cuenta de Instagram (@heybanco) durante el mismo periodo de vigencia de la promoción y a través de un correo electrónico notificando el incentivo.</span>
+
+
+        </div>
+    </div>
+</section>
+
+<section class="hey-hero-image bgimage-giveaway-ig">
+    <div class="container">
+        <br><br>
+        <div class="row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-10 offset-lg-1 text-center">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/giveaway/ig-heybanco.svg'" alt="Síguenos">
+            </div>
+
+            <div class="col-12 col-md-10 offset-md-1 col-lg-10 offset-lg-1 text-center">
+                <h2>Síguenos en Instagram @heybanco para conocer más sobre este y otros Giveaways que Hey Banco ofrece para ti</h2>
+                <br><br>
+                <a class="btn btn-primary" role="button" href="https://www.instagram.com/heybanco/?hl=es-la" target="_blank">Síguenos en Instagram</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="hey-faq">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-10 offset-0 col-md-5 offset-md-1 col-lg-3 offset-lg-1 order-2 order-md-1 order-lg-1">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-8-img-faq.png'" alt="¿Dónde puedo resolver mis dudas sobre la Cuenta Hey?">
+            </div>
+
+            <div class="col-md-5 col-lg-7 order-1 order-md-2 order-lg-2">
+                <h2>Preguntas frecuentes</h2>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card bg-01">
+                        <div class="card-header" id="headingOne">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ¿Qué es el Giveaway de Portabilidad de Nómina?<img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Cambia tu portabilidad de nómina a Hey Banco y al recibir al menos 1 mes completo de tu sueldo a través de Nómina Hey, podrás adquirir un código con el que tendrás la oportunidad de llevarte un año de tu sueldo, hasta un máximo de $500,000 pesos
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-01">
+                        <div class="card-header" id="headingTwo">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿Cómo puedo canjear mi código?<img
+                    [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Recibirás un correo electronico a tu cuenta registrada en Hey en donde encontrarás tu código. Da clic en el botón y espera tu folio.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-01">
+                        <div class="card-header" id="headingThree">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Cuándo se anunciará el seleccionado?<img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                La tercer semana del mes a través de instagram y por correo electrónico.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-slider color bg-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                <h2>Beneficios de tener tu banco en la mejor App</h2>
+
+                <div id="carousel" class="carousel slide" data-ride="carousel" data-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-md-3 col-lg-3">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-9-img-beneficios-transferencias.png'" alt="¿Se puede transferir a cualquier banco sin costo?">
+                                </div>
+
+                                <div class="col-9 col-md-8 col-lg-8">
+                                    <h3>Transfiere 24/7</h3>
+
+                                    <p>Cuando quieras, donde tu quieres, las veces que quieras, en minutos paga lo que necesites desde tu app. ¡Fácil y rápido!</p>
+
+                                    <hey-btn-crear-cuenta title="Quiero mi cuenta Hey"> </hey-btn-crear-cuenta>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-md-3 col-lg-3">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-11-img-beneficios-ahorro-programado.png'" alt="¿Puedo tener más de un ahorro?">
+                                </div>
+
+                                <div class="col-9 col-md-8 col-lg-8">
+                                    <h3>Programa tu ahorro</h3>
+
+                                    <p>Programa de manera automática hasta 5 ahorros desde tu app y recibe el <b>4%</b> de rendimiento anual.
+                                    </p>
+
+                                    <hey-btn-crear-cuenta title="Quiero mi cuenta Hey"> </hey-btn-crear-cuenta>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-md-3 col-lg-3">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-13-img-beneficios-codi.png'" alt="¿Cómo activo CODI en Hey?">
+                                </div>
+
+                                <div class="col-9 col-md-8 col-lg-8">
+                                    <h3>Paga y cobra con CoDi</h3>
+
+                                    <p>Haz tus pagos por medio de códigos QR, de forma inmediata desde tu app.</p>
+
+                                    <hey-btn-crear-cuenta title="Quiero mi cuenta Hey"> </hey-btn-crear-cuenta>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-md-3 col-lg-3">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/benefits/beneficios-inversion.png'" alt="Inversión Hey">
+                                </div>
+
+                                <div class="col-9 col-md-8 col-lg-8">
+                                    <h3>Inversión Hey</h3>
+
+                                    <p>Haz tus pagos por medio de códigos QR, de forma inmediata desde tu app.</p>
+
+                                    <hey-btn-crear-cuenta title="Quiero mi cuenta Hey"> </hey-btn-crear-cuenta>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-md-3 col-lg-3">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/benefits/beneficios-tdc.png'" alt="Tarjeta de Crédito Hey">
+                                </div>
+
+                                <div class="col-9 col-md-8 col-lg-8">
+                                    <h3>Tarjeta de Crédito Hey</h3>
+
+                                    <p>Maten el saldo actual de tu Tarjeta de Crédito a simple vista, revisa tus movimientos, consulta la información de tus pagos y elige una opción de pago, todo desde tu celular.</p>
+
+                                    <hey-btn-crear-cuenta title="Quiero mi cuenta Hey"> </hey-btn-crear-cuenta>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-md-3 col-lg-3">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-15-img-beneficios-money-coach.png'" alt="¿Cómo activo Money Coach en Hey?">
+                                </div>
+
+                                <div class="col-9 col-md-8 col-lg-8">
+                                    <h3>Money Coach</h3>
+
+                                    <p>La guía dentro de tu app diseñada para ayudarte a mejorar tu salud financiera de manera inteligente.
+                                    </p>
+
+                                    <hey-btn-crear-cuenta title="Quiero mi cuenta Hey"> </hey-btn-crear-cuenta>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-md-3 col-lg-3">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/benefits/beneficios-banco-digital.png'" alt="¿Debo mantener un saldo mínimo en la cuenta Hey?">
+                                </div>
+
+                                <div class="col-9 col-md-8 col-lg-8">
+                                    <h3>Tu Banco Digital</h3>
+
+                                    <p>Solicita tu Cuenta Hey y disfruta de los increíbles beneficios digitales que tu app Hey Banco te ofrece.
+                                    </p>
+
+                                    <hey-btn-crear-cuenta title="Quiero mi cuenta Hey"> </hey-btn-crear-cuenta>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-md-3 col-lg-3">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/benefits/beneficios-proteccion-hey.png'" alt="Protección Hey">
+                                </div>
+
+                                <div class="col-9 col-md-8 col-lg-8">
+                                    <h3>Protección Hey</h3>
+
+                                    <p>Personaliza tu plan seleccionando las coberturas que necesites. Contrata en minutos desde tu App.
+                                    </p>
+
+                                    <hey-btn-crear-cuenta title="Quiero mi cuenta Hey"> </hey-btn-crear-cuenta>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <li data-target="#carousel" data-slide-to="0" class="active"><span></span></li>
+                        <li data-target="#carousel" data-slide-to="1"><span></span></li>
+                        <li data-target="#carousel" data-slide-to="2"><span></span></li>
+                        <li data-target="#carousel" data-slide-to="3"><span></span></li>
+                        <li data-target="#carousel" data-slide-to="4"><span></span></li>
+                        <li data-target="#carousel" data-slide-to="5"><span></span></li>
+                        <li data-target="#carousel" data-slide-to="6"><span></span></li>
+                        <li data-target="#carousel" data-slide-to="7"><span></span></li>
+
+                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hey-cta-app></hey-cta-app>
+
+<section class="hey-slider">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+                <h2>Conoce más productos</h2>
+
+                <div id="carousel-desktop" class="carousel slide d-none d-xs-none d-sm-none d-md-none d-lg-block" data-ride="carousel" data-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 text-center">
+                                            <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-23-img-cuentas-tarjeta-credito.png'" alt="Cuales son las comisiones de la Tarjeta de Crédito Hey?">
+                                        </div>
+
+                                        <div class="col-7">
+                                            <h3>Tarjeta de Crédito</h3>
+
+                                            <p>Sin anualidades, ni trámites complicados, recíbela directo a tu domicilio.</p>
+
+                                            <a class="btn btn-link" role="button" [routerLink]="['/parami/tdc']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 text-center">
+                                            <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-25-img-cuentas-ahorro.png'" alt=" ¿Tengo que abrir una cuenta para poder crear un Ahorro Hey?">
+                                        </div>
+
+                                        <div class="col-7">
+                                            <h3>Cuenta de Ahorro</h3>
+
+                                            <p>Activa una nueva forma de ahorrar en automático desde tu Cuenta Hey Plus.</p>
+
+                                            <a class="btn btn-link" role="button" [routerLink]="['/personas/ahorro-hey']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 text-center">
+                                            <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-27-img-cuentas-inversiones.png'" alt="¿Tengo que abrir una cuenta para poder invertir Hey?">
+                                        </div>
+
+                                        <div class="col-7">
+                                            <h3>Inversiones</h3>
+
+                                            <p>Abre tu inversión desde $5,000 pesos y recibe el rendimientos cada 7 días.</p>
+
+                                            <a class="btn btn-link" role="button" [routerLink]="['/personas/inversion']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 text-center">
+                                            <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-29-img-cuentas-seguro-auto.png'" alt="¿Cómo puedo abrir un seguro de auto con Hey Banco?">
+                                        </div>
+
+                                        <div class="col-7">
+                                            <h3>Seguro de Auto</h3>
+
+                                            <p>Conoce el Seguro que te recompensa por mantenerte libre de accidentes.</p>
+
+                                            <a class="btn btn-link" role="button" [routerLink]="['/seguros-auto-persona']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 text-center">
+                                            <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-31-img-cuentas-seguro-celular.png'" alt="¿Cómo puedo abrir un seguro de celular con Hey Banco?">
+                                        </div>
+
+                                        <div class="col-7">
+                                            <h3>Seguro de Celular</h3>
+
+                                            <p>Hey, ¡Lo tenemos cubierto! Conoce nuestro plan contra robo y daño. Mantengamos tus finanzas y tu información a salvo.</p>
+
+                                            <a class="btn btn-link" role="button" href="https://la.studio.chubb.com/mx/heybanco/mobile/MXE4400001/es-MX?utm_medium=referral&utm_source=heybanco&utm_campaign=lazamiento+mobile&utm_content=hompage+cta" target="_blank" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 text-center">
+                                            <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-33-img-cuentas-apoyo-hospitalario-consulta-virtual.png'" alt="¿Cómo puedo abrir un seguro Dr Sam con Hey Banco?">
+                                        </div>
+
+                                        <div class="col-7">
+                                            <h3>Ayuda Hospitalaria y Consulta Virtual</h3>
+
+                                            <p>Cuida tu salud con nuestros planes.</p>
+
+                                            <a class="btn btn-link" role="button" [routerLink]="['/personas/seguros/apoyo-hospitalario']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 text-center">
+                                            <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-46-img-proteccion-hey.png'" alt="Protección Hey">
+                                        </div>
+
+                                        <div class="col-7">
+                                            <h3>Protección Hey</h3>
+
+                                            <p>Configura y selecciona los planes de cobertura que mejor se adapten a ti.</p>
+
+                                            <a class="btn btn-link" role="button" [routerLink]="['/seguros-proteccion-hey']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 text-center">
+                                            <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-fondo-hey.png'">
+                                        </div>
+
+                                        <div class="col-7">
+                                            <h3>Fondo HeyG</h3>
+
+                                            <p>Invierte con el Fondo de Inversión Hey Global desde $1,000 pesos.</p>
+
+                                            <a class="btn btn-link" role="button" [routerLink]="['/personas/fondos-inversion']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 text-center">
+                                            <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-35-img-cuentas-creditos.png'" alt="¿Cuándo podré solicitar un crédito en Hey Banco?">
+                                        </div>
+
+
+                                        <div class="col-7">
+                                            <h3>Crédito de auto</h3>
+
+                                            <p>Estrena tu auto pagando el 10% de enganche con mensualidades fijas y cómodas.</p>
+
+                                            <a class="btn btn-link" [routerLink]="['/personas/creditos/credito-auto']" onclick="dataLayer.push({'event':'evPageLink'});" role="button">Conoce más</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <a class="carousel-control-prev" href="#carousel-desktop" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <li data-target="#carousel-desktop" data-slide-to="0" class="active"><span></span></li>
+                        <li data-target="#carousel-desktop" data-slide-to="1"><span></span></li>
+                        <li data-target="#carousel-desktop" data-slide-to="2"><span></span></li>
+                        <li data-target="#carousel-desktop" data-slide-to="3"><span></span></li>
+                        <li data-target="#carousel-desktop" data-slide-to="4"><span></span></li>
+
+                        <a class="carousel-control-next" href="#carousel-desktop" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </ol>
+                </div>
+
+                <div id="carousel-mobile" class="carousel slide d-block d-xs-block d-sm-block d-md-block d-lg-none" data-ride="carousel" data-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row align-items-center">
+                                <div class="col-md-5 col-5 text-center">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-23-img-cuentas-tarjeta-credito.png'" alt="Cuales son las comisiones de la Tarjeta de Crédito Hey?">
+                                </div>
+
+                                <div class="col-md-7 col-7">
+                                    <h3>Tarjeta de Crédito Hey</h3>
+
+                                    <p>Sin anualidades, ni trámites complicados, recíbela directo a tu domicilio.</p>
+
+                                    <a class="btn btn-link" role="button" [routerLink]="['/parami/tdc']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-5 col-5 text-center">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-25-img-cuentas-ahorro.png'" alt=" ¿Tengo que abrir una cuenta para poder crear un Ahorro Hey?">
+                                </div>
+
+                                <div class="col-md-7 col-7">
+                                    <h3>Cuenta de Ahorro</h3>
+
+                                    <p>Activa una nueva forma de ahorrar en automático desde tu Cuenta Hey Plus.</p>
+
+                                    <a class="btn btn-link" role="button" [routerLink]="['/personas/ahorro-hey']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-5 col-5 text-center">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-27-img-cuentas-inversiones.png'" alt="¿Tengo que abrir una cuenta para poder invertir Hey?">
+                                </div>
+
+                                <div class="col-md-7 col-7">
+                                    <h3>Inversiones</h3>
+
+                                    <p>Abre tu inversión desde $5,000 pesos y recibe el rendimientos cada 7 días.</p>
+
+                                    <a class="btn btn-link" role="button" [routerLink]="['/personas/inversion']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-5 col-5 text-center">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-29-img-cuentas-seguro-auto.png'" alt="¿Cómo puedo abrir un seguro de auto con Hey Banco?">
+                                </div>
+
+                                <div class="col-md-7 col-7">
+                                    <h3>Seguro de Auto</h3>
+
+                                    <p>Conoce el Seguro que te recompensa por mantenerte libre de accidentes.</p>
+
+                                    <a class="btn btn-link" role="button" [routerLink]="['/seguros-auto-persona']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-5 col-5 text-center">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-31-img-cuentas-seguro-celular.png'" alt="¿Cómo puedo abrir un seguro de celular con Hey Banco?">
+                                </div>
+
+                                <div class="col-md-7 col-7">
+                                    <h3>Seguro de Celular</h3>
+
+                                    <p>Hey, ¡Lo tenemos cubierto! Conoce nuestro plan contra robo y daño. Mantengamos tus finanzas y tu información a salvo.</p>
+
+                                    <a class="btn btn-link" role="button" href="https://la.studio.chubb.com/mx/heybanco/mobile/MXE4400001/es-MX?utm_medium=referral&utm_source=heybanco&utm_campaign=lazamiento+mobile&utm_content=hompage+cta" target="_blank" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-5 col-5 text-center">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-33-img-cuentas-apoyo-hospitalario-consulta-virtual.png'" alt="¿Cómo puedo abrir un seguro Dr Sam con Hey Banco?">
+                                </div>
+
+                                <div class="col-md-7 col-7">
+                                    <h3>Ayuda Hospitalaria y Consulta Virtual</h3>
+
+                                    <p>Cuida tu salud con nuestros planes.</p>
+
+                                    <a class="btn btn-link" role="button" [routerLink]="['/personas/seguros/apoyo-hospitalario']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-5 col-5 text-center">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-46-img-proteccion-hey.png'" alt="Protección Hey">
+                                </div>
+
+                                <div class="col-md-7 col-7">
+                                    <h3>Protección Hey</h3>
+
+                                    <p>Configura y selecciona los planes de cobertura que mejor se adapten a ti.</p>
+
+                                    <a class="btn btn-link" role="button" [routerLink]="['/seguros-proteccion-hey']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-5 col-5 text-center">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-fondo-hey.png'">
+                                </div>
+
+                                <div class="col-md-7 col-7">
+                                    <h3>Fondo HeyG</h3>
+
+                                    <p>Invierte con el Fondo de Inversión Hey Global desde $1,000 pesos.</p>
+
+                                    <a class="btn btn-link" role="button" [routerLink]="['/personas/fondos-inversion']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-5 col-5 text-center">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-35-img-cuentas-creditos.png'" alt="¿Cuándo podré solicitar un crédito en Hey Banco?">
+                                </div>
+
+                                <div class="col-md-7 col-7">
+
+                                    <h3>Crédito de auto</h3>
+
+                                    <p>Estrena tu auto pagando el 10% de enganche con mensualidades fijas y cómodas.</p>
+
+                                    <a class="btn btn-link" [routerLink]="['/personas/creditos/credito-auto']" onclick="dataLayer.push({'event':'evPageLink'});" role="button">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <a class="carousel-control-prev" href="#carousel-mobile" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <li data-target="#carousel-mobile" data-slide-to="0" class="active"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="1"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="2"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="3"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="4"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="5"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="6"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="7"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="8"><span></span></li>
+
+                        <a class="carousel-control-next" href="#carousel-mobile" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<re-captcha size="invisible" *ngIf="RECAPTCHA_KEY" [siteKey]="RECAPTCHA_KEY" (resolved)="submitRequest(type, $event)"></re-captcha>
+
+
+
+<!-- Modal -->
+<section class="hey-modal">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" [hidden]="!exito">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">Has sido registrado exitosamente, tu número de folio es: </h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-folio">
+                    <p>{{folio}}</p>
+                </div>
+                <div class="modal-body">
+                    <p>En unos momentos te llegará un correo con tu número de folio y demás información.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Entendido</button>
+                </div>
+            </div>
+            <div class="modal-content" [hidden]="!error">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">¡El Registro no fué exitoso!</h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-folio">
+                    <p>{{errorMessage}}</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Entendido</button>
+                </div>
+            </div>
+            <div class="modal-content" [hidden]="exito || error">
+                <div>
+                    <h1 id="exampleModalLabel"></h1>
+                </div>
+                <div class="modal-body hey-giveaway-modal">
+                    <p class="centrado"><img loading="lazy" width="40%" [src]="environment.assetsUrl + 'img/loader.gif'"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

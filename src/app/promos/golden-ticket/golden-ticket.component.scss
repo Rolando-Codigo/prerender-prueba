@@ -1,0 +1,477 @@
+hey-golden-ticket {
+    #my-canvas {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+    }
+    .mb-20 {
+        margin-bottom: 50px !important;
+    }
+    .img-combo {
+        width: 20px;
+        height: 20px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .hey-hero-image {
+        height: 580px;
+        background: transparent linear-gradient(47deg, #FACB36 0%, #BA9631 100%) 0% 0% no-repeat padding-box;
+        h2 {
+            color: white;
+        }
+        p {
+            color: white;
+        }
+        .img-back {
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-boleto-dorado.png) no-repeat;
+            background-position: 100% 30%;
+            background-size: 37% auto;
+            height: 600px;
+        }
+        .col-lg-6 {
+            height: 420px;
+        }
+        .container-counter {
+            p,
+            h4 {
+                color: #000;
+                margin-bottom: 8px;
+            }
+            padding: 0px 24px;
+            box-shadow: 0px 3px 6px #00000029;
+            border-radius: 13px;
+            margin-bottom: 16px;
+        }
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+        .mr-24 {
+            margin-right: 24px;
+        }
+        .responsive-cuentas-hero {
+            position: absolute;
+            width: 85%;
+            margin: 35px auto;
+        }
+        .h1-o {
+            color: white;
+            opacity: 0.5;
+            font-size: 60px;
+        }
+        .container-f {
+            margin-top: 0px;
+        }
+    }
+    .hey-cta {
+        .mat-form-field-flex {
+            border-radius: 13px;
+            height: 48px;
+            background: #EFF4F7 0% 0% no-repeat padding-box;
+            background-repeat: no-repeat;
+            padding-left: 16px;
+            border-width: 0px !important;
+            background-position: 14px 15px;
+        }
+        .mat-form-field-underline {
+            display: none;
+        }
+        .mat-form-field-infix {
+            border-top: 0px !important;
+            padding: 11px !important;
+        }
+        .mat-checkbox-label {
+            @extend %lato-18;
+            font-size: 1.12rem !important;
+            line-height: 1.62rem !important;
+            color: #4B4B63 !important;
+        }
+        .img-premio {
+            width: 102px;
+            height: 102px;
+            margin-bottom: 22px;
+            margin-top: 60px;
+        }
+        .img-premio-c {
+            width: 85px;
+            height: 85px;
+            margin-left: 24px;
+            margin-bottom: 22px;
+            margin-top: 8px;
+            margin-right: 8px;
+        }
+        h1 {
+            margin-bottom: 70px;
+        }
+        .legales {
+            a {
+                color: black;
+            }
+        }
+        .ticket-dorado {
+            background: transparent linear-gradient(47deg, #FACB36 0%, #BA9631 100%) 0% 0% no-repeat padding-box;
+            padding: 32px;
+            border-radius: 13px;
+            color: white;
+            p {
+                color: white;
+            }
+            h1 {
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+hey-boleto-dorado {
+    .hey-hero-image {
+        height: 580px;
+        background: transparent linear-gradient(47deg, #FACB36 0%, #BA9631 100%) 0% 0% no-repeat padding-box;
+        h2 {
+            color: white;
+        }
+        p {
+            color: white;
+        }
+        .img-back {
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-boleto-dorado.png) no-repeat;
+            background-position: 100% 30%;
+            background-size: 37% auto;
+            height: 600px;
+        }
+        .col-lg-6 {
+            height: 420px;
+        }
+        .container-counter {
+            p,
+            h4 {
+                color: #000;
+                margin-bottom: 8px;
+            }
+            padding: 0px 24px;
+            box-shadow: 0px 3px 6px #00000029;
+            border-radius: 13px;
+            margin-bottom: 16px;
+        }
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+        .mr-24 {
+            margin-right: 24px;
+        }
+        .responsive-cuentas-hero {
+            position: absolute;
+            width: 85%;
+            margin: 35px auto;
+        }
+        .h1-o {
+            color: white;
+            opacity: 0.5;
+            font-size: 60px;
+        }
+        .container-f {
+            margin-top: 0px;
+        }
+    }
+    .hey-pro-participar {
+        text-align: center;
+        padding: 32px;
+        color: white;
+        h2 {
+            margin-bottom: 32px;
+            color: white;
+        }
+        p {
+            margin-bottom: 32px;
+            color: white;
+        }
+        .registrar-interes {
+            color: #FACB36;
+        }
+        padding: 110px 0px;
+        background: #333333 0% 0% no-repeat padding-box;
+        .container {
+            position: relative;
+            top: 25%;
+        }
+        .btn-primary {
+            margin-bottom: 24px;
+            background-color: white;
+        }
+    }
+    .hey-cta {
+        .btn-primary-white {
+            height: 45px;
+            padding-top: 12px;
+        }
+        h2 {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .item-premio {
+            height: 320px;
+            padding: 20px;
+            margin-right: 40px;
+            border-radius: 23px;
+            text-align: center;
+            background: #EFF4F7 0% 0% no-repeat padding-box;
+            .premio-img {
+                width: 180px;
+                height: 180px;
+                margin-top: 24px;
+                background-position: center center;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin: auto;
+            }
+        }
+        .carousel-indicators {
+            margin-bottom: 20px;
+            margin-top: 40px;
+            margin-left: 0;
+            margin-right: 0;
+            li {
+                background-color: transparent;
+                border: 1px solid transparent;
+                border-radius: 100%;
+                height: 12px;
+                width: 12px;
+                margin-left: 2px;
+                margin-right: 2px;
+                opacity: 1;
+                display: inline-block;
+                background-color: #EFF4F7;
+            }
+            .active {
+                background: #202020;
+                height: 12px;
+                width: 12px;
+            }
+        }
+    }
+}
+
+hey-boleto-dorado-informativo {
+    .hey-hero-image {
+        background: linear-gradient(#BA9631, #FACB36);
+        background: -webkit-linear-gradient(left, #BA9631, #FACB36);
+        background-image: -moz-linear-gradient(left, #BA9631, #FACB36);
+        background-image: -o-linear-gradient(left, #BA9631, #FACB36);
+        background-image: linear-gradient(to left, #BA9631, #FACB36);
+        color: white;
+        height: 520px;
+        .img-back {
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-boleto-dorado.png) no-repeat;
+            background-position: 100% 30%;
+            background-size: 37% auto;
+            height: 600px;
+        }
+        p {
+            margin-top: 16px;
+            color: white;
+        }
+        h1 {
+            color: white;
+            margin-bottom: 16px;
+            margin-top: 8px;
+        }
+        h2 {
+            color: white;
+            margin-bottom: 16px;
+            margin-top: 8px;
+        }
+        .legales {
+            @extend %lato-12;
+        }
+        .col-lg-5 {
+            height: 400px;
+        }
+    }
+    .hey-cta {
+        h2 {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .item-premio {
+            height: 320px;
+            padding: 20px;
+            margin-right: 40px;
+            border-radius: 23px;
+            text-align: center;
+            background: #EFF4F7 0% 0% no-repeat padding-box;
+            .premio-img {
+                width: 180px;
+                height: 180px;
+                margin-top: 24px;
+                background-position: center center;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin: auto;
+            }
+        }
+        .carousel-indicators {
+            margin-bottom: 20px;
+            margin-top: 40px;
+            margin-left: 0;
+            margin-right: 0;
+            li {
+                background-color: transparent;
+                border: 1px solid transparent;
+                border-radius: 100%;
+                height: 12px;
+                width: 12px;
+                margin-left: 2px;
+                margin-right: 2px;
+                opacity: 1;
+                display: inline-block;
+                background-color: #EFF4F7;
+            }
+            .active {
+                background: #202020;
+                height: 12px;
+                width: 12px;
+            }
+        }
+        .link {
+            color: #202020;
+            text-decoration: underline;
+        }
+    }
+}
+
+//Pantallas Medianas
+@media (max-width: 1400px) {
+    hey-boleto-dorado-informativo {
+        .hey-hero-image {
+            height: 430px;
+            .col-lg-5 {
+                height: 320px;
+            }
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    hey-golden-ticket {
+        .hey-hero-image {
+            .container-f {
+                margin-top: 130px;
+            }
+        }
+    }
+    hey-boleto-dorado {
+        .hey-hero-image {
+            height: 480px;
+            background: transparent linear-gradient(47deg, #FACB36 0%, #BA9631 100%) 0% 0% no-repeat padding-box;
+        }
+        .item-premio {
+            height: 220px !important;
+            padding: 20px;
+            .premio-img {
+                width: 120px !important;
+                height: 120px !important;
+            }
+        }
+    }
+    hey-boleto-dorado-informativo {
+        .hey-hero-image {
+            height: 400px;
+            .col-lg-5 {
+                height: 350px;
+            }
+            .img-back {
+                background-position: bottom right !important;
+                background-size: 50% auto !important;
+                height: 350px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    hey-golden-ticket {
+        .hey-hero-image {
+            height: 690px !important;
+            h2 {
+                margin-top: 90px;
+            }
+            .col-lg-6 {
+                height: 280px !important;
+            }
+            .vertical-center {
+                top: 50%;
+            }
+            .container-f {
+                margin-top: 280px;
+            }
+        }
+        .img-back {
+            background-position: bottom right !important;
+            background-size: 85% auto !important;
+            height: 660px !important;
+        }
+    }
+    hey-boleto-dorado {
+        .hey-hero-image {
+            height: 680px;
+        }
+        .img-back {
+            background-position: bottom right !important;
+            background-size: 85% auto !important;
+            height: 660px !important;
+        }
+        .item-premio {
+            height: 220px !important;
+            padding: 20px;
+            margin-right: 0px !important;
+            .premio-img {
+                width: 120px !important;
+                height: 120px !important;
+            }
+        }
+        .carousel-indicators {
+            margin-bottom: 20px;
+            margin-top: 40px;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            li {
+                background-color: transparent;
+                border: 1px solid transparent;
+                border-radius: 100%;
+                height: 16px;
+                margin-left: 8px;
+                margin-right: 8px;
+                opacity: 1;
+                width: 16px;
+                background-color: #EFF4F7;
+            }
+            .active {
+                background: #202020;
+                height: 18px;
+                width: 18px;
+            }
+        }
+    }
+    hey-boleto-dorado-informativo {
+        .hey-hero-image {
+            height: 530px !important;
+            .responsive-cuentas-hero {
+                margin-top: -30px;
+            }
+            .col-lg-5 {
+                height: 250px;
+                img {
+                    height: 250px;
+                    width: auto;
+                }
+            }
+            .img-back {
+                background-position: bottom right !important;
+                background-size: 85% auto !important;
+                height: 500px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,123 @@
+.hey-job-form {
+    padding-top: 60px;
+    h1 {
+        @extend %sneak-64;
+        margin-bottom: 0;
+    }
+    h2 {
+        @extend %sneak-22;
+        margin-bottom: 16px;
+        margin-top: 8px;
+    }
+    h3 {
+        @extend %lato-14;
+        color: $color-black-4B;
+        margin-bottom: 0;
+    }
+    h4 {
+        @extend %lato-18;
+        margin-bottom: 16px;
+    }
+    p {
+        @extend %lato-18;
+        color: $color-black-4B;
+        margin-bottom: 0;
+    }
+    hr {
+        border-top-color: $color-black-B2;
+        margin-bottom: 70px;
+        margin-top: 87px;
+    }
+    .legal {
+        @extend %lato-14;
+        color: $color-black-4B;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+    }
+    .mat-form-field {
+        margin-bottom: 12px;
+        &.name {
+            .mat-form-field-flex {
+                background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_name.png);
+                background-repeat: no-repeat;
+                background-position: 14px 15px;
+                background-size: 24px auto;
+            }
+        }
+        &.mail {
+            .mat-form-field-flex {
+                background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_send_mail.png);
+                background-repeat: no-repeat;
+                background-position: 14px 15px;
+                background-size: 24px auto;
+            }
+        }
+        &.phone {
+            .mat-form-field-flex {
+                background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_phone.svg);
+                background-repeat: no-repeat;
+                background-position: 14px 15px;
+            }
+        }
+        &.location {
+            .mat-form-field-flex {
+                background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_location.svg);
+                background-repeat: no-repeat;
+                background-position: 14px 15px;
+            }
+        }
+        &.skills {
+            .mat-form-field-flex {
+                background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_skills.svg);
+                background-repeat: no-repeat;
+                background-position: 14px 15px;
+            }
+        }
+        &.studies {
+            .mat-form-field-flex {
+                background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_studies.svg);
+                background-repeat: no-repeat;
+                background-position: 14px 15px;
+            }
+        }
+    }
+    .mat-radio-group {
+        margin-bottom: 24px;
+        .col-12 {
+            margin-bottom: 12px;
+        }
+    }
+    .mat-radio-label-content {
+        @extend %lato-14;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    .hey-job-form {
+        padding-top: 56px;
+        hr {
+            margin-bottom: 60px;
+            margin-top: 64px;
+        }
+        p {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    .hey-job-form {
+        padding-top: 60px;
+        hr {
+            margin-bottom: 40px;
+            margin-top: 40px;
+        }
+        p {
+            margin-bottom: 16px;
+        }
+    }
+}

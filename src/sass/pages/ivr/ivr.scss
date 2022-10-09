@@ -1,0 +1,52 @@
+.hey-ivr {
+    padding-bottom: 40px;
+    padding-top: 80px;
+
+    h1 {
+        @extend %sneak-48;
+        margin-bottom: 80px;
+    }
+
+    .col-lg-3 {
+        margin-bottom: 80px;
+
+        img {
+            display: block;
+            height: auto;
+            margin: 0 auto 16px;
+            width: 40px;
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    .hey-ivr {
+        padding-bottom: 22px;
+        padding-top: 56px;
+
+        h1 {
+            margin-bottom: 120px;
+        }
+
+        .col-lg-3 {
+            margin-bottom: 66px;
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    .hey-ivr {
+        padding-bottom: 12px;
+        padding-top: 60px;
+
+        h1 {
+            margin-bottom: 80px;
+        }
+
+        .col-lg-3 {
+            margin-bottom: 70px;
+        }
+    }
+}

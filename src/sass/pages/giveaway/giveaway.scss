@@ -1,0 +1,1415 @@
+.hey-giveaway-opciones {
+    margin-top: 3%;
+    padding-bottom: 3%;
+    h6 {
+        @extend %sneak-48;
+        color: $color-black;
+    }
+}
+
+hey-giveaway {
+    .hey-hero-image-boleto {
+        height: 520px;
+        background: linear-gradient(#BA9631, #FACB36);
+        background: -webkit-linear-gradient(left, #BA9631, #FACB36);
+        background-image: -moz-linear-gradient(left, #BA9631, #FACB36);
+        background-image: -o-linear-gradient(left, #BA9631, #FACB36);
+        background-image: linear-gradient(to left, #BA9631, #FACB36);
+        .img-back {
+            color: white !important;
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-boleto-dorado.png)no-repeat;
+            background-position: 100% 30%;
+            background-size: 37% auto;
+            height: 600px;
+            h1 {
+                color: white;
+                margin-bottom: 50px;
+                margin-top: 8px;
+            }
+            p {
+                margin-top: 16px;
+                color: white;
+            }
+        }
+        .col-lg-5 {
+            height: 480px;
+        }
+        .vertical-center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            width: calc(100% - 30px);
+        }
+    }
+    .mb-20 {
+        margin-bottom: 20px !important;
+    }
+    .mobile-3 {
+        width: 120%;
+        margin-top: -10%;
+    }
+    .circle {
+        width: 70%;
+        left: -40%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: -110px auto;
+        &:before {
+            border-radius: 50%;
+            width: 100%;
+            padding-bottom: 100%;
+            background: #77EAFF;
+            content: "";
+            position: absolute;
+            z-index: -1;
+        }
+    }
+    .hey-promos-cta {
+        background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-61-img.png) no-repeat;
+        background-size: 495px auto;
+        background-position: 15% 40%;
+        padding-bottom: 97px;
+        padding-top: 78px;
+        // Circulo
+        //.dis{
+        /*content: '';
+        //position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        //width: 40%;
+        //height: 450px;
+        //width: 100px;
+        //height: 100px;
+        border: 0px solid;
+        -moz-border-radius: 0 0 100% 0;
+        -webkit-border-radius: 0 0 100% 0;
+        border-radius: 0 0 100% 0;*/
+        //}
+        /*width: 100px;
+        height: 100px;
+        border: 2px solid #555;
+        background: #5cb85c;
+        -moz-border-radius: 0 100% 0 0;
+        -webkit-border-radius: 0 100% 0 0;
+        border-radius: 0 100% 0 0;*/
+        /*.circulo {
+            //img {
+                width: 500px;
+            //}
+        }*/
+        /*background: linear-gradient(to left bottom, transparent 50%, #EFF4F8 50%) left bottom 0/50% 100% no-repeat, linear-gradient(18deg, #44D181 50%, #72E4FE 100%);*/
+        h2 {
+            @extend %sneak-48;
+            margin-bottom: 8px;
+            margin-top: 38px;
+        }
+        h3 {
+            @extend %sneak-36;
+            margin-bottom: 0;
+            margin-top: 288px;
+        }
+        p {
+            @extend %sneak-18;
+            margin-bottom: 24px;
+        }
+        .btn-primary {
+            margin-right: 32px;
+        }
+        .col-lg-5 {
+            .d-block {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.buen-fin {
+    background-color: #FD0360;
+    color: white;
+}
+
+.hey-giveaway {
+    padding-bottom: 120px;
+    padding-top: 120px;
+    h2 {
+        @extend %sneak-48;
+        color: $color-purple;
+        margin-bottom: 0;
+    }
+    h3 {
+        @extend %sneak-48;
+        margin-bottom: 8px;
+    }
+    h4 {
+        @extend %sneak-22;
+        margin-bottom: 8px;
+    }
+    h5 {
+        @extend %sneak-48;
+        margin-bottom: 8px;
+        color: $color-white;
+    }
+    .texto {
+        @extend %lato-18;
+        color: $color-black;
+        margin-bottom: 0;
+        margin-top: 16px;
+        line-height: 26px;
+        margin-top: 8%
+    }
+    .texto-bullets {
+        @extend %lato-18;
+        color: $color-black;
+        margin-bottom: 0;
+        margin-top: 16px;
+        line-height: 26px;
+        margin-top: 1px;
+    }
+    .parrafo {
+        @extend %sneak-22;
+        color: $color-white;
+        margin-bottom: 0;
+    }
+    .parrafo-purple {
+        @extend %sneak-22;
+        color: $color-purple;
+        margin-bottom: 0;
+    }
+    .participantes {
+        @extend %sneak-18;
+        color: $color-black-4B;
+        z-index: 2;
+        margin-left: 190px;
+        position: absolute;
+        line-height: 80%;
+    }
+    .texto-participantes {
+        @extend %lato-12;
+        color: $color-black-77;
+        margin-bottom: 0;
+    }
+    p {
+        @extend %lato-18;
+        color: $color-white;
+        margin-bottom: 0;
+        margin-top: 16px;
+        &.legales {
+            @extend %lato-12;
+        }
+    }
+    .vigencia {
+        @extend %lato-10;
+        color: $color-black-77;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    a {
+        @extend %sneak-16;
+        margin-top: 8px;
+        color: $color-green;
+        text-decoration: none;
+    }
+    .media {
+        img {
+            height: auto;
+            margin-right: 20px;
+            width: 46px;
+        }
+    }
+    .textConsulta {
+        @extend %sneak-16;
+        color: #0FADC8;
+    }
+    .txtBanner {
+        @extend %lato-18;
+        color: $color-black-20;
+        margin-bottom: 0;
+        margin-top: 16px;
+    }
+    .mobile-14 {
+        margin-top: -2%;
+        width: 100%;
+    }
+}
+
+.hey-giveaway-modal {
+    .centrado {
+        margin: auto;
+        text-align: center;
+    }
+}
+
+.hey-giveaway-sin-resultado {
+    padding-bottom: 10px;
+    h5 {
+        @extend %sneak-36;
+        color: $color-black;
+    }
+    .textogiveaway {
+        @extend %lato-18;
+        color: $color-black-20;
+        margin-bottom: 0;
+        margin-top: 16px;
+    }
+    .bodygiveawayblack {
+        @extend %sneak-16;
+        color: $color-black-20;
+        margin-top: 15px;
+        padding-left: 15px;
+    }
+    .bodygiveawayblack2 {
+        @extend %sneak-16;
+        color: $color-black-20;
+        margin-top: 15px;
+        padding-left: 22px;
+    }
+    .borde {
+        border: #e9e9e9 1px solid;
+        width: 800px;
+    }
+}
+
+.bgimage {
+    width: 100%;
+    height: 600px;
+    background: url(https://heybanco.s3.amazonaws.com/img/centro-ayuda-negocios/home/N610-1-Home-Hero-Image-CAD.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.bgimage h1 {
+    color: white;
+    @extend %sneak-64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.space {
+    padding-bottom: 10%
+}
+
+.space-top {
+    padding-top: 3%
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: calc(100% - 30px);
+}
+
+.hey-generales {
+    .texto-participantes {
+        @extend %lato-12;
+        color: $color-black-77;
+        margin-bottom: 0;
+    }
+    .texto-parrafo {
+        color: $color-white;
+        margin-top: 5%
+    }
+    .texto-parrafo-legales {
+        color: $color-white;
+        margin-top: 5%;
+        @extend %lato-18;
+    }
+    .texto {
+        @extend %lato-18;
+        color: $color-black;
+        margin-bottom: 0;
+        margin-top: 16px;
+        line-height: 26px;
+        margin-top: 8%;
+    }
+    .media {
+        img {
+            height: auto;
+            width: 20px;
+        }
+        p {
+            @extend %lato-18;
+            color: $color-black;
+            line-height: 26px;
+            font-family: inherit;
+            margin-top: -5px
+        }
+    }
+    .vigencia {
+        @extend %lato-10;
+        color: $color-black;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .vigencia-tip {
+        @extend %lato-10;
+        color: $color-black;
+    }
+    .vigencia-tip-estudiantes {
+        @extend %lato-14;
+        color: $color-black;
+        margin-top: -10%;
+    }
+    .mobile-13 {
+        margin-top: 8% !important;
+        width: 120% !important;
+    }
+    .estudiantes-titulo {
+        color: $color-black;
+        @extend %sneak-48;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -15%;
+    }
+    .logo{
+        img{
+            vertical-align: middle;
+            border-style: none;
+            width: 250px !important;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+    }
+}
+
+/*.hey-hero-image .hey-generales .container .row .col-lg-6{
+    
+}*/
+
+.hey-caracteristicas-giveaway {
+    padding-bottom: 80px;
+    padding-top: 100px;
+    h1 {
+        @extend %sneak-48;
+        margin-bottom: 4%;
+        text-align: center;
+    }
+    h3 {
+        @extend %sneak-22;
+        margin-bottom: 8px;
+    }
+    .parrafo {
+        @extend %lato-22;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    p {
+        @extend %lato-16;
+        margin-bottom: 40px;
+        a {
+            color: $color-green;
+            text-decoration: underline;
+        }
+    }
+    .media {
+        img {
+            height: auto;
+            margin-right: 20px;
+            width: 46px;
+        }
+    }
+    .responsive-cantidad-tip-financiero {
+        width: 60%;
+    }
+}
+
+// ------ app ----
+.bgimage-hero-giveaway {
+    width: 100%;
+    height: 545px;
+    background: linear-gradient(150deg, #28d1f7, #F6E345);
+    background: -webkit-linear-gradient(150deg, left, #C8F2EB, #7EF0FF, #6E7AF9);
+    background-image: -moz-linear-gradient(150deg, left, #C8F2EB, #7EF0FF, #6E7AF9);
+    /* Firefox versiones relativamente modernas*/
+    background-image: -o-linear-gradient(150deg, left, #C8F2EB, #7EF0FF, #6E7AF9);
+    /* Opera versiones relativamente modernas*/
+    background-image: linear-gradient(150deg, to left, #C8F2EB, #7EF0FF, #6E7AF9);
+    /* Chrome, Firefox, IE, Opera versiones*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    background: linear-gradient(150deg, #6B6BFA, #7EEFFF, #8FC3FE, #E3DFA3);
+    background-size: 400% 300%;
+    animation: BgGradient 5s ease infinite;
+}
+
+@keyframes BgGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bgimage-hero-giveaway h1 {
+    color: $color-white;
+    @extend %sneak-64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.bgimage-hero-giveaway-40 {
+    width: 100%;
+    height: 545px;
+    background: linear-gradient(150deg, #28d1f7, #F6E345);
+    background: -webkit-linear-gradient(150deg, left, #C8F2EB, #7EF0FF, #6E7AF9);
+    background-image: -moz-linear-gradient(150deg, left, #C8F2EB, #7EF0FF, #6E7AF9);
+    /* Firefox versiones relativamente modernas*/
+    background-image: -o-linear-gradient(150deg, left, #C8F2EB, #7EF0FF, #6E7AF9);
+    /* Opera versiones relativamente modernas*/
+    background-image: linear-gradient(150deg, to left, #C8F2EB, #7EF0FF, #6E7AF9);
+    /* Chrome, Firefox, IE, Opera versiones*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    background: linear-gradient(150deg, #6B6BFA, #7EEFFF, #8FC3FE, #E3DFA3);
+    background-size: 400% 300%;
+    animation: BgGradient 5s ease infinite;
+}
+
+@keyframes BgGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bgimage-hero-giveaway-40 h1 {
+    color: $color-white;
+    @extend %sneak-64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+// ------ ahorro ----
+.bgimage-hero-giveaway-rosa {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(150deg, #28d1f7, #F6E345);
+    background: -webkit-linear-gradient(150deg, left, #C8F2EB, #7EF0FF, #6E7AF9);
+    background-image: -moz-linear-gradient(150deg, left, #C8F2EB, #7EF0FF, #6E7AF9);
+    /* Firefox versiones relativamente modernas*/
+    background-image: -o-linear-gradient(150deg, left, #C8F2EB, #7EF0FF, #6E7AF9);
+    /* Opera versiones relativamente modernas*/
+    background-image: linear-gradient(150deg, to left, #C8F2EB, #7EF0FF, #6E7AF9);
+    /* Chrome, Firefox, IE, Opera versiones*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    background: linear-gradient(150deg, #F987F5, #BABAFF, #DF9CF9, #AE9BFF);
+    background-size: 400% 300%;
+    animation: BgGradient 5s ease infinite;
+}
+
+@keyframes BgGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bgimage-hero-giveaway-rosa h1 {
+    color: $color-white;
+    @extend %sneak-64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+//amigos
+.bgimage-hero-giveaway-amigos {
+    width: 100%;
+    height: 480px;
+    background: linear-gradient(150deg, #a8a9ff, #b59efa, #BCE781, #b59efa, #BEFE40);
+    background: -webkit-linear-gradient(150deg, left, #a8a9ff, #b59efa, #BCE781, #b59efa, #BEFE40);
+    background-image: -moz-linear-gradient(150deg, left, #a8a9ff, #b59efa, #BCE781, #b59efa, #BEFE40);
+    /* Firefox versiones relativamente modernas*/
+    background-image: -o-linear-gradient(150deg, left, #a8a9ff, #b59efa, #BCE781, #b59efa, #BEFE40);
+    /* Opera versiones relativamente modernas*/
+    background-image: linear-gradient(150deg, to left, #a8a9ff, #b59efa, #BCE781, #b59efa, #BEFE40);
+    /* Chrome, Firefox, IE, Opera versiones*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    background: linear-gradient(150deg, #BEFE40, #a487fd, #BCE781, #d4ff98, );
+    background-size: 400% 300%;
+    animation: BgGradient 5s ease infinite;
+}
+
+@keyframes BgGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bgimage-hero-giveaway-amigos h2 {
+    color: $color-black;
+    @extend %sneak-64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20%;
+}
+
+.bgimage-hero-giveaway-amigos-interior {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(150deg, #28d1f7, #F6E345);
+    background: -webkit-linear-gradient(150deg, left, #C8F2EB, #7EF0FF, #6E7AF9);
+    background-image: -moz-linear-gradient(150deg, left, #C8F2EB, #7EF0FF, #6E7AF9);
+    /* Firefox versiones relativamente modernas*/
+    background-image: -o-linear-gradient(150deg, left, #C8F2EB, #7EF0FF, #6E7AF9);
+    /* Opera versiones relativamente modernas*/
+    background-image: linear-gradient(150deg, to left, #C8F2EB, #7EF0FF, #6E7AF9);
+    /* Chrome, Firefox, IE, Opera versiones*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    background: linear-gradient(150deg, #F987F5, #BABAFF, #DF9CF9, #AE9BFF);
+    background-size: 400% 300%;
+    animation: BgGradient 5s ease infinite;
+}
+
+@keyframes BgGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bgimage-hero-giveaway-amigos-interior h2 {
+    color: $color-black;
+    @extend %sneak-64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10%;
+}
+
+.mobile-8 {
+    margin-top: -10%;
+}
+
+.bgimage-hero-giveaway-rosa-amigos {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(150deg, #28d1f7, #F6E345);
+    background: -webkit-linear-gradient(150deg, left, #C8F2EB, #7EF0FF, #6E7AF9);
+    background-image: -moz-linear-gradient(150deg, left, #C8F2EB, #7EF0FF, #6E7AF9);
+    /* Firefox versiones relativamente modernas*/
+    background-image: -o-linear-gradient(150deg, left, #C8F2EB, #7EF0FF, #6E7AF9);
+    /* Opera versiones relativamente modernas*/
+    background-image: linear-gradient(150deg, to left, #C8F2EB, #7EF0FF, #6E7AF9);
+    /* Chrome, Firefox, IE, Opera versiones*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    background: linear-gradient(150deg, #F987F5, #BABAFF, #DF9CF9, #AE9BFF);
+    background-size: 400% 300%;
+    animation: BgGradient 5s ease infinite;
+}
+
+@keyframes BgGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bgimage-hero-giveaway-rosa-amigos h1 {
+    color: $color-white;
+    @extend %sneak-64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+//nomina
+.bgimage-hero-giveaway-nomina {
+    width: 100%;
+    height: 545px !important;
+    background: linear-gradient(150deg, #28d1f7, #F6E345);
+    background: -webkit-linear-gradient(150deg, left, #C8F2EB, #7EF0FF, #6E7AF9);
+    background-image: -moz-linear-gradient(150deg, left, #C8F2EB, #7EF0FF, #6E7AF9);
+    /* Firefox versiones relativamente modernas*/
+    background-image: -o-linear-gradient(150deg, left, #C8F2EB, #7EF0FF, #6E7AF9);
+    /* Opera versiones relativamente modernas*/
+    background-image: linear-gradient(150deg, to left, #C8F2EB, #7EF0FF, #6E7AF9);
+    /* Chrome, Firefox, IE, Opera versiones*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    background: linear-gradient(150deg, #6B6BFA, #7EEFFF, #8FC3FE, #E3DFA3);
+    background-size: 400% 300%;
+    animation: BgGradient 5s ease infinite;
+}
+
+@keyframes BgGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bgimage-hero-giveaway-nomina h1 {
+    color: $color-white;
+    @extend %sneak-64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+// ------ instagram ----
+.bgimage-giveaway-ig {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(#F13C9C, #F5E345);
+    background: -webkit-linear-gradient(left, #F13C9C, #F5E345);
+    background-image: -moz-linear-gradient(left, #F13C9C, #F5E345);
+    /* Firefox versiones relativamente modernas*/
+    background-image: -o-linear-gradient(left, #F13C9C, #F5E345);
+    /* Opera versiones relativamente modernas*/
+    background-image: linear-gradient(to left, #F13C9C, #F5E345);
+    /* Chrome, Firefox, IE, Opera versiones*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.bgimage-giveaway-ig h1 {
+    color: $color-black-20;
+    @extend %sneak-48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+// ------ 100,000mil pesos ----
+.bgimage-negocio {
+    width: 100%;
+    background: linear-gradient(150deg, #5BC1D8, #BABAFF, #1DCBFF, );
+    background: -webkit-linear-gradient(150deg, left, #5BC1D8, #BABAFF, #1DCBFF, );
+    background-image: -moz-linear-gradient(150deg, left, #5BC1D8, #BABAFF, #1DCBFF, );
+    /* Firefox versiones relativamente modernas*/
+    background-image: -o-linear-gradient(150deg, left, #5BC1D8, #BABAFF, #1DCBFF, );
+    /* Opera versiones relativamente modernas*/
+    background-image: linear-gradient(150deg, to left, #5BC1D8, #BABAFF, #1DCBFF, );
+    /* Chrome, Firefox, IE, Opera versiones*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    background: linear-gradient(150deg, #90ebff, #BABAFF, #1DCBFF, );
+    background-size: 400% 300%;
+    animation: BgGradient 5s ease infinite;
+}
+
+@keyframes BgGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+//tip-financiero
+.bgimage-hero-giveaway-estudiantes {
+    width: 100%;
+    height: 480px;
+    background: linear-gradient(150deg, #a8a9ff, #b59efa, #BCE781, #b59efa, #BEFE40);
+    background: -webkit-linear-gradient(150deg, left, #a8a9ff, #b59efa, #BCE781, #b59efa, #BEFE40);
+    background-image: -moz-linear-gradient(150deg, left, #a8a9ff, #b59efa, #BCE781, #b59efa, #BEFE40);
+    /* Firefox versiones relativamente modernas*/
+    background-image: -o-linear-gradient(150deg, left, #a8a9ff, #b59efa, #BCE781, #b59efa, #BEFE40);
+    /* Opera versiones relativamente modernas*/
+    background-image: linear-gradient(150deg, to left, #a8a9ff, #b59efa, #BCE781, #b59efa, #BEFE40);
+    /* Chrome, Firefox, IE, Opera versiones*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    background: linear-gradient(150deg, #a8a9ff, #b59efa, #BCE781, #b59efa, #BEFE40);
+    background-size: 400% 300%;
+    animation: BgGradient 5s ease infinite;
+}
+
+.bgimage-hero-giveaway-estudiantes h1 {
+    color: $color-white;
+    @extend %sneak-60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200%;
+}
+
+@keyframes BgGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bgimage-inversion h1 {
+    color: $color-black-20;
+    @extend %sneak-64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.btn.btn-light:hover {
+    background-color: #70E7FE;
+    border-color: #70E7FE;
+    border-radius: 0px !important;
+}
+
+.hey-modal {
+    margin-top: 3%;
+    padding-bottom: 3%;
+    h1 {
+        @extend %sneak-16;
+        color: $color-black;
+        margin-top: 5%;
+    }
+}
+
+.modal-backdrop.show {
+    background-color: black;
+    opacity: 0.8;
+    // filter: blur(20px);
+    // -webkit-filter: blur(20px);
+}
+
+.modal-content {
+    background-color: #FFFFFF;
+    border-radius: 20px !important;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    margin-top: 50%;
+    margin-left: 0%;
+}
+
+.modal-folio {
+    p {
+        @extend %sneak-22;
+        color: $color-black;
+        margin-left: 15px;
+    }
+}
+
+.modal-header {
+    border-bottom: none !important;
+}
+
+.modal-body {
+    p {
+        @extend %lato-12;
+        color: $color-black-4B;
+    }
+}
+
+.modal-footer {
+    border-top: none !important;
+}
+
+// ------ amigos ----
+.bgimage-amigos {
+    width: 100%;
+    height: 520px;
+    background: linear-gradient(150deg, #5BC1D8, #BABAFF, #1DCBFF, );
+    background: -webkit-linear-gradient(150deg, left, #5BC1D8, #BABAFF, #1DCBFF, );
+    background-image: -moz-linear-gradient(150deg, left, #5BC1D8, #BABAFF, #1DCBFF, );
+    /* Firefox versiones relativamente modernas*/
+    background-image: -o-linear-gradient(150deg, left, #5BC1D8, #BABAFF, #1DCBFF, );
+    /* Opera versiones relativamente modernas*/
+    background-image: linear-gradient(150deg, to left, #5BC1D8, #BABAFF, #1DCBFF, );
+    /* Chrome, Firefox, IE, Opera versiones*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    background: linear-gradient(150deg, #90ebff, #BABAFF, #1DCBFF, );
+    background-size: 400% 300%;
+    animation: BgGradient 5s ease infinite;
+}
+
+@keyframes BgGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bgimage-amigos h2 {
+    color: $color-black-20;
+    @extend %sneak-64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30%;
+}
+
+.btn.btn-light:hover {
+    background-color: #70E7FE;
+    border-color: #70E7FE;
+    border-radius: 0px !important;
+}
+
+.mobile-7 {
+    margin-left: 30%;
+    margin-top: -10%;
+}
+
+//Pantallas Medianas
+@media (max-width: 1500px) {
+    hey-giveaway {
+        .circle{
+            width: 73%;
+            left: -30%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: -5px auto;
+        }
+        .hey-hero-image-boleto {
+            height: 430px;
+            .col-lg-5 {
+                height: 400px;
+            }
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    hey-giveaway {
+        .hey-hero-image-boleto {
+            height: 480px;
+            .col-lg-5 {
+                height: 440px;
+            }
+            .img-back {
+                background-position: bottom right !important;
+                background-size: 45% auto !important;
+                height: 350px !important;
+            }
+        }
+        .mobile-3 {
+            margin-left: 180%;
+            width: 120%;
+            margin-top: -10%;
+        }
+        .hey-promos-cta {
+            background: transparent;
+            padding-bottom: 90px;
+            padding-top: 90px;
+
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-61-img.png) no-repeat;
+            background-size: 300px auto;
+            background-position: 15% 40%;
+            padding-bottom: 97px;
+            padding-top: 78px;
+            h2 {
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+            .d-block {
+                margin-bottom: 40px;
+                margin-top: 8px;
+            }
+        }
+        .circle{
+            width: 73%;
+            left: -30%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px auto;
+        }
+    }
+    .hey-giveaway {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    .bgimage-hero-giveaway {
+        width: 100%;
+        height: 350px;
+    }
+    .bgimage-hero-giveaway h1 {
+        margin-top: -30%;
+    }
+    .mobile {
+        margin-top: -130%;
+    }
+    .mobile-4 {
+        margin-left: 5%;
+        width: 150%;
+    }
+    .mobile-6 {
+        margin-left: 60%;
+        width: 130%;
+    }
+    .bgimage-hero-giveaway-amigos {
+        width: 100%;
+        height: 740px;
+    }
+    .bgimage-hero-giveaway-rosa-amigos {
+        width: 100%;
+        height: 400px;
+    }
+    .mobile-9 {
+        margin-top: -150%;
+    }
+    .bgimage-amigos {
+        width: 100%;
+        height: 450px;
+    }
+    .bgimage-amigos h2 {
+        margin-top: -20%;
+    }
+    .bgimage-hero-giveaway-amigos-interior {
+        width: 100%;
+        height: 810px;
+    }
+    .mobile-8 {
+        margin-top: -20%;
+    }
+    .bgimage-hero-giveaway-amigos-interior h2 {
+        margin-top: 3%;
+    }
+    .ocultar {
+        display: none;
+    }
+    .bgimage-hero-giveaway-40 {
+        width: 100%;
+        height: 450px;
+    }
+    .bgimage-hero-giveaway-40 h1 {
+        margin-top: 30%;
+    }
+    //nomina
+    .bgimage-hero-giveaway-nomina {
+        width: 100%;
+        height: 450px;
+    }
+    .bgimage-hero-giveaway-nomina h1 {
+        margin-top: 1%;
+    }
+    .mobile-11 {
+        margin-top: -30% !important;
+    }
+    //ahorro
+    .bgimage-hero-giveaway-rosa {
+        width: 100%;
+        height: 500px;
+    }
+    .bgimage-hero-giveaway-rosa h1 {
+        margin-top: 40%;
+    }
+    .mobile-12 {
+        margin-top: -20%;
+    }
+    .responsive-cantidad-tip-financiero {
+        width: 100%;
+    }
+    .hey-generales .vigencia-tip {
+        margin-top: 80px !important;
+    }
+    .bgimage-hero-giveaway-amigos {
+        width: 100%;
+        height: 495px;
+    }
+    .bgimage-hero-giveaway-amigos h3 {
+        margin-top: -40%;
+    }
+    .bgimage-hero-giveaway-amigos h2 {
+        margin-top: -78%;
+    }
+    .hey-giveaway .mobile-14 {
+        margin-top: 140%;
+        width: 114%;
+        margin-left: 160%;
+    }
+    .hey-generales{
+        .logo{
+            img{
+                vertical-align: middle;
+                border-style: none;
+                width: 100px !important;
+                margin-top: 5px;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+
+/* ----------- iPad Pro ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .bgimage-hero-giveaway-amigos h2 {
+        margin-top: -30%;
+    }
+    .bgimage-hero-giveaway-amigos {
+        width: 100%;
+        height: 495px;
+    }
+    .hey-generales .mobile-2 {
+        margin-left: -22% !important;
+    }
+    .hey-giveaway .mobile-14 {
+        margin-top: 15%;
+        width: 100%;
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    hey-giveaway {
+        .hey-hero-image {
+            height: 500px;
+        }
+        .hey-hero-image-boleto {
+            background-position: bottom center;
+            //background-size: 60% auto;
+            height: 670px;
+            min-height: 580px;
+            .col-lg-5 {
+                height: 450px;
+            }
+            img {
+                margin-top: 16px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 8px;
+            }
+            .img-back {
+                background-position: bottom right !important;
+                background-size: 85% auto !important;
+                height: 660px !important;
+            }
+        }
+        .mobile-3 {
+            width: 116% !important;
+            margin-top: 27% !important;
+            margin-left: 22% !important;
+        }
+        .hey-promos-cta {
+            background: transparent;
+            padding-bottom: 90px;
+            padding-top: 80px;
+
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-61-img.png) no-repeat;
+            background-size: 250px auto;
+            background-position: 10% 5%;
+            padding-bottom: 97px;
+            padding-top: 78px;
+
+            h2 {
+                margin-bottom: 4px;
+                margin-top: 40px;
+            }
+            h3 {
+                margin-top: 30px;
+            }
+            p {
+                margin-bottom: 30px;
+            }
+            .col-lg-5 {
+                .d-block {
+                    margin-top: 60px;
+                }
+            }
+            .col-lg-6{
+                margin-top: 130px;
+            }
+        }
+    }
+    .hey-giveaway {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    .bgimage-hero-giveaway {
+        width: 100%;
+        height: 500px;
+    }
+    .bgimage-hero-giveaway h1 {
+        margin-top: -20%;
+    }
+    .mobile {
+        margin-top: -45% !important;
+    }
+    .mobile-2 {
+        margin-left: -3%;
+        width: 90%;
+    }
+    .mobile-4 {
+        margin-left: 5%;
+        width: 90%;
+    }
+    .mobile-5 {
+        margin-left: 10%;
+        width: 100%;
+    }
+    .mobile-6 {
+        margin-left: 6% !important;
+        width: 90%;
+        margin-top: 10%;
+    }
+    .hey-giveaway h5 {
+        margin-top: 0%;
+    }
+    .bgimage-giveaway-ig {
+        width: 100%;
+        height: 600px;
+    }
+    .hey-faq {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    //ahorro
+    .bgimage-hero-giveaway-rosa {
+        width: 100%;
+        height: 520px;
+    }
+    .bgimage-hero-giveaway-rosa h1 {
+        margin-top: -20%;
+    }
+    .mobile-12 {
+        margin-top: -30%;
+    }
+    //amigos
+    .bgimage-hero-giveaway-rosa-amigos {
+        width: 100%;
+        height: 520px;
+    }
+    .bgimage-hero-giveaway-rosa-amigos h1 {
+        margin-top: -20%;
+    }
+    .mobile-9 {
+        margin-top: -30%;
+    }
+    .hey-caracteristicas-giveaway {
+        padding-bottom: 40px;
+        padding-top: 40px;
+        .responsive-cantidad-tip-financiero {
+            width: 100%;
+        }
+    }
+    .bgimage-amigos {
+        width: 100%;
+        height: 500px;
+    }
+    .bgimage-amigos h2 {
+        margin-top: -10%;
+    }
+    .mobile-7 {
+        margin-left: 50%;
+        margin-top: 6%;
+    }
+    .bgimage-hero-giveaway-amigos-interior {
+        width: 100%;
+        height: 820px;
+    }
+    .mobile-8 {
+        margin-top: -15% !important;
+    }
+    .bgimage-hero-giveaway-amigos-interior h2 {
+        margin-top: 5%;
+    }
+    .bgimage-hero-giveaway-40 {
+        width: 100%;
+        height: 550px !important;
+    }
+    .bgimage-hero-giveaway-40 h1 {
+        margin-top: 8%;
+    }
+    .mobile-10 {
+        margin-top: -15% !important;
+    }
+    //nomina
+    .bgimage-hero-giveaway-nomina {
+        width: 100%;
+        height: 545px;
+    }
+    .bgimage-hero-giveaway-nomina h1 {
+        margin-top: 1%;
+    }
+    .mobile-11 {
+        margin-top: -30% !important;
+    }
+    .responsive-img-tip-financiero {
+        margin-top: 45px !important;
+    }
+    .responsive-cantidad-tip-financiero {
+        margin-top: 45px !important;
+    }
+    .responsive-productos-tip-financiero {
+        width: 80%;
+    }
+    //estudiantes
+    .bgimage-hero-giveaway-estudiantes {
+        width: 100%;
+        height: 650px;
+    }
+    .hey-generales h1 {
+        margin-top: -18% !important;
+    }
+    .hey-generales .vigencia-tip {
+        margin-top: 12px;
+    }
+    .hey-generales .vigencia-tip-estudiantes {
+        margin-top: -60%;
+        font-size: 14px;
+    }
+    .bgimage-giveaway-ig h1 {
+        font-size: 32px;
+    }
+    .responsive-hero-tip-financiero {
+        margin-left: -13%;
+        margin-top: -25%;
+    }
+    .bgimage-hero-giveaway-amigos h2 {
+        margin-top: -155% !important;
+    }
+    .hey-giveaway .mobile-14 {
+        margin-top: 109% !important;
+        width: 80% !important;
+        margin-left: 27% !important;
+    }
+    .bgimage-hero-giveaway-amigos {
+        width: 100%;
+        height: 600px !important;
+    }
+    .hey-generales .mobile-13 {
+        margin-top: 80% !important;
+        width: 133%;
+        margin-left: 38%;
+    }
+    .hey-generales{
+        .logo{
+            img{
+                vertical-align: middle;
+                border-style: none;
+                width: 100px !important;
+                margin-top: -70px;
+                margin-left: 20px;
+            }
+        }
+        .vertical-center{
+            margin-top: 50px;
+        }
+    }
+}

@@ -1,0 +1,206 @@
+<section class="hey-hero-image">
+</section>
+
+<section class="hey-cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+                <h2>Beneficios para clientes Hey</h2>
+            </div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-12 col-md-5 offset-md-1 col-lg-5 offset-lg-1">
+
+                <h3>Promociones</h3>
+
+                <p>Tendrás acceso a promociones y descuentos exclusivos para clientes Hey.</p>
+
+                <h3>Envíos a todo México</h3>
+
+                <p>Recibe tu producto donde quieras, con envío sin costo*</p>
+
+                <br><br>
+                <p class="legales">*El costo de envío depende del artículo que se adquiera y se muestra en el resumen del pedido antes de confirmar tu compra.</p>
+                <br><br>
+            </div>
+
+
+            <div class="col-9 col-md-5 offset-md-0 col-lg-4 offset-lg-1">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/cta/cta-shop.png'" alt="Tu banco digital, Tu banco 100% digital">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hey-productos">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+                <h2>Colección COSMOS x Acapella</h2>
+
+                <div class="d-none d-xs-none d-sm-none d-md-block d-lg-block">
+                    <div class="row">
+                        <div class="col-9 col-md-3 col-lg-3" *ngFor="let producto of productos">
+                            <div class="height-img" alt="Tu banco digital" [style]="'background-image: url(' + producto.image + ');'"></div>
+
+                            <p>{{ producto.titulo }}</p>
+
+                            <br>
+                            <div class="row ml-15">
+                                <p class="legales">
+                                    <span class="mr-15 line-through" *ngIf="producto.precioAntes !== null && producto.precioAntes !== ''">${{producto.precioAntes }}</span>
+                                </p>
+                                <p>
+                                    <span class="descuento" *ngIf="producto.porcentajeDescuento !== null && producto.porcentajeDescuento !== ''">{{producto.porcentajeDescuento }}%</span>
+                                </p>
+                            </div>
+                            <h4>${{ producto.precio }}</h4>
+
+                            <p class="legales" *ngIf="producto.msi !== null && producto.msi !== ''">
+                                <strong style="color: black; font-weight: 500;"> En </strong>
+                                <span *ngIf="producto.msiCantidad">
+                                    {{ producto.msi }} X 
+                                    ${{producto.msiCantidad }} sin intereses
+                                </span>
+                            </p>
+                            <p class="legales" *ngIf="producto.envioGratis">Envío gratis</p>
+                            <a class="btn btn-outline-primary" role="button" [href]="producto.enlace" target="_blank">Comprar ahora</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="carousel-mobile" class="carousel slide d-block d-xs-block d-sm-block d-md-none d-lg-none" data-ride="carousel" data-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item" [ngClass]="{'active' : i === 0}" *ngFor="let producto of productos; let i = index;">
+                            <div class="col-9">
+
+                                <div class="height-img" alt="Tu banco digital" [style]="'background-image: url(' + producto.image + ');'"></div>
+
+                                <p>{{ producto.titulo }}</p>
+
+                                <br>
+                                <div class="row ml-15">
+                                    <p class="legales">
+                                        <span class="mr-15 line-through" *ngIf="producto.precioAntes !== null && producto.precioAntes !== ''">${{producto.precioAntes }}</span>
+                                    </p>
+                                    <p>
+                                        <span class="descuento" *ngIf="producto.porcentajeDescuento !== null && producto.porcentajeDescuento !== ''">{{producto.porcentajeDescuento }}%</span>
+                                    </p>
+                                </div>
+                                <h4>${{ producto.precio }}</h4>
+
+                                <p class="legales" *ngIf="producto.msi !== null && producto.msi !== ''">
+                                    <strong style="color: black; font-weight: 500;"> En </strong>
+                                    <span *ngIf="producto.msiCantidad">
+                                    {{ producto.msi }} X 
+                                    ${{producto.msiCantidad }} sin intereses
+                                </span>
+                                </p>
+                                <p class="legales" *ngIf="producto.envioGratis">Envío gratis</p>
+                                <a class="btn btn-outline-primary" role="button" [href]="producto.enlace" target="_blank">Comprar ahora</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <a class="carousel-control-prev" href="#carousel-mobile" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <li data-target="#carousel-mobile" data-slide-to="0" class="active"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="1"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="2"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="3"><span></span></li>
+
+                        <a class="carousel-control-next" href="#carousel-mobile" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </ol>
+                </div>
+
+                <a class="btn btn-primary" href="https://heyshop.com/vendedores/hey-banco/" target="_blank">Ver colección</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-benefits bg-02">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+                <h2>Es sencillo comprar en Hey Shop</h2>
+
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="benefit">
+                            <div class="benefit-box">
+                                <h3>Paso 1</h3>
+
+                                <p>Ingresa a www.heyshop.com o desde tu app a Hey Shop y regístrate.</p>
+                            </div>
+
+                            <div class="benefit-box-shadow bg-yellow">
+                                <div class="benefit-box-shadow-detail"></div>
+                                <div class="benefit-box-shadow-detail"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="benefit">
+                            <div class="benefit-box">
+                                <h3>Paso 2</h3>
+
+                                <p>Elige el producto que deseas comprar.</p>
+                            </div>
+
+                            <div class="benefit-box-shadow bg-yellow">
+                                <div class="benefit-box-shadow-detail"></div>
+                                <div class="benefit-box-shadow-detail"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="benefit">
+                            <div class="benefit-box">
+                                <h3>Paso 3</h3>
+
+                                <p>Realiza el pago en una sola exhibición o difiere a meses sin intereses.</p>
+                            </div>
+
+                            <div class="benefit-box-shadow bg-yellow">
+                                <div class="benefit-box-shadow-detail"></div>
+                                <div class="benefit-box-shadow-detail"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="btn btn-primary" role="button" href="https://heyshop.com/mi-cuenta/?action=register" target="_blank">Comprar</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-cta">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-11 col-md-3 offset-md-1 col-lg-4 offset-lg-1">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/P210-Cuentas/P210-41-img-descarga-app.png'" alt="¿Dónde puedo descargar la Aplicación Hey?, Tu banco digital">
+            </div>
+
+            <div class="col-md-6 offset-md-1 col-lg-6 offset-lg-0">
+                <h2>Visita Hey Shop desde nuestra App</h2>
+
+                <hey-stores></hey-stores>
+            </div>
+        </div>
+    </div>
+</section>

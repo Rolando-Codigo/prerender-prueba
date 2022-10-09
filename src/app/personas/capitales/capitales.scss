@@ -1,0 +1,169 @@
+hey-capitales {
+    .hey-hero-image {
+        height: 580px;
+        img {
+            width: 100%;
+        }
+        .img-hero {
+            height: 100%;
+        }
+        h2 {
+            margin-top: 20%;
+        }
+        .acciones-img {
+            width: 75%;
+            margin-bottom: 16px;
+        }
+    }
+    .hey-cta {
+        &.no-padding {
+            .col-lg-5 {
+                height: auto;
+                img {
+                    width: 55%;
+                }
+            }
+        }
+    }
+    .hey-caracterisitcas {
+        .media {
+            margin-top: 0;
+            margin-bottom: 40px;
+            img {
+                height: auto;
+                margin-right: 16px;
+                width: 44px;
+            }
+            p {
+                @extend %lato-16;
+            }
+            &:first-child {
+                margin-top: 40px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    #crs-capitales {
+        background: url(https://heybanco.s3.amazonaws.com/assets/img/P910-Capitales/P910-2-img-capitales.png) no-repeat, linear-gradient(90deg, #BABAFF, #77EAFF);
+        background: url(https://heybanco.s3.amazonaws.com/assets/img/P910-Capitales/P910-2-img-capitales.png) no-repeat, -webkit-linear-gradient(90deg, #BABAFF, #77EAFF);
+        background: url(https://heybanco.s3.amazonaws.com/assets/img/P910-Capitales/P910-2-img-capitales.png) no-repeat, -moz-linear-gradient(90deg, #BABAFF, #77EAFF);
+        background: url(https://heybanco.s3.amazonaws.com/assets/img/P910-Capitales/P910-2-img-capitales.png) no-repeat, -o-linear-gradient(90deg, #BABAFF, #77EAFF);
+        background-position: bottom right;
+        background-size: 45% auto, 100%;
+        height: auto;
+        h2 {
+            margin-bottom: 8px;
+            margin-top: 12px;
+        }
+        h3 {
+            font-weight: bold;
+        }
+        .media {
+            margin-top: 0;
+            margin-bottom: 40px;
+            img {
+                height: auto;
+                margin-right: 16px;
+                width: 53px;
+            }
+            p {
+                @extend %lato-16;
+            }
+            &:first-child {
+                margin-top: 40px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .img-background {
+            display: none;
+        }
+        .legales {
+            margin-top: 32px;
+        }
+    }
+    .last-content {
+        .info-content {
+            align-items: self-start;
+            .item-img {
+                margin-top: 20px;
+                margin-right: 8px;
+            }
+            h4 {
+                margin-top: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    hey-capitales {
+        .hey-hero-image {
+            .img-hero {
+                width: 100%;
+                height: auto;
+            }
+            h2 {
+                margin-top: 50%;
+                font-size: 38px;
+            }
+            .container-img {
+                align-items: center;
+            }
+        }
+        .hey-cta {
+            &.no-padding {
+                .col-lg-5 {
+                    img {
+                        width: 120% !important;
+                    }
+                }
+            }
+        }
+    }
+    #crs-capitales {
+        background-size: 55% auto, 100% !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    hey-capitales {
+        .hey-hero-image {
+            height: 720px !important;
+            h2 {
+                margin-top: 95%;
+            }
+            .img-hero {
+                height: 200px;
+            }
+            .acciones-img {
+                height: 70%;
+                text-align: center;
+            }
+        }
+        .hey-cta {
+            &.no-padding {
+                .col-lg-5 {
+                    img {
+                        width: 60% !important;
+                    }
+                }
+            }
+        }
+        #crs-capitales {
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P910-Capitales/P910-2-img-capitales.png) no-repeat, linear-gradient(-45deg, #BABAFF, #77EAFF) !important;
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P910-Capitales/P910-2-img-capitales.png) no-repeat, -webkit-linear-gradient(-45deg, #BABAFF, #77EAFF) !important;
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P910-Capitales/P910-2-img-capitales.png) no-repeat, -moz-linear-gradient(-45deg, #BABAFF, #77EAFF) !important;
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P910-Capitales/P910-2-img-capitales.png) no-repeat, -o-linear-gradient(-45deg, #BABAFF, #77EAFF) !important;
+            background-position: bottom !important;
+            background-size: 75% auto, 100% !important;
+            padding-bottom: 260px;
+            .item-img {
+                margin-top: -22px;
+            }
+        }
+    }
+}

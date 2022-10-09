@@ -1,0 +1,20 @@
+{
+  "/promocionales-portal/": {
+      "target": "https://promocionales-portal-next-portales.brmdocp.banregio.com",
+      "secure": false,
+      "pathRewrite": {
+          "^/promocionales-portal": ""
+      },
+      "logLevel": "debug",
+      "changeOrigin": true
+  },
+  "/cms-portal/": {
+      "target": "https://cms-portal-nepor.brmpocp.banregio.com",
+      "secure": false,
+      "pathRewrite": {
+          "^/cms-portal": ""
+      },
+      "logLevel": "debug",
+      "changeOrigin": true
+  }
+}

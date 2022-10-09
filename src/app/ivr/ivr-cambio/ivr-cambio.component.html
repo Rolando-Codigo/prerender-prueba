@@ -1,0 +1,95 @@
+<section class="hey-ivr-form bg-01">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-1 col-lg-8 offset-lg-2">
+                <h1>Cambio de RFC o CURP</h1>
+
+                <p>
+                    Registra el cambio de tu RFC o CURP llenando a continuación los siguientes campos.<br><br> Una vez que nos llegue tu información estarás recibiendo un correo con el estatus de tu cambio.
+                </p>
+
+                <form>
+                    <h2>Selecciona una opción:</h2>
+
+                    <div class="row">
+                        <div class="col-md-8 col-lg-6">
+                            <mat-form-field>
+                                <mat-label></mat-label>
+
+                                <mat-select>
+                                    <mat-option></mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-8 col-lg-6">
+                            <mat-form-field>
+                                <mat-label></mat-label>
+
+                                <input matInput/>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-8 col-lg-6">
+                            <mat-form-field>
+                                <mat-label></mat-label>
+
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <h2>Subir archivo</h2>
+
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3">
+                            <div class="card text-center">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/ivr-camara.png'">
+
+                                <p class="card-text">INE FRENTE</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3">
+                            <div class="card text-center">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/ivr-camara.png'">
+
+                                <p class="card-text">INE REVERSO</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3">
+                            <div class="card text-center">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/ivr-camara.png'">
+
+                                <p class="card-text">SELFIE</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3">
+                            <div class="card text-center">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/ivr-camara.png'">
+
+                                <p class="card-text">CURP/RFC</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>¿Tienes algo que contarnos?</h2>
+
+                    <textarea></textarea>
+
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <a class="btn btn-outline-primary" role="button" [routerLink]="['/reportes']">Cancelar</a>
+                        </div>
+
+                        <div class="col-6 col-md-6 col-lg-6 text-right">
+                            <button class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,783 @@
+@import "src/sass/components/colors.scss";
+@import "src/sass/components/font-styles.scss";
+.hey-hero-image-home {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    h1 {
+        @extend %sneak-64;
+        color: $color-black;
+        margin-bottom: 0;
+    }
+    h2 {
+        @extend %sneak-48;
+        color: $color-black;
+        margin-bottom: 0;
+    }
+    h3 {
+        @extend %sneak-36;
+        color: $color-black-20;
+        margin-bottom: 16px;
+        margin-top: 24px;
+    }
+    p {
+        @extend %sneak-22;
+        color: $color-black-4B;
+        margin-bottom: 0;
+        margin-top: 16px;
+        &.legales {
+            @extend %lato-12;
+        }
+    }
+    .pgreen {
+        @extend %sneak-30;
+        color: $color-green-dark;
+        margin-bottom: 0;
+        margin-top: 16px;
+    }
+    .btn-primary {
+        margin-top: 16px;
+    }
+    img {
+        //width: 157%;
+    }
+    .hero-image-beneficios-negocios {
+        width: 140%;
+        margin-left: -158px;
+    }
+    .btn-imagen {
+        width: 70%;
+        margin-top: 16px;
+        margin-right: 20%;
+    }
+    .tarifas {
+        color: #333333;
+        text-decoration: underline;
+    }
+}
+
+.hey-hero-image-negocios-beneficios {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    h1 {
+        @extend %sneak-64;
+        color: $color-black;
+    }
+    p {
+        @extend %sneak-30;
+        color: $color-green-dark;
+        margin-bottom: 0;
+    }
+    .legales-small {
+        @extend %sneak-12;
+        color: $color-black;
+        margin-bottom: 0;
+        margin-top: 16px;
+        text-decoration: underline;
+    }
+    .btn-primary {
+        margin-top: 16px;
+    }
+    .hero-image-beneficios-negocios {
+        width: 140%;
+        margin-left: -165px;
+    }
+    ul {
+        @extend %sneak-20;
+        color: $color-black;
+        margin-left: -40px;
+    }
+    li {
+        list-style: none;
+        line-height: 50px;
+    }
+    .list-img {
+        width: 26px;
+        margin-right: 10px;
+    }
+}
+
+.hey-home-cta {
+    &.bg-02 {
+        padding-bottom: 100px;
+        padding-top: 100px;
+        .col-lg-6 {
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+    }
+    .col-lg-6 {
+        padding-bottom: 0px;
+        padding-top: 80px;
+        img {
+            margin-bottom: 0px;
+        }
+    }
+    h2 {
+        @extend %sneak-48;
+        margin-bottom: 16px;
+    }
+    p {
+        @extend %sneak-22;
+        margin-bottom: 30px;
+    }
+    .btn-primary {
+        margin-right: 32px;
+    }
+    img {
+        //width: 70%;
+    }
+}
+
+.hey-hero-image-cuenta-hey-negocios {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    h1 {
+        @extend %sneak-64;
+        color: $color-black;
+    }
+    p {
+        @extend %sneak-30;
+        color: $color-purple;
+        margin-bottom: 0;
+    }
+    .legales-small {
+        @extend %sneak-12;
+        color: $color-black;
+        margin-bottom: 0;
+        margin-top: 16px;
+        text-decoration: underline;
+    }
+    .legales-terminos {
+        @extend %sneak-12;
+        color: $color-black;
+        margin-top: 16px;
+        text-decoration: none;
+    }
+    .btn-primary {
+        margin-top: 16px;
+    }
+    .hero-image-cuenta-hey-negocios {
+        width: 100%;
+    }
+    .media-body {
+        @extend %sneak-20;
+        color: $color-black;
+        margin-top: 5px;
+    }
+    .media {
+        margin-bottom: 21px;
+    }
+}
+
+.hey-hero-image-tarjeta-credito-hey {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    background-color: #22202A;
+    h1 {
+        @extend %sneak-64;
+        color: $color-white;
+    }
+    p {
+        @extend %sneak-30;
+        color: $color-green-light;
+        margin-bottom: 0;
+    }
+    .legales-small {
+        @extend %sneak-12;
+        color: $color-white;
+        margin-bottom: 0;
+        margin-top: 16px;
+        text-decoration: underline;
+    }
+    .legales-terminos {
+        @extend %sneak-12;
+        color: $color-white;
+        margin-top: 16px;
+        text-decoration: none;
+    }
+    .btn-primary {
+        margin-top: 16px;
+    }
+    .hero-image-tdc-hey {
+        width: 150%;
+        margin-left: -167px;
+    }
+    .media-body {
+        @extend %sneak-20;
+        color: $color-white;
+        margin-top: 5px;
+    }
+    .media {
+        margin-bottom: 21px;
+    }
+}
+
+
+/* mobiles */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .hey-hero-image-home {
+        padding-bottom: 0px;
+        padding-top: 0px;
+        h1 {
+            font-family: 'Sneak-Regular';
+            font-size: 26px;
+            line-height: 36px;
+            color: #333333;
+            margin-bottom: 0;
+            text-align: left;
+        }
+        h2 {
+            font-family: 'Sneak-Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 36px;
+            text-align: left;
+            margin-bottom: 0;
+        }
+        h3 {
+            font-family: 'Sneak-Regular';
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            color: #202020;
+            margin-bottom: 16px;
+            margin-top: 24px;
+        }
+        h4 {
+            font-family: 'Sneak-Regular';
+            font-size: 26px;
+            line-height: 36px;
+            color: #FFFFFF;
+            margin-bottom: 0;
+            text-align: left;
+        }
+        p {
+            font-family: 'Sneak-Regular';
+            font-size: 1.37rem;
+            line-height: 1.68rem;
+            color: #4B4B63;
+            margin-bottom: 0;
+            margin-top: 16px;
+            &.legales {
+                font-family: 'Sneak-Light';
+                font-size: 0.75rem;
+                line-height: 0.87rem;
+            }
+        }
+        .btn-primary {
+            margin-top: 16px;
+        }
+        img {
+            width: 140%;
+        }
+        .contratacion {
+            width: 110%;
+        }
+        .btn-imagen {
+            width: 70%;
+            margin-top: 16px;
+            margin-right: 20%;
+        }
+    }
+    .hey-hero-home {
+        padding-bottom: 0px;
+        padding-top: 45px;
+        height: 330px;
+        h1 {
+            font-family: 'Sneak-Regular';
+            font-size: 4rem;
+            line-height: 4.37rem;
+            color: #333333;
+            margin-bottom: 0;
+        }
+        h2 {
+            font-family: 'Sneak-Regular';
+            font-size: 3rem;
+            line-height: 3.56rem;
+            color: #333333;
+            margin-bottom: 0;
+        }
+        h3 {
+            font-family: 'Sneak-Regular';
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            color: #202020;
+            margin-bottom: 16px;
+            margin-top: 24px;
+        }
+        p {
+            font-family: 'Sneak-Regular';
+            font-size: 18px;
+            line-height: 1.68rem;
+            color: #4B4B63;
+            margin-bottom: 0;
+            margin-top: 16px;
+            &.legales {
+                font-family: 'Sneak-Light';
+                font-size: 0.75rem;
+                line-height: 0.87rem;
+            }
+        }
+        .btn-primary {
+            margin-top: 16px;
+        }
+        img {
+            width: 115%;
+        }
+        .btn-imagen {
+            width: 70%;
+            margin-top: 16px;
+            margin-right: 20%;
+        }
+        .tarifas {
+            color: #333333;
+            text-decoration: underline;
+        }
+    }
+    .hey-hero-home-contratacion {
+        padding-bottom: 0px;
+        padding-top: 45px;
+        height: 230px;
+        p {
+            font-family: 'Sneak-Regular';
+            font-size: 18px;
+            line-height: 1.68rem;
+            color: #4B4B63;
+            margin-bottom: 0;
+            margin-top: 16px;
+            &.legales {
+                font-family: 'Sneak-Light';
+                font-size: 0.75rem;
+                line-height: 0.87rem;
+            }
+        }
+        .btn-primary {
+            margin-top: 16px;
+        }
+        img {
+            width: 115%;
+        }
+        .btn-imagen {
+            width: 70%;
+            margin-top: 16px;
+            margin-right: 20%;
+        }
+    }
+    .hey-home-cta {
+        &.bg-02 {
+            padding-bottom: 100px;
+            padding-top: 100px;
+            .col-lg-6 {
+                padding-bottom: 0;
+                padding-top: 0;
+            }
+        }
+        .col-lg-6 {
+            padding-bottom: 0px;
+            padding-top: 40px;
+            img {
+                margin-bottom: 0px;
+            }
+        }
+        h2 {
+            font-family: 'Sneak-Regular';
+            font-size: 26px;
+            line-height: 36px;
+            margin-bottom: 16px;
+        }
+        p {
+            font-family: 'Sneak-Regular';
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 30px;
+        }
+        .btn-primary {
+            margin-right: 32px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .contenedor {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
+    .texto-encima {
+        position: absolute;
+        bottom: 30px;
+        left: 10px;
+    }
+    .hey-hero-image-negocios-beneficios {
+        padding-top: 10px;
+        padding-bottom: 40px;
+        h1 {
+            font-size: 30px !important;
+            line-height: 34px;
+        }
+        p {
+            font-size: 18px;
+        }
+        .beneficios {
+            font-size: 18px;
+            margin-left: -30px;
+        }
+        .legales-small {
+            font-size: 10px;
+            margin-bottom: 0;
+            margin-top: 16px;
+            text-decoration: underline;
+        }
+        .btn-primary {
+            margin-top: 16px;
+        }
+        .hero-image-beneficios-negocios {
+            width: 140%;
+            margin-left: -55px;
+        }
+        ul {
+            font-size: 15px;
+            margin-left: -40px;
+        }
+        li {
+            list-style: none;
+            line-height: 30px;
+        }
+        .list-img {
+            width: 20px;
+            margin-left: -30px;
+        }
+    }
+    .hey-hero-image-cuenta-hey-negocios {
+        padding-top: 10px;
+        padding-bottom: 40px;
+        h1 {
+            font-size: 30px !important;
+            line-height: 34px;
+        }
+        p {
+            font-size: 18px;
+            color: #B9B8FF;
+        }
+        .beneficios {
+            font-size: 18px;
+            color: #B9B8FF;
+        }
+        .legales-small {
+            font-size: 10px;
+            padding-top: 12px;
+            text-decoration: underline;
+            text-align: center;
+        }
+        .legales-terminos {
+            font-size: 10px;
+            padding-bottom: 14px;
+            text-decoration: none;
+        }
+        .btn-primary {
+            margin-top: 16px;
+        }
+        .hero-image-cuenta-hey-negocios {
+            width: 100%;
+        }
+        .media-body {
+            font-size: 15px;
+            margin-top: 5px;
+        }
+        .media {
+            margin-bottom: 0px;
+        }
+    }
+    .hey-hero-image-tarjeta-credito-hey {
+        padding-top: 50px;
+        padding-bottom: 25px;
+        h1 {
+            font-size: 30px !important;
+            line-height: 34px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+        .legales-small {
+            font-size: 10px;
+            padding-top: 12px;
+            text-decoration: underline;
+            text-align: left;
+        }
+        .legales-terminos {
+            font-size: 10px;
+            padding-bottom: 14px;
+            text-decoration: none;
+        }
+        .btn-primary {
+            margin-top: 16px;
+        }
+        .media-body {
+            font-size: 15px;
+            margin-top: 5px;
+        }
+        .media {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+
+/*iPAD  Portrait and Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .hey-hero-image-home {
+        padding-bottom: 0px;
+        padding-top: 20px;
+        h1 {
+            font-family: 'Sneak-Regular';
+            font-size: 35px;
+            line-height: 43px;
+            color: #333333;
+            margin-bottom: 0;
+        }
+        h2 {
+            font-family: 'Sneak-Regular';
+            font-size: 3rem;
+            line-height: 3.56rem;
+            color: #333333;
+            margin-bottom: 0;
+        }
+        h3 {
+            font-family: 'Sneak-Regular';
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            color: #202020;
+            margin-bottom: 16px;
+            margin-top: 24px;
+        }
+        p {
+            font-family: 'Sneak-Regular';
+            font-size: 18px;
+            line-height: 26px;
+            color: #4B4B63;
+            margin-bottom: 0;
+            margin-top: 16px;
+            &.legales {
+                font-family: 'Sneak-Light';
+                font-size: 0.75rem;
+                line-height: 0.87rem;
+            }
+        }
+        .btn-primary {
+            margin-top: 16px;
+        }
+        img {
+            width: 140%;
+            //margin-top: 120px;
+        }
+        .btn-imagen {
+            width: 70%;
+            margin-top: 16px;
+            margin-right: 20%;
+        }
+    }
+    .hey-hero-home {
+        padding-bottom: 0px;
+        padding-top: 30px;
+        height: 270px;
+        h1 {
+            font-family: 'Sneak-Regular';
+            font-size: 35px;
+            line-height: 43px;
+            color: #333333;
+            margin-bottom: 0;
+        }
+        h2 {
+            font-family: 'Sneak-Regular';
+            font-size: 3rem;
+            line-height: 3.56rem;
+            color: #333333;
+            margin-bottom: 0;
+        }
+        h3 {
+            font-family: 'Sneak-Regular';
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            color: #202020;
+            margin-bottom: 16px;
+            margin-top: 24px;
+        }
+        p {
+            font-family: 'Sneak-Regular';
+            font-size: 18px;
+            line-height: 1.68rem;
+            color: #4B4B63;
+            margin-bottom: 0;
+            margin-top: 16px;
+            &.legales {
+                font-family: 'Sneak-Light';
+                font-size: 0.75rem;
+                line-height: 0.87rem;
+            }
+        }
+        .btn-primary {
+            margin-top: 16px;
+        }
+        img {
+            width: 115%;
+        }
+        .btn-imagen {
+            width: 70%;
+            margin-top: 16px;
+            margin-right: 20%;
+        }
+    }
+    .hey-home-cta {
+        &.bg-02 {
+            padding-bottom: 100px;
+            padding-top: 100px;
+            .col-lg-6 {
+                padding-bottom: 0;
+                padding-top: 0;
+            }
+        }
+        .col-lg-6 {
+            padding-bottom: 0px;
+            padding-top: 40px;
+            img {
+                margin-bottom: 0px;
+            }
+        }
+        h2 {
+            font-family: 'Sneak-Regular';
+            font-size: 30px;
+            line-height: 38px;
+            margin-bottom: 16px;
+        }
+        p {
+            font-family: 'Sneak-Regular';
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 30px;
+        }
+        .btn-primary {
+            margin-right: 32px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .hey-hero-image-negocios-beneficios {
+        padding-top: 15px;
+        padding-bottom: 30px;
+        h1 {
+            font-size: 40px;
+            line-height: normal;
+        }
+        p {
+            font-size: 22px;
+        }
+        .beneficios {
+            font-size: 22px;
+            margin-left: -30px;
+        }
+        .hero-image-beneficios-negocios {
+            width: 140%;
+            margin-left: -55px;
+        }
+        .legales-small {
+            font-size: 10px;
+            margin-bottom: 0;
+            margin-top: 10px !important;
+            text-decoration: underline;
+        }
+        .btn-primary {
+            margin-top: 16px;
+        }
+        ul {
+            font-size: 18px;
+            margin-left: -40px;
+        }
+        li {
+            list-style: none;
+            line-height: 32px;
+            font-size: 18px;
+        }
+        .list-img {
+            width: 22px;
+            margin-left: -30px;
+        }
+    }
+    .hey-hero-image-cuenta-hey-negocios {
+        padding-top: 30px;
+        padding-bottom: 50px;
+        h1 {
+            font-size: 36px;
+            line-height: 50px;
+        }
+        p {
+            font-size: 22px;
+            color: #B9B8FF;
+        }
+        .beneficios {
+            font-size: 22px;
+            color: #B9B8FF;
+        }
+        .legales-small {
+            font-size: 12px;
+            padding-top: 12px;
+            text-decoration: underline;
+        }
+        .legales-terminos {
+            font-size: 12px;
+            text-decoration: none;
+        }
+        .btn-primary {
+            margin-top: 16px;
+        }
+        .hero-image-cuenta-hey-negocios {
+            width: 100%;
+        }
+        .media-body {
+            font-size: 18px;
+            margin-top: 5px;
+        }
+        .media {
+            margin-bottom: 0px;
+        }
+    }
+    .hey-hero-image-tarjeta-credito-hey {
+        padding-top: 30px;
+        padding-bottom: 0px;
+        h1 {
+            font-size: 36px;
+            line-height: 50px;
+        }
+        p {
+            font-size: 22px;
+            margin-bottom: 0;
+        }
+        .legales-small {
+            font-size: 12px;
+            padding-top: 12px;
+            text-decoration: underline;
+        }
+        .legales-terminos {
+            font-size: 12px;
+            text-decoration: none;
+        }
+        .hero-image-tdc-hey {
+            width: 140%;
+            margin-left: -46px;
+            margin-top: 130px;
+        }
+        .btn-primary {
+            margin-top: 16px;
+        }
+        .media-body {
+            font-size: 18px;
+            margin-top: 5px;
+        }
+        .media {
+            margin-bottom: 0px;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.fondo{
+    background-color: #40F3FF !important;
+}
+
+.fondo_anuncio{
+    background-color: #D4F910 !important;
+}
+
+.fondo_insta{
+    background-color: #FF8EF9 !important;
+}
+
+.boton{
+    background-color: #00E07B;
+    border-color: #00E07B;
+    color: #38383A !important;
+    margin-bottom: 20px;
+}

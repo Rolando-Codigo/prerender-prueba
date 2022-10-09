@@ -1,0 +1,62 @@
+hey-promocional-tranferencia-saldos {
+    .hey-hero-image {
+        background: #72E4FE 0% 0% no-repeat padding-box;
+        .vertical-center {
+            top: 50%;
+        }
+    }
+    .promocional-saldos {
+        text-align: center;
+        padding: 32px;
+        p {
+            margin-bottom: 32px;
+        }
+        height: 520px;
+        background: #DDF752 0% 0% no-repeat padding-box;
+        .container {
+            position: relative;
+            top: 25%;
+        }
+        .btn-primary {
+            margin-bottom: 24px;
+        }
+    }
+    .insta-hey {
+        background: #333333 0% 0% no-repeat padding-box;
+        color: #DDF752;
+        .btn-accent {
+            background-color: #72E4FE;
+            border-color: #000000;
+            &:hover {
+                background-color: #0D9AB5;
+                border-color: #0D9AB5;
+            }
+        }
+    }
+    .hey-hero-image {
+        h1 {
+            margin-top: 0%;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    hey-promocional-tranferencia-saldos {}
+}
+
+@media (max-width: 767.98px) {
+    hey-promocional-tranferencia-saldos {
+        .hey-hero-image {
+            img {
+                margin-top: 24px;
+            }
+            height: 480px;
+            h1 {
+                text-align: center;
+            }
+        }
+        .promocional-saldos {
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,310 @@
+<section class="hey-ivr-form bg-01">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-1 col-lg-8 offset-lg-2">
+                <h1>Reporte de fallas</h1>
+
+                <p>
+                    Crea un reporte por fallas en tu App Hey Banco llenando los datos que a continuación te solicitamos.<br><br> Una vez que nos llegue tu información estarás recibiendo un correo con el seguimiento de tu caso.
+                </p>
+
+                <div class="form" [formGroup]="form">
+                    <h2>Selecciona una opción:</h2>
+
+                    <div class="row">
+                        <div class="col-md-8 col-lg-6">
+                            <mat-form-field>
+                                <mat-label></mat-label>
+
+                                <mat-select name="identifier" [value]="identifier" [formControl]="identifierForm" [(ngModel)]="identifier">
+                                    <mat-option *ngFor="let value of IDENTIFIER_VALUES" [value]="value">{{ IDENTIFIER_VALUES_TEXT[value] }}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-8 col-lg-6" *ngIf="identifier === MODEL.CARD">
+                            <mat-form-field>
+                                <mat-label>{{ this.IDENTIFIER_VALUES_TEXT[MODEL.CARD] }}</mat-label>
+
+                                <input matInput [name]="MODEL.CARD" [formControl]="cardForm" maxlength="16" />
+
+                                <mat-error *ngIf="cardForm.invalid && (cardForm.dirty || cardForm.touched)">Ingresa los 16 dígitos de tu tarjeta Hey</mat-error>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-8 col-lg-6" *ngIf="identifier === MODEL.ACCOUNT_NUMBER">
+                            <mat-form-field>
+                                <mat-label>{{ this.IDENTIFIER_VALUES_TEXT[MODEL.ACCOUNT_NUMBER] }}</mat-label>
+
+                                <input matInput [name]="MODEL.ACCOUNT_NUMBER" [formControl]="accountNumberForm" maxlength="12">
+
+                                <mat-error *ngIf="accountNumberForm.invalid && (accountNumberForm.dirty || accountNumberForm.touched)">Ingresa una cuenta a 12 dígitos</mat-error>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-8 col-lg-6" *ngIf="identifier === MODEL.PHONE_NUMBER">
+                            <mat-form-field>
+                                <mat-label>{{ this.IDENTIFIER_VALUES_TEXT[MODEL.PHONE_NUMBER] }}</mat-label>
+
+                                <input matInput [name]="MODEL.PHONE_NUMBER" [formControl]="phoneNumberForm" maxlength="10">
+
+                                <mat-error *ngIf="phoneNumberForm.invalid && (phoneNumberForm.dirty || phoneNumberForm.touched)">Ingresa un número a 10 dígitos</mat-error>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <h2>Cuéntanos más</h2>
+
+                    <div class="row">
+
+                        <div class="col-md-8 col-lg-6">
+                            <mat-form-field>
+                                <mat-label>Tipo de producto</mat-label>
+
+                                <mat-select [formControl]="tipoProductoForm" (ngModelChange)="cambio()">
+                                    <mat-option *ngFor="let c of categoriasR" [value]="c">{{ c.nombre }}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-8 col-lg-6">
+                            <mat-form-field>
+                                <mat-label>Motivo del caso</mat-label>
+
+                                <mat-select [formControl]="motivoCasoProductoForm">
+                                    <mat-option *ngFor="let caso of tipoProductoForm.value?.categorias" [value]="caso">{{ caso }}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-8 col-lg-6" *ngIf="this.type === STATIC.TYPE_APP">
+                            <mat-form-field>
+                                <mat-label>{{ this.IDENTIFIER_VALUES_TEXT[MODEL.DEVICE] }}
+                                </mat-label>
+
+                                <input matInput [formControl]="deviceForm" [name]="MODEL.DEVICE">
+
+                                <mat-error *ngIf="deviceForm.invalid && (deviceForm.dirty || deviceForm.touched)">Ingresa el modelo de tu celular</mat-error>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-8 col-lg-6" *ngIf="this.type === STATIC.TYPE_APP">
+                            <p>{{ this.IDENTIFIER_VALUES_TEXT[MODEL.OS] }}:</p>
+
+                            <mat-radio-group class="row" [name]="MODEL.OS" [formControl]="osForm" (change)="appVersionForm.setValue(versions[0])">
+                                <div class="col-12 col-md-6 col-lg-6" *ngFor="let value of MODEL.OSS">
+                                    <mat-radio-button [value]="value">{{ this.IDENTIFIER_VALUES_TEXT[value] }}</mat-radio-button>
+                                </div>
+                            </mat-radio-group>
+                        </div>
+
+                        <div class="col-md-8 col-lg-6" *ngIf="this.type === STATIC.TYPE_APP">
+                            <mat-form-field>
+                                <mat-label>{{ this.IDENTIFIER_VALUES_TEXT[MODEL.APP_VERSION] }}</mat-label>
+
+                                <mat-select [formControl]="appVersionForm">
+                                    <mat-option *ngFor="let value of versions" [value]="value">{{ value }}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-12 col-lg-12">
+                            <textarea [placeholder]="this.IDENTIFIER_VALUES_TEXT[MODEL.DESCRIPTION]" [name]="MODEL.DESCRIPTION" [formControl]="descriptionForm" [(ngModel)]="model.description"></textarea>
+
+                            <mat-error *ngIf="descriptionForm.invalid && (descriptionForm.dirty || descriptionForm.touched)">Ingresa la descripción de la falla</mat-error>
+                        </div>
+                    </div>
+
+                    <h2 class="evidence">Sube evidencias de tu falla</h2>
+
+
+                    <div class="row">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="card text-center">
+                                <button class="btn btn-link" *ngIf="model.evidence.payload && model.evidence.payload !== null && model.evidence.payload.length > 0" (click)="removeFile(model.evidence, MODEL.EVIDENCE)">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/trash.svg'">
+                                </button>
+
+                                <img loading="lazy" *ngIf="model.evidence.payload && model.evidence.payload !== null && model.evidence.payload.length > 0" [src]="(model.evidence.base64Head ? model.evidence.base64Head : '') + ',' + model.evidence.payload" [alt]="MODEL.EVIDENCE" class="preview">
+                                <img loading="lazy" *ngIf="!model.evidence.payload" [src]="environment.assetsUrl + 'img/icons/ivr-camara.png'" class="icon">
+
+                                <p *ngIf="!model.evidence.payload" class="card-text">{{ this.IDENTIFIER_VALUES_TEXT[MODEL.EVIDENCE] }}</p>
+
+                                <input class="position-absolute w-100 h-100" type="file" [name]="MODEL.EVIDENCE" placeholder="Upload file" style="opacity: 0; top: 0; left: 0" (change)="fileChange($event, MODEL.EVIDENCE)" #evidenceFile>
+                            </div>
+
+                            <mat-hint *ngIf="model.evidence.payload && model.evidence.payload !== null && model.evidence.payload.length > 0">{{ model.evidence.name }} | {{ model.evidence.size }}bytes</mat-hint>
+
+                            <mat-error *ngIf="evidenceError === STATIC.FILE_CHANGE_ERROR_INVALID_MIMETYPE">Formato no valido. Sube una foto en png o jpg.</mat-error>
+
+                            <mat-error *ngIf="evidenceError === STATIC.FILE_CHANGE_ERROR_INVALID_FILESIZE">Tu imagen excede el peso máximo (2 MB)</mat-error>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="card text-center">
+                                <button class="btn btn-link" *ngIf="model.evidence2.payload && model.evidence2.payload !== null && model.evidence2.payload.length > 0" (click)="removeFile(model.evidence2, MODEL.EVIDENCE_2)">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/trash.svg'">
+                                </button>
+
+                                <img loading="lazy" *ngIf="model.evidence2.payload && model.evidence2.payload !== null && model.evidence2.payload.length > 0" [src]="(model.evidence2.base64Head ? model.evidence2.base64Head : '') + ',' + model.evidence2.payload" [alt]="MODEL.EVIDENCE_2"
+                                    class="preview">
+                                <img loading="lazy" *ngIf="!model.evidence2.payload" [src]="environment.assetsUrl + 'img/icons/ivr-camara.png'" class="icon">
+
+                                <p *ngIf="!model.evidence2.payload" class="card-text">{{ this.IDENTIFIER_VALUES_TEXT[MODEL.EVIDENCE_2] }}</p>
+
+                                <input class="position-absolute w-100 h-100" type="file" [name]="MODEL.EVIDENCE_2" placeholder="Upload file" style="opacity: 0; top: 0; left: 0" (change)="fileChange($event, MODEL.EVIDENCE_2)" #evidence2File>
+                            </div>
+
+                            <mat-hint *ngIf="model.evidence2.payload && model.evidence2.payload !== null && model.evidence2.payload.length > 0">{{ model.evidence2.name }} | {{ model.evidence2.size }}bytes</mat-hint>
+
+                            <mat-error *ngIf="evidence2Error === STATIC.FILE_CHANGE_ERROR_INVALID_MIMETYPE">Formato no valido. Sube una foto en png o jpg.</mat-error>
+
+                            <mat-error *ngIf="evidence2Error === STATIC.FILE_CHANGE_ERROR_INVALID_FILESIZE">Tu imagen excede el peso máximo (2 MB)</mat-error>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="card text-center">
+                                <button class="btn btn-link" *ngIf="model.evidence3.payload && model.evidence3.payload !== null && model.evidence3.payload.length > 0" (click)="removeFile(model.evidence3, MODEL.EVIDENCE_3)">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/trash.svg'">
+                                </button>
+
+                                <img loading="lazy" *ngIf="model.evidence3.payload && model.evidence3.payload !== null && model.evidence3.payload.length > 0" [src]="(model.evidence3.base64Head ? model.evidence3.base64Head : '') + ',' + model.evidence3.payload" [alt]="MODEL.EVIDENCE_3"
+                                    class="preview">
+                                <img loading="lazy" *ngIf="!model.evidence3.payload" [src]="environment.assetsUrl + 'img/icons/ivr-camara.png'" class="icon">
+
+                                <p *ngIf="!model.evidence3.payload" class="card-text">{{ this.IDENTIFIER_VALUES_TEXT[MODEL.EVIDENCE_3] }}</p>
+
+                                <input class="position-absolute w-100 h-100" type="file" [name]="MODEL.EVIDENCE_3" placeholder="Upload file" style="opacity: 0; top: 0; left: 0" (change)="fileChange($event, MODEL.EVIDENCE_3)" #evidence3File>
+                            </div>
+
+                            <mat-hint *ngIf="model.evidence3.payload && model.evidence3.payload !== null && model.evidence3.payload.length > 0">{{ model.evidence3.name }} | {{ model.evidence3.size }}bytes</mat-hint>
+
+                            <mat-error *ngIf="evidence3Error === STATIC.FILE_CHANGE_ERROR_INVALID_MIMETYPE">Formato no valido. Sube una foto en png o jpg.</mat-error>
+
+                            <mat-error *ngIf="evidence3Error === STATIC.FILE_CHANGE_ERROR_INVALID_FILESIZE">Tu imagen excede el peso máximo (2 MB)</mat-error>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="card text-center">
+                                <button class="btn btn-link" *ngIf="model.evidence4.payload && model.evidence4.payload !== null && model.evidence4.payload.length > 0" (click)="removeFile(model.evidence4, MODEL.EVIDENCE_4)">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/trash.svg'">
+                                </button>
+
+                                <img loading="lazy" *ngIf="model.evidence4.payload && model.evidence4.payload !== null && model.evidence4.payload.length > 0" [src]="(model.evidence4.base64Head ? model.evidence4.base64Head : '') + ',' + model.evidence4.payload" [alt]="MODEL.EVIDENCE_4"
+                                    class="preview">
+                                <img loading="lazy" *ngIf="!model.evidence4.payload" [src]="environment.assetsUrl + 'img/icons/ivr-camara.png'" class="icon">
+
+                                <p *ngIf="!model.evidence4.payload" class="card-text">{{ this.IDENTIFIER_VALUES_TEXT[MODEL.EVIDENCE_4] }}</p>
+
+                                <input class="position-absolute w-100 h-100" type="file" [name]="MODEL.EVIDENCE_4" placeholder="Upload file" style="opacity: 0; top: 0; left: 0" (change)="fileChange($event, MODEL.EVIDENCE_4)" #evidence4File>
+                            </div>
+
+                            <mat-hint *ngIf="model.evidence4.payload && model.evidence4.payload !== null && model.evidence4.payload.length > 0">{{ model.evidence4.name }} | {{ model.evidence4.size }}bytes</mat-hint>
+
+                            <mat-error *ngIf="evidence4Error === STATIC.FILE_CHANGE_ERROR_INVALID_MIMETYPE">Formato no valido. Sube una foto en png o jpg.</mat-error>
+
+                            <mat-error *ngIf="evidence4Error === STATIC.FILE_CHANGE_ERROR_INVALID_FILESIZE">Tu imagen excede el peso máximo (2 MB)</mat-error>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <a class="btn btn-outline-primary" role="button" [routerLink]="['/reportes']">Cancelar</a>
+                        </div>
+
+                        <div class="col-6 col-md-6 col-lg-6 text-right">
+                            <button class="btn btn-primary" type="button" [disabled]="!isValidForm || busy" (click)="submitForm(form)">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="loader" *ngIf="busy">
+    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/loader.gif'">
+</div>
+
+<div id="ivr-modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" *ngIf="modalType === STATIC.MODAL_TYPE_EMAIL">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+
+            <div class="modal-body">
+                <h5 class="modal-title">¡Hey, sigamos en contacto!</h5>
+
+                <p>Ingresa tu correo para seguir atendiéndote.</p>
+
+                <div class="row">
+                    <div class="col-lg-5">
+                        <mat-form-field>
+                            <mat-label>Nombre</mat-label>
+
+                            <input matInput [formControl]="nameForm" [name]="MODEL.NAME">
+
+                            <mat-error *ngIf="nameForm.invalid && (nameForm.dirty || nameForm.touched)">Ingresa un nombre válido</mat-error>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <mat-form-field>
+                            <mat-label>Correo electrónico</mat-label>
+
+                            <input matInput [formControl]="emailForm" [name]="MODEL.EMAIL">
+
+                            <mat-error *ngIf="emailForm.invalid && (emailForm.dirty || emailForm.touched)">Ingresa un correo electrónico válido</mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancelar</button>
+
+                <button type="button" class="btn btn-primary" (click)="submitForm(form)" [disabled]="!isValidForm || busy">Enviar</button>
+            </div>
+        </div>
+
+        <div class="modal-content" *ngIf="modalType === STATIC.MODAL_TYPE_SUCCESS">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+
+            <div class="modal-body">
+                <h5 class="modal-title">¡Excelente, tu información ha sido enviada!</h5>
+
+                <p>En breve uno de nuestros agentes Hey te contactará para darle seguimiento a tu caso.</p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Entendido</button>
+            </div>
+        </div>
+
+        <div class="modal-content" *ngIf="modalType === STATIC.MODAL_TYPE_ERROR">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+
+            <div class="modal-body">
+                <h5 class="modal-title">¡Ocurrió un error!</h5>
+
+                <p>Al parecer no pudimos enviar tu información.</p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Entendido</button>
+            </div>
+        </div>
+    </div>
+</div>
+<re-captcha size="invisible" *ngIf="RECAPTCHA_KEY" [siteKey]="RECAPTCHA_KEY" (resolved)="$event && submitForm(form)" [formControl]="captcha"></re-captcha>

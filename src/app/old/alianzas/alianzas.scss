@@ -1,0 +1,176 @@
+hey-alianzas {
+    .hey-legal-title {
+        padding-bottom: 82px;
+        padding-top: 62px;
+        p {
+            margin-top: 4px;
+        }
+    }
+    .hey-benefits {
+        padding-bottom: 64px;
+        padding-top: 80px;
+        h2 {
+            margin-bottom: 40px;
+        }
+        .col-lg-4 {
+            img {
+                margin-top: 0;
+            }
+        }
+        .benefit {
+            margin-bottom: 0;
+            .benefit-box {
+                padding: 48px;
+                p {
+                    @extend %sneak-18;
+                }
+            }
+        }
+    }
+    .hey-alianzas-form {
+        padding-bottom: 130px;
+        padding-top: 40px;
+        h3 {
+            @extend %lato-30;
+            margin-bottom: 24px;
+        }
+        h4 {
+            @extend %lato-18;
+            margin-bottom: 18px;
+            margin-top: 14px;
+        }
+        .mat-form-field {
+            margin-bottom: 6px;
+            &.name {
+                .mat-form-field-flex {
+                    background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_name.svg);
+                    background-repeat: no-repeat;
+                    background-position: 14px 15px;
+                }
+            }
+            &.mail {
+                .mat-form-field-flex {
+                    background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_send_mail.svg);
+                    background-repeat: no-repeat;
+                    background-position: 14px 15px;
+                }
+            }
+            &.company {
+                .mat-form-field-flex {
+                    background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_company.svg);
+                    background-repeat: no-repeat;
+                    background-position: 14px 15px;
+                }
+            }
+            &.foundation {
+                .mat-form-field-flex {
+                    background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_calendar.svg);
+                    background-repeat: no-repeat;
+                    background-position: 14px 15px;
+                }
+            }
+            &.activity {
+                .mat-form-field-flex {
+                    background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_activity.svg);
+                    background-repeat: no-repeat;
+                    background-position: 14px 15px;
+                }
+            }
+            &.website {
+                .mat-form-field-flex {
+                    background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_website.svg);
+                    background-repeat: no-repeat;
+                    background-position: 14px 15px;
+                }
+            }
+        }
+        .mat-radio-label-content {
+            @extend %lato-14;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    /*body {
+        background: url(https://heybanco.s3.amazonaws.com/img/alianzas_tablet.png)no-repeat 0 -30px;
+        background-size: 768px auto;
+    }*/
+    hey-alianzas {
+        .hey-legal-title {
+            padding-bottom: 80px;
+            padding-top: 59px;
+            h2 {
+                margin-bottom: 12px;
+            }
+            p {
+                margin-top: 2px;
+            }
+            p+.btn {
+                margin-top: 22px;
+            }
+        }
+        .hey-benefits {
+            .col-lg-4 {
+                img {
+                    margin-bottom: 24px;
+                }
+            }
+            .benefit {
+                .benefit-box {
+                    padding: 32px;
+                    p {
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                }
+            }
+        }
+        .hey-alianzas-form {
+            h4 {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    /*body {
+        background: url(https://heybanco.s3.amazonaws.com/img/alianzas_mobile.png)no-repeat 0 -30px;
+        background-size: 375px auto;
+    }*/
+    hey-alianzas {
+        .hey-legal-title {
+            padding-bottom: 40px;
+            padding-top: 32px;
+            h2 {
+                margin-bottom: 8px;
+            }
+            p {
+                margin-top: 8px;
+            }
+            p+.btn {
+                margin-top: 20px;
+            }
+        }
+        .hey-alianzas-form {
+            h3 {
+                margin-bottom: 40px;
+            }
+            h4 {
+                margin-bottom: 16px;
+                margin-top: 0;
+            }
+            .mat-radio-button {
+                margin-bottom: 8px;
+            }
+            .mat-radio-label-content {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+}

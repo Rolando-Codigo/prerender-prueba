@@ -1,0 +1,174 @@
+@import "src/sass/components/colors.scss";
+@import "src/sass/components/font-styles.scss";
+hey-careers {
+    .hey-hero-image {
+        background: #EFF4F7 url(https://heybanco.s3.amazonaws.com/assets/img/hero-image/hero-image-careers.png)no-repeat;
+        background-position: bottom right;
+        background-size: 592px auto;
+        height: 600px;
+        .col-lg-5 {
+            height: 600px;
+        }
+        h1 {
+            margin-bottom: 8px;
+        }
+        h2 {
+            @extend %sneak-14;
+            margin-bottom: 8px;
+        }
+        p {}
+    }
+    .hey-cta {
+        padding-bottom: 107px;
+        padding-top: 97px;
+        h2 {
+            margin-bottom: 16px;
+        }
+        p {
+            @extend %lato-16;
+            color: $color-black-4B;
+            margin-bottom: 0;
+        }
+        &.bg-02 {
+            padding-bottom: 0;
+            padding-top: 0;
+            img {
+                height: auto;
+                width: 100%;
+            }
+            h2 {
+                margin-bottom: 22px;
+            }
+            .btn-primary {
+                margin-top: 22px;
+            }
+        }
+    }
+    .hey-testimonials {
+        padding-bottom: 25px;
+        padding-top: 123px;
+        h2 {
+            @extend %sneak-22;
+            margin-bottom: 32px;
+        }
+        .card {
+            background: $color-background-02;
+            border: none;
+            border-radius: 10px;
+            .card-body {
+                padding: 24px;
+                h3 {
+                    @extend %lato-28;
+                    margin-bottom: 32px;
+                }
+                h4 {
+                    @extend %lato-16;
+                    margin-bottom: 0;
+                }
+                p {
+                    @extend %lato-16;
+                    color: $color-black-4B;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .hey-jobs-benefits {
+        padding-bottom: 92px;
+        padding-top: 92px;
+        .card {
+            background: $color-white;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 8px 4px 12px 0 rgba(0, 0, 0, 0.10);
+            .card-body {
+                padding: 24px;
+                h2 {
+                    @extend %lato-30;
+                    margin-bottom: 16px;
+                }
+                p {
+                    @extend %lato-18;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    hey-careers {
+        .hey-hero-image {
+            background-position: center right;
+            background-size: 370px auto;
+            height: 486px;
+            .col-lg-5 {
+                height: 486px;
+            }
+            h1 {
+                margin-bottom: 16px;
+            }
+        }
+        .hey-cta {
+            padding-bottom: 90px;
+            padding-top: 92px;
+            &.bg-02 {
+                padding-bottom: 77px;
+                padding-top: 75px;
+                h2 {
+                    margin-bottom: 16px;
+                    margin-top: 24px;
+                }
+                p {
+                    margin-top: 0;
+                }
+            }
+        }
+        .hey-testimonials {
+            padding-bottom: 0px;
+            padding-top: 88px;
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    hey-careers {
+        .hey-hero-image {
+            background-position: center top;
+            background-size: auto 290px;
+            height: 794px;
+            .col-lg-5 {
+                height: 794px;
+                padding-top: 330px;
+                .vertical-center {
+                    position: relative;
+                    top: 0;
+                    -ms-transform: translateY(0);
+                    transform: translateY(0);
+                }
+            }
+        }
+        .hey-cta {
+            padding-bottom: 64px;
+            padding-top: 50px;
+            img {
+                margin-bottom: 32px;
+                margin-top: 0!important;
+            }
+            &.bg-02 {
+                padding-bottom: 54px;
+                padding-top: 0;
+            }
+        }
+        .hey-testimonials {
+            padding-bottom: 20px;
+            padding-top: 50px;
+        }
+        .hey-jobs-benefits {
+            padding-bottom: 40px;
+            padding-top: 56px;
+        }
+    }
+}

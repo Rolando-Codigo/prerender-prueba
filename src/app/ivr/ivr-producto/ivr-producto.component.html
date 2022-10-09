@@ -1,0 +1,186 @@
+<section class="hey-ivr-form bg-01">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-1 col-lg-8 offset-lg-2">
+                <h1>Asesoría de producto</h1>
+
+                <p>
+                    Queremos aclararte cualquier duda que tengas sobre nuestros productos.<br><br> Llena los siguientes campos y una vez que contemos con tu información nos estaremos comunicando contigo por correo.
+                </p>
+
+                <div class="form" [formGroup]="form">
+                    <h2>Datos personales:</h2>
+
+                    <div class="row">
+                        <div class="col-md-8 col-lg-6">
+                            <mat-form-field>
+                                <mat-label></mat-label>
+
+                                <mat-select name="identifier" [value]="identifier" [formControl]="identifierForm" [(ngModel)]="identifier">
+                                    <mat-option *ngFor="let value of IDENTIFIER_VALUES" [value]="value">{{ IDENTIFIER_VALUES_TEXT[value] }}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-8 col-lg-6" *ngIf="identifier === MODEL.CARD">
+                            <mat-form-field>
+                                <mat-label>{{ this.IDENTIFIER_VALUES_TEXT[MODEL.CARD] }}</mat-label>
+
+                                <input matInput [name]="MODEL.CARD" [formControl]="cardForm" maxlength="16" />
+
+                                <mat-error *ngIf="cardForm.invalid && (cardForm.dirty || cardForm.touched)">Ingresa los 16 dígitos de tu tarjeta Hey</mat-error>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-8 col-lg-6" *ngIf="identifier === MODEL.ACCOUNT_NUMBER">
+                            <mat-form-field>
+                                <mat-label>{{ this.IDENTIFIER_VALUES_TEXT[MODEL.ACCOUNT_NUMBER] }}</mat-label>
+
+                                <input matInput [name]="MODEL.ACCOUNT_NUMBER" [formControl]="accountNumberForm" maxlength="12">
+
+                                <mat-error *ngIf="accountNumberForm.invalid && (accountNumberForm.dirty || accountNumberForm.touched)">Ingresa una cuenta a 12 dígitos</mat-error>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-8 col-lg-6" *ngIf="identifier === MODEL.PHONE_NUMBER">
+                            <mat-form-field>
+                                <mat-label>{{ this.IDENTIFIER_VALUES_TEXT[MODEL.PHONE_NUMBER] }}</mat-label>
+
+                                <input matInput [name]="MODEL.PHONE_NUMBER" [formControl]="phoneNumberForm" maxlength="10">
+
+                                <mat-error *ngIf="phoneNumberForm.invalid && (phoneNumberForm.dirty || phoneNumberForm.touched)">Ingresa un número a 10 dígitos</mat-error>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <h2>¿De qué producto quieres saber más?</h2>
+
+                    <div class="row">
+                        <div class="col-md-8 col-lg-6">
+                            <mat-form-field>
+                                <mat-label>Tipo de producto</mat-label>
+
+                                <mat-select [formControl]="tipoProductoForm">
+                                    <mat-option *ngFor="let c of categoriasR" [value]="c">{{ c.nombre }}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-8 col-lg-6">
+                            <mat-form-field>
+                                <mat-label>Motivo del caso</mat-label>
+
+                                <mat-select [formControl]="motivoCasoProductoForm">
+                                    <mat-option *ngFor="let caso of tipoProductoForm.value?.categorias" [value]="caso">{{ caso }}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-12 col-lg-12">
+                            <textarea [name]="MODEL.COMMENTS" placeholder="Cuéntanos tus dudas" [formControl]="commentsForm"></textarea>
+
+                            <mat-error *ngIf="commentsForm.invalid && (commentsForm.dirty || commentsForm.touched)">Ingresa un comentario</mat-error>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <a class="btn btn-outline-primary" role="button" [routerLink]="['/reportes']">Cancelar</a>
+                        </div>
+
+                        <div class="col-6 col-md-6 col-lg-6 text-right">
+                            <button class="btn btn-primary" type="button" [disabled]="!isValidForm || busy" (click)="submitForm(form)">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="loader" *ngIf="busy">
+    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/loader.gif'">
+</div>
+
+<div id="ivr-modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" *ngIf="modalType === STATIC.MODAL_TYPE_EMAIL">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+
+            <div class="modal-body">
+                <h5 class="modal-title">¡Hey, sigamos en contacto!</h5>
+
+                <p>Ingresa tu correo para seguir atendiéndote.</p>
+
+                <div class="row">
+                    <div class="col-lg-5">
+                        <mat-form-field>
+                            <mat-label>Nombre</mat-label>
+
+                            <input matInput [formControl]="nameForm" [name]="MODEL.NAME">
+
+                            <mat-error *ngIf="nameForm.invalid && (nameForm.dirty || nameForm.touched)">Ingresa un nombre válido</mat-error>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <mat-form-field>
+                            <mat-label>Correo electrónico</mat-label>
+
+                            <input matInput [formControl]="emailForm" [name]="MODEL.EMAIL">
+
+                            <mat-error *ngIf="emailForm.invalid && (emailForm.dirty || emailForm.touched)">Ingresa un correo electrónico válido</mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancelar</button>
+
+                <button type="button" class="btn btn-primary" (click)="submitForm(form)" [disabled]="!isValidForm || busy">Enviar</button>
+            </div>
+        </div>
+
+        <div class="modal-content" *ngIf="modalType === STATIC.MODAL_TYPE_SUCCESS">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+
+            <div class="modal-body">
+                <h5 class="modal-title">¡Excelente, tu información ha sido enviada!</h5>
+
+                <p>En breve uno de nuestros agentes Hey te contactará para darle seguimiento a tu caso.</p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Entendido</button>
+            </div>
+        </div>
+
+        <div class="modal-content" *ngIf="modalType === STATIC.MODAL_TYPE_ERROR">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+
+            <div class="modal-body">
+                <h5 class="modal-title">¡Ocurrió un error!</h5>
+
+                <p>Al parecer no pudimos enviar tu información.</p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Entendido</button>
+            </div>
+        </div>
+    </div>
+</div>
+<re-captcha size="invisible" *ngIf="RECAPTCHA_KEY" [siteKey]="RECAPTCHA_KEY" (resolved)="$event && submitForm(form)" [formControl]="captcha"></re-captcha>

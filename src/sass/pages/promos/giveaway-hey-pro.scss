@@ -1,0 +1,722 @@
+hey-giveaway-hey-pro {
+    .hey-hero-image {
+        background: linear-gradient(#BA9631, #FACB36);
+        background: -webkit-linear-gradient(left, #BA9631, #FACB36);
+        background-image: -moz-linear-gradient(left, #BA9631, #FACB36);
+        background-image: -o-linear-gradient(left, #BA9631, #FACB36);
+        background-image: linear-gradient(to left, #BA9631, #FACB36);
+        color: white;
+        height: 520px;
+        .img-back {
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-boleto-dorado.png)no-repeat;
+            background-position: 100% 30%;
+            background-size: 37% auto;
+            height: 600px;
+        }
+        p {
+            margin-top: 16px;
+            color: white;
+        }
+        h1 {
+            color: white;
+            margin-bottom: 16px;
+            margin-top: 8px;
+        }
+        h2 {
+            color: white;
+            margin-bottom: 16px;
+            margin-top: 8px;
+        }
+        .legales {
+            @extend %lato-12;
+        }
+        .col-lg-6 {
+            height: 400px;
+        }
+    }
+    .text-min {
+        font-size: 10px;
+        margin-left: -6px;
+        vertical-align: super;
+    }
+    .mr-20 {
+        margin-right: 20px;
+    }
+    .circle-white {
+        width: 175px;
+        height: 175px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: white;
+        text-align: center;
+        position: relative;
+        margin-left: 24px;
+        h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @extend %sneak-64;
+        }
+    }
+    .text-green {
+        color: #43D181;
+    }
+    .text-green2 {
+        color: #DBF551;
+    }
+    .bg-green {
+        background-color: #44D181;
+    }
+    .bg-blue-purple {
+        background: linear-gradient(#BABAFF, #0E82C6);
+        background: -webkit-linear-gradient(left, #BABAFF, #0E82C6);
+        background-image: -moz-linear-gradient(left, #BABAFF, #0E82C6);
+        background-image: -o-linear-gradient(left, #BABAFF, #0E82C6);
+        background-image: linear-gradient(to left, #BABAFF, #0E82C6);
+    }
+    .bg-gradient-green {
+        background: linear-gradient(#BEFE40, #43D181);
+        background: -webkit-linear-gradient(left, #BEFE40, #43D181);
+        background-image: -moz-linear-gradient(left, #BEFE40, #43D181);
+        background-image: -o-linear-gradient(left, #BEFE40, #43D181);
+        background-image: linear-gradient(to left, #BEFE40, #43D181);
+        color: white;
+    }
+    .nfl-cortesia {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        text-align: center;
+        img {
+            width: 90px;
+            padding-left: 0px;
+        }
+        p {
+            margin-right: 16px;
+        }
+        .icon {
+            padding-left: 0px;
+        }
+    }
+    .m-15 {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .mb-20 {
+        margin-bottom: 20px !important;
+    }
+    .text-rembolso {
+        color: #44D181;
+    }
+    .hey-applepay {
+        height: 560px;
+        .responsive-apple-pay {
+            width: 140%;
+        }
+    }
+    .icon {
+        margin-top: 8px;
+        margin-left: 24px;
+        width: 35px;
+        margin-right: 16px;
+    }
+    .img-6 {
+        width: 40%;
+        margin-bottom: 24px;
+    }
+    .hey-tasa {
+        .horizontal-bottom {
+            text-align: center;
+            img {
+                width: 50%;
+            }
+        }
+        .legales {
+            margin-top: 24px;
+        }
+    }
+    #participacion {
+        background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-74-img.png)no-repeat;
+        background-position: 100% 30%;
+        background-size: 37% auto;
+        height: 600px !important;
+        h2 {
+            margin-bottom: 8px;
+            margin-top: 12px;
+        }
+        .media {
+            margin-top: 0;
+            margin-bottom: 40px;
+            img {
+                height: auto;
+                margin-right: 16px;
+                width: 53px;
+            }
+            p {
+                @extend %lato-16;
+            }
+            &:first-child {
+                margin-top: 40px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .img-background {
+            display: none;
+        }
+        .legales {
+            margin-top: 32px;
+        }
+    }
+    #tdc-hey {
+        background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-76-img.png)no-repeat #EFF4F7;
+        background-position: 100% 30%;
+        background-size: 45% auto;
+        height: 600px !important;
+        h2 {
+            margin-bottom: 8px;
+            margin-top: 12px;
+        }
+        .media {
+            margin-top: 0;
+            margin-bottom: 40px;
+            img {
+                height: auto;
+                margin-right: 16px;
+                width: 53px;
+            }
+            p {
+                @extend %lato-16;
+            }
+            &:first-child {
+                margin-top: 40px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .img-background {
+            display: none;
+        }
+        .legales {
+            margin-top: 32px;
+        }
+    }
+}
+
+hey-promocional-embajadores {
+    .hey-hero-image {
+        .vertical-center {
+            top: 50%;
+        }
+    }
+    .bg-gradient-green {
+        background: linear-gradient(#BEFE40, #43D181);
+        background: -webkit-linear-gradient(left, #BEFE40, #43D181);
+        background-image: -moz-linear-gradient(left, #BEFE40, #43D181);
+        background-image: -o-linear-gradient(left, #BEFE40, #43D181);
+        background-image: linear-gradient(to left, #BEFE40, #43D181);
+        color: #4B4B63 !important;
+        .website {
+            .mat-form-field-flex {
+                border-radius: 13px;
+                height: 48px;
+                background-repeat: no-repeat;
+                padding-left: 16px;
+                border-width: 0px !important;
+                background-position: 14px 15px;
+            }
+            .mat-form-field-underline {
+                display: none;
+            }
+            .mat-form-field-infix {
+                border-top: 0px !important;
+                padding: 11px !important;
+            }
+            .mat-checkbox-label {
+                @extend %lato-18;
+                font-size: 1.12rem !important;
+                line-height: 1.62rem !important;
+                color: #4B4B63 !important;
+            }
+        }
+    }
+    .mat-checkbox .mat-checkbox-frame {
+        border-color: transparent;
+        background-color: #fff;
+    }
+    .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
+    .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+        width: 20px;
+        height: 20px;
+    }
+    .mat-checkbox.mat-accent {
+        &.mat-checkbox-checked .mat-checkbox-background {
+            border-color: transparent;
+            background-color: black;
+            width: 16px !important;
+            height: 16px !important;
+        }
+    }
+}
+
+hey-embajadores-clientes {
+    .hey-hero-image {
+        .vertical-center {
+            top: 50%;
+        }
+    }
+    .hey-cta {
+        p {
+            color: black;
+        }
+        .mat-checkbox-label {
+            font-size: 1.12rem !important;
+            line-height: 1.62rem !important;
+            color: black !important;
+            font-weight: 500 !important;
+        }
+    }
+    .bg-gradient-green {
+        background: linear-gradient(#FF70F7, #FF70F7);
+        background: -webkit-linear-gradient(left, #FF70F7, #FF70F7);
+        background-image: -moz-linear-gradient(left, #FF70F7, #FF70F7);
+        background-image: -o-linear-gradient(left, #FF70F7, #FF70F7);
+        background-image: linear-gradient(to left, #FF70F7, #FF70F7);
+        color: black !important;
+        .website {
+            .mat-form-field-flex {
+                border-radius: 13px;
+                height: 48px;
+                background-repeat: no-repeat;
+                padding-left: 16px;
+                border-width: 0px !important;
+                background-position: 14px 15px;
+            }
+            .mat-form-field-underline {
+                display: none;
+            }
+            .mat-form-field-infix {
+                border-top: 0px !important;
+                padding: 11px !important;
+            }
+            .mat-checkbox-label {
+                font-size: 1.12rem !important;
+                line-height: 1.62rem !important;
+                color: #4B4B63 !important;
+                font-weight: 500 !important;
+            }
+        }
+    }
+    .mat-checkbox .mat-checkbox-frame {
+        border-color: transparent;
+        background-color: #fff;
+    }
+    .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
+    .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+        width: 20px;
+        height: 20px;
+    }
+    .mat-checkbox.mat-accent {
+        &.mat-checkbox-checked .mat-checkbox-background {
+            border-color: transparent;
+            background-color: black;
+            width: 16px !important;
+            height: 16px !important;
+        }
+    }
+    .boton {
+        margin-bottom: 20px;
+    }
+    .centrar {
+        text-align: center;
+    }
+    .fondo {
+        background-color: #EFF4F7;
+    }
+    a:link {
+        color: #000;
+    }
+    /* unvisited link  */
+    a:visited {
+        color: #000;
+    }
+    /* visited link    */
+    a:hover {
+        color: #000;
+    }
+    /* mouse over link */
+    a:active {
+        color: #000;
+    }
+    /* selected link   */
+}
+
+hey-giveaway-participacion-referidos-hey {
+    .hey-hero-image {
+        .vertical-center {
+            top: 50%;
+        }
+    }
+    .hey-cta {
+        p {
+            color: black;
+        }
+        .mat-checkbox-label {
+            font-size: 1.12rem !important;
+            line-height: 1.62rem !important;
+            color: black !important;
+            font-weight: 500 !important;
+        }
+    }
+    .bg-gradient-lilac {
+        background: linear-gradient(#FF70F7, #FF70F7);
+        background: -webkit-linear-gradient(left, #FF70F7, #FF70F7);
+        background-image: -moz-linear-gradient(left, #FF70F7, #FF70F7);
+        background-image: -o-linear-gradient(left, #FF70F7, #FF70F7);
+        background-image: linear-gradient(to left, #FF70F7, #FF70F7);
+        color: black !important;
+        .website {
+            .mat-form-field-flex {
+                border-radius: 13px;
+                height: 48px;
+                background-repeat: no-repeat;
+                padding-left: 16px;
+                border-width: 0px !important;
+                background-position: 14px 15px;
+            }
+            .mat-form-field-underline {
+                display: none;
+            }
+            .mat-form-field-infix {
+                border-top: 0px !important;
+                padding: 11px !important;
+            }
+            .mat-checkbox-label {
+                font-size: 1.12rem !important;
+                line-height: 1.62rem !important;
+                color: #4B4B63 !important;
+                font-weight: 500 !important;
+            }
+        }
+    }
+    .mat-checkbox .mat-checkbox-frame {
+        border-color: transparent;
+        background-color: #fff;
+    }
+    .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
+    .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+        width: 20px;
+        height: 20px;
+    }
+    .mat-checkbox.mat-accent {
+        &.mat-checkbox-checked .mat-checkbox-background {
+            border-color: transparent;
+            background-color: black;
+            width: 16px !important;
+            height: 16px !important;
+        }
+    }
+    .boton {
+        margin-bottom: 20px;
+    }
+    .centrar {
+        text-align: center;
+    }
+    .fondo {
+        background-color: #EFF4F7;
+    }
+    a:link {
+        color: #2C68EF;
+    }
+    /* unvisited link  */
+    a:visited {
+        color: #2C68EF;
+    }
+    /* visited link    */
+    a:hover {
+        color: #2C68EF;
+    }
+    /* mouse over link */
+    a:active {
+        color: #2C68EF;
+    }
+    /* selected link   */
+}
+
+//Pantallas Medianas
+@media (max-width: 1400px) {
+    hey-giveaway-hey-pro {
+        .hey-hero-image {
+            height: 430px;
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    hey-giveaway-hey-pro {
+        .hey-hero-image {
+            height: 400px;
+            .col-lg-6 {
+                height: 350px;
+            }
+            .img-back {
+                background-position: bottom right !important;
+                background-size: 50% auto !important;
+                height: 350px !important;
+            }
+        }
+        .container-counter {
+            margin: 0 auto;
+            width: 100%;
+            margin-top: 32px;
+        }
+        .hey-applepay {
+            height: 650px;
+            a {
+                margin-bottom: 0px !important;
+            }
+            .btn-primary {
+                margin-top: 16px !important;
+            }
+            .responsive-apple-pay {
+                width: 140%;
+            }
+            h2+p {
+                margin-bottom: 26px;
+            }
+        }
+        .img-6 {
+            width: 60%;
+        }
+    }
+    hey-giveaway-participacion-referidos-hey {
+        .container-counter {
+            margin: 0 auto;
+            width: 100%;
+            margin-top: 32px;
+        }
+        .hey-applepay {
+            height: 650px;
+            a {
+                margin-bottom: 0px !important;
+            }
+            .btn-primary {
+                margin-top: 16px !important;
+            }
+            .responsive-apple-pay {
+                width: 140%;
+            }
+            h2+p {
+                margin-bottom: 26px;
+            }
+        }
+        .img-6 {
+            width: 60%;
+        }
+    }
+    .circle-white {
+        h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .hey-tasa {
+        .horizontal-bottom {
+            img {
+                margin-left: 0% !important;
+                width: 70% !important;
+            }
+        }
+        .vertical-center {
+            position: relative !important;
+        }
+    }
+    #participacion {
+        height: 820px !important;
+        background-size: 350px !important;
+        background-position: 100% 50% !important;
+        background-position: right;
+        .img-background {
+            display: none;
+        }
+    }
+    #tdc-hey {
+        height: 820px !important;
+        background-size: 350px !important;
+        background-position: 100% 50% !important;
+        background-position: right;
+        .img-background {
+            display: none;
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    hey-giveaway-hey-pro {
+        .hey-hero-image {
+            height: 530px !important;
+            .responsive-cuentas-hero {
+                margin-top: -30px;
+            }
+            .col-lg-6 {
+                height: 250px;
+            }
+            .col-lg-5 {
+                img {
+                    height: 250px;
+                    width: auto;
+                }
+            }
+            .img-back {
+                background-position: bottom right !important;
+                background-size: 85% auto !important;
+                height: 500px !important;
+            }
+        }
+        .container-counter {
+            margin: 16px;
+            width: 90%;
+            margin-top: 16px;
+        }
+        .hey-applepay {
+            height: 720px;
+            text-align: center;
+            a {
+                margin-bottom: 0px !important;
+            }
+            .center-content {
+                display: flex;
+                justify-content: center;
+            }
+            .responsive-apple-pay {
+                margin-top: 0px !important;
+                margin-left: 0px !important;
+                margin-bottom: 32px !important;
+            }
+            .btn-primary {
+                margin-top: 16px !important;
+            }
+        }
+        .img-6 {
+            width: 70%;
+        }
+        .circle-white {
+            width: 120px;
+            height: 120px;
+            h2 {
+                position: absolute;
+                top: 35%;
+            }
+        }
+        .hey-tasa {
+            height: auto !important;
+            .horizontal-bottom {
+                text-align: center;
+                bottom: 0;
+                img {
+                    margin-left: -35%;
+                    width: 40% !important;
+                }
+            }
+            .vertical-center {
+                position: relative !important;
+            }
+        }
+        #participacion {
+            background: white !important;
+            height: auto !important;
+            padding-bottom: 16px;
+            .img-background {
+                display: block !important;
+                width: 100%;
+                text-align: center;
+                img {
+                    width: 80%;
+                }
+            }
+            h2 {
+                margin-top: 22px !important;
+            }
+            .legales {
+                margin-top: 16px;
+            }
+        }
+        #tdc-hey {
+            background: #EFF4F7 !important;
+            padding-bottom: 16px;
+            text-align: center;
+            .img-background {
+                display: block !important;
+                width: 100%;
+                img {
+                    width: 100%;
+                    margin-right: -160px;
+                    margin-top: 32px;
+                }
+            }
+            h2 {
+                margin-top: 22px !important;
+            }
+            .legales {
+                margin-top: 16px;
+            }
+        }
+    }
+    hey-promocional-embajadores {
+        .hey-hero-image {
+            height: 570px !important;
+            .responsive-cuentas-hero {
+                margin-top: 20px;
+            }
+            .col-lg-6 {
+                height: 310px;
+            }
+            .col-lg-5 {
+                img {
+                    height: 240px;
+                    width: auto;
+                }
+            }
+        }
+    }
+    hey-embajadores-clientes {
+        .hey-hero-image {
+            height: 570px !important;
+            .responsive-cuentas-hero {
+                margin-top: 20px;
+            }
+            .col-lg-6 {
+                height: 310px;
+            }
+            .col-lg-5 {
+                img {
+                    height: 240px;
+                    width: auto;
+                }
+            }
+        }
+    }
+    hey-giveaway-participacion-referidos-hey {
+        .hey-hero-image {
+            height: 570px !important;
+            .responsive-cuentas-hero {
+                margin-top: 20px;
+            }
+            .col-lg-6 {
+                height: 310px;
+            }
+            .col-lg-5 {
+                img {
+                    height: 240px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}

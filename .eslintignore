@@ -1,0 +1,9 @@
+**/package.json
+**/package-lock.json
+**/dist
+**/node_modules
+**/src/main.ts
+**/src/test.ts
+**/src/polyfills.ts
+**/ocp
+**/*.spec.ts

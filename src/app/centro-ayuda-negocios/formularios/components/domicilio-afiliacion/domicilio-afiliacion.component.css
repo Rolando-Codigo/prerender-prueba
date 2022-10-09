@@ -1,0 +1,9 @@
+.mt-16 {
+    margin-top: 16px;
+}
+
+.p-desc {
+    margin-left: 16px;
+    margin-top: 10px;
+    vertical-align: text-bottom !important;
+}

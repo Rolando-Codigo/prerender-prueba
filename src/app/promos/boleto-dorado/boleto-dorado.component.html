@@ -1,0 +1,88 @@
+<section class="hey-hero-image">
+    <div class="img-back">
+        <div class="container">
+            <div class="row align-middle">
+                <div class="col-sm-6 offset-sm-1 col-md-6 offset-md-0 col-lg-6 offset-lg-1 order-1">
+                    <div class="column vertical-center">
+                        <h1 class="mb-20 header">¡El Boleto Dorado te espera!</h1>
+                        <p>
+                            Utiliza tu código para obtener la oportunidad de encontrar un Boleto Dorado y adquirir grandes incentivos
+                        </p>
+                        <div class="p-0 m-0 col-11 col-md-9 offset-md-0 col-lg-9 text-center ">
+                            <div class="container-counter mt-15 col-md-12 col-lg-12">
+                                <h4 class="title-counter"> {{ contador }} </h4>
+                                <p>Códigos registrados</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<re-captcha size="invisible" *ngIf="RECAPTCHA_KEY" [siteKey]="RECAPTCHA_KEY" (resolved)="participar($event)"></re-captcha>
+
+
+<section class="hey-cta hey-pro-participar">
+    <div class="container">
+        <h2>Al ser usuario Hey Pro podrás</h2>
+
+        <a (click)="submitRequest()" class="btn btn-primary-white col-4" type="button">Utilizar tus códigos</a>
+        <br>
+    </div>
+</section>
+
+
+<section class="hey-cta">
+    <div class="container">
+        <div class="offset-lg-1">
+            <h2>Puedes llevarte:</h2>
+
+            <div id="carouselID" class="carousel slide d-none d-xs-none d-sm-none d-md-block d-lg-block" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div [ngClass]="{'active' : i === 0}" class="carousel-item" *ngFor="let premio of premios; let i = index;">
+                        <div class="row offset-1">
+                            <div class="item-premio col-9 col-md-3 col-lg-3" *ngFor="let p of premio">
+                                <div class="premio-img" [style.background-image]="imageBackgorund(p.imagen)">
+                                </div>
+                                <p> {{p.nombre}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselID" [attr.data-slide-to]="i" [ngClass]="{'active' : i === 0}" *ngFor="let premio of premios; let i = index;">
+                    </li>
+                </ol>
+            </div>
+
+            <div id="carousel-mobile" class="carousel slide d-block d-xs-block d-sm-block d-md-none d-lg-none" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div [ngClass]="{'active' : i === 0}" class="carousel-item item-premio col-12" *ngFor="let p of premiosMovil; let i = index;">
+                        <div class="premio-img" [style.background-image]="imageBackgorund(p.imagen)">
+                        </div>
+                        <p> {{p.nombre}}</p>
+                    </div>
+                </div>
+
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselID" [attr.data-slide-to]="i" [ngClass]="{'active' : i === 0}" *ngFor="let premio of premiosMovil; let i = index;">
+                    </li>
+                </ol>
+            </div>
+
+            <div class="row p-0 m-0 text-center">
+                <p class="col-12 legales text-center">
+                    Imágenes ilustrativas. Consulta términos, condiciones, comisiones, requisitos de contratación y demás información en <a routerLink="/">banco.hey.inc</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="loader" *ngIf="busy">
+    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/loader.gif'">
+</div>

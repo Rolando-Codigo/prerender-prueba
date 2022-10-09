@@ -1,0 +1,67 @@
+hey-giveaway-medalia {
+    .vertical-center {
+        top: 50%;
+    }
+    .hey-hero-image {
+        background-color: #b9b8ff;
+        h2 {
+            color: white;
+        }
+        p {
+            color: white;
+        }
+        text-align: center;
+        img {
+            width: 100%;
+        }
+    }
+    .hey-contador {
+        height: 200px !important;
+        text-align: center;
+        .txt-contador {
+            font-size: 56px;
+            font-family: 'Sneak-Regular';
+        }
+    }
+    .txt-green {
+        color: #5CD088 !important;
+    }
+    .hey-giveaway {
+        height: 280px;
+        background-color: #EFF4F7;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        h2 {
+            color: #000;
+        }
+    }
+    .hey-participar {
+        height: 500px;
+    }
+    .hey-terminos {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        p {
+            margin-top: 35px;
+            margin-bottom: 35px;
+            font-family: 'Sneak-Regular';
+        }
+        .legales {
+            font-size: .75rem;
+            line-height: .93rem;
+            color: #BCC0C3;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hey-hero-image {
+        text-align: center;
+        height: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        .col-lg-6 {
+            height: 330px;
+        }
+    }
+}

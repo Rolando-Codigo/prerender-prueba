@@ -1,0 +1,173 @@
+hey-giveaway-menores {
+    .hey-hero-image {
+        height: 450px;
+        .col-lg-6 {
+            height: 400px;
+        }
+        .col-lg-5{
+            img{
+                height: 300px;
+                width: auto;
+            }
+        }
+        h2 {
+            margin-top: 20%;
+        }
+        .vertical-center{
+            margin: 0;
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            width: calc(100% - 30px)
+        }
+    }
+    .hey-cta {
+        height: 600px;
+        .nintendo{
+            width: 350px;
+        }
+        .col-lg-6 {
+            height: 350px;
+        }
+        .vertical-center{
+            margin: 0;
+            position: absolute;
+            top: 55%;
+            transform: translateY(-50%);
+            width: calc(100% - 30px)
+        }
+    }
+    .hey-home-cta {
+        .insta{
+            width: 398px;
+        }
+        .row{
+            .fondo_insta{
+                .col-lg-8{
+                    .btn{
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+    }
+    .hey-terminos{
+        height: 250px;
+        .col-lg-10{
+            margin-top: 80px;
+        }
+    }
+}
+
+//Pantallas Medianas
+@media (max-width: 1400px) {
+    hey-giveaway-menores {
+        .hey-home-cta {
+            .insta{
+                width: 280px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    hey-giveaway-menores {
+        .hey-hero-image {
+            height: 400px;
+            .col-lg-6 {
+                height: 300px;
+            }
+            .col-lg-5{
+                img{
+                    height: 220px;
+                    width: auto;
+                }
+            }
+            .vertical-center{
+                margin: 0;
+                position: absolute;
+                top: 55%;
+                transform: translateY(-50%);
+                width: calc(100% - 30px)
+            }
+        }
+        .hey-cta {
+            height: 530px;
+            .nintendo{
+                width: 300px;
+            }
+            .col-lg-6 {
+                height: 300px;
+            }
+            .vertical-center{
+                margin: 0;
+                position: absolute;
+                top: 55%;
+                transform: translateY(-50%);
+                width: calc(100% - 30px)
+            }
+        }
+        .hey-home-cta {
+            .insta{
+                width: 210px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    hey-giveaway-menores {
+        .hey-hero-image {
+            height: 500px !important;
+            .col-lg-6 {
+                height: 100px;
+                margin-top: 50px;
+            }
+            .col-lg-5 {
+                img{
+                    height: 220px;
+                    width: auto;
+                    margin-top: 80px;
+                }
+            }
+            .vertical-center{
+                margin: 0;
+                position: absolute;
+                top: 40%;
+                transform: translateY(-50%);
+                width: calc(100% - 30px)
+            }
+            .titulo{
+                margin-top: 50%;
+            }
+        }
+        .hey-cta {
+            height: 780px;
+            .nintendo{
+                width: 300px;
+            }
+            .col-lg-6 {
+                height: 310px;
+                margin-bottom: 140px;
+            }
+            .vertical-center{
+                margin: 0;
+                position: absolute;
+                top: 55%;
+                transform: translateY(-50%);
+                width: calc(100% - 30px)
+            }
+        }
+        .hey-home-cta {
+            .insta{
+                width: 250px;
+            }
+        }
+        .hey-terminos{
+            height: 280px;
+            .col-lg-10{
+                margin-top: 50px;
+            }
+        }
+    }
+}

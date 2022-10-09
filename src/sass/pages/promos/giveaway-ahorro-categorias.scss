@@ -1,0 +1,552 @@
+hey-giveaway-ahorro-categorias { 
+    .hey-hero-image{
+        background-color: #FF8EF9;
+        height: 480px;
+        text-align: left;
+        .img-back {
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-116-img.svg) no-repeat;
+            background-position: 85% 100%;
+            background-size: 30% auto;
+        }
+        .vertical-center{
+            top: 50%;
+            h2{
+                color: #333333;
+                font-size: 64px;
+                line-height: 72px;
+            }
+            p{
+                color: #333333;
+                font-size: 34px;
+                line-height: 42px;
+            }
+        }
+    }
+
+    .hey-lograrlo{
+        height: 600px;
+        .img-back {
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-117-img.svg) no-repeat;
+            background-position: 85% 50%;
+            background-size: 20% auto;
+        }
+        .col-lg-5{
+            margin-top: 65px;
+            h2{
+                line-height: 60px;
+                font-size: 50px;
+            }
+            .punto-uno{
+                margin-top: -16px;
+            }
+            .punto-dos{
+                margin-top: -40px;
+            }
+            .punto-tres{
+                margin-top: -70px;
+            }
+            p{
+                line-height: 32px;
+                font-size: 24px;
+            }
+        }
+        .col-lg-10{
+            margin-top: 30px;
+            p{
+                line-height: 32px;
+                font-size: 24px;
+            }
+        }
+    }
+
+    .hey-categorias{
+        height: 650px;
+        h2{
+            font-size: 50px;
+            line-height: 58px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+        .categoria{
+            height: 300px;
+        }
+        .platino{
+            background-color: #B1AFFF;
+            border-radius: 20px;
+            p{
+                color: #FFFFFF;
+                font-size: 20px;
+                line-height: 32px;
+            }
+            .col-lg-1{
+                margin-top: 30px;
+            }
+            .col-lg-9{
+                margin-top: 30px;
+            }
+        }
+        .premium{
+            background-color: #D4F910;
+            border-radius: 20px;
+            p{
+                color: #333333;
+                font-size: 20px;
+                line-height: 32px;
+            }
+            .col-lg-1{
+                margin-top: 30px;
+            }
+            .col-lg-9{
+                margin-top: 30px;
+            }
+        }
+        .vip{
+            background-color: #FF8EF9;
+            border-radius: 20px;
+            p{
+                color: #FFFFFF;
+                font-size: 20px;
+                line-height: 32px;
+            }
+            .col-lg-1{
+                margin-top: 30px;
+            }
+            .col-lg-9{
+                margin-top: 30px;
+            }
+        }
+        .col-lg-10{
+            p{
+                font-size: 24px;
+                line-height: 32px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .hey-meta{
+        background-color: #B1AFFF;
+        height: 626px;
+        .img-back {
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-120-img.svg) no-repeat;
+            background-position: 50% 35%;
+            background-size: 25% auto;
+        }
+        .col-lg-10{
+            margin-top: 100px;
+            h2{
+                margin-top: 150px;
+                text-align: center;
+                font-size: 50px;
+                line-height: 60px;
+                color: #333333;
+            }
+            p{
+                font-size: 24px;
+                line-height: 32px;
+                text-align: center;
+                margin-top: 35px;
+                color: #333333;
+            }
+        }
+        
+    }
+
+    .hey-registro{
+        height: 626px;
+        .row{
+            .text-center{
+                h2{
+                    font-size: 54px;
+                    line-height: 50px;
+                    margin-top: 90px;
+                    margin-bottom: 50px;
+                    text-align: left;
+                }
+                .website {
+                    .mat-form-field-flex {
+                        border-radius: 16px;
+                        height: 55px;
+                        background-repeat: no-repeat;
+                        padding-left: 32px;
+                        border-width: 0px !important;
+                        background-position: 14px 15px;
+                        background-color: #F1F2F8;
+                    }
+                    .mat-form-field-underline {
+                        display: none;
+                    }
+                }
+                
+                .col-lg-5{
+                    .mat-checkbox{
+                        font-size: 18px;
+                        line-height: 24px;
+                        margin-top: 30px;
+                    }
+                }
+                .col-lg-12{
+                    margin-top: 40px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .hey-redes{
+        height: 769px;
+        background-color: #D4F910;
+        img{
+            margin-top: 100px;
+            width: 80px;
+        }
+        h2{
+            font-size: 50px;
+            line-height: 60px;
+            margin-top: 30px;
+        }
+        .col-lg-8{
+            p{
+                font-size: 24px;
+                line-height: 32px;
+                margin-top: 50px;
+            }
+        }
+        
+        .col-lg-10{
+            p{
+                font-size: 14px;
+                line-height: 24px;
+                margin-top: 50px;
+                a{
+                    text-decoration: underline;
+                    color: #333333;
+                }
+            }
+        }
+        
+    }
+}
+
+//Pantallas Medianas
+@media (max-width: 1400px) {
+    hey-giveaway-ahorro-categorias {
+        .hey-hero-image{
+            .img-back {
+                background-size: 40% auto;
+            }
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    hey-giveaway-ahorro-categorias { 
+        .hey-hero-image{
+            height: 360px;
+            .img-back {
+                background-position: 90% 100%;
+                background-size: 50% auto;
+            }
+            .vertical-center{
+                top: 40%;
+                h2{
+                    font-size: 50px;
+                    line-height: 58px;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+        }
+
+        .hey-lograrlo{
+            height: 587px;
+            .img-back {
+                background-position: 85% 50%;
+                background-size: 28% auto;
+            }
+            .col-lg-5{
+                margin-top: 65px;
+                h2{
+                    font-size: 25px;
+                    line-height: 38px;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+            .col-lg-10{
+                margin-top: 30px;
+                p{
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+        }
+        
+        .hey-categorias{
+            height: 740px;
+            h2{
+                font-size: 25px;
+                line-height: 33px;
+            }
+            .categoria{
+                height: 130px;
+            }
+            .platino{
+                margin-bottom: 20px;
+                p{
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+            .premium{
+                margin-bottom: 20px;
+                p{
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+            .vip{
+                margin-bottom: 20px;
+                p{
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+            .col-lg-10{
+                p{
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .hey-meta{
+            height: 540px;
+            .img-back {
+                background-position: 50% 35%;
+                background-size: 40% auto;
+            }
+            .col-lg-10{
+                margin-top: 100px;
+                h2{
+                    margin-top: 150px;
+                    font-size: 25px;
+                    line-height: 33px;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 26px;
+                    margin-top: 35px;
+                }
+            }
+            
+        }
+
+        .hey-registro{
+            height: 575px;
+            .row{
+                .text-center{
+                    h2{
+                        font-size: 25px;
+                        line-height: 30px;
+                    }
+                    
+                    .col-lg-5{
+                        .mat-checkbox{
+                            font-size: 14px;
+                            line-height: 32px;
+                        }
+                    }
+                    .col-lg-12{
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        .hey-redes{
+            height: 541px;
+            img{
+                margin-top: 70px;
+                width: 50px;
+            }
+            h2{
+                font-size: 25px;
+                line-height: 33px;
+            }
+            .col-lg-8{
+                p{
+                    font-size: 18px;
+                    line-height: 26px;
+                    margin-top: 20px;
+                }
+            }
+            
+            .col-lg-10{
+                p{
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin-top: 20px;
+                }
+            }
+            
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    hey-giveaway-ahorro-categorias {
+        .hey-hero-image{
+            height: 448px;
+            .img-back {
+                height: 430px;
+                background-position: 50% 100%;
+                background-size: 60% auto;
+            }
+            .vertical-center{
+                top: 40%;
+                h2{
+                    font-size: 30px;
+                    line-height: 38px;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+        }
+
+        .hey-lograrlo{
+            height: 826px;
+            .img-back {
+                height: 826px;
+                background-position: 50% 95%;
+                background-size: 45% auto;
+            }
+            .col-lg-5{
+                margin-top: 65px;
+                h2{
+                    font-size: 25px;
+                    line-height: 38px;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+            .col-lg-10{
+                margin-top: 30px;
+                p{
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+        }
+
+        .hey-categorias{
+            height: 970px;
+            h2{
+                font-size: 25px;
+                line-height: 33px;
+            }
+            .categoria{
+                height: 200px;
+            }
+            .platino{
+                margin-bottom: 20px;
+                p{
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+            .premium{
+                margin-bottom: 20px;
+                p{
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+            .vip{
+                margin-bottom: 20px;
+                p{
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+            .col-lg-10{
+                p{
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .hey-meta{
+            height: 505px;
+            .img-back {
+                background-position: 50% 20%;
+                background-size: 75% auto;
+            }
+            .col-lg-10{
+                margin-top: 20px;
+                h2{
+                    margin-top: 150px;
+                    font-size: 25px;
+                    line-height: 33px;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 26px;
+                    margin-top: 35px;
+                }
+            }
+            
+        }
+
+        .hey-registro{
+            height: 690px;
+            .row{
+                .text-center{
+                    h2{
+                        font-size: 22px;
+                        line-height: 38px;
+                    }
+                    
+                    .col-lg-5{
+                        .mat-checkbox{
+                            font-size: 14px;
+                            line-height: 26px;
+                        }
+                    }
+                    .col-lg-12{
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+
+        .hey-redes{
+            height: 669px;
+            img{
+                width: 40px;
+            }
+            .col-lg-8{
+                p{
+                    margin-top: 20px !important;
+                }
+            }
+            
+            .col-lg-10{
+                p{
+                    line-height: 24px;
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,255 @@
+.item-img {
+    width: 24px !important;
+    margin-top: 16px;
+}
+
+.container-counter {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 8px 16px;
+    .title-counter {
+        color: #44D181;
+        font-size: 42pt;
+        text-align: left;
+    }
+    p {
+        margin-top: -10px;
+        text-align: left;
+        font-size: 14px;
+    }
+}
+
+.mb-32 {
+    margin-bottom: 32px !important;
+}
+
+hey-giveaway-participacion-nps {
+    .hey-hero-image{
+        background-color: #EFF4F7;
+        height: 480px;
+    }
+    /*.hey-hero-image{
+        .logo {
+            width: 300px;
+            padding-left: 20px;
+            padding-bottom: 80px;
+        }
+        .col-lg-6{
+            height: 450px;
+        }
+        h1{
+            color: #212121;
+            margin-bottom: 30px;
+        }
+    }
+    .hey-generales {
+        position: relative;
+    }
+    .hey-generales::before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(to left bottom, transparent 50%, #EFF4F8 50%) left bottom 0/50% 100% no-repeat, linear-gradient(18deg, #CCFF00 50%, #CCFF00 100%);
+    }
+    .hey-backgroung {
+        width: 100%;
+        // linear-gradient(to left bottom, transparent 50%, #EFF4F7 50%) left bottom 0/60% 240% no-repeat, linear-gradient(18deg, #44D181 50%, #72E4FE 100%)
+        background: linear-gradient(to left bottom, transparent 50%, $color-background-01 50%) left bottom 0/65% 300% no-repeat, linear-gradient(18deg, #44D181 50%, #72E4FE 100%);
+        background: -webkit-linear-gradient(to left bottom, transparent 50%, $color-background-01 50%) left bottom 0/65% 300% no-repeat, -webkit-linear-gradient(18deg, #44D181 50%, #72E4FE 100%);
+        background-image: -moz-linear-gradient(to left bottom, transparent 50%, $color-background-01 50%) left bottom 0/65% 300% no-repeat, -moz-linear-gradient(18deg, #44D181 50%, #72E4FE 100%);
+        background-image: -o-linear-gradient(to left bottom, transparent 50%, $color-background-01 50%) left bottom 0/65% 300% no-repeat, -o-linear-gradient(18deg, #44D181 50%, #72E4FE 100%);
+    }
+    .bg-participacion {
+        background: transparent linear-gradient(90deg, #44D181 0%, #72E4FE 100%) 0% 0% no-repeat padding-box;
+        background: -webkit-linear-gradient(90deg, #44D181 0%, #72E4FE 100%) 0% 0% no-repeat padding-box;
+        background-image: -moz-linear-gradient(90deg, #44D181 0%, #72E4FE 100%) 0% 0% no-repeat padding-box;
+        background-image: -o-linear-gradient(90deg, #44D181 0%, #72E4FE 100%) 0% 0% no-repeat padding-box;
+    }*/
+    .hey-generales {
+        position: relative;
+    }
+    .hey-generales::before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(to left bottom, transparent 50%, #EFF4F8 50%) left bottom 0/50% 100% no-repeat, linear-gradient(18deg, #44D181 50%, #72E4FE 100%);
+    }
+    .hey-backgroung {
+        width: 100%;
+        // linear-gradient(to left bottom, transparent 50%, #EFF4F7 50%) left bottom 0/60% 240% no-repeat, linear-gradient(18deg, #44D181 50%, #72E4FE 100%)
+        background: linear-gradient(to left bottom, transparent 50%, $color-background-01 50%) left bottom 0/65% 300% no-repeat, linear-gradient(18deg, #44D181 50%, #72E4FE 100%);
+        background: -webkit-linear-gradient(to left bottom, transparent 50%, $color-background-01 50%) left bottom 0/65% 300% no-repeat, -webkit-linear-gradient(18deg, #44D181 50%, #72E4FE 100%);
+        background-image: -moz-linear-gradient(to left bottom, transparent 50%, $color-background-01 50%) left bottom 0/65% 300% no-repeat, -moz-linear-gradient(18deg, #44D181 50%, #72E4FE 100%);
+        background-image: -o-linear-gradient(to left bottom, transparent 50%, $color-background-01 50%) left bottom 0/65% 300% no-repeat, -o-linear-gradient(18deg, #44D181 50%, #72E4FE 100%);
+    }
+    .bg-participacion {
+        background: transparent linear-gradient(90deg, #44D181 0%, #72E4FE 100%) 0% 0% no-repeat padding-box;
+        background: -webkit-linear-gradient(90deg, #44D181 0%, #72E4FE 100%) 0% 0% no-repeat padding-box;
+        background-image: -moz-linear-gradient(90deg, #44D181 0%, #72E4FE 100%) 0% 0% no-repeat padding-box;
+        background-image: -o-linear-gradient(90deg, #44D181 0%, #72E4FE 100%) 0% 0% no-repeat padding-box;
+    }
+}
+
+hey-giveaway-proteccion-hey {
+    .hey-hero-image {
+        .vertical-center {
+            top: 50%;
+        }
+    }
+    .bg-participacion {
+        background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-back-heypro-89-img.png );
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    hey-giveaway-participacion-nps {
+        .hey-hero-image{
+            height: 402px;
+        }
+        /*.hey-hero-image{
+            .logo {
+                width: 200px;
+                padding-left: 20px;
+                padding-bottom: 110px;
+            }
+            .col-lg-6{
+                height: 350px !important;
+            }
+            h1{
+                color: #212121;
+                margin-bottom: 0px !important;
+            }
+        }
+        .container-counter {
+            margin: 0 auto;
+            width: 100%;
+            margin-top: 32px;
+        }*/
+        .container-counter {
+            margin: 0 auto;
+            width: 100%;
+            margin-top: 32px;
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    hey-giveaway-participacion-nps {
+        .hey-hero-image{
+            height: 530px;
+        }
+        /*.hey-backgroung {
+            width: 100%;
+            height: 600px;
+            background: linear-gradient(to left bottom, transparent 50%, $color-background-01 50%) left bottom 0/150% 90% no-repeat, linear-gradient(18deg, #44D181 50%, #72E4FE 100%) !important;
+            background: -webkit-linear-gradient(to left bottom, transparent 50%, $color-background-01 50%) left bottom 0/150% 90% no-repeat, -webkitlinear-gradient(18deg, #44D181 50%, #72E4FE 100%) !important;
+            background-image: -moz-linear-gradient(to left bottom, transparent 50%, $color-background-01 50%) left bottom 0/150% 90% no-repeat, -moz-linear-gradient(18deg, #44D181 50%, #72E4FE 100%) !important;
+            background-image: -o-linear-gradient(to left bottom, transparent 50%, $color-background-01 50%) left bottom 0/150% 90% no-repeat, -o-linear-gradient(18deg, #44D181 50%, #72E4FE 100%) !important;
+            img {
+                margin-top: 20%;
+            }
+        }
+        .hey-generales {
+            img {
+                margin-top: 15%;
+                height: auto !important;
+                width: 75% !important;
+                margin-bottom: 16px;
+            }
+            h1 {
+                margin-top: -58% !important;
+            }
+        }
+        .hey-generales::before {
+            width: 105% !important;
+            // height: 600px;
+            background: linear-gradient(to left bottom, transparent 50%, #EFF4F8 50%) left bottom 0/190% 97% no-repeat, linear-gradient(18deg, #44D181 50%, #72E4FE 100%) !important;
+        }
+        .container-counter {
+            margin: 16px;
+            width: 90%;
+            margin-top: 16px;
+        }
+        .item-img {
+            width: 24px;
+            margin-left: 16px;
+            margin-top: -25px !important;
+        }
+        .hey-hero-image{
+            .logo {
+                width: 150px !important;
+                padding-left: 20px;
+                padding-bottom: 200px;
+            }
+            .col-lg-6{
+                height: 160px !important;
+            }
+            h1{
+                color: #212121;
+                margin-bottom: 0px !important;
+            }
+        }*/
+        .hey-backgroung {
+            width: 100%;
+            height: 600px;
+            background: linear-gradient(to left bottom, transparent 50%, $color-background-01 50%) left bottom 0/150% 90% no-repeat, linear-gradient(18deg, #44D181 50%, #72E4FE 100%) !important;
+            background: -webkit-linear-gradient(to left bottom, transparent 50%, $color-background-01 50%) left bottom 0/150% 90% no-repeat, -webkitlinear-gradient(18deg, #44D181 50%, #72E4FE 100%) !important;
+            background-image: -moz-linear-gradient(to left bottom, transparent 50%, $color-background-01 50%) left bottom 0/150% 90% no-repeat, -moz-linear-gradient(18deg, #44D181 50%, #72E4FE 100%) !important;
+            background-image: -o-linear-gradient(to left bottom, transparent 50%, $color-background-01 50%) left bottom 0/150% 90% no-repeat, -o-linear-gradient(18deg, #44D181 50%, #72E4FE 100%) !important;
+            img {
+                margin-top: 20%;
+            }
+        }
+        .hey-generales {
+            img {
+                margin-top: 15%;
+                height: auto !important;
+                width: 75% !important;
+                margin-bottom: 16px;
+            }
+            h1 {
+                margin-top: -58% !important;
+            }
+        }
+        .hey-generales::before {
+            width: 105% !important;
+            // height: 600px;
+            background: linear-gradient(to left bottom, transparent 50%, #EFF4F8 50%) left bottom 0/190% 97% no-repeat, linear-gradient(18deg, #44D181 50%, #72E4FE 100%) !important;
+        }
+        .container-counter {
+            margin: 16px;
+            width: 90%;
+            margin-top: 16px;
+        }
+        .item-img {
+            width: 24px;
+            margin-left: 16px;
+            margin-top: -25px !important;
+        }
+    }
+    hey-giveaway-proteccion-hey {
+        .hey-generales {
+            height: 600px !important;
+        }
+        .item-img {
+            width: 24px;
+            margin-left: 16px;
+            margin-top: -25px !important;
+        }
+        .bg-participacion {
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-back-heypro-89-img.png ) no-repeat;
+            background-size: 650% 300%;
+        }
+    }
+}

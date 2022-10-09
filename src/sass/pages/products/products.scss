@@ -1,0 +1,1393 @@
+.hey-caracteristicas {
+    padding-bottom: 120px;
+    padding-top: 120px;
+    h3 {
+        @extend %sneak-22;
+        margin-bottom: 8px;
+    }
+    p {
+        @extend %lato-16;
+        margin-bottom: 40px;
+        a {
+            color: $color-green;
+            text-decoration: underline;
+        }
+    }
+    .media {
+        img {
+            height: auto;
+            margin-right: 20px;
+            width: 46px;
+        }
+    }
+    .col-lg-10 {
+        p {
+            @extend %lato-10;
+            color: $color-black-4B;
+            margin-top: 40px;
+            margin-bottom: 0;
+            a {
+                color: inherit;
+                text-decoration: underline;
+            }
+            b.title {
+                @extend %lato-10;
+            }
+            b.num {
+                font-size: 36px;
+                line-height: 44px;
+            }
+        }
+        .ipab {
+            width: 64px;
+        }
+        .col-lg-11 {
+            p {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.hey-tarjetas {
+    padding-bottom: 140px;
+    padding-top: 140px;
+    h2 {
+        @extend %sneak-48;
+        margin-bottom: 8px;
+    }
+    p {
+        @extend %sneak-22;
+        margin-bottom: 50px;
+    }
+    .col-lg-4 {
+        img {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        h3 {
+            @extend %sneak-22;
+            margin-bottom: 8px;
+        }
+        p {
+            @extend %lato-16;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.hey-simulador {
+    padding-bottom: 120px;
+    padding-top: 112px;
+    h2 {
+        @extend %sneak-48;
+        margin-bottom: 24px;
+    }
+    h3,
+    h4 {
+        @extend %sneak-36;
+        margin-bottom: 0;
+        u {
+            text-decoration: underline;
+            text-decoration-color: $color-blue-variant;
+        }
+    }
+    h4 {
+        margin-bottom: 54px;
+    }
+    h6 {
+        @extend %sneak-24;
+        margin-bottom: 0;
+    }
+    .col-6 {
+        p {
+            margin-bottom: 0!important;
+        }
+    }
+    p {
+        @extend %lato-22;
+        margin-bottom: 80px;
+        &.legal {
+            @extend %lato-10;
+            margin-bottom: 0;
+            margin-top: 24px;
+        }
+    }
+    .col-lg-4 {
+        p {
+            @extend %lato-18;
+            margin-bottom: 10px;
+        }
+        .card {
+            background: $color-white;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 8px 4px 12px 0 rgba(0, 0, 0, 0.11);
+            margin-top: 44px;
+            padding: 28px;
+            .card-body {
+                padding: 0 0 30px;
+            }
+            p {
+                margin-bottom: 0;
+                margin-top: 14px;
+            }
+        }
+        .card+p {
+            margin-top: 20px;
+        }
+    }
+    .grafica {
+        .col-3 {
+            &:nth-child(1) {
+                .graph {
+                    background-image: linear-gradient(#BBB9FF, #FFC888);
+                    height: 260px;
+                }
+                h5 {
+                    @extend %lato-18;
+                }
+                p {
+                    @extend %lato-36;
+                    span {
+                        @extend %lato-20;
+                    }
+                }
+                .pill {
+                    background: #BBB9FF;
+                    height: 34px;
+                    margin-bottom: 14px;
+                    p {
+                        @extend %lato-18;
+                        line-height: 34px;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                .space {
+                    height: 140px;
+                    width: 100%;
+                }
+                .graph {
+                    height: 130px;
+                }
+            }
+        }
+        .graph {
+            background: #B2B2B2;
+            border-radius: 100px 100px 0 0;
+            height: 130px;
+            width: 100%;
+        }
+        .pill {
+            background: $color-white;
+            border-radius: 50px;
+            box-shadow: 5px 3px 8px 0 rgba(0, 0, 0, 0.10);
+            height: 28px;
+            margin-bottom: 10px;
+            margin-top: 8px;
+            width: 100%;
+            p {
+                @extend %lato-14;
+                font-weight: 700;
+                line-height: 28px;
+                margin-bottom: 0;
+            }
+        }
+        h5 {
+            @extend %lato-16;
+            margin-bottom: 0;
+        }
+        p {
+            @extend %lato-18;
+            margin-bottom: 0;
+            span {
+                @extend %lato-12;
+            }
+        }
+    }
+    .mat-radio-group {
+        .col-12 {
+            margin-bottom: 16px;
+            p {
+                @extend %lato-16;
+            }
+        }
+    }
+    .mat-radio-button {
+        background: $color-white;
+        border-radius: 4px;
+        display: block;
+        margin-bottom: 58px;
+    }
+    .mat-radio-label {
+        margin-bottom: 0;
+        padding: 20px;
+        width: 100%;
+    }
+    .mat-radio-container {
+        display: none;
+    }
+    .mat-radio-button.mat-accent.mat-radio-checked {
+        background: $color-blue-variant;
+        box-shadow: 8px 4px 12px 0 rgba(0, 0, 0, 0.11);
+    }
+    .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+        border-color: $color-black-21;
+    }
+    .mat-radio-button.mat-accent .mat-radio-inner-circle {
+        background: $color-black-21;
+    }
+    .mat-radio-label-content {
+        @extend %lato-14;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        padding-left: 0;
+    }
+    .mat-slider-horizontal {
+        width: 100%;
+    }
+    hr {
+        border-top: 1px solid #CAD5DE;
+        margin: 0;
+    }
+    .mat-form-field {
+        &.meta {
+            .mat-form-field-flex {
+                background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_savings.png);
+                background-repeat: no-repeat;
+                background-position: 12px 16px;
+                background-size: 24px auto;
+            }
+        }
+    }
+    .mat-radio-button {
+        background: $color-white;
+        border-radius: 4px;
+        display: block;
+        margin-bottom: 58px;
+    }
+    .mat-radio-label {
+        margin-bottom: 0;
+        padding: 20px;
+        width: 100%;
+    }
+    .mat-radio-container {
+        display: none;
+    }
+    .mat-radio-button.mat-accent.mat-radio-checked {
+        background: $color-blue-variant;
+        box-shadow: 8px 4px 12px 0 rgba(0, 0, 0, 0.11);
+    }
+    .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+        border-color: $color-black-21;
+    }
+    .mat-radio-button.mat-accent .mat-radio-inner-circle {
+        background: $color-black-21;
+    }
+    .mat-radio-label-content {
+        @extend %lato-14;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        padding-left: 0;
+    }
+    .mat-slider-horizontal {
+        width: 100%;
+    }
+    .mat-accent .mat-slider-thumb,
+    .mat-accent .mat-slider-thumb-label,
+    .mat-accent .mat-slider-track-fill {
+        background-color: $color-blue-variant;
+    }
+}
+
+.hey-ipab {
+    padding-bottom: 120px;
+    padding-top: 120px;
+    h2 {
+        @extend %sneak-48;
+        margin-bottom: 66px;
+    }
+    p {
+        @extend %lato-22;
+        color: $color-black-20;
+        margin-bottom: 30px;
+    }
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.hey-requisitos {
+    padding-bottom: 96px;
+    padding-top: 135px;
+    h2 {
+        @extend %sneak-48;
+        margin-bottom: 40px;
+    }
+    h3 {
+        @extend %sneak-36;
+        border-bottom: 2px solid $color-purple;
+        display: inline-block;
+        margin-bottom: 24px;
+        img {
+            margin-right: 6px;
+            width: 30px;
+        }
+    }
+    h4 {
+        @extend %sneak-22;
+        margin-bottom: 0;
+    }
+    h5 {
+        @extend %sneak-20;
+        margin-bottom: 16px;
+    }
+    p {
+        @extend %lato-16;
+        color: $color-black-4B;
+        margin-bottom: 0;
+        a {
+            color: $color-green;
+            text-decoration: underline;
+        }
+    }
+    .btn.btn-link {
+        @extend %sneak-22;
+        margin-bottom: 16px;
+    }
+    .col-lg-4 {
+        h4+p {
+            @extend %lato-16;
+            margin-bottom: 24px;
+        }
+    }
+    .col-lg-5 {
+        .btn.btn-link {
+            &::after {
+                display: inline-block;
+                margin-left: .255em;
+                vertical-align: .255em;
+                content: "";
+                border-top: .3em solid;
+                border-right: .3em solid transparent;
+                border-bottom: 0;
+                border-left: .3em solid transparent;
+            }
+        }
+        .collapse {
+            padding-bottom: 35px;
+        }
+    }
+    .media {
+        margin-bottom: 21px;
+        img {
+            margin-right: 8px;
+            width: 24px;
+        }
+        a {
+            color: #6ECD88;
+            text-decoration: underline;
+        }
+    }
+    #legales {
+        .btn.btn-link.title {
+            @extend %lato-10;
+        }
+    }
+    .col-lg-1 {
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+    .col-lg-9 {
+        p {
+            @extend %lato-10;
+            color: $color-black-77;
+            margin-bottom: 0;
+        }
+    }
+    .col-lg-10 {
+        h2+p {
+            @extend %sneak-22;
+        }
+        p {
+            @extend %lato-10;
+            color: $color-black-77;
+            b.title {
+                @extend %lato-10;
+            }
+            b.num {
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 57px;
+            }
+        }
+        .btn.btn-link {
+            @extend %lato-10;
+            color: $color-black-4B;
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+            margin-bottom: 12px;
+            margin-top: 4px;
+            text-decoration: underline;
+        }
+        .ipab {
+            width: 64px;
+        }
+    }
+}
+
+.hey-faq {
+    padding-bottom: 120px;
+    padding-top: 120px;
+    h2 {
+        @extend %sneak-48;
+        color: $color-black-20;
+        margin-bottom: 38px;
+    }
+    h3 {
+        margin-bottom: 0;
+    }
+    .accordion {
+        .card {
+            background: $color-background-01;
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .card-header {
+            @extend %sneak-16;
+            background: inherit;
+            border: none;
+            color: $color-black-20;
+            padding: 19px 30px 18px 32px;
+            .btn-link {
+                width: calc(100% - 30px);
+                img {
+                    margin-left: 0;
+                    position: absolute;
+                    right: 30px;
+                    top: 18px;
+                }
+            }
+            .collapsed {
+                img {
+                    content: url(https://heybanco.s3.amazonaws.com/assets/img/icons/expand-icon.svg);
+                }
+            }
+        }
+        .card-body {
+            @extend %sneak-14;
+            padding: 0 30px 16px 32px;
+            a {
+                color: $color-green;
+                text-decoration: underline;
+            }
+        }
+    }
+    .col-lg-3 {
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+}
+
+hey-cuentas {
+    .hey-requisitos {
+        h4 {
+            margin-bottom: 16px;
+        }
+    }
+    .hey-cta {
+        .media {
+            margin-top: 18px;
+            img {
+                height: auto;
+                margin-right: 28px;
+                width: 45px;
+            }
+        }
+        h4 {
+            @extend %lato-22;
+            margin-bottom: 0;
+        }
+        h5 {
+            @extend %lato-18;
+            color: $color-black-4B;
+            margin-bottom: 0;
+        }
+    }
+    .hey-pro-nomina {
+        .vertical-center {
+            top: 50%;
+        }
+        .mt-25 {
+            margin-top: 25px;
+        }
+        .mt-10 {
+            margin-top: -15px;
+            width: 25px;
+            margin-left: 12px;
+        }
+        h2 {
+            margin-bottom: 16px;
+        }
+        .text-left {
+            vertical-align: top;
+            margin-bottom: 16px;
+            margin-left: 0px;
+            p {
+                height: 10px;
+                color: #4B4B63;
+            }
+        }
+        p {
+            @extend %lato-18;
+        }
+    }
+}
+
+hey-tarjeta-de-credito,
+hey-inversion {
+    .hey-hero-image {
+        height: 480px;
+    }
+    .hey-cta {
+        &.bg-orange {
+            h2 {
+                @extend %sneak-48;
+            }
+        }
+    }
+    .hey-requisitos {
+        .col-lg-10 {
+            .btn.btn-link {
+                margin-bottom: 0;
+                &::after {
+                    display: inline-block;
+                    margin-left: .255em;
+                    vertical-align: .255em;
+                    content: "";
+                    border-top: .3em solid;
+                    border-right: .3em solid transparent;
+                    border-bottom: 0;
+                    border-left: .3em solid transparent;
+                }
+            }
+        }
+        table {
+            @extend %lato-10;
+            color: $color-black-4B;
+            td {
+                border-top-color: $color-background-01;
+            }
+            a {
+                color: #43D181;
+            }
+        }
+    }
+    .hey-simulador {
+        h2 {
+            margin-bottom: 42px;
+        }
+        .mat-radio-button {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/*hey-hazte-cliente {
+    .hey-hero-image {
+        height: 480px;
+    }
+    .hey-cat {
+        &.bg-orange {
+            h2 {
+                @extend %sneak-48;
+            }
+        }
+    }
+    .hey-requisitos {
+        .col-lg-10 {
+            .btn.btn-link {
+                margin-bottom: 0;
+                &::after {
+                    display: inline-block;
+                    margin-left: .255em;
+                    vertical-align: .255em;
+                    content: "";
+                    border-top: .3em solid;
+                    border-right: .3em solid transparent;
+                    border-bottom: 0;
+                    border-left: .3em solid transparent;
+                }
+            }
+        }
+        table {
+            @extend %lato-10;
+            color: $color-black-4B;
+            td {
+                border-top-color: $color-background-01;
+            }
+            a {
+                color: #43D181;
+            }
+        }
+    }
+    .hey-simulador {
+        h2 {
+            margin-bottom: 42px;
+        }
+        .mat-radio-button {
+            margin-bottom: 0;
+        }
+    }
+}*/
+
+hey-tarjeta-de-credito {
+    #garantizada {
+        background: url(https://heybanco.s3.amazonaws.com/assets/img/cta/cta-tdc-garantizada.png)no-repeat;
+        background-color: $color-background-01;
+        background-position: right bottom;
+        background-size: 530px auto;
+        .media {
+            margin-top: 0;
+            margin-bottom: 40px;
+            img {
+                height: auto;
+                margin-right: 16px;
+                width: 53px;
+            }
+            h3 {
+                @extend %sneak-22;
+                margin-bottom: 8px;
+                margin-top: 12px;
+            }
+            p {
+                @extend %lato-16;
+            }
+            &:first-child {
+                margin-top: 40px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .hey-cta {
+        p+a {
+            @extend %sneak-16;
+            margin-top: 8px;
+            color: $color-green;
+            text-decoration: underline;
+        }
+        a {
+            @extend %sneak-16;
+            margin-top: 8px;
+            color: $color-green;
+            text-decoration: underline;
+        }
+        .btn {
+            text-decoration: none;
+        }
+    }
+    .hey-hero-image {
+        .vertical-center {
+            top: 50%;
+            a {
+                margin-bottom: 16px;
+            }
+            h1 {
+                margin-top: 0px;
+            }
+        }
+    }
+}
+
+hey-ahorro {
+    .hey-cta {
+        &.no-padding {
+            .col-lg-4,
+            .col-lg-5 {
+                height: 550px;
+            }
+            .pill {
+                height: auto;
+                width: 400px;
+            }
+            .graph {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+    .hey-faq {
+        .accordion {
+            .card {
+                background: $color-white;
+            }
+        }
+    }
+}
+
+hey-inversion {
+    .hey-cta {
+        &.bg-01 {
+            .col-lg-6 {
+                h2 {
+                    margin-bottom: 24px;
+                    b {
+                        font-family: 'Sneak-Bold';
+                    }
+                }
+            }
+        }
+    }
+    .hey-simulador {
+        .grafica {
+            .col-3 {
+                &:nth-child(1) {
+                    .pill {
+                        background: #BBB9FF;
+                    }
+                    .graph {
+                        background-image: linear-gradient(#BBB9FF, #FFC888);
+                    }
+                }
+                &:nth-child(2) {
+                    .space {
+                        height: 218px;
+                    }
+                    .graph {
+                        height: 52px;
+                    }
+                }
+            }
+        }
+        .mat-radio-button {
+            border: 1px solid #707070;
+        }
+        .mat-radio-button.mat-accent.mat-radio-checked {
+            border: 1px solid #00BCE0;
+        }
+    }
+}
+
+hey-seguros-auto,
+hey-seguros-drsam {
+    .table {
+        margin-top: 32px;
+        th {
+            @extend %sneak-16;
+            &:first-child {
+                @extend %lato-14;
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+            }
+            span {
+                @extend %sneak-24;
+            }
+        }
+        td {
+            @extend %sneak-16;
+            text-align: center;
+            &:first-child {
+                text-align: left;
+                img {
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+    .hey-cta,
+    .hey-requisitos {
+        p {
+            a {
+                color: $color-green;
+                text-decoration: underline;
+            }
+        }
+    }
+    .hey-cta {
+        h3 {
+            margin-bottom: 4px;
+        }
+        h3+p {
+            margin-top: 0;
+        }
+        &.bg-01 {
+            .col-lg-8 {
+                h2 {
+                    font-size: 40px;
+                    line-height: 52px;
+                    margin-bottom: 46px;
+                    margin-top: 36px;
+                }
+                .pill {
+                    height: auto;
+                    width: 400px;
+                }
+            }
+        }
+    }
+    .hey-requisitos {
+        h2 {
+            margin-bottom: 8px;
+        }
+        &#recompensa {
+            h2 {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+hey-seguros-drsam {
+    .hey-hero-image {
+        .col-lg-5 {
+            img {
+                height: 412px;
+                width: auto;
+            }
+        }
+    }
+}
+
+hey-proteccion-hey {
+    .hey-hero-image {
+        video {
+            height: auto;
+            width: 100%;
+        }
+    }
+    .hey-faq {
+        .accordion {
+            .card {
+                background: $color-white;
+            }
+        }
+    }
+    .hey-cta {
+        &.color {
+            h2 {
+                @extend %sneak-40;
+                line-height: 51px;
+            }
+            .col-lg-10 {
+                h2 {
+                    margin-bottom: 20px;
+                    margin-top: 16px;
+                }
+                img {
+                    &:nth-of-type(1) {
+                        height: auto;
+                        width: 158px;
+                    }
+                    &:nth-of-type(2) {
+                        height: auto;
+                        width: 375px;
+                    }
+                }
+            }
+            &.bg-yellow {
+                background: $color-white;
+                .pill {
+                    background: $color-yellow;
+                    border-radius: 118px;
+                    display: inline-block;
+                    height: 113px;
+                    margin: 0 auto 40px;
+                    width: 413px;
+                    p {
+                        @extend %sneak-44;
+                        color: $color-black-21;
+                        line-height: 113px;
+                        margin-bottom: 0;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+hey-fondo-hey {
+    hey-cta-app {
+        .hey-cta {
+            background: $color-white!important;
+        }
+    }
+    .hey-requisitos {
+        .media {
+            p {
+                span {
+                    text-decoration: underline;
+                    img {
+                        height: auto;
+                        margin-left: 4px;
+                        width: 19px;
+                    }
+                }
+            }
+        }
+        ul {
+            margin: 16px 0 0;
+            padding: 0;
+            li {
+                display: block;
+                line-height: 25px;
+                a {
+                    @extend %lato-16;
+                    color: $color-black-4B;
+                    text-decoration: underline;
+                    img {
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+hey-paygo {
+    .hey-requisitos {
+        .col-lg-10 {
+            border-top: 1px solid $color-background-01;
+            margin-top: 74px;
+            padding-top: 24px;
+            a {
+                @extend %lato-16;
+                color: $color-black-4B;
+                text-decoration: underline;
+            }
+        }
+        .col-lg-4 {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .hey-cta {
+        h3 {
+            margin-top: 0;
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    .hey-simulador {
+        padding-bottom: 102px;
+        padding-top: 108px;
+        h4 {
+            margin-bottom: 34px;
+            margin-top: 54px;
+        }
+        .col-lg-4 {
+            .card {
+                margin-top: 50px;
+            }
+        }
+        .grafica {
+            .col-3 {
+                &:nth-child(2) {
+                    .space {
+                        height: 165px;
+                    }
+                }
+            }
+        }
+    }
+    hey-cuentas,
+    hey-tarjeta-de-credito {
+        .hey-cta {
+            &.bg-01 {
+                .col-8 {
+                    img {
+                        margin-bottom: 40px;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+    hey-hazte-cliente {
+        .hey-hazte-cliente {
+            &.bg-01 {
+                .col-8 {
+                    img {
+                        margin-bottom: 40px;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+    hey-inversion {
+        .hey-simulador {
+            .grafica {
+                .col-3 {
+                    &:nth-child(2) {
+                        .space {
+                            height: 243px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    hey-seguros-drsam {
+        .hey-hero-image {
+            .col-lg-5 {
+                img {
+                    height: 350px;
+                    width: auto;
+                }
+            }
+        }
+    }
+    hey-tarjeta-de-credito {
+        #garantizada {
+            padding-bottom: 650px;
+        }
+        .hey-hero-image {
+            .vertical-center {
+                top: 62%;
+                a {
+                    margin-bottom: 16px;
+                }
+                h1 {
+                    margin-top: 0px !important;
+                }
+            }
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    hey-inversion {
+        .hey-hero-image {
+            height: 510px;
+            .col-lg-6 {
+                height: 353px;
+            }
+            .col-lg-4 {
+                img {
+                    height: 207px;
+                    width: auto;
+                }
+            }
+        }
+        .hey-simulador {
+            .grafica {
+                .col-3 {
+                    &:nth-child(2) {
+                        .graph {
+                            height: 35px;
+                        }
+                        .space {
+                            height: 169px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    hey-tarjeta-de-credito {
+        .hey-hero-image {
+            .col-lg-5 {
+                img {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+        }
+        #garantizada {
+            background-size: 85% auto;
+            padding-bottom: 396px;
+        }
+        .recompensas {
+            img {
+                margin-bottom: 24px;
+                margin-top: 0!important;
+            }
+        }
+        .hey-hero-image {
+            .vertical-center {
+                top: 50%;
+                a {
+                    margin-bottom: 16px;
+                }
+                h1 {
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+    hey-ahorro {
+        .hey-hero-image {
+            height: 480px !important;
+            .col-lg-6 {
+                height: 383px;
+            }
+            .col-lg-3 {
+                img {
+                    height: 177px;
+                    width: auto;
+                }
+            }
+        }
+        .hey-cta {
+            &.no-padding {
+                .col-lg-4,
+                .col-lg-5 {
+                    height: auto;
+                }
+                .pill {
+                    height: auto;
+                    margin-top: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    hey-proteccion-hey {
+        .hey-hero-image {
+            height: 640px;
+            .col-lg-5 {
+                img {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+            .col-lg-6 {
+                height: auto;
+                .vertical-center {
+                    position: relative;
+                    transform: translateY(0%);
+                    top: 0;
+                }
+            }
+        }
+        .hey-cta {
+            .col-lg-4 {
+                img {
+                    margin-bottom: 80px;
+                    margin-top: 0;
+                }
+            }
+            &.color {
+                h2 {
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+                .col-lg-10 {
+                    h2 {
+                        margin-bottom: 30px;
+                        margin-top: 20px;
+                    }
+                    img {
+                        &:nth-of-type(2) {
+                            height: auto;
+                            width: 230px;
+                        }
+                    }
+                }
+                &.bg-yellow {
+                    .pill {
+                        height: 74px;
+                        width: 258px;
+                        p {
+                            font-size: 22px;
+                            line-height: 74px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    hey-seguros-auto,
+    hey-seguros-drsam {
+        .hey-cta {
+            &.bg-01 {
+                .col-lg-8 {
+                    h2 {
+                        font-size: 36px;
+                        line-height: 40px;
+                        margin-bottom: 40px;
+                        margin-top: 50px;
+                    }
+                    .pill {
+                        height: auto;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .hey-simulador {
+        padding-bottom: 100px;
+        padding-top: 100px;
+        h2 {
+            margin-bottom: 16px;
+        }
+        h4 {
+            margin-bottom: 32px;
+        }
+        p {
+            margin-bottom: 60px;
+        }
+        .grafica {
+            h5 {
+                font-size: 14px;
+                line-height: 18px;
+            }
+            .col-3 {
+                &:nth-child(1) {
+                    h5 {
+                        font-size: 16px;
+                        line-height: 25px;
+                    }
+                    p {
+                        font-size: 24px;
+                        line-height: 25px;
+                        span {
+                            font-size: 13px;
+                        }
+                    }
+                    .pill {
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                    .graph {
+                        height: 177px;
+                    }
+                }
+                &:nth-child(2) {
+                    .graph {
+                        height: 88px;
+                    }
+                    .space {
+                        height: 116px;
+                    }
+                }
+                &:nth-child(3),
+                &:nth-child(4) {
+                    .graph {
+                        height: 12px;
+                    }
+                    .space {
+                        height: 215px;
+                    }
+                }
+            }
+        }
+    }
+    hey-seguros-drsam {
+        .hey-hero-image {
+            .col-lg-5 {
+                img {
+                    height: 250px;
+                    width: auto;
+                }
+            }
+        }
+    }
+    hey-fondo-hey {
+        .hey-hero-image {
+            .col-lg-5 {
+                img {
+                    height: auto!important;
+                    width: 100%!important;
+                }
+            }
+        }
+    }
+    .hey-caracteristicas {
+        padding-bottom: 58px;
+        padding-top: 80px;
+    }
+    .hey-tarjetas {
+        padding-bottom: 8px;
+        padding-top: 68px;
+        .col-lg-4 {
+            margin-bottom: 60px;
+            img {
+                margin-bottom: 8px;
+                width: 50%;
+            }
+            p {
+                margin-bottom: 16px;
+            }
+        }
+    }
+    .hey-ipab {
+        .col-lg-3 {
+            img {
+                margin-top: 32px;
+            }
+        }
+    }
+    .hey-requisitos {
+        padding-bottom: 84px;
+        padding-top: 0;
+        h2 {
+            margin-top: 50px;
+        }
+        p {
+            &.collapse {
+                padding-bottom: 30px;
+                padding-left: 0;
+            }
+        }
+    }
+    .hey-faq {
+        .col-lg-3 {
+            img {
+                margin-top: 48px;
+            }
+        }
+        .faqs {
+            display: none;
+        }
+    }
+    hey-paygo {
+        .hey-cta {
+            h3 {
+                font-size: 36px;
+                line-height: 40px;
+            }
+        }
+    }
+    hey-seguros {
+        .hey-hero-image {
+            height: 480px;
+        }
+    }
+    hey-cuentas {
+        .hey-pro-nomina {
+            height: 700px;
+            .vertical-center {
+                top: 50%;
+            }
+            .responsive-cuentas-hero {
+                margin-top: 0px !important;
+            }
+            h2 {
+                margin-top: 120px;
+            }
+        }
+        .mt-20 {
+            margin-top: 140px;
+        }
+    }
+}

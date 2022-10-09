@@ -1,0 +1,96 @@
+<section class="hey-hero-image fondo">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-sm-6 offset-sm-1 col-md-5 offset-md-1 col-lg-6 offset-lg-1">
+                <div class="vertical-center">
+                    <h2 class="web">¡Ya eres parte de Hey Banco!
+                    </h2>
+                    <br>
+                    <p class="mb-15 sub">
+                        ¡Ahora tus hijos también ganan con Hey!
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-10 col-md-6 offset-md-0 col-lg-5 offset-lg-0 text-center">
+                <img loading="lazy" class="" [src]="environment.assetsUrl + 'img/P810-Giveaways/p810-99-img .png'" alt="Giveaway menores">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-cta bg-01">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-7 col-lg-6 offset-lg-1">
+                <div class="vertical-center">
+                    <h2 class="web titulo">Por aperturar tu cuenta Hey Menores, participa en un giveaway para ganar:
+                        <strong>un Nintendo Switch</strong>
+                    </h2>
+                    <br>
+                    <p class="mb-15 sub">
+                        Haz clic en el botón y genera tu folio de Registro Digital
+                    </p>
+                    <button class="btn btn-primary button boton" id="enviar" role="button" type="button" (click)="submitRequest()">Participar en el Giveaway</button>
+                </div>
+            </div>
+
+            <div class="col-8 offset-1 col-md-4 offset-md-0 col-lg-5 offset-lg-0 text-center">
+                <img loading="lazy" class="responsive-cuentas-hero nintendo" [src]="environment.assetsUrl + 'img/P810-Giveaways/p810-nintendo-switch.png'" alt="Nintendo Switch">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-home-cta">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-lg-6 fondo_anuncio">
+                <div class="row">
+                    <div class="col-10 offset-1 col-md-10 offset-md-1 col-lg-7 offset-lg-2">
+
+                        <h2>¡Mantente al pendiente y espera el gran anuncio!</h2>
+
+                        <p>Anunciaremos a los seleccionados la primera semana del més vía Instagram (@<strong>HeyBanco</strong>).<br><br> Si eres seleccionado recibirás un correo con la información para poder recibir tu premio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6 fondo_insta">
+                <div class="row">
+                    <div class="col-10 offset-1 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+
+                        <h2>Síguenos en instragram @<strong>heybanco</strong></h2>
+
+                        <p>Para conocer más sobre éste y otros Giveaways que Hey Banco ofrece para ti.</p>
+                        <a class="btn btn-primary" role="button" href="https://www.instagram.com/heybanco/?hl=es-la" target="_blank">Síguenos en Instagram</a>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-md-1 offset-md-0 col-lg-2 offset-lg-4">
+                            <img loading="lazy" class="insta" [src]="environment.assetsUrl + 'img/P810-Giveaways/p810-90-img.png'" alt="Instagram del banco">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<re-captcha size="invisible" *ngIf="RECAPTCHA_KEY" [siteKey]="RECAPTCHA_KEY" (resolved)="participar($event)"></re-captcha>
+
+<section class="hey-terminos">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <p>Consulta términos, condiciones, bases y privacidad. Vigencia del 05 de mayo al 13 de mayo de 2022. Los resultados serán publicados en nuestra cuenta de Instagram (@heybanco) durante el mismo periodo de vigencia de la promoción y a través
+                    de un correo electrónico notificando el incentivo.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="loader" *ngIf="busy">
+    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/loader.gif'">
+</div>

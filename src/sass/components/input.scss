@@ -1,0 +1,63 @@
+.mat-form-field,
+.mat-select-panel .mat-option {
+    color: $color-black-4B;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    width: 100%;
+    
+    .mat-form-field-flex {
+        background: #fff;
+        background-repeat: no-repeat;
+        background-position: 14px 15px;
+    }
+}
+
+.mat-form-field-flex {
+    border-radius: 4px 4px 0 0;
+    padding-left: 48px;
+    padding-right: 44px;
+}
+
+.mat-form-field.mat-focused .mat-form-field-label {
+    color: $color-black-4B;
+}
+
+.mat-form-field.mat-focused .mat-form-field-ripple {
+    background-color: $color-blue-variant;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-subscript-wrapper {
+    margin-top: 0;
+}
+
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+    color: $color-black-20;
+}
+
+.mat-select {
+    font-family: 'Lato', sans-serif;
+}
+
+.mat-input-element:-webkit-autofill,
+.mat-input-element:-webkit-autofill:hover, 
+.mat-input-element:-webkit-autofill:focus,
+.mat-input-element:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.mat-input-element::-webkit-outer-spin-button,
+.mat-input-element::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.mat-input-element[type=number] {
+    -moz-appearance: textfield;
+}
+
+.mat-form-field-infix {
+    @extend %lato-18;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}

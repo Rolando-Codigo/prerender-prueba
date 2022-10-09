@@ -1,0 +1,31 @@
+<section class="hey-ivr">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                <h1>¿En qué podemos ayudarte hoy?</h1>
+
+                <div class="row justify-content-center">
+
+                    <div class="col-6 col-md-3 col-lg-3 text-center">
+                        <a class="btn btn-link" role="button" [routerLink]="['/reportes/reporte-fallas-app']">
+                            <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/ivr-fallas.png'" alt="Hey Banco - reporte fallas"> Reporte de fallas en tu App
+                        </a>
+                    </div>
+
+
+                    <div class="col-6 col-md-3 col-lg-3 text-center">
+                        <a class="btn btn-link" role="button" [routerLink]="['/reportes/asesoria-producto']">
+                            <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/ivr-productos.png'" alt="Hey Banco - Asesoría de producto"> Asesoría de producto
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-md-3 col-lg-3 text-center">
+                        <a class="btn btn-link" role="button" [routerLink]="['/reportes/sugerencias-mejora']">
+                            <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/ivr-buzon.png'" alt="Hey Banco - sugerencias mejora"> Sugerencias de mejora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

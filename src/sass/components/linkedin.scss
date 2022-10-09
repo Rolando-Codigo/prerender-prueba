@@ -1,0 +1,45 @@
+.hey-linkedin {
+    padding-bottom: 85px;
+    padding-top: 90px;
+
+    p {
+        @extend %lato-14;
+        margin-bottom: 0;
+    }
+
+    p + .btn-primary {
+        margin-top: 40px;
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    .hey-linkedin {
+        padding-bottom: 100px;
+        padding-top: 72px;
+
+        .col-lg-4 {
+            p {
+                margin-top: 40px;
+            }
+        }
+    
+        p + .btn-primary {
+            margin-top: 24px;
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    .hey-linkedin {
+        padding-bottom: 72px;
+        padding-top: 65px;
+
+        .col-lg-4 {
+            p {
+                margin-top: 22px;
+            }
+        }
+    }
+}

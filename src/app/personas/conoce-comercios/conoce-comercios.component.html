@@ -1,0 +1,213 @@
+<section class="hey-hero-image">
+    <div class="img-back">
+        <div class="container">
+            <div class="row align-middle">
+                <div class="col-sm-6 offset-sm-1 col-md-6 offset-md-0 col-lg-6 offset-lg-1 order-1">
+                    <div class="column vertical-center">
+                        <h1 class="mb-20 header">Conoce tu terminal Hey o Banregio más cercana</h1>
+                        <p>
+                            Encuentra +24,000 comercios con terminales Hey o Banregio y paga usando tus Tarjetas Hey
+                            fácilmente.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-busqueda bg-white">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-10 offset-lg-1">
+                <h2 class="mb-15">
+                    Encuentra las tiendas más cercanas a ti.
+                </h2>
+
+                <div class="text-center row" [formGroup]="form">
+
+                    <div class="col-md-6 col-lg-6">
+                        <mat-form-field class="website">
+                            <mat-label>Estado</mat-label>
+
+                            <mat-select formControlName="estado" (selectionChange)="changeEstado()">
+                                <mat-option value="AGUASCALIENTES">AGUASCALIENTES
+                                </mat-option>
+                                <mat-option value="BAJA CALIFORNIA NORTE">BAJA CALIFORNIA NORTE
+                                </mat-option>
+                                <mat-option value="BAJA CALIFORNIA SUR">BAJA CALIFORNIA SUR
+                                </mat-option>
+                                <mat-option value="CAMPECHE">CAMPECHE
+                                </mat-option>
+                                <mat-option value="CHIAPAS">CHIAPAS
+                                </mat-option>
+                                <mat-option value="CHIHUAHUA">CHIHUAHUA
+                                </mat-option>
+                                <mat-option value="CIUDAD DE MEXICO">CIUDAD DE MEXICO
+                                </mat-option>
+                                <mat-option value="COAHUILA">COAHUILA
+                                </mat-option>
+                                <mat-option value="COLIMA">COLIMA
+                                </mat-option>
+                                <mat-option value="DURANGO">DURANGO
+                                </mat-option>
+                                <mat-option value="GUANAJUATO">GUANAJUATO
+                                </mat-option>
+                                <mat-option value="GUERRERO">GUERRERO
+                                </mat-option>
+                                <mat-option value="HIDALGO">HIDALGO
+                                </mat-option>
+                                <mat-option value="JALISCO">JALISCO
+                                </mat-option>
+                                <mat-option value="MEXICO">MEXICO
+                                </mat-option>
+                                <mat-option value="MICHOACAN">MICHOACAN
+                                </mat-option>
+                                <mat-option value="MORELOS">MORELOS
+                                </mat-option>
+                                <mat-option value="NAYARIT">NAYARIT
+                                </mat-option>
+                                <mat-option value="NUEVO LEON">NUEVO LEON
+                                </mat-option>
+                                <mat-option value="OAXACA">OAXACA
+                                </mat-option>
+                                <mat-option value="PUEBLA">PUEBLA
+                                </mat-option>
+                                <mat-option value="QUERETARO">QUERETARO
+                                </mat-option>
+                                <mat-option value="QUINTANA ROO">QUINTANA ROO
+                                </mat-option>
+                                <mat-option value="SAN LUIS POTOSI">SAN LUIS POTOSI
+                                </mat-option>
+                                <mat-option value="SINALOA">SINALOA
+                                </mat-option>
+                                <mat-option value="SONORA">SONORA
+                                </mat-option>
+                                <mat-option value="TABASCO">TABASCO
+                                </mat-option>
+                                <mat-option value="TAMAULIPAS">TAMAULIPAS
+                                </mat-option>
+                                <mat-option value="TLAXCALA">TLAXCALA
+                                </mat-option>
+                                <mat-option value="VERACRUZ">VERACRUZ
+                                </mat-option>
+                                <mat-option value="YUCATAN">YUCATAN
+                                </mat-option>
+                                <mat-option value="ZACATECAS">ZACATECAS
+                                </mat-option>
+
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6">
+                        <mat-form-field class="website">
+                            <mat-label>Colonia</mat-label>
+
+                            <mat-select formControlName="colonia" (selectionChange)="changeColonia()">
+                                <mat-option *ngFor="let colonia of coloniasfiltro | keyvalue" [value]="colonia.key"> {{
+                                    colonia.key}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6">
+                        <mat-form-field class="website">
+                            <mat-label>Comercio</mat-label>
+
+                            <mat-select formControlName="comercio" (selectionChange)="changeComercio($event.value)">
+                                <mat-option *ngFor="let comercio of comerciosfiltro | keyvalue" [value]="comercio.key">
+                                    {{ comercio.key}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6">
+                        <mat-form-field class="website">
+                            <mat-label>Ingresa palabras clave</mat-label>
+
+                            <input matInput formControlName="palabraClave" type="text" (click)="changePalabra()">
+                        </mat-form-field>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-1 offset-0 col-md-1 offset-md-0 col-lg-1 offset-lg-0">
+                            <button class="btn btn-primary" role="button" type="button" (click)="submitRequest()"
+                            [disabled]="form.get('estado').value === null && form.get('palabraClave').value === null" >Buscar</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div *ngIf="busqueda">
+                    <h2>Resultado de búsqueda:</h2>
+                    <hr>
+                    <div class="d-none d-md-none d-lg-block">
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <h4><strong>Nombre de Comercio</strong></h4>
+                            </div>
+                            <div class="col-12 col-lg-3">
+                                <h4><strong>Giro</strong></h4>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <h4><strong>Dirección</strong></h4>
+                            </div>
+                        </div>
+                        <hr>
+                        <div *ngFor="let comercio of listadoComercio">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <span class="listado">{{comercio.nombre}}</span>
+                                </div>
+                                <div class="col-lg-3">
+                                    <span class="listado">{{comercio.giro}}</span>
+                                </div>
+                                <div class="col-lg-4">
+                                    <span class="listado">{{comercio.direccion.domicilio}},
+                                        {{comercio.direccion.colonia}},
+                                        {{comercio.direccion.estado}}, CP {{comercio.direccion.cp}}</span>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="d-block d-md-block d-lg-none">
+                        <div *ngFor="let comercio of listadoComercio">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h4><strong>Nombre de Comercio</strong></h4>
+                                    <span class="listado">{{comercio.nombre}}</span>
+                                </div>
+                                <div class="col-12">
+                                    <h4><strong>Giro</strong></h4>
+                                    <span class="listado">{{comercio.giro}}</span>
+                                </div>
+                                <div class="col-12">
+                                    <h4><strong>Dirección</strong></h4>
+                                    <span class="listado">{{comercio.direccion.domicilio}}, {{comercio.direccion.colonia}},
+                                        {{comercio.direccion.estado}}, CP {{comercio.direccion.cp}}</span>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<re-captcha size="invisible" *ngIf="RECAPTCHA_KEY" [siteKey]="RECAPTCHA_KEY" (resolved)="participar(type, $event)"></re-captcha>
+
+<div class="loader" *ngIf="busy">
+    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/loader.gif'">
+</div>

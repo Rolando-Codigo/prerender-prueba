@@ -1,0 +1,13 @@
+.modal-title {
+    font-size: 22px;
+    text-align: center;
+    color: gray;
+    margin-bottom: 16px;
+}
+
+.p-folio {
+    padding: 8px 16px;
+    width: 100%;
+    background: #efefef;
+    color: grey;
+}

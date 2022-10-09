@@ -1,0 +1,65 @@
+<section class="hey-hero-image">
+    <div class="filter"></div>
+
+    <div class="container ">
+        <div class="row ">
+            <div class="col-sm-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2">
+                <div class="vertical-center text-center">
+                    <h1>Colección Cosmos</h1>
+
+                    <p>Disponible ahora y por tiempo limitado</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-none d-sm-none d-md-block d-lg-block">
+        <div class="row justify-content-center">
+            <div class="col-lg-11 col-xl-11">
+                <div class="bg-white">
+                    <div class="row">
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/personas/cuentas-hey']" role="button">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/P100-Home/P100-4-btn-cuenta-hey.png'" alt="¿Cómo abro una Cuenta Hey?">
+                                <br> Cuenta Hey
+                            </a>
+                        </div>
+
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/personas/ahorro-hey']" role="button">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/P100-Home/P100-5-btn-ahorro.png'" alt="¿Cómo puedo crear un Ahorro Hey?">
+                                <br> Ahorro
+                            </a>
+                        </div>
+
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/personas/inversion']" role="button">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/P100-Home/P100-6-btn-inversion-hey﻿.png'" alt="¿Cómo abro una inversión Hey?">
+                                <br> Inversión Hey
+                            </a>
+                        </div>
+
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/personas/seguros-hey']" role="button">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/P100-Home/P100-7-btn-seguros-hey.png'" alt="¿Cómo abro un Seguro con Hey Banco?">
+                                <br> Seguros Hey
+                            </a>
+                        </div>
+
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/parami/tdc']" role="button">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/P100-Home/P100-8-btn-tarjeta-credito-hey.png'" alt="¿Cómo solicito una Tarjeta de Crédito Hey?">
+                                <br> Tarjeta de Crédito Hey
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <video loop autoplay muted playsinline oncanplay="this.play()" onloadedmetadata="this.muted = true"> 
+        <source [src]="environment.assetsUrl + 'img/P100-Home/P100-0-hero-video.webm'" type="video/webm">
+    </video>
+</section>

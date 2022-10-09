@@ -1,0 +1,369 @@
+.hey-hero-recompensas {
+    padding-bottom: 120px;
+    padding-top: 120px;
+    h1 {
+        @extend %sneak-64;
+        color: $color-black-20;
+        margin-bottom: 0;
+    }
+    .pill {
+        display: inline-block;
+        box-sizing: border-box;
+        line-height: 64px;
+        padding: 0px 50px;
+        border-radius: 999em;
+        text-decoration: none;
+        vertical-align: bottom;
+        margin: 40px 15px;
+    }
+    p {
+        @extend %sneak-24;
+        color: $color-black-20;
+        margin-top: 10px;
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    .hey-hero-recompensas {
+        padding-bottom: 120px;
+        padding-top: 120px;
+        .pill {
+            display: inline-block;
+            box-sizing: border-box;
+            line-height: 4px;
+            padding: 0px 50px;
+            border-radius: 999em;
+            text-decoration: none;
+            vertical-align: bottom;
+            margin: 20px 15px;
+        }
+        p {
+            margin-top: 10px;
+        }
+    }
+    hey-cuentas,
+    hey-tarjeta-de-credito {
+        .hey-cta {
+            &.bg-01 {
+                .col-8 {
+                    img {
+                        margin-bottom: 40px;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+    hey-inversion {
+        .hey-simulador {
+            .grafica {
+                .col-3 {
+                    &:nth-child(2) {
+                        .space {
+                            height: 243px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    hey-seguros-drsam {
+        .hey-hero-image {
+            .col-lg-5 {
+                img {
+                    height: 350px;
+                    width: auto;
+                }
+            }
+        }
+    }
+    hey-tarjeta-de-credito {
+        #garantizada {
+            padding-bottom: 650px;
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    hey-inversion {
+        .hey-hero-image {
+            .col-lg-6 {
+                height: 353px;
+            }
+            .col-lg-4 {
+                img {
+                    height: 207px;
+                    width: auto;
+                }
+            }
+        }
+        .hey-simulador {
+            .grafica {
+                .col-3 {
+                    &:nth-child(2) {
+                        .graph {
+                            height: 35px;
+                        }
+                        .space {
+                            height: 169px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    hey-tarjeta-de-credito {
+        .hey-hero-image {
+            .col-lg-5 {
+                img {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+        }
+        #garantizada {
+            background-size: 85% auto;
+            padding-bottom: 396px;
+        }
+        .recompensas {
+            img {
+                margin-bottom: 24px;
+                margin-top: 0!important;
+            }
+        }
+    }
+    hey-ahorro {
+        .hey-hero-image {
+            .col-lg-6 {
+                height: 383px;
+            }
+            .col-lg-3 {
+                img {
+                    height: 177px;
+                    width: auto;
+                }
+            }
+        }
+        .hey-cta {
+            &.no-padding {
+                .col-lg-4,
+                .col-lg-5 {
+                    height: auto;
+                }
+                .pill {
+                    height: auto;
+                    margin-top: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    hey-proteccion-hey {
+        .hey-hero-image {
+            height: 640px;
+            .col-lg-5 {
+                img {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+            .col-lg-6 {
+                height: auto;
+                .vertical-center {
+                    position: relative;
+                    transform: translateY(0%);
+                    top: 0;
+                }
+            }
+        }
+        .hey-cta {
+            .col-lg-4 {
+                img {
+                    margin-bottom: 80px;
+                    margin-top: 0;
+                }
+            }
+            &.color {
+                h2 {
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+                .col-lg-10 {
+                    h2 {
+                        margin-bottom: 30px;
+                        margin-top: 20px;
+                    }
+                    img {
+                        &:nth-of-type(2) {
+                            height: auto;
+                            width: 230px;
+                        }
+                    }
+                }
+                &.bg-yellow {
+                    .pill {
+                        height: 74px;
+                        width: 258px;
+                        p {
+                            font-size: 22px;
+                            line-height: 74px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    hey-seguros-auto,
+    hey-seguros-drsam {
+        .hey-cta {
+            &.bg-01 {
+                .col-lg-8 {
+                    h2 {
+                        font-size: 36px;
+                        line-height: 40px;
+                        margin-bottom: 40px;
+                        margin-top: 50px;
+                    }
+                    .pill {
+                        height: auto;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .hey-simulador {
+        padding-bottom: 100px;
+        padding-top: 100px;
+        h2 {
+            margin-bottom: 16px;
+        }
+        h4 {
+            margin-bottom: 32px;
+        }
+        p {
+            margin-bottom: 60px;
+        }
+        .grafica {
+            h5 {
+                font-size: 14px;
+                line-height: 18px;
+            }
+            .col-3 {
+                &:nth-child(1) {
+                    h5 {
+                        font-size: 16px;
+                        line-height: 25px;
+                    }
+                    p {
+                        font-size: 24px;
+                        line-height: 25px;
+                        span {
+                            font-size: 13px;
+                        }
+                    }
+                    .pill {
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                    .graph {
+                        height: 177px;
+                    }
+                }
+                &:nth-child(2) {
+                    .graph {
+                        height: 88px;
+                    }
+                    .space {
+                        height: 116px;
+                    }
+                }
+                &:nth-child(3),
+                &:nth-child(4) {
+                    .graph {
+                        height: 12px;
+                    }
+                    .space {
+                        height: 215px;
+                    }
+                }
+            }
+        }
+    }
+    hey-seguros-drsam {
+        .hey-hero-image {
+            .col-lg-5 {
+                img {
+                    height: 250px;
+                    width: auto;
+                }
+            }
+        }
+    }
+    hey-fondo-hey {
+        .hey-hero-image {
+            .col-lg-5 {
+                img {
+                    height: auto!important;
+                    width: 100%!important;
+                }
+            }
+        }
+    }
+    .hey-caracteristicas {
+        padding-bottom: 58px;
+        padding-top: 80px;
+    }
+    .hey-tarjetas {
+        padding-bottom: 8px;
+        padding-top: 68px;
+        .col-lg-4 {
+            margin-bottom: 60px;
+            img {
+                margin-bottom: 8px;
+                width: 50%;
+            }
+            p {
+                margin-bottom: 16px;
+            }
+        }
+    }
+    .hey-ipab {
+        .col-lg-3 {
+            img {
+                margin-top: 32px;
+            }
+        }
+    }
+    .hey-requisitos {
+        padding-bottom: 84px;
+        padding-top: 0;
+        h2 {
+            margin-top: 50px;
+        }
+        p {
+            &.collapse {
+                padding-bottom: 30px;
+                padding-left: 0;
+            }
+        }
+    }
+    .hey-faq {
+        .col-lg-3 {
+            img {
+                margin-top: 48px;
+            }
+        }
+    }
+    hey-paygo {
+        .hey-cta {
+            h3 {
+                font-size: 36px;
+                line-height: 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,325 @@
+<section class="bgimage-personas">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Centro de Ayuda Hey</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form class="card">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <input class="form-control form-control-borderless" type="search" id="search" [formControl]="searchForm" placeholder="¿Cómo podemos ayudarte?" />
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light" role="button" [disabled]="!isValidSearchForm" (click)="submitSearch()">Buscar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <br>
+                <p class="txtSmallWhite">
+                    Ingresa a nuestro centro de servicio para reportes y aclaraciones
+                </p>
+                <a class="btn btn-primary-green" [routerLink]="['/reportes']" target="_self" role="button" onclick="dataLayer.push({'event':'evPageLink'});">Centro de servicio</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p class="titlehome">
+                    <img loading="lazy" class="line-responsive" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-21-CAD-division.svg'" alt="Tu banco digital"> &nbsp;&nbsp;&nbsp;&nbsp;Busca por producto&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img loading="lazy" class="line-responsive" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-21-CAD-division.svg'" alt="Tu banco digital"></p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-12 col-lg-12">
+                    <div class="row">
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/centro-ayuda-app']" role="button">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-2-CAD-ic-app.svg'">
+                                <p class="bodyhome">App </p>
+                            </a>
+                        </div>
+
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/centro-ayuda-cuenta']" role="button">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-3-CAD-ic-cuenta.svg'" alt="Tu banco digital">
+
+                                <p class="bodyhome">Cuenta </p>
+                            </a>
+                        </div>
+
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/centro-ayuda-inversion']" role="button">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-4-CAD-ic-inversion.svg'" alt="Tu banco digital">
+                                <br>
+                                <p class="bodyhome">Inversión</p>
+
+                            </a>
+                        </div>
+
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/centro-ayuda-tarjeta-credito']" role="button">
+                                <img loading="lazy" alt="Tu banco digital" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-5-CAD-ic-tarjeta-credito.svg'">
+                                <br>
+                                <p class="bodyhome">Tarjeta de Crédito</p>
+
+                            </a>
+                        </div>
+
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/centro-ayuda-ahorro']" role="button">
+                                <img loading="lazy" alt="Tu banco digital" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-7-CAD-ic-ahorro.svg'">
+                                <br>
+                                <p class="bodyhome">Ahorro</p>
+
+                            </a>
+                        </div>
+
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/centro-ayuda-seguros']" role="button">
+                                <img loading="lazy" alt="Tu banco digital" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-8-CAD-ic-seguros.svg'">
+                                <br>
+                                <p class="bodyhome">Seguros</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="hey-benefits-cad bg-02">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+                <h2>Temas más populares </h2>
+
+                <div class="row">
+
+                    <div class="col-12 col-md-4">
+                        <div class="benefit-cad">
+                            <div class="benefit-cad-box">
+                                <a href="/centro-ayuda/articulo/kA03s0000006LkyCAE" target="_self">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-23-CAD-ic-geolocalizacion.svg'" alt="Tu banco digital">
+                                    <br>
+                                    <h3>¿Por qué debo compartir mi ubicación?</h3>
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-24-CAD-ic-ver-mas.svg'" alt="Tu banco digital">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="benefit-cad">
+                            <div class="benefit-cad-box">
+                                <a onclick="dataLayer.push({'event':'evPageLink'});" href="/centro-ayuda/tarjeta-virtual">
+                                    <img loading="lazy" alt="Tu banco digital" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-10-CAD-ic-solicita-tarjeta-fisica.svg'">
+                                    <br>
+                                    <h3>¿Qué es mi tarjeta virtual Hey y cómo la uso?</h3>
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-12-CAD-ic-play.svg'" alt="¿Qué es mi tarjeta virtual Hey y cómo la uso?">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="benefit-cad">
+                            <div class="benefit-cad-box">
+                                <a onclick="dataLayer.push({'event':'evPageLink'});" href="/centro-ayuda/rastreo-tarjeta">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-22-CAD-ic-buscar.svg'" alt="Cómo rastreo el envío de mi tarjeta Hey a mi domicilio">
+                                    <br>
+                                    <h3>Cómo rastreo el envío de mi tarjeta Hey a mi domicilio?</h3>
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-12-CAD-ic-play.svg'" alt="Cómo rastreo el envío de mi tarjeta Hey a mi domicilio">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-cta bg-purple">
+    <div class="container">
+
+        <div class="row align-items-center">
+            <div class="video-responsive-home col-9 col-md-4 offset-md-0 col-lg-4 offset-lg-1 order-2 order-md-1 order-lg-1">
+                <a href="https://www.youtube.com/watch?v=JaJuvPOTRXI&=1s&ab_channel=HeyBanco" target="_blank">
+                    <img loading="lazy" class="videos" [src]="environment.assetsUrl + 'img/videos/09-img.png'" alt="¿Como abrir una Cuenta Hey?">
+                    <br>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-6 offset-md-2 col-lg-6 offset-lg-1 order-1 order-md-2 order-lg-2">
+                <h2>Paso por paso</h2>
+
+                <p>Visita nuestra sección de video tutoriales para que resuelvas cualquier duda que tengas relacionada a tu app Hey Banco. </p>
+
+                <a class="btn btn-primary" [routerLink]="['/centro-ayuda/videotutoriales']" target="_self" role="button" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bgimage-seccion2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <h2>¿Por qué debo compartir <br>mi ubicación al usar mi App? </h2>
+                <a class="btn btn-light" href="/centro-ayuda/articulo/ka03s0000006YDdAAM" target="_self" role="button" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+<section class="hey-faq">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="ocultar col-10 offset-0 col-md-4 offset-md-1 col-lg-3 offset-lg-1 order-2 order-md-1 order-lg-1">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/cta/cta-faq-cuenta.png'" alt="Tu banco digital">
+            </div>
+
+            <div class="col-md-12 col-lg-7 order-1 order-md-2 order-lg-2">
+                <h2>Preguntas frecuentes</h2>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingSeven">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                  ¿Qué es la Geolocalización?<img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'" alt="Tu banco digital">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                            <div class="card-body">
+                                La geolocalización es un recurso digital que permite conocer la ubicación física de tu dispositivo electrónico expresada únicamente en coordenadas geográficas de latitud y longitud (sin especificar ningún domicilio).
+                                <br> Más información <a href="centro-ayuda/articulo/ka03s0000006YDdAAM">aquí</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ¿Cómo abro una Cuenta Hey?<img loading="lazy" alt="Tu banco digital" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                1. Selecciona el botón con la opción <b>Quiero mi Cuenta Hey</b> <a routerLink="./personas/cuentas-hey" target="_blank" target="_blank"> aquí</a> o descarga la app Hey Banco dentro de tu tienda Apple o Google.
+                                <br> 2. Crea tu usuario registrando tu nombre y contraseña.
+                                <br> 3. Manten a la mano tu INE/IFE vigente para seguir el flujo de contratación y llenar los datos que te solicitamos.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ¿Cómo abro una inversión?<img loading="lazy" alt="Tu banco digital" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                ¡Muy fácil! Lo primero es contar con una Cuenta Hey activa y sigue estos pasos dentro de tu app:<br><br> 1. Ingresa a tu app hey Banco y haz login.
+                                <br> 2. Desliza hasta Inversión.
+                                <br> 3. Presiona Comenzar a invertir.
+                                <br> 4. Define un monto e instrucciones para al vencimiento.
+                                <br> 5. Presiona Comenzar Inversión.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                  ¿Cómo solicito una Tarjeta de Crédito Hey?<img alt="Tu banco digital"
+                    [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Si mantienes una Cuenta Hey próximamente recibirás una invitación para solicitar tu Tarjeta de Crédito Hey, sin anualidad.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  ¿Hey asegura mi auto?<img loading="lazy" alt="Tu banco digital" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                            <div class="card-body">
+                                No, para asegurar tu vehículo tenemos una alianza con Quálitas, la compañía número 1 en el país. 1 de cada 3 autos en México está asegurado con ellos, quiénes serán las personas que te atiendan en caso de un siniestro.
+                                <br><br> Si quieres conocer más de la aseguradora puedes visitar:
+                                <a routerLink="/personas/cuentas-hey" target="_blank" target="_blank">
+                  www.qualitas.com.mx</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-ayuda bg-02">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 text-center">
+                <h2>Encuentra información<br> sobre más temas</h2>
+            </div>
+        </div>
+        <br><br>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form class="card">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <input class="form-control form-control-borderless" type="search" id="search" [formControl]="searchForm" placeholder="¿Cómo podemos ayudarte?" />
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light" role="button" [disabled]="!isValidSearchForm" (click)="submitSearch()">Buscar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>

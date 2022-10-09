@@ -1,0 +1,219 @@
+<section class="hey-hero-image" style="background-image:url(https://heybanco.s3.amazonaws.com/assets/img/hero-image/hero-image-home-negocio.png);">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-1 col-md-6 offset-md-1 col-lg-6 offset-lg-1">
+                <div class="vertical-center">
+                    <h1>Trabaja tus ingresos de manera inteligente</h1>
+
+                    <div class="row">
+                        <div class="col-9 col-sm-12 col-md-12 col-lg-12">
+                            <p>Conoce una nueva forma de hacer crecer tu negocio de forma digital, sin complicaciones y con beneficios diseñados para sumarle a tus finanzas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-benefits">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 col-lg-5 offset-lg-1">
+                <h2>Beneficios</h2>
+
+                <div class="benefit">
+                    <div class="benefit-box">
+                        <h3>Contratación 100% Digital</h3>
+
+                        <p>Apertura tus Cuentas Hey Biz Lite, Hey Biz Smart y Hey Biz de forma digital, sin complicaciones y en minutos.</p>
+                    </div>
+
+                    <div class="benefit-box-shadow bg-01">
+                        <div class="benefit-box-shadow-detail"></div>
+
+                        <div class="benefit-box-shadow-detail"></div>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <div class="benefit-box">
+                        <h3>Banca electrónica sin costo</h3>
+
+                        <p>Conoce una nueva forma de manejar tus finanzas a través desde nuestra Banca Electrónica.</p>
+                    </div>
+
+                    <div class="benefit-box-shadow bg-blue-variant">
+                        <div class="benefit-box-shadow-detail"></div>
+
+                        <div class="benefit-box-shadow-detail"></div>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <div class="benefit-box">
+                        <h3>Crece tu dinero <b>+5.50%</b></h3>
+
+                        <p>Te ofrecemos un rendimiento del <b>5.50%</b> en todas tus Cuentas Hey Biz manteniendo un saldo promedio de $3,000 pesos.</p>
+                    </div>
+
+                    <div class="benefit-box-shadow bg-01">
+                        <div class="benefit-box-shadow-detail"></div>
+
+                        <div class="benefit-box-shadow-detail"></div>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <div class="benefit-box">
+                        <h3>Cobra de forma inteligente</h3>
+
+                        <p>Impulsa tu negocio con alguna de nuestras terminales Hey Pay gracias a sus beneficios exclusivos y bajas comisiones.</p>
+                    </div>
+
+                    <div class="benefit-box-shadow bg-blue-variant">
+                        <div class="benefit-box-shadow-detail"></div>
+
+                        <div class="benefit-box-shadow-detail"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-7 offset-md-2 col-lg-4 offset-lg-1">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/benefits/beneficios-negocio.png'" alt="Tu banco digital, Tu banco 100% digital">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-productos bg-02">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+                <h2>Productos Hey para tu negocio</h2>
+
+
+
+                <div id="carousel-desktop" class="carousel slide d-none d-xs-none d-sm-none d-md-block d-lg-block" data-ride="carousel" data-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-9 col-md-4 col-lg-4">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-heypaygo.png'" alt="Hey Pay Go">
+
+                                    <h3>Hey Pay Go</h3>
+
+                                    <p>Conoce la terminal móvil que va con tu negocio.</p>
+
+                                    <a class="btn btn-outline-primary" role="button" [routerLink]="['/heypay/go']">Conoce más</a>
+
+                                    <a *ngIf="ajuste === false" class="btn btn-primary" role="button" href="https://quieroserclientenegocios.heybanco.com/#/crear-usuario?producto=HBZ" target="_blank" onclick="dataLayer.push({'event':'evPageLink'});">Contratar</a>
+                                    <a *ngIf="ajuste === true" class="btn btn-primary" role="button" href="https://quieroserclientenegocios.hey.inc/#/crear-usuario?producto=HBZ" target="_blank" onclick="dataLayer.push({'event':'evPageLink'});">Contratar</a>
+                                </div>
+
+                                <div class="col-9 col-md-4 col-lg-4">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-seguros.png'" alt="Seguros">
+
+                                    <h3>Seguros</h3>
+
+                                    <p>Protegemos tus finanzas y pertenencias con planes flexibles diseñados para ti.</p>
+
+                                    <a class="btn btn-outline-primary" [routerLink]="['/seguros-negocio']" role="button">Conoce más</a>
+
+                                    <a *ngIf="ajuste === false" class="btn btn-primary" role="button" href="https://quieroserclientenegocios.heybanco.com/#/cotizador/info-vehiculo" target="_blank" onclick="dataLayer.push({'event':'evPageLink'});">Contratar</a>
+                                    <a *ngIf="ajuste === true" class="btn btn-primary" role="button" href="https://quieroserclientenegocios.hey.inc/#/cotizador/info-vehiculo" target="_blank" onclick="dataLayer.push({'event':'evPageLink'});">Contratar</a>
+                                </div>
+
+                                <div class="col-9 col-md-4 col-lg-4">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-tarjeta-de-credito-negocio.png'" alt="Tarjeta de Crédito">
+
+                                    <h3>Tarjeta de Crédito</h3>
+
+                                    <p>Recíbela directo a tu domicilio, sin complicaciones ni costo alguno.</p>
+
+                                    <a class="btn btn-outline-primary disabled" disabled role="button">Próximamente</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <a class="carousel-control-prev" href="#carousel-desktop" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <li data-target="#carousel-desktop" data-slide-to="0" class="active"><span></span></li>
+
+                        <a class="carousel-control-next" href="#carousel-desktop" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </ol>
+                </div>
+
+                <div id="carousel-mobile" class="carousel slide d-block d-xs-block d-sm-block d-md-none d-lg-none" data-ride="carousel" data-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="col-9">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-heypaygo.png'" alt="Hey Pay Go">
+
+                                <h3>Hey Pay Go</h3>
+
+                                <p>Conoce la terminal móvil que va con tu negocio.</p>
+
+                                <a class="btn btn-outline-primary" role="button" [routerLink]="['/heypay/go']">Conoce más</a>
+
+                                <a *ngIf="ajuste === false" class="btn btn-primary" role="button" href="https://quieroserclientenegocios.heybanco.com/#/crear-usuario?producto=HBZ" target="_blank" onclick="dataLayer.push({'event':'evPageLink'});">Contratar</a>
+                                <a *ngIf="ajuste === true" class="btn btn-primary" role="button" href="https://quieroserclientenegocios.hey.inc/#/crear-usuario?producto=HBZ" target="_blank" onclick="dataLayer.push({'event':'evPageLink'});">Contratar</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-9">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-seguros.png'" alt="Seguros">
+
+                                <h3>Seguros</h3>
+
+                                <p>Conoce el Seguro que te recompensa por mantenerte libre de accidentes.</p>
+
+                                <a class="btn btn-outline-primary" role="button" [routerLink]="['/seguros-negocio']">Conoce más</a>
+
+                                <a *ngIf="ajuste === false" class="btn btn-primary" role="button" href="https://quieroserclientenegocios.heybanco.com/#/cotizador/info-vehiculo" target="_blank" onclick="dataLayer.push({'event':'evPageLink'});">Contratar</a>
+                                <a *ngIf="ajuste === true" class="btn btn-primary" role="button" href="https://quieroserclientenegocios.hey.inc/#/cotizador/info-vehiculo" target="_blank" onclick="dataLayer.push({'event':'evPageLink'});">Contratar</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-9">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-tarjeta-de-credito-negocio.png'" alt="Tarjeta de Crédito">
+
+                                <h3>Tarjeta de Crédito</h3>
+
+                                <p>Recíbela directo a tu domicilio, sin complicaciones ni costo alguno.</p>
+
+                                <a class="btn btn-outline-primary disabled" disabled role="button">Próximamente</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <a class="carousel-control-prev" href="#carousel-mobile" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <li data-target="#carousel-mobile" data-slide-to="0" class="active"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="1"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="2"><span></span></li>
+
+                        <a class="carousel-control-next" href="#carousel-mobile" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

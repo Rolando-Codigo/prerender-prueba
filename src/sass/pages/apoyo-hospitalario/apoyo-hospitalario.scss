@@ -1,0 +1,64 @@
+.hey-apoyo-hospitalario-generales{
+  h2 {
+    text-align: center;
+}
+
+    .titulo {
+        @extend %sneak-24;
+        color: $color-black;
+    }
+    .cantidad {
+      @extend %sneak-32;
+      color: $color-black;
+      
+  }
+
+  .privacidad {
+    font-size: 16px !important;
+    color: #707070 !important;
+    
+}
+
+}
+//mobiles 
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+   
+  .responsive-logo-chubb {
+    width: 60%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+   }
+   .hey-apoyo-hospitalario-generales .cantidad {
+    font-size: 30px; 
+}
+}
+
+
+/* TABLET Portrait and Landscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+  .responsive-logo-chubb {
+    display: none;
+   }
+
+   .hey-apoyo-hospitalario-generales .cantidad {
+    font-size: 36px; 
+}
+.ocultar {
+  display: none;
+ }
+
+
+}
+
+/* ----------- iPad Pro ----------- */
+  /* Portrait and Landscape */
+  @media only screen 
+  and (min-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .ocultar {
+      display: block;
+     }
+    
+}
+  

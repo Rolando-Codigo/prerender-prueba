@@ -1,0 +1,340 @@
+<section class="hey-simulador-auto bg-01">
+
+    <re-captcha size="invisible" *ngIf="RECAPTCHA_KEY" [siteKey]="RECAPTCHA_KEY" (resolved)="resolveCaptcha($event)"></re-captcha>
+
+    <mat-horizontal-stepper [linear]="true" [selectedIndex]="selectedIndex" #stepper class="mat-stepper-label-position-bottom bg-01" labelPosition="bottom" (selectionChange)="changeSection($event)">
+        <mat-step [stepControl]="infoSimuladorForm">
+            <ng-template matStepLabel><img loading="lazy" [src]="selectedIndex > 0 ? 'https://heybanco.s3.amazonaws.com/assets/img/P261-Credito-Auto/simulador-auto/money_select.png' : 'https://heybanco.s3.amazonaws.com/assets/img/P261-Credito-Auto/simulador-auto/money.png' " width="45" height="45"></ng-template>
+            <form>
+                <div class="container">
+                    <div>
+                        <h1>Simulador de Crédito de Auto</h1>
+                        <p>Este producto es válido en Monterrey y su área metropolitana</p>
+                    </div>
+                    <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="24px">
+                        <div fxFlex="50">
+                            <mat-form-field [formGroup]="infoSimuladorForm">
+                                <img loading="lazy" matPrefix [src]="environment.assetsUrl + 'img/P261-Credito-Auto/simulador-auto/cars.png'" alt="Tu banco digital, Tu banco 100% digital" width="24" height="24">
+                                <mat-label>¿Cuál es el costo del vehículo?</mat-label>
+
+                                <input matInput formControlName="costo" inputWithComma>
+                            </mat-form-field>
+                            <div fxLayout="column" class="background-form mb-16" [formGroup]="infoSimuladorForm">
+                                <div fxFlex="row" fxLayoutAlign="start center" class="mb-16">
+                                    <img loading="lazy" class="mr-8" matPrefix [src]="environment.assetsUrl + 'img/P261-Credito-Auto/simulador-auto/money.png'" alt="Tu banco digital, Tu banco 100% digital" width="24" height="24">
+                                    <mat-label>¿Cuánto se dará de enganche?</mat-label>
+                                    <mat-divider></mat-divider>
+                                </div>
+
+                                <mat-slider #mSlider formControlName="enganche" [thumbLabel]="true" [displayWith]="labelFn" class="mb-16" tickInterval="10" step="10" min="10" max="100"></mat-slider>
+                                <div fxLayout="row" fxLayoutAlign="space-between center" class="mat-slider-bottom mt-16">
+                                    <p class="mat-caption"></p>
+                                    <p class="mat-caption">100</p>
+                                </div>
+                            </div>
+                            <div fxLayout="column" class="mb-16 background-form">
+                                <div fxFlex="row" fxLayoutAlign="start center" class="mb-16">
+                                    <img loading="lazy" class="mr-8" matPrefix [src]="environment.assetsUrl + 'img/P261-Credito-Auto/simulador-auto/caledar_pay.png'" alt="Tu banco digital, Tu banco 100% digital" width="24" height="24">
+                                    <mat-label>¿Cuál es el plazo del crédito?</mat-label>
+                                </div>
+
+                                <div fxLayout="row" fxLayoutGap.xs="16px" fxLayout.xs="row wrap" fxLayoutAlign="space-around center">
+                                    <span (click)="selectPlazo(12)" [ngClass]="{'periodo-item-select': infoSimuladorForm.value.plazo === 12, 'periodo-item' : infoSimuladorForm.value.plazo !== 12 }" class="mb-8">12</span>
+                                    <span (click)="selectPlazo(24)" [ngClass]="{'periodo-item-select': infoSimuladorForm.value.plazo === 24, 'periodo-item' : infoSimuladorForm.value.plazo !== 24 }" class="mb-8">24</span>
+                                    <span (click)="selectPlazo(36)" [ngClass]="{'periodo-item-select': infoSimuladorForm.value.plazo === 36, 'periodo-item' : infoSimuladorForm.value.plazo !== 36 }" class="mb-8">36</span>
+                                    <span (click)="selectPlazo(48)" [ngClass]="{'periodo-item-select': infoSimuladorForm.value.plazo === 48, 'periodo-item' : infoSimuladorForm.value.plazo !== 48 }" class="mb-8">48</span>
+                                    <span (click)="selectPlazo(60)" [ngClass]="{'periodo-item-select': infoSimuladorForm.value.plazo === 60, 'periodo-item' : infoSimuladorForm.value.plazo !== 60 }" class="mb-8">60</span>
+                                </div>
+                            </div>
+
+                            <mat-form-field [formGroup]="infoSimuladorForm">
+                                <img loading="lazy" matPrefix [src]="environment.assetsUrl + 'img/P261-Credito-Auto/simulador-auto/seguro.png'" alt="Tu banco digital, Tu banco 100% digital" width="24" height="24">
+                                <mat-label>¿Cómo se cubrirá el seguro?</mat-label>
+
+                                <mat-select formControlName="seguro">
+                                    <mat-option value="Financiado">Financiado</mat-option>
+                                    <mat-option value="Contado">Contado</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+
+                        </div>
+                        <div fxFlex="50" fxLayout="column" fxLayoutAlign="center center" fxLayoutAlign.xs="start center" class="costo-info-auto">
+                            <p>Con los datos que ingresaste,<br>pagarías {{infoSimuladorForm.value.plazo || '' }} mensualidades de:</p>
+                            <div class="auto-mensual p-16" fxLayout="row" fxLayoutAlign="center center">
+                                <p>${{ mensualidad | number : '1.2-2'}} pesos</p>
+                            </div>
+                            <p *ngIf="infoSimuladorForm.value.seguro === 'Financiado'">Incluye el seguro de tu auto</p>
+                        </div>
+
+                    </div>
+
+                    <div class="mb-16" [formGroup]="infoSimuladorForm">
+                        <mat-checkbox formControlName="avisoPrivacidad">
+                            He leído y aceptado el <a target="_blank" [href]="['/aviso-privacidad']">Aviso de Privacidad</a>
+                        </mat-checkbox>
+                    </div>
+
+                    <div fxLayout="row" fxLayoutAlign="end start">
+                        <button class="btn btn-primary" type="submit" matStepperNext [disabled]="infoSimuladorForm.value.avisoPrivacidad === false || infoSimuladorForm.invalid">Siguiente</button>
+                    </div>
+                </div>
+            </form>
+
+        </mat-step>
+        <mat-step [stepControl]="infoPersonalForm">
+            <ng-template matStepLabel><img loading="lazy" [src]="selectedIndex > 1 ? 'https://heybanco.s3.amazonaws.com/assets/img/P261-Credito-Auto/simulador-auto/info_select.png' : 'https://heybanco.s3.amazonaws.com/assets/img/P261-Credito-Auto/simulador-auto/info.png'" width="45" height="45"></ng-template>
+
+            <form class="container">
+
+                <div class="mb-16">
+                    <h1>Información personal</h1>
+                </div>
+                <div fxLayout="row" fxLayout.xs="column" class="mb-24" fxLayoutGap="16px">
+                    <mat-form-field [formGroup]="infoPersonalForm">
+                        <img loading="lazy" matPrefix [src]="environment.assetsUrl + 'img/P261-Credito-Auto/simulador-auto/user.png'" alt="Tu banco digital, Tu banco 100% digital" width="24" height="24">
+                        <mat-label>Nombre completo</mat-label>
+
+                        <input matInput type="text" formControlName="nombreCompleto">
+                    </mat-form-field>
+                    <mat-form-field [formGroup]="infoPersonalForm">
+                        <img loading="lazy" matPrefix [src]="environment.assetsUrl + 'img/P261-Credito-Auto/simulador-auto/number.png'" alt="Tu banco digital, Tu banco 100% digital" width="24" height="24">
+                        <mat-label>Teléfono celular</mat-label>
+                        <input matInput type="text" formControlName="telefono">
+                    </mat-form-field>
+                </div>
+
+                <div fxLayout="row" fxLayout.xs="column" class="mb-24" fxLayoutGap="16px">
+                    <mat-form-field [formGroup]="infoPersonalForm">
+                        <img loading="lazy" matPrefix [src]="environment.assetsUrl + 'img/P261-Credito-Auto/simulador-auto/map.png'" alt="Tu banco digital, Tu banco 100% digital" width="24" height="24">
+                        <mat-label>Estado</mat-label>
+
+                        <input matInput type="text" value="Nuevo León" [disabled]="true" formControlName="estado">
+                    </mat-form-field>
+                    <mat-form-field [formGroup]="infoPersonalForm">
+                        <img loading="lazy" matPrefix [src]="environment.assetsUrl + 'img/P261-Credito-Auto/simulador-auto/city.png'" alt="Tu banco digital, Tu banco 100% digital" width="24" height="24">
+                        <mat-label>Ciudad</mat-label>
+                        <mat-select formControlName="ciudad">
+                            <mat-option value="Abasolo">Abasolo</mat-option>
+                            <mat-option value="Agualeguas">Agualeguas</mat-option>
+                            <mat-option value="Los Aldamas">Los Aldamas</mat-option>
+                            <mat-option value="Allende">Allende</mat-option>
+                            <mat-option value="Anáhuac">Anáhuac</mat-option>
+                            <mat-option value="Apodaca">Apodaca</mat-option>
+                            <mat-option value="Aramberri">Aramberri</mat-option>
+                            <mat-option value="Bustamante">Bustamante</mat-option>
+                            <mat-option value="Cadereyta Jiménez"> Cadereyta Jiménez</mat-option>
+                            <mat-option value="El Carmen"> El Carmen</mat-option>
+                            <mat-option value="Cerralvo">Cerralvo</mat-option>
+                            <mat-option value="Ciénega de Flores">Ciénega de Flores</mat-option>
+                            <mat-option value="China">China</mat-option>
+                            <mat-option value="Doctor Arroyo">Doctor Arroyo</mat-option>
+                            <mat-option value="Doctor Coss">Doctor Coss</mat-option>
+                            <mat-option value="Doctor González">Doctor González</mat-option>
+                            <mat-option value="Galeana">Galeana</mat-option>
+                            <mat-option value="García">García</mat-option>
+                            <mat-option value="San Pedro Garza García">San Pedro Garza García</mat-option>
+                            <mat-option value="General Bravo">General Bravo</mat-option>
+                            <mat-option value="General Escobedo">General Escobedo</mat-option>
+                            <mat-option value="General Terán">General Terán</mat-option>
+                            <mat-option value="General Treviño">General Treviño</mat-option>
+                            <mat-option value="General Zaragoza">General Zaragoza</mat-option>
+                            <mat-option value="General Zuazua">General Zuazua</mat-option>
+                            <mat-option value="Guadalupe">Guadalupe</mat-option>
+                            <mat-option value="Los Herreras">Los Herreras</mat-option>
+                            <mat-option value="Higueras">Higueras</mat-option>
+                            <mat-option value="Hualahuises">Hualahuises</mat-option>
+                            <mat-option value="Iturbide">Iturbide</mat-option>
+                            <mat-option value="Juárez">Juárez</mat-option>
+                            <mat-option value="Lampazos de Naranjo">Lampazos de Naranjo</mat-option>
+                            <mat-option value="Linares">Linares</mat-option>
+                            <mat-option value="Marín">Marín</mat-option>
+                            <mat-option value="Melchor Ocampo">Melchor Ocampo</mat-option>
+                            <mat-option value="Mier y Noriega">Mier y Noriega</mat-option>
+                            <mat-option value="Mina">Mina</mat-option>
+                            <mat-option value="Montemorelos">Montemorelos</mat-option>
+                            <mat-option value="Monterrey">Monterrey</mat-option>
+                            <mat-option value="Parás">Parás</mat-option>
+                            <mat-option value="Pesquería">Pesquería</mat-option>
+                            <mat-option value="Los Ramones">Los Ramones</mat-option>
+                            <mat-option value="Rayones">Rayones</mat-option>
+                            <mat-option value="Sabinas Hidalgo">Sabinas Hidalgo</mat-option>
+                            <mat-option value="Salinas Victoria">Salinas Victoria</mat-option>
+                            <mat-option value="San Nicolás de los Garza">San Nicolás de los Garza</mat-option>
+                            <mat-option value="Hidalgo">Hidalgo</mat-option>
+                            <mat-option value="Santa Catarina">Santa Catarina</mat-option>
+                            <mat-option value="Santiago">Santiago</mat-option>
+                            <mat-option value="Vallecillo">Vallecillo</mat-option>
+                            <mat-option value="Villaldama">Villaldama</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+
+                <div fxLayout="row" fxLayout.xs="column" class="mb-24" fxLayoutGap="16px">
+                    <mat-form-field [formGroup]="infoPersonalForm">
+                        <img loading="lazy" matPrefix [src]="environment.assetsUrl + 'img/P261-Credito-Auto/simulador-auto/maletin.png'" alt="Tu banco digital, Tu banco 100% digital" width="24" height="24">
+                        <mat-label>¿En que régimen fiscal estás?</mat-label>
+
+                        <mat-select formControlName="regimenFiscal">
+                            <mat-option [value]="0.15">Informal</mat-option>
+                            <mat-option [value]="0.35">PFAE Sector Servicios</mat-option>
+                            <mat-option [value]="0.3">PFAE Sector Otros</mat-option>
+                            <mat-option [value]="0.5">PF Asalariado</mat-option>
+                        </mat-select>
+
+                    </mat-form-field>
+                    <mat-form-field [formGroup]="infoPersonalForm">
+                        <img loading="lazy" matPrefix [src]="environment.assetsUrl + 'img/P261-Credito-Auto/simulador-auto/maletin.png'" alt="Tu banco digital, Tu banco 100% digital" width="24" height="24">
+                        <mat-label>Correo electrónico</mat-label>
+                        <input matInput type="text" formControlName="correo">
+                    </mat-form-field>
+                </div>
+
+                <div fxLayout="row" fxLayout.xs="column" class="mb-24" fxLayoutGap="16px">
+                    <mat-form-field [formGroup]="infoPersonalForm">
+                        <img loading="lazy" matPrefix [src]="environment.assetsUrl + 'img/P261-Credito-Auto/simulador-auto/money.png'" alt="Tu banco digital, Tu banco 100% digital" width="24" height="24">
+                        <mat-label>¿Cual es tu sueldo despues de impuestos?</mat-label>
+                        <input matInput inputWithComma formControlName="sueldoNeto">
+                    </mat-form-field>
+                    <mat-form-field [formGroup]="infoPersonalForm">
+                        <img loading="lazy" matPrefix [src]="environment.assetsUrl + 'img/P261-Credito-Auto/simulador-auto/info_pay.png'" alt="Tu banco digital, Tu banco 100% digital" width="24" height="24">
+                        <mat-label>¿A cuánto ascienden tus gastos fijos mensuales?</mat-label>
+
+                        <input matInput inputWithComma formControlName="gastosMensuales">
+                    </mat-form-field>
+                </div>
+
+                <div fxLayout="row" fxLayout.xs="column" class="mb-24" fxLayoutGap="16px">
+
+                    <div fxFlex="50" fxLayout="column" [formGroup]="infoPersonalForm">
+                        <mat-label class="mb-8">¿Cuántos años tienes viviendo en tu domicilio actual?</mat-label>
+                        <mat-radio-group formControlName="aniosEnDomicilio" layout="row" aria-label="Select an option" fxLayoutGap="16px">
+                            <mat-radio-button value="1" fxFlex="50">Menos de 1 año</mat-radio-button>
+                            <mat-radio-button value="2" fxFlex="50">Más de 1 año</mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+                    <div fxFlex="50" fxLayout="column" [formGroup]="infoPersonalForm">
+                        <mat-label class="mb-8">¿Cuántos años tiene en tu trabajo actual?</mat-label>
+                        <mat-radio-group formControlName="aniosEnTrabajo" layout="row" aria-label="Select an option" fxLayoutGap="16px">
+                            <mat-radio-button value="1" fxFlex="50">Menos de 1 año</mat-radio-button>
+                            <mat-radio-button value="2" fxFlex="50">Más de 1 año</mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+
+                </div>
+
+                <div fxLayout="row" fxLayoutAlign="space-between center">
+                    <button class="btn btn-outline-primary" matStepperPrevious>Regresar</button>
+                    <button class="btn btn-primary" type="submit" matStepperNext>Siguiente</button>
+                </div>
+
+            </form>
+        </mat-step>
+        <mat-step>
+            <ng-template matStepLabel>
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/P261-Credito-Auto/simulador-auto/cars.png'" width="45" height="45"></ng-template>
+
+            <div class="container">
+                <div *ngIf="validarAcreditado()">
+                    <div class="mb-24">
+                        <h1>¡Adelante vamos bien!</h1>
+                        <p>Pronto te contactaremos.</p>
+                    </div>
+                    <div class="mt-62">
+                        <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="16px">
+                            <div fxLayout="column" fxLayout.xs="row" fxFlex="33" fxFlex.xs="100%" fxLayoutGap.xs="16px">
+                                <div class="circle-img mb-8">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P261-Credito-Auto/simulador-auto/cars.png'" alt="Tu banco digital, Tu banco 100% digital">
+                                </div>
+                                <div fxLayout="column">
+                                    <p>Costo del vehículo</p>
+                                    <h4>${{ removeComma(infoSimuladorForm.value.costo) | number : '1.2-2'}}</h4>
+                                </div>
+                            </div>
+                            <div fxLayout="column" fxLayout.xs="row" fxFlex="33" fxFlex.xs="100%" fxLayoutGap.xs="16px">
+                                <div class="circle-img mb-8">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P261-Credito-Auto/simulador-auto/money.png'" alt="Tu banco digital, Tu banco 100% digital">
+                                </div>
+
+                                <div fxLayout="column">
+                                    <p>Enganche</p>
+                                    <h4>${{ enganche | number : '1.2-2'}}</h4>
+                                </div>
+                            </div>
+                            <div fxLayout="column" fxLayout.xs="row" fxFlex="33" fxFlex.xs="100%" fxLayoutGap.xs="16px">
+                                <div class="circle-img mb-8">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P261-Credito-Auto/simulador-auto/caledar_pay.png'" alt="Tu banco digital, Tu banco 100% digital">
+                                </div>
+                                <div fxLayout="column">
+                                    <p>Plazo</p>
+                                    <h4>{{ infoSimuladorForm.value.plazo }}</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div fxLayout="row" fxLayout.xs="column" class="mt-32  mb-32">
+
+                        <div class="benefit" fxFlex="33" fxFlex.xs="100%">
+                            <div class="benefit-box">
+                                <h3>Mensualidad aproximada</h3>
+
+                                <h4>${{mensualidad | number : '1.2-2'}}</h4>
+                            </div>
+
+                            <div class="benefit-box-shadow bg-purple">
+                                <div class="benefit-box-shadow-detail"></div>
+                                <div class="benefit-box-shadow-detail"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div fxLayout="row" fxLayout.xs="column" fxLayoutGap.xs="16px">
+
+                        <button class="btn btn-primary" type="submit" (click)="solicitarContacto()">Quiero que me contacten</button>
+
+                        <button mat-stroked-button class="btn mat-stroked-border" type="submit" (click)="formtatearFormularios()">Intentalo nuevamente</button>
+
+                    </div>
+
+                    <h4 class="mb-32 mt-32">Gracias por utilizar el simulador de Crédito de Auto Hey.</h4>
+
+                    <span class="mat-caption">
+                        <strong>Costo Anual Total (CAT) {{calcularCat() || 0 | number : '1.1-1'}}%</strong> Sin IVA. <strong>Tasa de interés anual fija {{tazaAnual * 100}}%</strong> La Presente cotización es solo para fines ilustrativos no representa ningún ofrecimiento formal de parte de Banregio. El valor del seguro es por el plazo de un año, a partir del crédito de auto. La
+                        cantidad puede variar dependiendo del día de la operación del crédito.
+                    </span>
+                </div>
+                <div *ngIf="!validarAcreditado()">
+                    <div class="mb-24">
+                        <h1>Ajuste la información e intenta de nuevo, para que baje tu pago mensual</h1>
+                        <p>Puedes modificar el monto, envnache y plazo de tu crédito.</p>
+                    </div>
+
+                    <div class="mt-62">
+                        <h2>Recomendaciones de Hey</h2>
+                        <div class="media">
+                            <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/arrow-right-circle.svg'" class="align-self-start mr-16" alt="Tu banco digital">
+                            <div class="media-body">
+                                <p>Antigüedad de por lo menos un año en tu domicilio actual.</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/arrow-right-circle.svg'" class="align-self-start mr-16" alt="Tu banco digital">
+                            <div class="media-body">
+                                <p>Antigüedad de por lo menos un año en tu empleo actual.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary mt-32 mb-32" type="submit" (click)="formtatearFormularios()">Intentalo nuevamente</button>
+
+
+                    <h4>Gracias por utilizar el simulador de Crédito de Auto Hey.</h4>
+
+                </div>
+
+                <hey-mas-productos></hey-mas-productos>
+
+            </div>
+        </mat-step>
+    </mat-horizontal-stepper>
+
+</section>

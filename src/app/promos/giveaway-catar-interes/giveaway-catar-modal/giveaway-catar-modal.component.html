@@ -1,0 +1,9 @@
+<div>
+    <h1 class="modal-title"> Folio(s) asignado(s): </h1>
+    <div *ngFor="let folio of config.response" class="mb-20">
+        <a type="button" class="btn btn-primary col-12 mb-20" target="_blank" [routerLink]="['promos/boleto-dorado-premiados', folio.participante.clave]"> Folio {{ folio.numeroClick }}  </a>
+    </div>
+    <div class="col-12 text-center">Conoce el resultado de tu registro dando clic en cada folio obtenido
+    </div>
+
+</div>

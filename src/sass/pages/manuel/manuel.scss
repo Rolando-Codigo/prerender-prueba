@@ -1,0 +1,140 @@
+hey-manuel {
+    .hey-hero-image {
+        background-color: $color-background-01;
+        height: 480px;
+    }
+    .hey-hero-image h1 {
+        color: #202020;
+        @extend %sneak-64;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+    .textohome {
+        color: white;
+        @extend %sneak-22;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8%;
+        margin-bottom: 2%;
+        line-height: 40px;
+    }
+    .textosmall {
+        font-size: 16px !important;
+        font-weight: bolder;
+    }
+    .textolinks {
+        color: #202020;
+    }
+    .contenido-manuel {
+        float: left;
+        margin-top: 4%;
+    }
+    .social-media {
+        width: 40px !important;
+    }
+    .hey-cta .btn-primary {
+        margin-top: 0px !important;
+    }
+    .hey-cta {
+        img {
+            height: auto;
+            width: 100%;
+        }
+        &.no-padding {
+            padding-bottom: 200px;
+            padding-top: 174px;
+            .col-lg-4,
+            .col-lg-5 {
+                height: auto;
+            }
+            .col-lg-7 {
+                height: 570px;
+            }
+            &.bg-01 {
+                background: #EFF4F7 url(https://heybanco.s3.amazonaws.com/assets/img/cta/cta-about-02.png) no-repeat center left;
+                background-size: 570px auto;
+                padding-bottom: 0;
+                padding-top: 0;
+            }
+        }
+        &.bg-purple {
+            padding-bottom: 202px;
+            padding-top: 214px;
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    hey-manuel {
+        .hey-hero-image {
+            height: 550px;
+            .responsive-manuel {
+                margin-top: -4% !important;
+            }
+        }
+        .responsive-manuel-rivero {
+            display: none;
+        }
+        .hey-cta {
+            &.no-padding {
+                padding-bottom: 142px;
+                padding-top: 141px;
+                &.bg-01 {
+                    background-size: 340px auto;
+                }
+                .col-lg-7 {
+                    height: 540px;
+                }
+            }
+            &.bg-purple {
+                padding-bottom: 122px;
+                padding-top: 100px;
+            }
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    hey-manuel {
+        .hey-hero-image {
+            height: 550px !important;
+        }
+        .textolinks {
+            font-size: 12px;
+        }
+        .responsive-manuel-rivero {
+            display: none;
+        }
+        .hey-cta {
+            &.no-padding {
+                background: $color-blue!important;
+                padding-bottom: 60px;
+                padding-top: 35px;
+                h2 {
+                    margin-bottom: 32px;
+                    margin-top: 32px;
+                }
+                .col-lg-7 {
+                    height: auto;
+                }
+                &.bg-01 {
+                    background: $color-background-01!important;
+                    padding-bottom: 70px;
+                    h2 {
+                        margin-bottom: 24px;
+                        margin-top: 64px;
+                    }
+                }
+            }
+        }
+        .hey-cta h2 {
+            margin-top: -50px !important;
+        }
+    }
+}

@@ -1,0 +1,377 @@
+header {
+    .bg-dark {
+        p {
+            @extend %sneak-12;
+            line-height: 32px;
+            margin: 0;
+            img {
+                height: auto;
+                margin-right: 8px;
+                width: 14px;
+            }
+            a {
+                color: $color-white !important;
+                text-decoration: underline;
+            }
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                @extend %sneak-14;
+                border-bottom: 2px solid transparent;
+                display: inline-block;
+                line-height: 32px;
+                padding-left: 8px;
+                padding-right: 8px;
+                a {
+                    color: $color-background-01 !important;
+                    text-decoration: underline;
+                }
+                &.active {
+                    border-bottom: 2px solid $color-blue;
+                    a {
+                        color: $color-white !important;
+                    }
+                }
+            }
+        }
+    }
+    .container {
+        .navbar.navbar-light {
+            padding: 24px 0;
+            .navbar-brand {
+                margin: 0;
+                padding: 0;
+                img {
+                    height: 40px;
+                    vertical-align: top;
+                    width: auto;
+                }
+            }
+            .navbar-nav {
+                padding-top: 15px;
+                .nav-link {
+                    @extend %sneak-18;
+                    color: $color-black-20 !important;
+                    padding: 0 12px!important;
+                }
+            }
+            .navbar-toggler {
+                border: none;
+                color: $color-black-20 !important;
+                display: initial;
+                padding: 0;
+            }
+            .btn-outline-primary {
+                margin-right: 40px;
+            }
+            .dropdown-menu {
+                background-color: $color-white;
+                border-color: $color-blue-light;
+                box-shadow: 0px 5px 11px 0 rgba(158, 204, 230, 0.22);
+                color: $color-white;
+                margin: 8px 0 0;
+                min-width: 180px;
+                padding: 16px 0;
+                .dropdown-item {
+                    @extend %sneak-18;
+                    line-height: 31px;
+                    color: $color-black-4B;
+                    padding: 0 16px;
+                    &:hover,
+                    &:focus,
+                    &.active,
+                    &:active {
+                        background-color: transparent;
+                        color: $color-blue-dark;
+                    }
+                    &.disabled {
+                        color: $color-black-A5 !important;
+                        span {
+                            @extend %lato-10;
+                            color: $color-blue-dark;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(https://heybanco.s3.amazonaws.com/assets/img/list.svg)
+}
+
+.menu-collapse::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-collapse {
+    height: 100%;
+    overflow: scroll;
+    padding-top: 24px;
+    transition: all .15s ease-in-out;
+    width: 35%;
+    .row {
+        &:nth-child(1) {
+            margin-bottom: 10px;
+        }
+    }
+    .col-lg-2 {
+        img {
+            height: 30px;
+            margin-top: 5px;
+        }
+        .navbar-toggler {
+            @extend %sneak-12;
+            border: none;
+            color: $color-background-01 !important;
+            padding: 0;
+            span {
+                font-family: serif;
+                font-size: 40px;
+                font-weight: lighter !important;
+                top: 0;
+                right: 0 !important;
+            }
+        }
+    }
+    .btn-outline-primary {
+        /*&:nth-child(1) {
+            margin-left: 34px;
+            margin-right: 24px;
+        }*/
+        &.active,
+        &:hover {
+            background-color: $color-black-20!important;
+            border-color: $color-black-20!important;
+            color: $color-white!important;
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            display: block;
+            @extend %sneak-14;
+            color: $color-background-01 !important;
+        }
+        .txt1 {
+            @extend %sneak-16;
+            color: #fff !important;
+            line-height: 30px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .txt2 {
+            @extend %sneak-14;
+            color: #fff !important;
+            line-height: 30px;
+            text-decoration: underline;
+        }
+    }
+    .txt3 {
+        @extend %sneak-14;
+        color: #fff !important;
+        line-height: 30px;
+        text-decoration: underline;
+    }
+    .txt4 {
+        @extend %sneak-14;
+        color: #fff !important;
+        line-height: 30px;
+        text-decoration: none;
+    }
+    .col-lg-5 {
+        ul {
+            li {
+                @extend %sneak-40;
+                color: $color-background-01 !important;
+                line-height: 70px;
+                a {
+                    color: $color-background-01 !important;
+                }
+                &.active {
+                    a {
+                        &::after {
+                            content: url(https://heybanco.s3.amazonaws.com/assets/img/icons/emoji-thumbsup.png);
+                            padding-left: 16px;
+                        }
+                    }
+                }
+                &.disabled {
+                    a {
+                        color: $color-background-01 !important;
+                    }
+                    span {
+                        @extend %lato-12;
+                        color: $color-blue-dark;
+                        display: block;
+                    }
+                }
+            }
+        }
+        p {
+            @extend %sneak-16;
+            margin-bottom: 8px;
+        }
+        .btn-link {
+            @extend %sneak-12;
+            margin-bottom: 35px;
+            img {
+                margin-left: 0;
+                margin-right: 8px;
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+            }
+        }
+    }
+    .col-lg-7 {
+        ul {
+            display: inline-block;
+            margin-bottom: 68px;
+            vertical-align: top;
+            width: 33.33%;
+            li {
+                @extend %sneak-16;
+                color: $color-background-01 !important;
+                a {
+                    @extend %lato-14;
+                    color: $color-background-01 !important;
+                    display: inline-block;
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+}
+
+.fixed-top-v2 {
+    position: fixed;
+    top: 0;
+    right: 0 !important;
+    z-index: 999;
+    padding-left: 4%;
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    header {
+        .container {
+            .navbar.navbar-light {
+                padding: 17px 0;
+                .navbar-brand {
+                    img {
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .fixed-top-v2 {
+        position: fixed;
+        top: 0;
+        right: 0 !important;
+        z-index: 999;
+        padding-left: 2% !important;
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    header {
+        .bg-dark {
+            p {
+                line-height: 0.87rem;
+                padding-bottom: 8px;
+                padding-top: 8px;
+            }
+        }
+        .container {
+            .navbar.navbar-light {
+                padding: 17px 0;
+                .navbar-brand {
+                    img {
+                        height: 30px;
+                        width: auto;
+                    }
+                }
+                .btn-outline-primary {
+                    font-size: 0.68rem;
+                    line-height: 0.81rem;
+                    margin-right: 0;
+                    padding: 7px 12px;
+                }
+            }
+        }
+    }
+    .menu-collapse {
+        padding-bottom: 128px;
+        width: 100%;
+        .row {
+            &:nth-child(1) {
+                padding-bottom: 32px;
+            }
+            .logo {
+                margin: auto;
+                align-items: center;
+                text-align: center;
+            }
+            .botones-mobile {
+                align-items: center;
+                text-align: center;
+            }
+            .cad {
+                margin-left: 26%;
+            }
+        }
+        .btn-outline-primary {
+            line-height: 1.25rem!important;
+            /*margin-top: 24px;*/
+            &:nth-child(1) {
+                margin-left: 0;
+                /*margin-right: 24px;*/
+            }
+        }
+        .col-lg-2 {
+            img {
+                height: 30px;
+                margin-top: 5px;
+            }
+            .navbar-toggler {
+                border: none;
+                padding: 0;
+                span {
+                    font-weight: 100 !important;
+                    top: 0;
+                    margin-left: 600% !important;
+                }
+            }
+        }
+        .col-lg-5 {
+            ul {
+                li {
+                    a {
+                        line-height: 57px;
+                    }
+                }
+            }
+        }
+        .col-lg-7 {
+            ul {
+                margin-bottom: 0;
+                margin-top: 40px;
+                width: 100%;
+            }
+        }
+    }
+    .fixed-top-v2 {
+        position: fixed;
+        top: 0;
+        right: 0 !important;
+        z-index: 999;
+        padding-left: 0% !important;
+    }
+}

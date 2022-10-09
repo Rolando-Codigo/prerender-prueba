@@ -1,0 +1,151 @@
+<section class="hey-ivr-form bg-01">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-1 col-lg-8 offset-lg-2">
+                <h1>Solicitud de publicidad</h1>
+
+                <p>Recibe calcomanías y publicidad de aceptación de tarjetas en tu negocio compartiendo los datos solicitados a continuación.</p>
+                <p>Una vez recibida tu información, te enviaremos un correo con el número de folio para el seguimiento a tu solicitud.</p><br>
+
+                <hey-datos-afiliacion [datosAfiliacionForm]="datosAfiliacionForm" (form)="updateAfiliadosForm($event)"></hey-datos-afiliacion>
+
+                <hey-domicilio-afiliacion [domicilioAfiliacionForm] (form)="updateDomicilioAfiliadosForm($event)"></hey-domicilio-afiliacion>
+
+                <hey-info-entrega [infoEntregaAfiliacionForm]="infoEntregaAfiliacionForm" (form)="updateInfoEntregaAfiliadosForm($event)"></hey-info-entrega>
+
+
+                <div class="form" [formGroup]="publicidadForm">
+                    <h2>Información de la solicitud</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            <mat-form-field appearance="fill" class="mb-10">
+                                <mat-label>Tipo de publicidad solicitada</mat-label>
+                                <mat-select formControlName="tipo">
+                                    <mat-option value="Calcas de Bienvenida">Calcas de Bienvenida</mat-option>
+                                    <mat-option value="Calcas de Meses Sin Intereres">Calcas de Meses Sin Intereres</mat-option>
+                                    <mat-option value="Tentcards">Tentcards</mat-option>
+                                    <mat-option value="Portacuentas">Portacuentas</mat-option>
+                                </mat-select>
+
+                                <mat-error *ngIf="publicidadForm.get('tipo').hasError('required')">
+                                    Campo requerido
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-6 col-lg-6">
+
+                            <mat-form-field appearance="fill" class="mb-10">
+                                <mat-label>Cantidad</mat-label>
+                                <input type="number" matInput formControlName="cantidad">
+                            </mat-form-field>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <a class="btn btn-outline-primary" role="button" [routerLink]="['/ayuda-negocios']">Cancelar</a>
+                        </div>
+
+                        <div class="col-6 col-md-6 col-lg-6 text-right">
+                            <button class="btn btn-primary" type="button" *ngIf="publicidadForm && datosAfiliacionForm && domicilioAfiliacionForm && infoEntregaAfiliacionForm" [disabled]="publicidadForm.invalid || datosAfiliacionForm.invalid || domicilioAfiliacionForm.invalid || infoEntregaAfiliacionForm.invalid  || busy"
+                                (click)="submitForm()">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="loader" *ngIf="busy">
+    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/loader.gif'">
+</div>
+
+<div id="ivr-modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" *ngIf="modalType === STATIC.MODAL_TYPE_EMAIL">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+
+            <div class="modal-body">
+                <h5 class="modal-title">¡Excelente tu información ha sido enviada</h5>
+
+                <p>En breve uno de nuestros agentes Hey te contactará para darle seguimiento a tu caso</p>
+
+                <div class="row">
+                    <div class="col-lg-5">
+                        <mat-form-field>
+                            <mat-label>Nombre</mat-label>
+
+                            <input matInput [formControl]="nameForm" [name]="MODEL.NAME">
+
+                            <mat-error *ngIf="nameForm.invalid && (nameForm.dirty || nameForm.touched)">Ingresa un nombre válido</mat-error>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <mat-form-field>
+                            <mat-label>Correo electrónico</mat-label>
+
+                            <input matInput [formControl]="emailForm" [name]="MODEL.EMAIL">
+
+                            <mat-error *ngIf="emailForm.invalid && (emailForm.dirty || emailForm.touched)">Ingresa un correo electrónico válido</mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancelar</button>
+
+                <button type="button" class="btn btn-primary" (click)="submitForm()" [disabled]="!publicidadForm.valid || busy">Enviar</button>
+            </div>
+        </div>
+
+        <div class="modal-content" *ngIf="modalType === STATIC.MODAL_TYPE_SUCCESS">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+
+            <div class="modal-body">
+                <h5 class="modal-title">¡Excelente, tu información ha sido enviada!</h5>
+
+                <p>En breve uno de nuestros agentes Hey te contactará para darle seguimiento a tu caso.</p> <br>
+
+                <p>Te recomendamos consultar nuestro <a target="_blank" [routerLink]="['/aviso-privacidad']">Aviso de Privacidad</a></p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Entendido</button>
+            </div>
+        </div>
+
+        <div class="modal-content" *ngIf="modalType === STATIC.MODAL_TYPE_ERROR">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+
+            <div class="modal-body">
+                <h5 class="modal-title">¡Ocurrió un error!</h5>
+
+                <p>Al parecer no pudimos enviar tu información.</p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Entendido</button>
+            </div>
+        </div>
+    </div>
+</div>

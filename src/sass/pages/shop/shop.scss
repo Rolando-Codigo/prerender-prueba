@@ -1,0 +1,194 @@
+hey-shop {
+    .hey-hero-image {
+        height: 640px !important;
+        background: url(https://heybanco.s3.amazonaws.com/assets/img/P400-Hey-Shop/Acapella-WebBanner_Web.png);
+        background-size: cover;
+        .col-12{
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        img {
+            margin-bottom: 24px;
+            width: 1837px !important;
+        }
+        
+    }
+    .hey-cta {
+        &.color {
+            h2 {
+                margin-bottom: 24px;
+            }
+            .col-lg-3 {
+                img {
+                    width: 100%;
+                }
+            }
+            .btn-primary {
+                margin-top: 24px;
+            }
+        }
+    }
+    .hey-productos {
+        padding-bottom: 88px;
+        padding-top: 126px;
+        h2 {
+            margin-bottom: 72px;
+        }
+        .col-9 {
+            img {
+                margin-bottom: 24px;
+            }
+            .btn-outline-primary {
+                margin-bottom: 0;
+                margin-top: 24px;
+            }
+            .ml-15 {
+                margin-left: 0px;
+            }
+            h4 {
+                @extend %lato-18;
+                font-weight: 700;
+                margin-bottom: 0;
+                margin-top: 12px;
+            }
+        }
+        .btn-primary {
+            margin-top: 56px;
+        }
+    }
+    .height-img {
+        height: 220px !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-bottom: 16px;
+    }
+}
+
+.hey-pay-diferido {
+    padding-bottom: 100px;
+    padding-top: 120px;
+    h2 {
+        @extend %sneak-36;
+        margin-bottom: 16px;
+    }
+    h3 {
+        @extend %lato-28;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+    h4 {
+        @extend %lato-14;
+        margin-bottom: 4px;
+    }
+    p {
+        @extend %lato-16;
+        color: $color-black-4B;
+        margin-bottom: 0;
+    }
+    .btn-link {
+        margin-bottom: 24px;
+    }
+    .col-lg-4 {
+        img {
+            width: 100%;
+        }
+    }
+    .mat-form-field-flex {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+    .mat-form-field-appearance-fill .mat-form-field-flex {
+        padding-top: 0;
+    }
+    .mat-form-field-appearance-fill .mat-select-arrow-wrapper {
+        transform: translateY(0);
+    }
+}
+
+//Pantallas medianas
+@media (max-width: 1500px) {
+    hey-shop {
+        .hey-hero-image {
+            height: 475px !important;
+            .col-12{
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+            }
+            img {
+                margin-bottom: 24px;
+                width: 1350px !important;
+            }            
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    hey-shop {
+        .hey-hero-image {
+            height: 285px !important;
+            img {
+                vertical-align: middle;
+                border-style: none;
+                width: 820px !important;
+            }
+        }
+        .hey-productos {
+            h2 {
+                margin-bottom: 56px;
+            }
+        }
+    }
+    .hey-pay-diferido {
+        padding-bottom: 104px;
+        padding-top: 86px;
+        h2 {
+            margin-bottom: 24px;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    hey-shop {
+        .hey-hero-image {
+            height: 130px !important;
+            img {
+                vertical-align: middle;
+                border-style: none;
+                width: 375px !important;
+            }
+            .vertical-center {
+                top: 35% !important;
+            }
+        }
+        .hey-productos {
+            padding-bottom: 80px;
+            padding-top: 88px;
+            h2 {
+                margin-bottom: 20px;
+            }
+            .btn-primary {
+                margin-top: 42px;
+            }
+        }
+    }
+    .hey-pay-diferido {
+        padding-bottom: 96px;
+        padding-top: 72px;
+        h2 {
+            font-size: 36px;
+            line-height: 43px;
+        }
+        .col-lg-4 {
+            img {
+                margin-bottom: 44px;
+            }
+        }
+    }
+}

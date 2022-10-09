@@ -1,0 +1,161 @@
+<section class="hey-hero-image">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-sm-6 offset-sm-1 col-md-5 offset-md-1 col-lg-6 offset-lg-1">
+                <div class="vertical-center">
+                    <h2>¡Giveaway Referidos Hey!</h2>
+                    <br>
+
+                    <p class="mb-15">
+                        Si ya eres parte de Hey Banco, descubre nuestros Giveaways y participa por un incentivo de $2,500 pesos
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-5 offset-lg-0 text-center">
+                <img loading="lazy" class="responsive-cuentas-hero" [src]="environment.assetsUrl + 'img/P810-Giveaways/p810-101-img.png'" alt="¿Cómo puedo abrir una Cuenta Hey? Tu banco digital">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-faq bg-white">
+    <div class="container">
+        <div class="row align-items-center centrar">
+            <div class="col-11 offset-1 col-sm-7 offset-sm-3 col-md-7 offset-md-4 col-lg-9 offset-lg-1 ajuste">
+                <h2>
+                    ¡Registra tu interés por participar!
+                </h2>
+            </div>
+
+            <div class="col-lg-8 offset-lg-2 col-sm-8 offset-sm-2">
+                <h5>
+                    Tu registro como referido Hey te da la oportunidad de participar en este Giveaway.
+                </h5>
+            </div>
+            <div class="col-lg-4 offset-lg-4 pb-30">
+                <h5><strong>¡Habrá 5 ganadores!</strong></h5>
+            </div>
+
+            <div class="col-10 offset-1 pb-30 col-sm-8 offset-sm-2">
+                <h5>Haz clic en el botón y genera tu folio de registro digital.</h5>
+            </div>
+
+
+            <div class="col-lg-4 offset-lg-4 boton centrar pb-30">
+                <button class="btn btn-primary" role="button" type="button" (click)="submitRequest()" data-toggle="modal" data-target="#exampleModal">Participar</button>
+            </div>
+            <p class="legales col-lg-6 offset-lg-3 centrar">
+                <b><a href="https://heybanco.s3.amazonaws.com/assets/legales/terminos-y-condiciones-embajadores-clientes-hey.pdf"
+                        target="_blank">Consulta términos, condiciones, bases y privacidad</a>
+                </b>
+            </p>
+        </div>
+    </div>
+</section>
+
+<re-captcha size="invisible" *ngIf="RECAPTCHA_KEY" [siteKey]="RECAPTCHA_KEY" (resolved)="participar($event)"></re-captcha>
+
+
+<section class="hey-cta bg-gradient-lilac">
+    <div class="container">
+        <div class="row align-items-center centrar">
+            <div class="col-lg-12">
+                <img loading="lazy" class="verde" [src]="environment.assetsUrl + 'img/giveaway/ig-heybanco-black.svg'" alt="Instagram ">
+
+            </div>
+            <div class="col-lg-12">
+                <h2>
+                    ¡Mantente al pendiente para el gran anuncio!
+                </h2>
+            </div>
+
+            <div class="col-lg-8 offset-lg-2">
+                <h5>
+                    Anunciaremos ganadores el 31 de marzo de 2022 en el Instagram @HeyBanco.
+                </h5>
+            </div>
+
+
+            <div class="col-lg-4 offset-lg-4 boton centrar pb-30">
+                <button class="btn btn-primary" role="button" type="button" routerLink="/parami/hey-pro" data-toggle="modal" data-target="#exampleModal">Conoce más</button>
+            </div>
+            <p class="legales col-lg-9 offset-lg-1 centrar">
+                Consulta términos, condiciones, bases y privacidad. Vigencia del 24 al 31 de marzo de 2022. Los resultados serán publicados en nuestra cuenta de Instagram (@heybanco) durante el mismo periodo de vigencia de la promoción y a través de un correo electrónico
+                notificando el incentivo.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="hey-faq bg-02">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-10 offset-0 col-md-5 offset-md-1 col-lg-3 offset-lg-1 order-2 order-md-1 order-lg-1">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/cta/cta-faq-cuenta.png'">
+            </div>
+
+            <div class="col-md-5 col-lg-7 order-1 order-md-2 order-lg-2">
+                <h2>Preguntas frecuentes</h2>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingOne">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ¿Qué es el Giveaway de Referidos Hey?
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Es un Giveaway mensual en donde puedes ser acreedor a uno de los 5 incentivos de $2,500 pesos por haber aperturado una cuenta Hey y registrarte como referido con el código de tu embajador.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingTwo">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿Cómo participo?
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Revisa el correo electrónico asociado a tu Cuenta Hey. Encontrarás un correo con los Términos y Condiciones y un botón de registro para obtener tu folio de Registro Digital. Da clic en el botón y espera tu folio en tu correo.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingThree">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Cuándo seleccionan al ganador?
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Vigencia de marzo a abril de 2022. Los resultados serán publicados en nuestra cuenta de Instagram (@heybanco) durante el mismo periodo de vigencia de la promoción y a través de un correo electrónico.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hey-cta-app></hey-cta-app>
+
+<hey-slider-productos bg1="true"></hey-slider-productos>

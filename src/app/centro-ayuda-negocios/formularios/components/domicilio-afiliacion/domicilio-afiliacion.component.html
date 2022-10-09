@@ -1,0 +1,79 @@
+<div class="form" [formGroup]="domicilioAfiliacionForm">
+    <div class="row title-desc">
+        <h2>Domicilio de la afiliación</h2>
+        <p class="p-desc"> (El domicilio debe coincidir con el registrado en tu afiliación)</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <mat-form-field appearance="fill" class="mb-10">
+                <mat-label>Calle</mat-label>
+                <input matInput formControlName="calle">
+
+                <mat-error *ngIf="domicilioAfiliacionForm.get('calle').hasError('required')">
+                    Campo requerido
+                </mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-md-4 col-lg-4">
+            <mat-form-field appearance="fill" class="mb-10">
+                <mat-label>Número int.</mat-label>
+                <input matInput formControlName="noInterior" maxlength="10">
+            </mat-form-field>
+        </div>
+
+        <div class="col-md-4 col-lg-4">
+            <mat-form-field appearance="fill" class="mb-10">
+                <mat-label>Número ext.</mat-label>
+                <input matInput formControlName="noExterior" maxlength="10">
+
+                <mat-error *ngIf="domicilioAfiliacionForm.get('noExterior').hasError('required')">
+                    Campo requerido
+                </mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="col-md-4 col-lg-4">
+            <mat-form-field appearance="fill" class="mb-10">
+                <mat-label>Código postal</mat-label>
+                <input matInput formControlName="cp" maxlength="6">
+
+                <mat-error *ngIf="domicilioAfiliacionForm.get('cp').hasError('required')">
+                    Campo requerido
+                </mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+            <mat-form-field appearance="fill" class="mb-10">
+                <mat-label>Estado</mat-label>
+
+                <input matInput formControlName="estado">
+                <mat-error *ngIf="domicilioAfiliacionForm.get('estado').hasError('required')">
+                    Campo requerido
+                </mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+            <mat-form-field appearance="fill" class="mb-10">
+                <mat-label>Ciudad</mat-label>
+                <input matInput formControlName="ciudad">
+                <mat-error *ngIf="domicilioAfiliacionForm.get('ciudad').hasError('required')">
+                    Campo requerido
+                </mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+            <mat-form-field appearance="fill" class="mb-10">
+                <mat-label>Colonia</mat-label>
+                <input matInput formControlName="colonia">
+                <mat-error *ngIf="domicilioAfiliacionForm.get('colonia').hasError('required')">
+                    Campo requerido
+                </mat-error>
+            </mat-form-field>
+        </div>
+
+    </div>
+</div>

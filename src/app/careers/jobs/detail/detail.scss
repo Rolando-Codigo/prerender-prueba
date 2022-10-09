@@ -1,0 +1,100 @@
+@import "src/sass/components/colors.scss";
+@import "src/sass/components/font-styles.scss";
+hey-detail {
+    .hey-legal-title {
+        padding-bottom: 54px;
+        padding-top: 62px;
+        h2 {
+            @extend %sneak-64;
+            margin-bottom: 12px;
+        }
+        h3 {
+            @extend %sneak-30;
+            margin-bottom: 24px;
+        }
+        h4 {
+            @extend %sneak-14;
+            margin-bottom: 22px;
+        }
+    }
+    .hey-job-detail {
+        padding-bottom: 90px;
+        padding-top: 46px;
+        h2 {
+            @extend %sneak-22;
+            margin-bottom: 32px;
+            padding-top: 20px;
+        }
+        p {
+            @extend %lato-16;
+            color: $color-black-4B;
+            margin-bottom: 22px;
+        }
+        .btn-link {
+            @extend %lato-20;
+            color: $color-black-4B;
+            margin-bottom: 52px;
+            img {
+                margin-left: 0;
+                margin-right: 16px;
+            }
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    hey-detail {
+        .hey-legal-title {
+            padding-bottom: 52px;
+            padding-top: 58px;
+            h2 {
+                margin-bottom: 16px;
+            }
+            h3 {
+                margin-bottom: 20px;
+            }
+        }
+        .hey-job-detail {
+            padding-bottom: 56px;
+            padding-top: 72px;
+            h2 {
+                padding-top: 26px;
+            }
+            .btn-link {
+                margin-bottom: 36px;
+            }
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    hey-detail {
+        .hey-legal-title {
+            padding-bottom: 26px;
+            padding-top: 32px;
+            h2 {
+                margin-bottom: 10px;
+            }
+            h3 {
+                margin-bottom: 14px;
+            }
+            h4 {
+                margin-bottom: 8px;
+            }
+        }
+        .hey-job-detail {
+            padding-bottom: 42px;
+            padding-top: 32px;
+            h2 {
+                margin-bottom: 16px;
+                padding-top: 18px;
+            }
+            .btn-link {
+                font-size: 16px;
+                margin-bottom: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,104 @@
+$color-background-01: #EFF4F7;
+$color-background-02: #EBF1F5;
+
+$color-black: #000;
+$color-black-22: #333333;
+$color-black-21: #212121;
+$color-black-20: #38383A;
+$color-black-4B: #4B4B63;
+$color-black-77: #777777;
+$color-black-A5: #A5A5A5;
+$color-black-B2: #B2B8BF;
+$color-blue: #77EAFF;
+$color-blue-variant: #70E7FE;
+$color-blue-dark: #0B5F83;
+$color-blue-light: #DFEBF2;
+$color-gray-99: #999999;
+$color-gray-variant: #ECECEC;
+$color-green-dark: #00E07B;
+$color-green: #6ECD88;
+$color-green-light: #BDFF40;
+$color-orange: #FFC888;
+$color-pink: #EA8DED;
+$color-purple: #B9B8FF;
+$color-purple-light: #E3E2FC;
+$color-red: #F43A7A;
+$color-white: #FFFFFF;
+$color-yellow: #F5E345;
+$color-yellow-light: #edfa96;
+
+.bg-01 {
+    background-color: $color-background-01;
+}
+
+.bg-02 {
+    background-color: $color-background-02;
+}
+
+.bg-03 {
+    background-color: $color-black-22;
+}
+
+.bg-blue {
+    background-color: $color-blue;
+}
+
+.bg-blue-variant {
+    background-color: $color-blue-variant;
+}
+
+.bg-dark {
+    background-color: $color-black!important;
+}
+
+.bg-green {
+    background-color: $color-green;
+}
+
+.bg-green-dark {
+    background-color: $color-green-dark;
+}
+
+.bg-green-light {
+    background-color: $color-green-light;
+}
+
+.bg-orange {
+    background-color: $color-orange;
+}
+
+.bg-pink {
+    background-color: $color-pink;
+}
+
+.bg-purple {
+    background-color: $color-purple;
+}
+.bg-purple-light {
+    background-color: $color-purple-light;
+}
+
+.bg-red {
+    background-color: $color-red;
+}
+
+.bg-yellow {
+    background-color: $color-yellow;
+}
+
+.bg-yellow-light {
+    background-color: $color-yellow-light;
+}
+
+
+.bg-white {
+    background-color: $color-white;
+}
+
+.text-dark {
+    color: $color-black!important;
+}
+
+.text-white {
+    color: $color-white!important;
+}

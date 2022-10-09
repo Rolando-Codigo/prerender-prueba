@@ -1,0 +1,1011 @@
+<section class="hey-hero-image">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-sm-6 offset-sm-1 col-md-5 offset-md-1 col-lg-6 offset-lg-1 order-2 order-sm-2 order-md-1 order-lg-1">
+                <div class="vertical-center">
+                    <h1>Tu Seguro de Auto Hey</h1>
+
+                    <p>Con tu Seguro de Auto Hey nunca tienes pérdidas. Obtén tu cobertura Smart y recibe $1,000 pesos en tu renovación por no tener siniestros.</p>
+                    <a class="btn btn-primary" role="button" href="https://quierosercliente.hey.inc/#/cotizador/info-vehiculo?cid={{ cookie }}" target="_blank" onclick="dataLayer.push({'event':'evPageLink'});">Me interesa</a>
+                </div>
+            </div>
+
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-5 offset-lg-0 text-center order-1 order-sm-1 order-md-2 order-lg-2">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/hero-image/hero-image-seguro-auto-persona.png'">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <h2>¡Vas por buen camino!</h2>
+            </div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-12 col-md-5 offset-md-0 col-lg-5 offset-lg-1">
+                <h3>Contratación Online</h3>
+
+                <p>Elige, cotiza y contrata de forma 100% digital. Sin necesidad de salir de casa.</p>
+
+                <h3>Cuidarte te premia</h3>
+
+                <p>Te recompensamos con $1,000 pesos si durante la vigencia de tu póliza no sufres siniestros y decides renovar con nosotros*</p>
+
+                <h3>¡Tú eliges cómo pagar!</h3>
+
+                <p>Te ofrecemos hacer el pago de tu póliza a 3 y 6 Meses Sin Intereses en cualquier paquete.</p>
+
+                <a *ngIf="ajuste === false" class="btn btn-primary" role="button" href="https://quierosercliente.heybanco.inc/#/cotizador/info-vehiculo?cid={{ cookie }}" target="_blank" onclick="dataLayer.push({'event':'evPageLink'});">Lo quiero</a>
+                <a *ngIf="ajuste === true" class="btn btn-primary" role="button" href="https://quierosercliente.hey.inc/#/cotizador/info-vehiculo?cid={{ cookie }}" target="_blank" onclick="dataLayer.push({'event':'evPageLink'});">Lo quiero</a>
+            </div>
+
+            <div class="col-9 col-md-5 offset-md-0 col-lg-4 offset-lg-1">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/cta/cta-seguro-auto.png'" alt="Seguro de auto">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-cta bg-02">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-5 offset-md-1 col-lg-6 offset-lg-1">
+                <h2>Cuidamos tu seguridad y tus finanzas juntos</h2>
+
+                <p>
+                    Nuestro seguro es respaldado por Quálitas Compañía de Seguros, aseguradora número 1 en el país especializada en seguro de auto.<br><br> Si deseas conocer más acerca de ellos, te invitamos a entrar a <a href="https://www.qualitas.com.mx/"
+                        target="_blank">www.qualitas.com.mx</a>
+                </p>
+            </div>
+
+            <div class="col-9 offset-0 col-md-3 offset-md-1 col-lg-3 offset-lg-1">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/cta/cta-seguro-qualitas.png'">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-cta color bg-purple">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <h2>Sin papel, sin filas, ni letras chiquitas</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-requisitos">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <h2>Compara nuestros seguros</h2>
+
+                <p>¡Elige tu nuevo plan!</p>
+
+                <div class="table-responsive-sm table-responsive-md">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th></th>
+
+                                <th><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/star-icon.svg'">Smart</th>
+
+                                <th>Limitada</th>
+
+                                <th>Básica</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Recompensa de $1,000.00<img loading="lazy" matTooltip="Recibe $1,000 pesos por no tener siniestros al renovar tu póliza." [src]="environment.assetsUrl + 'img/icons/info-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/check-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/clear-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/clear-icon.svg'"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Daños materiales<img loading="lazy" matTooltip="Si chocaste, sufriste incendio, inundación o terremoto. Pagas el 5% del valor de tu auto, si eres el responsable." [src]="environment.assetsUrl + 'img/icons/info-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/check-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/clear-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/clear-icon.svg'"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Robo total<img loading="lazy" matTooltip="Pagamos el valor de tu auto, solo debes presentar la denuncia y algunos documentos del auto. Deducible del 10%." [src]="environment.assetsUrl + 'img/icons/info-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/check-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/check-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/clear-icon.svg'"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Gastos médicos ocupantes<img loading="lazy" matTooltip="¡Tu salud es primero! Cubrimos desde un collarín hasta una posible cirugía sin deducible." [src]="environment.assetsUrl + 'img/icons/info-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/check-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/check-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/check-icon.svg'"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Responsabilidad civil<img loading="lazy" matTooltip="Cubrimos los daños ocasionados a terceros (médicos o a propiedad) por el uso de tu auto. ¡Sin deducible!" [src]="environment.assetsUrl + 'img/icons/info-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/check-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/check-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/check-icon.svg'"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Gastos legales<img loading="lazy" matTooltip="Cobertura en gastos que se generen de la defensa del conductor ante autoridades." [src]="environment.assetsUrl + 'img/icons/info-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/check-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/check-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/check-icon.svg'"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Asistencia vial ilimitada<img loading="lazy" matTooltip="Servicio de ambulancia, cambio de llanta, paso de corriente, además de 2 servicios de gasolina." [src]="environment.assetsUrl + 'img/icons/info-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/check-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/check-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/check-icon.svg'"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Responsabilidad civil en EUA y Canadá<img loading="lazy" matTooltip="Cubrimos los daños a terceros y tus gastos médicos cuando viajes al extranjero." [src]="environment.assetsUrl + 'img/icons/info-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/check-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/check-icon.svg'"></td>
+
+                                <td><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/check-icon.svg'"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <a class="btn btn-primary" role="button" href="https://quierosercliente.hey.inc/#/cotizador/info-vehiculo?cid={{ cookie }}" target="_blank" onclick="dataLayer.push({'event':'evPageLink'});">Cotizar y contratar</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-requisitos bg-02" id="recompensa">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+                <h2>Conoce más sobre el seguro</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 offset-md-1 col-lg-6 offset-lg-1">
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/arrow-right-circle.svg'" class="align-self-start" alt="Tu banco digital, Tu banco 100% digital">
+
+                    <div class="media-body">
+                        <p>Recompensa de $1,000.00 pesos al no tener accidentes y renovar tu seguro con Hey*.</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/arrow-right-circle.svg'" class="align-self-start" alt="Tu banco digital, Tu banco 100% digital">
+
+                    <div class="media-body">
+                        <p>Servicio legal y de asistencia vial ilimitados durante la vigencia de la póliza.</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/arrow-right-circle.svg'" class="align-self-start" alt="Tu banco digital, Tu banco 100% digital">
+
+                    <div class="media-body">
+                        <p>Paga tu seguro con cargo automático a tu cuenta Hey o tu tarjeta de crédito (excepto American Express).</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/arrow-right-circle.svg'" class="align-self-start" alt="Tu banco digital, Tu banco 100% digital">
+
+                    <div class="media-body">
+                        <p>Opciones de pago: mensual, trimestral, semestral, anual y meses sin intereses.</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/arrow-right-circle.svg'" class="align-self-start" alt="Tu banco digital, Tu banco 100% digital">
+
+                    <div class="media-body">
+                        <p>Seguro para auto y pick ups de hasta 3.5 toneladas de uso particular (no se aseguran fronterizos, ni legalizados, ni uso comercial).</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/arrow-right-circle.svg'" class="align-self-start" alt="Tu banco digital, Tu banco 100% digital">
+
+                    <div class="media-body">
+                        <p>Vigencia anual con renovación automática.</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/arrow-right-circle.svg'" class="align-self-start" alt="Tu banco digital, Tu banco 100% digital">
+
+                    <div class="media-body">
+                        <p>El costo del seguro varía de acuerdo con el vehículo y código postal de residencia.</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/arrow-right-circle.svg'" class="align-self-start" alt="Tu banco digital, Tu banco 100% digital">
+
+                    <div class="media-body">
+                        <p>Para contratarlo necesitas ser mexicano de nacimiento.</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/arrow-right-circle.svg'" class="align-self-start" alt="Tu banco digital, Tu banco 100% digital">
+
+                    <div class="media-body">
+                        <p>Para contratarlo necesitas contar con licencia de manejo vigente.</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/arrow-right-circle.svg'" class="align-self-start" alt="Tu banco digital, Tu banco 100% digital">
+
+                    <div class="media-body">
+                        <p>Para contratación se necesitará el número de serie y placas del vehículo, estos datos se pueden consultar en la factura o tarjeta de circulación vigente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+                <p>El Seguro de Auto es ofrecido, operado y contratado por el Cliente exclusivamente con Quálitas Compañía de Seguros, S.A. de C.V. (Quálitas). *Beneficio exclusivo para seguros que incluyan cobertura de daños materiales. El pago correspondiente
+                    a la renovación del seguro deberá realizarse con Tarjetas de Crédito y/o Débito Hey. El análisis de siniestralidad del Cliente no deberá presentar evento alguno, o bien en caso de que se presente siniestralidad, la responsabilidad
+                    derivada de la misma no deberá estar a cargo del Cliente (de acuerdo al reporte emitido por Quálitas). En caso de que el Cliente cumpla con los requisitos indicados, el monto de la recompensa será depositado a la cuenta Hey que previamente
+                    ha contratado el Cliente, en un plazo no mayor a 30 (treinta) días posteriores a la fecha de inicio de su renovación correspondiente. La recompensa aplicable será por la cantidad de $1,000.00 (mil pesos 00/100 M.N.), la cual estará
+                    en todo momento sujeta a cambios sin previo aviso. En caso de dudas relativas a los beneficios descritos, escríbenos a contacto@heybanco.com. Los beneficios aquí descritos estarán vigentes del 18 de agosto 2020 al 31 de diciembre de
+                    2022.
+                    <br>
+                    <br> Consulta las condiciones generales en <a href="https://heybanco.s3.amazonaws.com/assets/legales/Seguro_Auto_Hey.pdf" target="_blank">aquí</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-benefits">
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+                    <h2>Obtener tu seguro ¡Es sencillo!</h2>
+
+                    <div class="row">
+                        <div class="col-12 col-md-7 col-lg-4">
+                            <div class="benefit">
+                                <div class="benefit-box">
+                                    <h3>1. Cotiza</h3>
+
+                                    <p>Conoce los beneficios y precios de cada plan.</p>
+                                </div>
+
+                                <div class="benefit-box-shadow bg-green-light">
+                                    <div class="benefit-box-shadow-detail"></div>
+                                    <div class="benefit-box-shadow-detail"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-7 col-lg-4">
+                            <div class="benefit">
+                                <div class="benefit-box">
+                                    <h3>2. Elige</h3>
+
+                                    <p>Selecciona el plan que se acomode a tus necesidades.</p>
+                                </div>
+
+                                <div class="benefit-box-shadow bg-green-light">
+                                    <div class="benefit-box-shadow-detail"></div>
+                                    <div class="benefit-box-shadow-detail"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-7 col-lg-4">
+                            <div class="benefit">
+                                <div class="benefit-box">
+                                    <h3>3. Contrata</h3>
+
+                                    <p>Con el mismo usuario de tu app Hey Banco sin necesidad de más trámites selecciona "Contratar".</p>
+                                </div>
+
+                                <div class="benefit-box-shadow bg-green-light">
+                                    <div class="benefit-box-shadow-detail"></div>
+                                    <div class="benefit-box-shadow-detail"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="btn btn-primary" role="button" href="https://quierosercliente.hey.inc/#/cotizador/info-vehiculo?cid={{ cookie }}" target="_blank" onclick="dataLayer.push({'event':'evPageLink'});">Cotiza mi seguro</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-faq bg-02">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-10 offset-0 col-md-5 offset-md-1 col-lg-3 offset-lg-1 order-2 order-md-1 order-lg-1">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/cta/cta-faq-cuenta.png'">
+            </div>
+
+            <div class="col-md-5 col-lg-7 order-1 order-md-2 order-lg-2">
+                <h2>Preguntas frecuentes</h2>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingOne">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ¿Qué datos necesito para cotizar el seguro de auto?<img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Año del vehículo, categoría del vehículo, marca, modelo, versión, código postal de tu residencia, correo electrónico.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingTwo">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ¿Puedo asegurar mi auto si trabajo con UBER, DiDi o plataformas similares?<img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                No por el momento, solo aseguramos autos de uso particular.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingThree">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Entonces ¿Hey sería mi aseguradora?<img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                No, para asegurar tu automóvil tenemos una alianza con Quálitas, la compañía número 1 en el país, 1 de cada 3 autos en México está asegurado con ellos, por lo tanto ellos serán las personas que te atiendan en caso de un siniestro.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingFour">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                  ¿Cómo consulto la información de mi póliza del seguro de auto?<img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Cuando termines tu proceso de contratación te llegará un correo con la información de tu póliza, el documento vendrá protegido y la clave es tu RFC.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingFive">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  ¿Cuándo recibo los $1,000 pesos?<img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Al finalizar la vigencia de tu póliza Hey, siempre y cuando no hayas tenido accidentes.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingSix">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  ¿Cómo reporto un accidente de auto?<img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Reporta inmediatamente al 800 800 2880 y 800 288 6700 te pedirán el número de póliza y tu nombre.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-slider color bg-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                <h2>Beneficios de tener tu banco en la mejor App</h2>
+
+                <div id="carousel" class="carousel slide" data-ride="carousel" data-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-md-3 col-lg-3">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/benefits/beneficios-transferencias.png'" alt="Transfiere 24/7">
+                                </div>
+
+                                <div class="col-9 col-md-8 col-lg-8">
+                                    <h3>Transfiere 24/7</h3>
+
+                                    <p>Cuando quieras, donde tu quieres, las veces que quieras, en minutos paga lo que necesites desde tu app. ¡Fácil y rápido!</p>
+
+                                    <hey-btn-crear-cuenta title="Quiero mi cuenta Hey"> </hey-btn-crear-cuenta>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-md-3 col-lg-3">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/benefits/beneficios-ahorro-programado.png'" alt="Programa tu Ahorro">
+                                </div>
+
+                                <div class="col-9 col-md-8 col-lg-8">
+                                    <h3>Programa tu ahorro</h3>
+
+                                    <p>Programa de manera automática hasta 5 ahorros desde tu app y recibe el <b>4%</b> de rendimiento anual.</p>
+
+                                    <hey-btn-crear-cuenta title="Quiero mi cuenta Hey"> </hey-btn-crear-cuenta>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-md-3 col-lg-3">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/benefits/beneficios-codi.png'" alt="Paga y cobra con CoDi">
+                                </div>
+
+                                <div class="col-9 col-md-8 col-lg-8">
+                                    <h3>Paga y cobra con CoDi</h3>
+
+                                    <p>Haz tus pagos por medio de códigos QR, de forma inmediata desde tu app.</p>
+
+                                    <hey-btn-crear-cuenta title="Quiero mi cuenta Hey"> </hey-btn-crear-cuenta>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-md-3 col-lg-3">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/benefits/beneficios-inversion.png'" alt="Inversión Hey">
+                                </div>
+
+                                <div class="col-9 col-md-8 col-lg-8">
+                                    <h3>Inversión Hey</h3>
+
+                                    <p>Lleva el control de tu inversión directamente desde tu App Hey Banco y ve crecer tu pagaré en 7 días.</p>
+
+                                    <hey-btn-crear-cuenta title="Quiero mi cuenta Hey"> </hey-btn-crear-cuenta>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-md-3 col-lg-3">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/benefits/beneficios-tdc.png'" alt="Inversión Hey">
+                                </div>
+
+                                <div class="col-9 col-md-8 col-lg-8">
+                                    <h3>Tarjeta de Crédito Hey</h3>
+
+                                    <p>Maten el saldo actual de tu Tarjeta de Crédito a simple vista, revisa tus movimientos, consulta la información de tus pagos y elige una opción de pago, todo desde tu celular.</p>
+
+                                    <hey-btn-crear-cuenta title="Quiero mi cuenta Hey"> </hey-btn-crear-cuenta>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-md-3 col-lg-3">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/benefits/beneficios-money-coach.png'" alt="Money Coach">
+                                </div>
+
+                                <div class="col-9 col-md-8 col-lg-8">
+                                    <h3>Money Coach</h3>
+
+                                    <p>La guía dentro de tu app diseñada para ayudarte a mejorar tu salud financiera de manera inteligente.</p>
+
+                                    <hey-btn-crear-cuenta title="Quiero mi cuenta Hey"> </hey-btn-crear-cuenta>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-md-3 col-lg-3">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/benefits/beneficios-banco-digital.png'" alt="Tu Banco Digital">
+                                </div>
+
+                                <div class="col-9 col-md-8 col-lg-8">
+                                    <h3>Tu Banco Digital </h3>
+
+                                    <p>Solicita tu Cuenta Hey y disfruta de los increíbles beneficios digitales que tu app Hey Banco te ofrece.</p>
+
+                                    <hey-btn-crear-cuenta title="Quiero mi cuenta Hey"> </hey-btn-crear-cuenta>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-md-3 col-lg-3">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/benefits/beneficios-proteccion-hey.png'" alt="Protección Hey">
+                                </div>
+
+                                <div class="col-9 col-md-8 col-lg-8">
+                                    <h3>Protección Hey</h3>
+
+                                    <p>Personaliza tu plan seleccionando las coberturas que necesites. Contrata en minutos desde tu App.</p>
+
+                                    <hey-btn-crear-cuenta title="Quiero mi cuenta Hey"> </hey-btn-crear-cuenta>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <li data-target="#carousel" data-slide-to="0" class="active"><span></span></li>
+                        <li data-target="#carousel" data-slide-to="1"><span></span></li>
+                        <li data-target="#carousel" data-slide-to="2"><span></span></li>
+                        <li data-target="#carousel" data-slide-to="3"><span></span></li>
+                        <li data-target="#carousel" data-slide-to="4"><span></span></li>
+                        <li data-target="#carousel" data-slide-to="5"><span></span></li>
+                        <li data-target="#carousel" data-slide-to="6"><span></span></li>
+                        <li data-target="#carousel" data-slide-to="7"><span></span></li>
+
+                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hey-cta-app></hey-cta-app>
+
+<section class="hey-slider">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+                <h2>Conoce más productos</h2>
+
+                <div id="carousel-desktop" class="carousel slide d-none d-xs-none d-sm-none d-md-none d-lg-block" data-ride="carousel" data-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 text-center">
+                                            <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-cuentas.png'">
+                                        </div>
+
+                                        <div class="col-7">
+                                            <h3>Cuentas Hey</h3>
+
+                                            <p>Diseñamos cuentas que crecen contigo adaptándose a tu estilo de vida.</p>
+
+                                            <a class="btn btn-link" role="button" [routerLink]="['/personas/cuentas-hey']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 text-center">
+                                            <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-tarjeta-de-credito.png'">
+                                        </div>
+
+                                        <div class="col-7">
+                                            <h3>Tarjeta de Crédito Hey</h3>
+
+                                            <p>Sin anualidades, ni trámites complicados, recíbela directo a tu domicilio.</p>
+
+                                            <a class="btn btn-link" role="button" [routerLink]="['/parami/tdc']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 text-center">
+                                            <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-ahorro.png'">
+                                        </div>
+
+                                        <div class="col-7">
+                                            <h3>Cuenta de Ahorro</h3>
+
+                                            <p>Activa una nueva forma de ahorrar en automático desde tu Cuenta Hey Plus.</p>
+
+                                            <a class="btn btn-link" role="button" [routerLink]="['/personas/ahorro-hey']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 text-center">
+                                            <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-inversion.png'">
+                                        </div>
+
+                                        <div class="col-7">
+                                            <h3>Inversiones</h3>
+
+                                            <p>Abre tu inversión desde $5,000 pesos y recibe el rendimientos cada 7 días.</p>
+
+                                            <a class="btn btn-link" role="button" [routerLink]="['/personas/inversion']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 text-center">
+                                            <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-seguros-celular.png'">
+                                        </div>
+
+                                        <div class="col-7">
+                                            <h3>Seguro de Celular</h3>
+
+                                            <p>Hey, ¡Lo tenemos cubierto! Conoce nuestro plan contra robo y daño. Mantengamos tus finanzas y tu información a salvo.</p>
+
+                                            <a class="btn btn-link" role="button" href="https://la.studio.chubb.com/mx/heybanco/mobile/MXE4400001/es-MX?utm_medium=referral&utm_source=heybanco&utm_campaign=lazamiento+mobile&utm_content=hompage+cta" target="_blank" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 text-center">
+                                            <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-seguros-drsam.png'">
+                                        </div>
+
+                                        <div class="col-7">
+                                            <h3>Ayuda Hospitalaria y Consulta Virtual</h3>
+
+                                            <p>Cuida tu salud con nuestros planes.</p>
+
+                                            <a class="btn btn-link" role="button" [routerLink]="['/personas/seguros/apoyo-hospitalario']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 text-center">
+                                            <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-proteccion.png'">
+                                        </div>
+
+                                        <div class="col-7">
+                                            <h3>Protección Hey</h3>
+
+                                            <p>Configura y selecciona los planes de cobertura que mejor se adapten a ti.</p>
+
+                                            <a class="btn btn-link" role="button" [routerLink]="['/seguros-proteccion-hey']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 text-center">
+                                            <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-fondo-hey.png'">
+                                        </div>
+
+                                        <div class="col-7">
+                                            <h3>Fondo HeyG</h3>
+
+                                            <p>Invierte con el Fondo de Inversión Hey Global desde $1,000 pesos.</p>
+
+                                            <a class="btn btn-link" role="button" [routerLink]="['/personas/fondos-inversion']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 text-center">
+                                            <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-creditos.png'">
+                                        </div>
+
+
+                                        <div class="col-7">
+                                            <h3>Crédito de auto</h3>
+
+                                            <p>Estrena tu auto pagando el 10% de enganche con mensualidades fijas y cómodas.</p>
+
+                                            <a class="btn btn-link" [routerLink]="['/personas/creditos/credito-auto']" onclick="dataLayer.push({'event':'evPageLink'});" role="button">Conoce más</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <a class="carousel-control-prev" href="#carousel-desktop" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <li data-target="#carousel-desktop" data-slide-to="0" class="active"><span></span></li>
+                        <li data-target="#carousel-desktop" data-slide-to="1"><span></span></li>
+                        <li data-target="#carousel-desktop" data-slide-to="2"><span></span></li>
+                        <li data-target="#carousel-desktop" data-slide-to="3"><span></span></li>
+                        <li data-target="#carousel-desktop" data-slide-to="4"><span></span></li>
+
+                        <a class="carousel-control-next" href="#carousel-desktop" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </ol>
+                </div>
+
+                <div id="carousel-mobile" class="carousel slide d-block d-xs-block d-sm-block d-md-block d-lg-none" data-ride="carousel" data-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row align-items-center">
+                                <div class="col-5 col-md-5 text-center">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-cuentas.png'">
+                                </div>
+
+                                <div class="col-7 col-md-7">
+                                    <h3>Cuentas Hey</h3>
+
+                                    <p>Diseñamos cuentas que crecen contigo adaptándose a tu estilo de vida.</p>
+
+                                    <a class="btn btn-link" role="button" [routerLink]="['/personas/cuentas-hey']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-5 col-md-5 text-center">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-tarjeta-de-credito.png'">
+                                </div>
+
+                                <div class="col-7 col-md-7">
+                                    <h3>Tarjeta de Crédito Hey</h3>
+
+                                    <p>Sin anualidades, ni trámites complicados, recíbela directo a tu domicilio.</p>
+
+                                    <a class="btn btn-link" role="button" [routerLink]="['/parami/tdc']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-5 col-5 text-center">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-ahorro.png'">
+                                </div>
+
+                                <div class="col-md-7 col-7">
+                                    <h3>Cuenta de Ahorro</h3>
+
+                                    <p>Activa una nueva forma de ahorrar en automático desde tu Cuenta Hey Plus.</p>
+
+                                    <a class="btn btn-link" role="button" [routerLink]="['/personas/ahorro-hey']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-5 col-5 text-center">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-inversion.png'">
+                                </div>
+
+                                <div class="col-md-7 col-7">
+                                    <h3>Inversiones</h3>
+
+                                    <p>Abre tu inversión desde $5,000 pesos y recibe el rendimientos cada 7 días.</p>
+
+                                    <a class="btn btn-link" role="button" [routerLink]="['/personas/inversion']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-5 col-md-5 text-center">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-seguros-celular.png'">
+                                </div>
+
+                                <div class="col-7 col-md-7">
+                                    <h3>Seguro de Celular</h3>
+
+                                    <p>Hey, ¡Lo tenemos cubierto! Conoce nuestro plan contra robo y daño. Mantengamos tus finanzas y tu información a salvo.</p>
+
+                                    <a class="btn btn-link" role="button" href="https://la.studio.chubb.com/mx/heybanco/mobile/MXE4400001/es-MX?utm_medium=referral&utm_source=heybanco&utm_campaign=lazamiento+mobile&utm_content=hompage+cta" target="_blank" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-5 col-md-5 text-center">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-seguros-drsam.png'">
+                                </div>
+
+                                <div class="col-7 col-md-7">
+                                    <h3>Ayuda Hospitalaria y Consulta Virtual</h3>
+
+                                    <p>Cuida tu salud con nuestros planes.</p>
+
+                                    <a class="btn btn-link" role="button" [routerLink]="['/personas/seguros/apoyo-hospitalario']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-5 col-md-5 text-center">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-proteccion.png'">
+                                </div>
+
+                                <div class="col-7 col-md-7">
+                                    <h3>Protección Hey</h3>
+
+                                    <p>Configura y selecciona los planes de cobertura que mejor se adapten a ti.</p>
+
+                                    <a class="btn btn-link" role="button" [routerLink]="['/seguros-proteccion-hey']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-5 col-md-5 text-center">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-fondo-hey.png'">
+                                </div>
+
+                                <div class="col-7 col-md-7">
+                                    <h3>Fondo HeyG</h3>
+
+                                    <p>Invierte con el Fondo de Inversión Hey Global desde $1,000 pesos.</p>
+
+                                    <a class="btn btn-link" role="button" [routerLink]="['/personas/fondos-inversion']" onclick="dataLayer.push({'event':'evPageLink'});">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-5 col-md-5 text-center">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/products/productos-creditos.png'">
+                                </div>
+
+                                <div class="col-7 col-md-7">
+                                    <h3>Créditos</h3>
+
+                                    <p>Estrena tu auto pagando el 10% de enganche con mensualidades fijas y cómodas.</p>
+
+                                    <a class="btn btn-link disabled" role="button">Próximamente</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <a class="carousel-control-prev" href="#carousel-mobile" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <li data-target="#carousel-mobile" data-slide-to="0" class="active"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="1"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="2"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="3"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="4"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="5"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="6"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="7"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="8"><span></span></li>
+
+                        <a class="carousel-control-next" href="#carousel-mobile" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

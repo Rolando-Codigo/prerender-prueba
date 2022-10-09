@@ -1,0 +1,637 @@
+hey-test {
+    .hey-test {
+        .mat-horizontal-stepper-content {
+            form {
+                padding-bottom: 28px;
+                padding-top: 39px;
+                h1 {
+                    @extend %sneak-64;
+                    color: $color-black-20;
+                    margin-bottom: 0;
+                }
+                h2 {
+                    @extend %sneak-24;
+                    margin-bottom: 47px;
+                }
+                p {
+                    @extend %lato-18;
+                    color: $color-black-4B;
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 400;
+                    margin-bottom: 40px;
+                    margin-top: 11px;
+                }
+                .mat-checkbox {
+                    @extend %lato-12;
+                    color: $color-black-4B;
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 400;
+                }
+                .mat-checkbox-layout {
+                    align-items: unset;
+                    margin-bottom: 0;
+                    margin-top: 56px;
+                    vertical-align: top;
+                    white-space: normal;
+                    .mat-checkbox-label {
+                        line-height: 0.93rem;
+                        a {
+                            color: $color-green;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .col-lg-5 {
+                    img {
+                        width: 100%;
+                    }
+                }
+                /*.row {
+                    &:nth-child(3) {
+                        padding-bottom: 38px;
+                        padding-top: 80px;
+                    }
+                }*/
+                .mat-form-field {
+                    img {
+                        height: auto;
+                        position: absolute;
+                        right: 0;
+                        width: 19px;
+                    }
+                    &.nombre {
+                        .mat-form-field-flex {
+                            background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_name.png);
+                            background-repeat: no-repeat;
+                            background-position: 12px 16px;
+                            background-size: 24px auto;
+                        }
+                    }
+                    &.ingreso {
+                        .mat-form-field-flex {
+                            background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_income.png);
+                            background-repeat: no-repeat;
+                            background-position: 12px 16px;
+                            background-size: 24px auto;
+                        }
+                    }
+                    &.vivienda {
+                        .mat-form-field-flex {
+                            background: #fff url(https://heybanco.s3.amazonaws.comassets/img/money-coach/ic_input_home.png);
+                            background-repeat: no-repeat;
+                            background-position: 12px 16px;
+                            background-size: 24px auto;
+                        }
+                    }
+                    &.transporte {
+                        .mat-form-field-flex {
+                            background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_transport.png);
+                            background-repeat: no-repeat;
+                            background-position: 12px 16px;
+                            background-size: 24px auto;
+                        }
+                    }
+                    &.educacion {
+                        .mat-form-field-flex {
+                            background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_education.png);
+                            background-repeat: no-repeat;
+                            background-position: 12px 16px;
+                            background-size: 24px auto;
+                        }
+                    }
+                    &.ocacionales {
+                        .mat-form-field-flex {
+                            background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_occasional.png);
+                            background-repeat: no-repeat;
+                            background-position: 12px 16px;
+                            background-size: 24px auto;
+                        }
+                    }
+                    &.servicios {
+                        .mat-form-field-flex {
+                            background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_bills.png);
+                            background-repeat: no-repeat;
+                            background-position: 12px 16px;
+                            background-size: 24px auto;
+                        }
+                    }
+                    &.entretenimiento {
+                        .mat-form-field-flex {
+                            background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_entertainment.png);
+                            background-repeat: no-repeat;
+                            background-position: 12px 16px;
+                            background-size: 24px auto;
+                        }
+                    }
+                    &.personales {
+                        .mat-form-field-flex {
+                            background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_personal.png);
+                            background-repeat: no-repeat;
+                            background-position: 12px 16px;
+                            background-size: 24px auto;
+                        }
+                    }
+                    &.pension {
+                        .mat-form-field-flex {
+                            background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_pension.png);
+                            background-repeat: no-repeat;
+                            background-position: 12px 16px;
+                            background-size: 24px auto;
+                        }
+                    }
+                    &.edad {
+                        .mat-form-field-flex {
+                            background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_age.png);
+                            background-repeat: no-repeat;
+                            background-position: 12px 16px;
+                            background-size: 24px auto;
+                        }
+                    }
+                    &.ahorro {
+                        .mat-form-field-flex {
+                            background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_savings.png);
+                            background-repeat: no-repeat;
+                            background-position: 12px 16px;
+                            background-size: 24px auto;
+                        }
+                    }
+                    &.trabajando {
+                        .mat-form-field-flex {
+                            background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_input_work.png);
+                            background-repeat: no-repeat;
+                            background-position: 12px 16px;
+                            background-size: 24px auto;
+                        }
+                    }
+                }
+                /*.mat-form-field-appearance-legacy .mat-form-field-infix {
+                    border-top: 14px solid transparent;
+                    padding: 10px 0;
+                }*/
+                .mat-radio-button {
+                    background: $color-white;
+                    border-radius: 4px;
+                    display: block;
+                    margin-bottom: 22px;
+                }
+                .mat-radio-label {
+                    margin-bottom: 0;
+                    padding: 20px;
+                    width: 100%;
+                }
+                .mat-radio-button.mat-accent.mat-radio-checked {
+                    background: $color-blue-variant;
+                    box-shadow: 8px 4px 12px 0 rgba(0, 0, 0, 0.11);
+                }
+                .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+                    border-color: $color-black-21;
+                }
+                .mat-radio-button.mat-accent .mat-radio-inner-circle {
+                    background: $color-black-21;
+                }
+                .mat-radio-label-content {
+                    @extend %lato-14;
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .mat-hint {
+        color: $color-green!important;
+    }
+    .mat-stepper-label-position-bottom .mat-horizontal-stepper-header {
+        box-sizing: border-box;
+        flex-direction: column;
+        height: auto;
+    }
+    .mat-step-header.cdk-keyboard-focused,
+    .mat-step-header.cdk-program-focused,
+    .mat-step-header:hover {
+        background-color: transparent;
+    }
+    .mat-horizontal-stepper-header {
+        height: auto;
+        padding: 0;
+        .mat-step-icon,
+        .mat-step-icon-not-touched {
+            background: $color-background-01;
+        }
+        .mat-step-icon {
+            border: 3px solid #43D181;
+            height: 16px;
+            width: 16px;
+        }
+        .mat-step-icon-not-touched {
+            border: 1px solid #A7B7C6;
+            height: 10px;
+            width: 10px;
+        }
+        .mat-step-icon-content {
+            display: none;
+        }
+        .mat-step-label {
+            min-width: auto;
+            img {
+                height: auto;
+                margin-top: 12px;
+                width: 29px;
+            }
+        }
+        .mat-step-label-active .mat-step-label-selected {
+            img {}
+        }
+    }
+     ::ng-deep .mat-horizontal-stepper-header {
+        pointer-events: none !important;
+    }
+    .mat-horizontal-content-container {
+        padding: 56px 0 0;
+    }
+    .mat-stepper-horizontal-line {
+        border-color: #A7B7C6;
+    }
+    .mat-horizontal-stepper-header-container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1140px;
+    }
+    .mat-horizontal-stepper-header .mat-step-icon,
+    .mat-horizontal-stepper-header .mat-step-icon-not-touched {
+        margin-right: 0;
+    }
+    .mat-checkbox-inner-container {
+        margin: 0 8px 0 0;
+    }
+    .hey-benefits {
+        &.bg-01 {
+            padding-bottom: 64px;
+            padding-top: 72px;
+            h2 {
+                @extend %sneak-64;
+                margin-bottom: 76px;
+            }
+            h3 {
+                @extend %sneak-36;
+                margin-bottom: 0;
+                margin-top: 8px;
+            }
+            .col-lg-4 {
+                img {
+                    height: auto;
+                    margin-top: 0;
+                    width: 244px;
+                }
+            }
+            .benefit {
+                margin-bottom: 60px;
+                .benefit-box {
+                    padding: 18px 16px;
+                    h3 {
+                        @extend %sneak-22;
+                        margin-bottom: 2px;
+                        margin-top: 0;
+                    }
+                    p {
+                        @extend %lato-14;
+                        font-family: 'Lato', sans-serif;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+        &.bg-02 {
+            padding-bottom: 74px;
+            padding-top: 120px;
+            h2 {
+                margin-bottom: 22px;
+                &:nth-of-type(2) {
+                    margin-top: 142px;
+                }
+            }
+            .benefit {
+                .benefit-box {
+                    padding: 18px 16px;
+                    h3 {
+                        margin-bottom: 4px;
+                    }
+                    p {
+                        margin-bottom: 10px;
+                        font-family: 'Lato', sans-serif;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+    .hey-test-graphics {
+        padding-bottom: 50px;
+        padding-top: 112px;
+        [mat-align-tabs=center]>.mat-tab-header .mat-tab-labels {
+            justify-content: center;
+        }
+        h2 {
+            @extend %sneak-48;
+            margin-bottom: 8px;
+        }
+        h3 {
+            @extend %lato-36;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+        h4 {
+            @extend %lato-18;
+            color: $color-black-4B;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+        .col-lg-4 {
+            height: 350px;
+            .overlay {
+                height: 65px;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 65%;
+            }
+        }
+        p {
+            @extend %lato-18;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            margin-bottom: 82px;
+        }
+        .mat-tab-header {
+            border-bottom: 1px solid #CAD5DE;
+        }
+        .mat-tab-group.mat-primary .mat-ink-bar {
+            background-color: $color-black-21;
+        }
+        .mat-tab-body-content {
+            padding: 36px 0 0;
+        }
+        .mat-tab-label {
+            height: 44px;
+            width: 33.33%;
+        }
+        .mat-tab-label,
+        .mat-tab-link {
+            @extend %sneak-18;
+            color: $color-black-77;
+            opacity: 1;
+        }
+        .mat-tab-label-active {
+            color: $color-black-21;
+        }
+        .mat-tab-group {
+            .col-lg-4 {
+                height: auto;
+                margin-bottom: 50px;
+            }
+        }
+        .card {
+            background: $color-background-01;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            padding: 24px 20px 20px;
+            h5 {
+                @extend %lato-24;
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                margin-bottom: 0;
+                margin-top: 26px;
+            }
+            p {
+                @extend %lato-14;
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                margin-bottom: 4px;
+            }
+            .icon {
+                height: auto;
+                margin-bottom: 20px;
+                width: 22px;
+            }
+            .arrow {
+                height: auto;
+                margin-left: 10px;
+                width: 12px;
+            }
+            /*&.vivienda[aria-expanded="true"] {
+                background: $color-blue-variant;
+            }
+
+            &.educacion[aria-expanded="true"] {
+                background: $color-green-light;
+            }
+
+            &.servicios[aria-expanded="true"] {
+                background: $color-yellow;
+            }
+
+            &.transporte[aria-expanded="true"] {
+                background: $color-orange;
+            }
+
+            &.personales[aria-expanded="true"] {
+                background: $color-purple;
+            }
+
+            &.entretenimiento[aria-expanded="true"] {
+                background: $color-pink;
+            }
+
+            &.ocasionales[aria-expanded="true"] {
+                background: #FFB9E1;
+            }
+
+            &.ahorros[aria-expanded="true"] {
+                background: #97B6FD;
+            }*/
+        }
+        .pill {
+            border-radius: 100px;
+            height: 24px;
+            margin-top: 10px;
+            width: 100%;
+            p {
+                @extend %lato-12;
+                color: $color-white;
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 0;
+                text-align: center;
+            }
+            img {
+                height: auto;
+                margin-right: 8px;
+                width: 12px;
+            }
+            &.bg-green {
+                color: #43D181;
+            }
+        }
+    }
+    .hey-test-future {
+        padding-bottom: 110px;
+        padding-top: 120px;
+        h2 {
+            @extend %sneak-48;
+            margin-bottom: 54px;
+        }
+        h3 {
+            @extend %lato-36;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+        p {
+            @extend %lato-18;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            margin-bottom: 0;
+            margin-top: 20px;
+            &.legal {
+                @extend %lato-12;
+                color: $color-black-4B;
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+            }
+        }
+        .col-lg-3 {
+            img {
+                height: auto;
+                width: 96px;
+            }
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            margin-top: 70px;
+            padding: 32px 124px 24px 32px;
+            img {
+                height: auto;
+                margin-right: 32px;
+                width: 34px;
+            }
+            h4 {
+                @extend %lato-36;
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                margin-bottom: 0;
+            }
+            p {
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+        }
+    }
+    .hey-test-results {
+        padding-bottom: 80px;
+        padding-top: 100px;
+        h2 {
+            @extend %sneak-56;
+            margin-bottom: 30px;
+        }
+        h3 {
+            @extend %sneak-16;
+            margin-bottom: 12px;
+            margin-top: 10px;
+        }
+        p {
+            @extend %lato-14;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+        form {
+            padding: 0!important;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 8px 4px 12px 0 rgba(0, 0, 0, 0.11);
+            padding: 32px 52px 40px 42px;
+            h3 {
+                margin-bottom: 14px;
+                margin-top: 0;
+            }
+            p {
+                margin-bottom: 30px;
+            }
+        }
+        .mat-form-field {
+            img {
+                height: auto;
+                position: absolute;
+                right: 0;
+                width: 19px;
+            }
+            &.mail {
+                .mat-form-field-flex {
+                    background: #fff url(https://heybanco.s3.amazonaws.com/assets/img/money-coach/ic_send_mail.png);
+                    background-repeat: no-repeat;
+                    background-position: 12px 16px;
+                    background-size: 24px auto;
+                }
+            }
+        }
+        .btn-primary {
+            margin-top: 16px;
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    hey-test {
+        .mat-horizontal-stepper-header-container {
+            max-width: 960px;
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    hey-test {
+        .hey-test {
+            padding-bottom: 82px;
+            padding-top: 26px;
+            h2 {
+                font-size: 22px;
+                line-height: 30px;
+                margin-bottom: 24px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 36px;
+                margin-top: 49px;
+            }
+            .col-lg-5 {
+                img {
+                    margin-top: 80px;
+                }
+            }
+            .mat-horizontal-content-container {
+                padding: 41px 0 0;
+            }
+            .mat-step-label {
+                display: none;
+            }
+        }
+        .mat-horizontal-stepper-header-container {
+            max-width: 720px;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+<section class="hey-hero-image">
+    <div class="img-back">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-9 col-md-6 col-lg-6">
+                    <div class="vertical-center">
+                        <h1>Vuélvete un Embajador
+                            de Nómina Hey</h1>
+                        <br>
+                        <p class="mb-15">
+                            Obtén hasta un mes de tu sueldo
+                            invitando a tus amigos a cambiar
+                            su nómina a Hey.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-invitacion">
+    <div class="img-back">
+        <div class="container">
+            <div class="row align-items-center centrar">
+                <div class="col-12 offset-0 col-md-6 offset-md-6 col-lg-6 offset-lg-6">
+                    <h2>
+                        ¡Invita y obtén hasta un mes de tu sueldo!
+                    </h2>
+                    <p class="legales">
+                        Si tienes tu nómina en Hey y ya recibiste un mes de tu sueldo, tienes la oportunidad de invitar a
+                        tus amigos a cambiar su nómina a Hey y llevarte hasta un mes de tu sueldo.
+                    </p>
+                    <p class="legales">
+                        Entre más amigos invites y cambien su nómina, ¡más oportunidades tendrás!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-registro">
+    <div class="container">
+        <div class="row ">
+            <div class="col-12 col-md-12 col-lg-12 text-center">
+                <div class="row text-center column registro" [formGroup]="form">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <mat-form-field class="website">
+                            <mat-label>Nombre completo de tu referido*</mat-label>
+                            <input matInput formControlName="nombreReferido">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <mat-form-field class="website">
+                            <mat-label>Correo electrónico de tu referido*</mat-label>
+                            <input matInput formControlName="correoReferido">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <mat-form-field class="website">
+                            <mat-label>Nombre completo registrado en Hey*</mat-label>
+                            <input matInput formControlName="nombreEmbajador">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <mat-form-field class="website">
+                            <mat-label>Correo electrónico registrado en Hey*</mat-label>
+                            <input matInput formControlName="correoEmbajador" type="email">
+                        </mat-form-field>
+                    </div>
+                    
+                    <div class="col-6 col-md-6 col-lg-5">
+                        <mat-checkbox color="accent" formControlName="aceptoTerminos">
+                            He leído y aceptado el Aviso de Privacidad
+                        </mat-checkbox>
+                    </div>
+                    <div class="col-12 col-md-2 offset-md-4 col-lg-12 offset-lg-0">
+                        <button class="btn btn-primary" [disabled]="!form.valid || busy" type="submit" (click)="submitRequest()">Enviar</button>
+                    </div>
+                </div>
+                <div class="col-11 offset-1 col-md-9 offset-md-0 col-lg-6 offset-lg-0">
+                    <p>Consulta términos y condiciones de la promoción en banco.hey.inc</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<re-captcha size="invisible" *ngIf="RECAPTCHA_KEY" [siteKey]="RECAPTCHA_KEY" (resolved)="participar(type, $event)">
+</re-captcha>
+
+<div class="loader" *ngIf="busy === true">
+    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/loader.gif'">
+</div>

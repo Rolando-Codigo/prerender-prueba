@@ -1,0 +1,529 @@
+<section class="bgimage-seguros">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Sobre Seguros Hey</h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form class="card">
+                    <div class="row align-items-center">
+
+                        <div class="col">
+                            <input class="form-control form-control-borderless" type="search" id="search" [formControl]="searchForm" placeholder="¿Cómo podemos ayudarte?" />
+                        </div>
+
+                        <div class="col-auto">
+                            <button class="btn btn-light" role="button" [disabled]="!isValidSearchForm" (click)="submitSearch()">Buscar</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <a routerLink="/reportes">
+                    <p class="txtSmall"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+          </svg> Contacta a nuestro Centro de Servicio para reportes y aclaraciones</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p class="titlehomeblack"><img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-20-CAD-division.svg'" alt="Tu banco digital">&nbsp;&nbsp;&nbsp;&nbsp;Busca por producto&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Tu banco digital" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-20-CAD-division.svg'"></p>
+            </div>
+        </div>
+
+        <div class="container d-none d-sm-none d-md-block d-lg-block">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-xl-12">
+                    <div class="row">
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/centro-ayuda-app']" role="button">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-2-CAD-ic-app.svg'" alt="centro de ayuda app">
+                                <p class="bodyhomeblack">App </p>
+                            </a>
+                        </div>
+
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/centro-ayuda-cuenta']" role="button">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-3-CAD-ic-cuenta.svg'" alt="centro de ayuda cuenta">
+
+                                <p class="bodyhomeblack">Cuenta </p>
+                            </a>
+                        </div>
+
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/centro-ayuda-inversion']" role="button">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-4-CAD-ic-inversion.svg'" alt="centro de ayuda inversion">
+                                <br>
+                                <p class="bodyhomeblack">Inversión</p>
+
+                            </a>
+                        </div>
+
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/centro-ayuda-tarjeta-credito']" role="button">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-5-CAD-ic-tarjeta-credito.svg'" alt="centro de ayuda tarjeta de credito">
+                                <br>
+                                <p class="bodyhomeblack">Tarjeta de Crédito</p>
+
+                            </a>
+                        </div>
+
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/centro-ayuda-ahorro']" role="button">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-7-CAD-ic-ahorro.svg'" alt="centro de ayuda ahorro">
+                                <br>
+                                <p class="bodyhomeblack">Ahorro</p>
+
+                            </a>
+                        </div>
+
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/centro-ayuda-seguros']" role="button">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/seguros/P390-1-CAD-ic-seguros.svg'" alt="centro de ayuda seguros">
+                                <br>
+                                <p class="bodyhomeblackActive">Seguros</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="hey-benefits-cad bg-02">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+                <h2>Temas más populares </h2>
+
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="benefit-cad">
+                            <div class="benefit-cad-box">
+                                <a onclick="dataLayer.push({'event':'evPageLink'});" href="/centro-ayuda/seguros-auto">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/seguros/P390-2-CAD-ic-seguro-auto.svg'" alt="Seguro de auto">
+                                    <h3>Seguro de auto</h3>
+                                    <br>
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-24-CAD-ic-ver-mas.svg'" alt="Seguro de auto">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="benefit-cad">
+                            <div class="benefit-cad-box">
+                                <a onclick="dataLayer.push({'event':'evPageLink'});" href="/centro-ayuda/seguros-celular">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/seguros/P390-3-CAD-ic-seguro-celular.svg'" alt="Seguro de celular">
+                                    <h3>Seguro de celular</h3>
+                                    <br>
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-24-CAD-ic-ver-mas.svg'" alt="Seguro de celular">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="benefit-cad">
+                            <div class="benefit-cad-box">
+                                <a onclick="dataLayer.push({'event':'evPageLink'});" href="/centro-ayuda/seguro-apoyo-hospitalario-consulta-virtual">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/seguros/P390-4-CAD-ic-seguro-apoyo-hospitalario.svg'" alt="Ayuda Hospitalaria y Consulta Virtual">
+                                    <h3>Ayuda Hospitalaria y Consulta Virtual</h3>
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-24-CAD-ic-ver-mas.svg'" alt="Ayuda Hospitalaria y Consulta Virtual">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-slider-card">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-1">
+                <h2>Seguros</h2><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-11 col-lg-11 offset-lg-1">
+                <div id="multicard-desktop-zoomin-seguros" class="carousel slide d-none d-xs-none d-sm-none d-md-block d-lg-block" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row row-cols-3">
+                                <div class="col-lg-4">
+                                    <a href="https://www.youtube.com/watch?v=JZTCdtcV3Y0&=1s&ab_channel=HeyBanco" target="_blank">
+                                        <img loading="lazy" class="videos" [src]="environment.assetsUrl + 'img/videos/13-img.png'" alt="¿Qué es protección Hey y cómo la activo?">
+                                        <br>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <a class="carousel-control-prev" href="#multicard-desktop-zoomin-seguros" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <li data-target="#multicard-desktop-zoomin-seguros" data-slide-to="1" class="active"><span></span></li>
+                        <li data-target="#multicard-desktop-zoomin-seguros" data-slide-to="2"><span></span></li>
+                        <li data-target="#multicard-desktop-zoomin-seguros" data-slide-to="3"><span></span></li>
+
+                        <a class="carousel-control-next" href="#multicard-desktop-zoomin-seguros" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </ol>
+                </div>
+
+                <div id="multicard-mobile-zoomin-seguros" class="carousel slide d-block d-xs-block d-sm-block d-md-none d-lg-none" data-ride="carousel" data-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://www.youtube.com/watch?v=JZTCdtcV3Y0&=1s&ab_channel=HeyBanco" target="_blank">
+                                <img loading="lazy" class="videos" [src]="environment.assetsUrl + 'img/videos/13-img.png'" alt="¿Qué es protección Hey y cómo la activo?">
+                                <br>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <a class="carousel-control-prev" href="#multicard-mobile-zoomin-seguros" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <li data-target="#multicard-mobile-zoomin-seguros" data-slide-to="0" class="active"><span></span></li>
+                        <li data-target="#multicard-mobile-zoomin-seguros" data-slide-to="1"><span></span></li>
+
+                        <a class="carousel-control-next" href="#multicard-mobile-zoomin-seguros" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-slider bg-green-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-12">
+                <h2>El paso a paso de tus Seguros Hey en tu App </h2>
+
+                <div id="carousel-desktop" class="carousel slide d-none d-xs-none d-sm-none d-md-none d-lg-block" data-ride="carousel" data-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <a href="https://www.youtube.com/embed/JZTCdtcV3Y0" target="_blank">
+                                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/seguros/P390-7-img-proteccion-hey.png'" alt="Abre tu Cuenta Hey">
+                                                <br>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <a href="https://www.youtube.com/watch?v=SNzFv9QsRKY&t=1s&ab_channel=HeyBanco" target="_blank">
+                                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-17-CAD-img-estados-cuenta.png'" alt="Estados de Cuenta">
+                                                <br>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <a href="https://www.youtube.com/watch?v=LeaU0AFgT4I&ab_channel=HeyBanco" target="_blank">
+                                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-18-CAD-img-funcionamiento-tarjeta-virtual.png'" alt="¿Cómo funciona la tarjeta virtual?">
+                                                <br>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <a href="https://www.youtube.com/watch?v=vBy6eJVe5Ic&ab_channel=HeyBanco" target="_blank">
+                                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-19-CAD-img-revision-movimientos-cuentas.png'" alt="Revisión movimientos de cuenta">
+                                                <br>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <a class="carousel-control-prev" href="#carousel-desktop" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <li data-target="#carousel-desktop" data-slide-to="0" class="active"><span></span></li>
+                        <li data-target="#carousel-desktop" data-slide-to="1"><span></span></li>
+                        <a class="carousel-control-next" href="#carousel-desktop" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </ol>
+                </div>
+
+                <div id="carousel-mobile" class="carousel slide d-block d-xs-block d-sm-block d-md-block d-lg-none" data-ride="carousel" data-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="col-md-7 col-7">
+                                <div class="row align-items-center">
+                                    <div class="col-6">
+                                        <a href="https://www.youtube.com/watch?v=JZTCdtcV3Y0&t=1s&ab_channel=HeyBanco" target="_blank">
+                                            <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-16-CAD-img-abre-cuenta-hey.png'" alt="Abre tu Cuenta Hey">
+                                            <br>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-7 col-7">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <a href="https://www.youtube.com/watch?v=SNzFv9QsRKY&t=1s&ab_channel=HeyBanco" target="_blank">
+                                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-17-CAD-img-estados-cuenta.png'" alt="Estados de Cuenta">
+                                                <br>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-7 col-7">
+                                <div class="row align-items-center">
+                                    <div class="col-6">
+                                        <a href="https://www.youtube.com/watch?v=LeaU0AFgT4I&ab_channel=HeyBanco" target="_blank">
+                                            <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-18-CAD-img-funcionamiento-tarjeta-virtual.png'" alt="¿Cómo funciona la tarjeta virtual?">
+                                            <br>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-7 col-7">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <a href="https://www.youtube.com/watch?v=vBy6eJVe5Ic&ab_channel=HeyBanco" target="_blank">
+                                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-19-CAD-img-revision-movimientos-cuentas.png'" alt="Revisión movimientos de cuenta">
+                                                <br>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <a class="carousel-control-prev" href="#carousel-mobile" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <li data-target="#carousel-mobile" data-slide-to="0" class="active"><span></span></li>
+                        <li data-target="#carousel-mobile" data-slide-to="1"><span></span></li>
+                        <a class="carousel-control-next" href="#carousel-mobile" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hey-faq">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-10 offset-0 col-md-5 offset-md-1 col-lg-3 offset-lg-1 order-2 order-md-1 order-lg-1">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-20-CAD-img-faq.png'" alt="Preguntas frecuentes">
+            </div>
+
+            <div class="col-md-5 col-lg-7 order-1 order-md-2 order-lg-2">
+                <h2>Preguntas frecuentes</h2>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ¿Hey asegura mi auto?<img loading="lazy" alt="Tu banco digital" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                No, para asegurar tu vehículo tenemos una alianza con Quálitas, la compañía número 1 en el país, 1 de cada 3 autos en México está asegurado con ellos, quiénes serán las personas que te atiendan en caso de un siniestro.
+                                <br><br> Si quieres conocer mas de la aseguradora puedes visitar:<a href="https://www.qualitas.com.mx/web/qmx/inicio" target="_blank">www.qualitas.com.mx</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ¿La hospitalización incluye deducible?<img loading="lazy" alt="Tu banco digital" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                El seguro de Ayuda Hospitalaria y Consulta Virtual no incluye pago adicional de deducible, pero sí deben pasar por lo menos 24 hrs en el hospital para que aplique la cobertura y si el ingreso es por enfermedad deben pasar 30 días entre la fecha de contratación
+                                y la fecha de ingreso.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ¿Qué son las compras fraudulentas por internet?<img loading="lazy" alt="Tu banco digital" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Cuando una persona ajena y no autorizada utiliza la tarjeta del asegurado sin su permiso.
+                                <br> <br> Ejemplo: Juan Pérez revisa su cuenta desde su app y encuentra cargos por una suscripción de Spotify que no reconoce en su Tarjeta Hey.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                  ¿Cuáles son las características del Seguro de Celular?<img loading="lazy" alt="Tu banco digital" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                El deducible es el monto con el que participas en caso de un accidente o robo.
+                                <br><br> Recuerda que te entregaremos tu celular reparado o lo sustituiremos por uno de las mismas características, el monto que te corresponde se incluye en la póliza para que lo puedas consultar fácilmente.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  ¿Cómo funciona la cobertura de muerte accidental?<img loading="lazy" alt="Tu banco digital" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Se ofrece indemnización en caso que el asegurado titular muera a causa de un accidente.
+                                <br><br> Ejemplo: Laura Rodríguez va en el metro y sin querer se resbala por un líquido que hay en el piso, el golpe al caer lo noquea y muere.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  ¿Cómo se hace el cobro del seguro?<img loading="lazy" alt="Tu banco digital" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Se te hace el cargo mes a mes en tu Tarjeta de Hey Banco.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-ayuda bg-02">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 text-center">
+                <h2>Encuentra información<br> sobre más temas</h2>
+            </div>
+        </div>
+        <br><br>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form class="card">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <input class="form-control form-control-borderless" type="search" id="search" [formControl]="searchForm" placeholder="¿Cómo podemos ayudarte?" />
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light" role="button" [disabled]="!isValidSearchForm" (click)="submitSearch()">Buscar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>

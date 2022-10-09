@@ -1,0 +1,168 @@
+<!--<section class="hey-ivr-form bg-01">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-1 col-lg-8 offset-lg-2">
+        <h1>Aclaraciones y Cargos no reconocidos</h1>
+
+        <p>
+          Registra una aclaración o cargo no reconocido llenando los datos que a continuación te solicitamos.<br><br>
+          Una vez que nos llegue tu información estarás recibiendo un correo con el seguimiento de tu caso.
+        </p>
+
+        <form (ngSubmit)="submitForm($event)">
+          <h2>Selecciona una opción:</h2>
+
+          <div class="row">
+            <div class="col-md-8 col-lg-6">
+              <mat-form-field>
+                <mat-label></mat-label>
+
+                <mat-select [(ngModel)]="identifier" name="identifier" [value]="''">
+                  <mat-option *ngFor="let value of IDENTIFIER_VALUES" [value]="value">{{ IDENTIFIER_VALUES_TEXT[value] }}</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+
+            <div class="col-md-8 col-lg-6" *ngIf="identifier == aclaracion.CARD">
+              <mat-form-field>
+                <mat-label>{{ IDENTIFIER_VALUES_TEXT[aclaracion.CARD] }}</mat-label>
+
+                <input matInput [name]="aclaracion.CARD" [(ngModel)]="aclaracion.accountNumber">
+              </mat-form-field>
+            </div>
+
+            <div class="col-md-8 col-lg-6" *ngIf="identifier == aclaracion.ACCOUNT_NUMBER">
+              <mat-form-field>
+                <mat-label>{{ IDENTIFIER_VALUES_TEXT[aclaracion.ACCOUNT_NUMBER] }}</mat-label>
+
+                <input matInput [name]="aclaracion.ACCOUNT_NUMBER" [(ngModel)]="aclaracion.accountNumber">
+              </mat-form-field>
+            </div>
+          </div>
+
+          <h2>Sube una foto</h2>
+
+          <p>Compártenos cada uno de los siguientes documentos.</p>
+
+          <div class="row">
+            <div class="col-md-4 col-lg-3">
+              <div class="card text-center">
+                <img loading="lazy" [src]="aclaracion.ineFront != null && aclaracion.ineFront.length > 0 ? aclaracion.ineFrontBase64Head + ',' + aclaracion.ineFront : '/../../assets/img/icons/ivr-camara.png'" [alt]="'INE Frente'">
+
+                <p class="card-text">INE FRENTE</p>
+
+                <input class="position-absolute w-100 h-100" type="file" name="ine_front" (change)="fileChange($event, aclaracion.INE_FRONT)" placeholder="Upload file" style="opacity: 0; top: 0; left: 0">
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+              <div class="card text-center">
+                <img loading="lazy" [src]="aclaracion.ineBack != null && aclaracion.ineBack.length > 0 ? aclaracion.ineBackBase64Head + ',' + aclaracion.ineBack : '/../../assets/img/icons/ivr-camara.png'" [alt]="'INE Respaldo'">
+
+                <p class="card-text">INE REVERSO</p>
+
+                <input class="position-absolute w-100 h-100" type="file" name="ine_back" (change)="fileChange($event, aclaracion.INE_BACK)" placeholder="Upload file" style="opacity: 0; top: 0; left: 0">
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+              <div class="card text-center">
+                <img loading="lazy" [src]="aclaracion.cardFront != null && aclaracion.cardFront.length > 0 ? aclaracion.cardFrontBase64Head + ',' + aclaracion.cardFront : '/../../assets/img/icons/ivr-camara.png'" [alt]="'Tarjeta Frente'">
+
+                <p class="card-text">TARJETA</p>
+
+                <input class="position-absolute w-100 h-100" type="file" name="card_front" (change)="fileChange($event, aclaracion.CARD_FRONT)" placeholder="Upload file" style="opacity: 0; top: 0; left: 0">
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+              <div class="card text-center">
+                <img loading="lazy" [src]="aclaracion.cardBack != null && aclaracion.cardBack.length > 0 ? aclaracion.cardBackBase64Head + ',' + aclaracion.cardBack : '/../../assets/img/icons/ivr-camara.png'" [alt]="'Tarjeta Respaldo'">
+
+                <input class="position-absolute w-100 h-100" type="file" name="card_back" (change)="fileChange($event, aclaracion.CARD_BACK)" placeholder="Upload file" style="opacity: 0; top: 0; left: 0">
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+              <div class="card text-center">
+                <img loading="lazy" [src]="aclaracion.voucher != null && aclaracion.voucher.length > 0 ? aclaracion.voucherBase64Head + ',' + aclaracion.voucher : '/../../assets/img/icons/ivr-camara.png'" [alt]="'Voucher'">
+
+                <p class="card-text">VOUCHER</p>
+
+                <input class="position-absolute w-100 h-100" type="file" name="voucher" (change)="fileChange($event, aclaracion.VOUCHER)" placeholder="Upload file" style="opacity: 0; top: 0; left: 0">
+              </div>
+            </div>
+          </div>
+
+          <h2>Cuéntanos tu problema</h2>
+
+          <div class="row">
+            <div class="col-md-8 col-lg-6">
+              <mat-form-field>
+                <mat-label>Motivo de aclaración</mat-label>
+
+                <mat-select [(ngModel)]="aclaracion.reason" [name]="aclaracion.REASON" [value]="''">
+                  <mat-option *ngFor="let value of REASON_VALUES" [value]="value">{{ value }}</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+
+            <div class="col-md-8 col-lg-6">
+              <mat-form-field>
+                <mat-label>Nombre del comercio</mat-label>
+
+                <input matInput [name]="aclaracion.BUSINESS_NAME" [(ngModel)]="aclaracion.businessName"/>
+              </mat-form-field>
+            </div>
+
+            <div class="col-md-8 col-lg-6">
+              <mat-form-field>
+                <mat-label>Monto de la transacción</mat-label>
+
+                <input matInput [name]="aclaracion.TRANSACTION_AMOUNT" [(ngModel)]="aclaracion.transactionAmount"/>
+              </mat-form-field>
+            </div>
+
+            <div class="col-md-8 col-lg-6">
+              <mat-form-field>
+                <mat-label>Fecha de la transacción</mat-label>
+
+                <input matInput [name]="aclaracion.TRANSACTION_DATE" [(ngModel)]="aclaracion.transactionDate"/>
+              </mat-form-field>
+            </div>
+
+            <div class="col-md-8 col-lg-6">
+              <p>Estatus de tu saldo</p>
+
+              <mat-radio-group class="row">
+                <div class="col-12 col-md-6 col-lg-6">
+                  <mat-radio-button [name]="aclaracion.BALANCE_LOCKED_OR_PENDING" [(ngModel)]="aclaracion.balanceLockedOrPending" [value]="true">Bloqueado</mat-radio-button>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6">
+                  <mat-radio-button [name]="aclaracion.BALANCE_LOCKED_OR_PENDING" [(ngModel)]="aclaracion.balanceLockedOrPending" [value]="false">Pendiente</mat-radio-button>
+                </div>
+              </mat-radio-group>
+            </div>
+          </div>
+
+          <textarea [name]="aclaracion.COMMENTS" [(ngModel)]="aclaracion.comments" placeholder="¿Algo más que nos quieras decir?"></textarea>
+
+          <mat-checkbox [name]="aclaracion.AGREEMENT" [(ngModel)]="aclaracion.agreement">
+            Estoy de acuerdo que en caso de que la aclaración resulte improcedente se realice un cargo a mi cuenta por $250.00 más IVA por concepto administrativo.
+          </mat-checkbox>
+
+          <div class="row">
+            <div class="col-md-6 col-lg-6">
+              <a class="btn btn-outline-primary" role="button" [routerLink]="['/reportes']">Cancelar</a>
+            </div>
+
+            <div class="col-md-6 col-lg-6 text-right">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>-->

@@ -1,0 +1,120 @@
+hey-credito-personas {
+    .hey-hero-image {
+        img {
+            width: 150% !important;
+            margin-left: -30%;
+        }
+        .vertical-center {
+            top: 50%;
+        }
+    }
+    .text-bold {
+        font-weight: 1.62rem;
+        font-size: 1.62rem;
+    }
+    .personal-banner {
+        height: 550px;
+        img {
+            height: 100%;
+            width: auto;
+        }
+        h2 {
+            margin-top: 62px;
+            margin-bottom: 32px;
+        }
+        .vertical-full {
+            img {
+                height: 550px;
+            }
+        }
+    }
+    .item-img {
+        width: 24px !important;
+        margin-top: 24px;
+        margin-left: 16px;
+    }
+    .mb-24 {
+        margin-bottom: 24px;
+    }
+    .info-credito {
+        padding-top: 5% !important;
+        background: url(https://heybanco.s3.amazonaws.com/assets/img/P262-Personas/p262-3-img.png)no-repeat;
+        background-position: top right;
+        background-size: 40% auto;
+        height: auto;
+        padding-bottom: 20px !important;
+        .info-legales {
+            margin-top: 20px;
+        }
+        .col-lg-5 {
+            height: auto !important;
+        }
+        .info-box {
+            height: 450px !important;
+        }
+    }
+    .hey-caracteristicas {
+        .col-lg-5 {
+            padding-left: 0px;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    hey-credito-personas {
+        .personal-banner {
+            height: 1000px;
+            .vertical-full {
+                img {
+                    width: 112% !important;
+                    margin-left: -35px;
+                    height: auto;
+                }
+            }
+        }
+        .info-credito {
+            background-size: 90% auto;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    hey-credito-personas {
+        .hey-hero-image {
+            height: auto !important;
+            img {
+                margin-top: -100px !important;
+                width: 125% !important;
+                height: 60% !important;
+                margin-left: 0px;
+                height: auto;
+            }
+        }
+        .personal-banner {
+            height: 800px;
+            .vertical-full {
+                img {
+                    width: 120% !important;
+                    margin-left: -40px;
+                    height: auto;
+                    margin-top: 145%;
+                }
+            }
+            .item-img {
+                margin-top: 8px;
+            }
+        }
+        .info-credito {
+            background-size: 90% auto !important;
+            .info-legales {
+                margin-top: 0px;
+            }
+            .info-box {
+                height: 260px !important;
+            }
+            .item-img {
+                margin-top: -20px;
+            }
+        }
+    }
+}

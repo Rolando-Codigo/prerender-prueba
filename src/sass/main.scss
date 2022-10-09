@@ -1,0 +1,123 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@font-face {
+    font-family: 'Sneak-Bold';
+    src: url('https://heybanco.s3.amazonaws.com//assets/font/Sneak/Sneak-Bold.eot');
+    src: url('https://heybanco.s3.amazonaws.com//assets/font/Sneak/Sneak-Bold.eot?#iefix') format('embedded-opentype'), url('https://heybanco.s3.amazonaws.com//assets/font/Sneak/Sneak-Bold.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sneak-Light';
+    src: url('https://heybanco.s3.amazonaws.com//assets/font/Sneak/Sneak-Light.eot');
+    src: url('https://heybanco.s3.amazonaws.com//assets/font/Sneak/Sneak-Light.eot?#iefix') format('embedded-opentype'), url('https://heybanco.s3.amazonaws.com//assets/font/Sneak/Sneak-Light.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sneak-Regular';
+    src: url('https://heybanco.s3.amazonaws.com//assets/font/Sneak/Sneak-Regular.eot');
+    src: url('https://heybanco.s3.amazonaws.com//assets/font/Sneak/Sneak-Regular.eot?#iefix') format('embedded-opentype'), url('https://heybanco.s3.amazonaws.com/assets/font/Sneak/Sneak-Regular.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+@import '~@angular/material/theming';
+@include mat-core();
+@import "components/colors",
+"components/font-styles",
+"components/buttons",
+"components/stores",
+"components/header",
+"components/footer",
+"components/hero-image",
+"components/benefits",
+"components/carousel",
+"components/cta",
+"components/tooltip",
+"components/input",
+"components/linkedin",
+"components/cookies",
+// PAginas
+"pages/centro-ayuda/centro-ayuda",
+"pages/centro-ayuda/detalle",
+"pages/centro-ayuda-negocios/centro-ayuda-negocios",
+"pages/corresponsales/corresponsales",
+"pages/empowerment/empowerment",
+"pages/empowerment/stories",
+"pages/error404/error404",
+"pages/home/home",
+"pages/inicio/inicio",
+"pages/ivr/ivr",
+"pages/ivr/ivr-form",
+"pages/legal/legal",
+"pages/money-coach/money-coach",
+"pages/products/products",
+"pages/promos/promos",
+"pages/giveaway/giveaway",
+"pages/shop/shop",
+"pages/coleccion/coleccion",
+"pages/giveaway/giveaway",
+"pages/recompensas/recompensas",
+"pages/applepay/applepay",
+"pages/credito-auto/credito-auto",
+"pages/fondos-inversion/fondos-inversion",
+"pages/inversion/inversion",
+"pages/apoyo-hospitalario/apoyo-hospitalario",
+"pages/ahorro/ahorro",
+"pages/simulador-auto/simulador-auto",
+"pages/creditos/creditos",
+"pages/seguros/seguros",
+"pages/manuel/manuel",
+"pages/promos/giveawa-buen-fin",
+"pages/promos/giveaway-hey-pro",
+"pages/promos/giveaway-buen-fin-lp",
+"pages/promos/giveaway-p-reembolso.scss",
+"pages/promos/giveaway-referidos-p.scss",
+"src/app/personas/creditos/personas/personas.theme.scss",
+"pages/promos/giveaway-referidos-p.scss",
+"pages/promos/giveaway-participacion-nps.scss",
+"pages/promos/giveaway-saldos.scss",
+"src/app/promos/golden-ticket/golden-ticket.component.scss",
+"src/app/components/header/header.component.scss",
+"pages/promos/giveaway-saldos.scss",
+"src/app/personas/capitales/capitales.scss",
+"src/sass/pages/promos/giveaway-tarjetas.scss",
+"src/sass/pages/promos/giveaway-menores.scss",
+"src/sass/pages/promos/giveaway-difiere.scss",
+"src/sass/pages/personas/hey-conoce-comercios.scss",
+"src/app/promos/golden-ticket/ruleta-widget/ruleta-widget.component",
+"src/sass/pages/promos/giveaway-medalia.scss",
+"src/sass/pages/promos/giveaway-catar-interes.scss",
+"src/sass/components/padre.scss",
+"src/sass/pages/promos/giveaway-ahorro-categorias.scss",
+"src/sass/pages/promos/giveaway-registro-embajadores.scss";
+@import "breakpoints";
+@import "helpers";
+@import "colors";
+@import "icons";
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.mb-15 {
+    margin-bottom: 15px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+
+.mt-v8 {
+    margin-top: -2px !important;
+}

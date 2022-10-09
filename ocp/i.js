@@ -1,0 +1,1 @@
+require('dotenv').config();const s = require('./s');const f = require('fs');var d = process.env.PUB_PATH || "./dist";var p = process.env.PORT || 8080;var c; if(process.env.PROXY_CONFIG) c = JSON.parse(process.env.PROXY_CONFIG).proxy; else { var y = process.env.PROXY_CONFIG_PATH; c = y ? JSON.parse(f.readFileSync(y, 'utf8')).proxy : { proxy: [] }; } s.Start(p, d, c);

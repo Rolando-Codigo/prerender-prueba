@@ -1,0 +1,115 @@
+<section class="hey-ivr-form bg-01">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-1 col-lg-8 offset-lg-2">
+                <h1>Desbloqueo de cuentas</h1>
+
+                <p>
+                    Solicita el desbloqueo de tu Cuenta Hey llenando los datos que a continuación te solicitamos.<br><br> Una vez que nos llegue tu información estarás recibiendo un correo con el seguimiento de tu solicitud.
+                </p>
+
+                <form (ngSubmit)="submitForm($event)">
+                    <h2>Selecciona una opción:</h2>
+
+                    <div class="row">
+                        <div class="col-md-8 col-lg-6">
+                            <mat-form-field>
+                                <mat-label></mat-label>
+
+                                <mat-select name="identifier" [value]="identifier" [(ngModel)]="identifier">
+                                    <mat-option *ngFor="let value of IDENTIFIER_VALUES" [value]="value">{{ IDENTIFIER_VALUES_TEXT[value] }}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-8 col-lg-6" *ngIf="identifier === DesbloqueoIvr.CARD">
+                            <mat-form-field>
+                                <mat-label>Número de Tarjeta</mat-label>
+
+                                <input matInput name="card" />
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-8 col-lg-6" *ngIf="identifier === DesbloqueoIvr.ACCOUNT_NUMBER">
+                            <mat-form-field>
+                                <mat-label>Número de Cuenta</mat-label>
+
+                                <input matInput name="account_number">
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-8 col-lg-6" *ngIf="identifier === DesbloqueoIvr.PHONE_NUMBER">
+                            <mat-form-field>
+                                <mat-label>Número de Teléfono</mat-label>
+
+                                <input matInput name="phone_number">
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <h2>Sube evidencia</h2>
+
+                    <div class="row">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="card text-center">
+                                <img loading="lazy" *ngIf="desbloqueo.ineFront.payload !== null && desbloqueo.ineFront.payload.length > 0" [src]="(desbloqueo.ineFront.base64Head ? desbloqueo.ineFront.base64Head : '') + ',' + desbloqueo.ineFront.payload" [alt]="'INE Frente'">
+                                <img loading="lazy" *ngIf="desbloqueo.ineFront.payload === null || desbloqueo.ineFront.payload.length <= 0" [src]="environment.assetsUrl + 'img/icons/ivr-camara.png'">
+
+                                <p *ngIf="desbloqueo.ineFront.payload === null || desbloqueo.ineFront.payload.length <= 0" class="card-text">Ine Frente</p>
+
+                                <input class="position-absolute w-100 h-100" type="file" name="ine_front" placeholder="Upload file" style="opacity: 0; top: 0; left: 0" (change)="fileChange($event, DesbloqueoIvr.INE_FRONT)">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="card text-center">
+                                <img loading="lazy" *ngIf="desbloqueo.ineBack.payload !== null && desbloqueo.ineBack.payload.length > 0" [src]="(desbloqueo.ineBack.base64Head ? desbloqueo.ineBack.base64Head : '') + ',' + desbloqueo.ineBack.payload" [alt]="'INE Reverso'">
+                                <img loading="lazy" *ngIf="desbloqueo.ineBack.payload === null || desbloqueo.ineBack.payload.length <= 0" [src]="environment.assetsUrl + 'img/icons/ivr-camara.png'">
+
+                                <p *ngIf="desbloqueo.ineBack.payload === null || desbloqueo.ineBack.payload.length <= 0" class="card-text">Ine Reverso</p>
+
+                                <input class="position-absolute w-100 h-100" type="file" name="ine_front" placeholder="Upload file" style="opacity: 0; top: 0; left: 0" (change)="fileChange($event, DesbloqueoIvr.INE_BACK)">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="card text-center">
+                                <img loading="lazy" *ngIf="desbloqueo.selfie.payload !== null && desbloqueo.selfie.payload.length > 0" [src]="(desbloqueo.selfie.base64Head ? desbloqueo.selfie.base64Head : '') + ',' + desbloqueo.selfie.payload" [alt]="'Selfie'">
+                                <img loading="lazy" *ngIf="desbloqueo.selfie.payload === null || desbloqueo.selfie.payload.length <= 0" [src]="environment.assetsUrl + 'img/icons/ivr-camara.png'">
+
+                                <p *ngIf="desbloqueo.selfie.payload === null || desbloqueo.selfie.payload.length <= 0" class="card-text">Selfie</p>
+
+                                <input class="position-absolute w-100 h-100" type="file" name="ine_front" placeholder="Upload file" style="opacity: 0; top: 0; left: 0" (change)="fileChange($event, DesbloqueoIvr.SELFIE)">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="card text-center">
+                                <img loading="lazy" *ngIf="desbloqueo.proofOfResidency.payload !== null && desbloqueo.proofOfResidency.payload.length > 0" [src]="(desbloqueo.proofOfResidency.base64Head ? desbloqueo.proofOfResidency.base64Head : '') + ',' + desbloqueo.proofOfResidency.payload" [alt]="'Comprobante de Domicilio'">
+                                <img loading="lazy" *ngIf="desbloqueo.proofOfResidency.payload === null || desbloqueo.proofOfResidency.payload.length <= 0" [src]="environment.assetsUrl + 'img/icons/ivr-camara.png'">
+
+                                <p *ngIf="desbloqueo.proofOfResidency.payload === null || desbloqueo.proofOfResidency.payload.length <= 0" class="card-text">Comprobante de Domicilio</p>
+
+                                <input class="position-absolute w-100 h-100" type="file" name="ine_front" placeholder="Upload file" style="opacity: 0; top: 0; left: 0" (change)="fileChange($event, DesbloqueoIvr.PROOF_OF_RESIDENCY)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>¿Tienes algo que contarnos?</h2>
+
+                    <textarea name="comments" [(ngModel)]="desbloqueo.comments"></textarea>
+
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <a class="btn btn-outline-primary" role="button" [routerLink]="['/reportes']">Cancelar</a>
+                        </div>
+
+                        <div class="col-6 col-md-6 col-lg-6 text-right">
+                            <button class="btn btn-primary" type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

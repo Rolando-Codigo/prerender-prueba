@@ -1,0 +1,170 @@
+hey-giveaway-participacion-buen-fin {
+    .hey-hero-image {
+        background-color: #FD0360;
+        color: white;
+        p {
+            margin-top: 16px;
+            color: white;
+        }
+        h1 {
+            color: white;
+            margin-bottom: 16px;
+            margin-top: 8px;
+        }
+    }
+    .container-counter {
+        background-color: white;
+        border-radius: 25px;
+        box-shadow: 0px 3px 6px #00000029;
+        padding: 8px 16px;
+        .title-counter {
+            color: #FD0360;
+            font-size: 42pt;
+            text-align: left;
+        }
+        p {
+            margin-top: -10px;
+            text-align: left;
+            font-size: 14px;
+        }
+    }
+    .hey-giveaway {
+        background-color: #202020;
+        h2 {
+            color: white;
+            margin-bottom: 16px;
+        }
+        .website {
+            .mat-form-field-flex {
+                border-radius: 16px;
+                height: 55px;
+                background-repeat: no-repeat;
+                padding-left: 32px;
+                border-width: 0px !important;
+                background-position: 14px 15px;
+            }
+            .mat-form-field-underline {
+                display: none;
+            }
+        }
+    }
+    #tdcV {
+        background: url(https://heybanco.s3.amazonaws.com/img/P810-Giveaways/p810-54-img-4.png)no-repeat;
+        background-position: right;
+        background-size: 500px auto;
+        height: 520px;
+        .media {
+            margin-top: 0;
+            margin-bottom: 40px;
+            img {
+                height: auto;
+                margin-right: 16px;
+                width: 53px;
+            }
+            h3 {
+                @extend %sneak-22;
+                margin-bottom: 8px;
+                margin-top: 12px;
+            }
+            p {
+                @extend %lato-16;
+            }
+            &:first-child {
+                margin-top: 40px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .img-background {
+            display: none;
+        }
+    }
+    .mat-vigencia {
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 0 !important;
+        letter-spacing: 0px;
+    }
+    .bgimage-giveaway-bn {
+        width: 100%;
+        height: 600px;
+        background-color: #FD0360;
+        color: white;
+        position: relative;
+        text-align: center;
+        margin: 0px auto;
+        h1 {
+            font-weight: unset;
+        }
+    }
+    .mb-24 {
+        margin-bottom: 16px;
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    hey-giveaway-participacion-buen-fin {
+        .container-counter {
+            margin: 0 auto;
+            width: 100%;
+            margin-top: 32px;
+        }
+        #tdcV {
+            background-size: 300px;
+            background-position: right;
+            .img-background {
+                display: none;
+            }
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    hey-giveaway-participacion-buen-fin {
+        .hey-hero-image {
+            height: 530px !important;
+            .responsive-cuentas-hero {
+                margin-top: -30px;
+            }
+            .col-lg-6 {
+                height: 310px;
+            }
+            .col-lg-5 {
+                img {
+                    height: 250px;
+                    width: auto;
+                }
+            }
+        }
+        .container-counter {
+            margin: 16px;
+            width: 90%;
+            margin-top: 16px;
+        }
+        #tdcV {
+            background: none;
+            height: 660px !important;
+            .img-background {
+                position: absolute;
+                display: block !important;
+                top: -70px;
+                right: -10px;
+                text-align: right;
+                img {
+                    width: 80%;
+                    margin-top: 65px;
+                    margin-right: -10px;
+                }
+            }
+            h3 {
+                margin-top: 180px;
+            }
+        }
+        .bgimage-giveaway-bn {
+            height: 680px;
+        }
+    }
+}

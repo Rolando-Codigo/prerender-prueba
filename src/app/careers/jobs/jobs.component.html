@@ -1,0 +1,43 @@
+<section class="hey-legal-title bg-01">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+                <h3>Somos Hey Banco</h3>
+
+                <h1>Forma parte de nosotros</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-jobs bg-01">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+                <h2>Encuentra tu nuevo trabajo</h2>
+
+                <div class="row">
+                    <div class="col-lg-6" *ngFor="let career of careers; let i = index">
+                        <div class="card" (click)="careerDetail(i)">
+                            <div class="card-body">
+                                <h3>{{ career.puesto }}</h3>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h4><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/ic_input_locationpin.svg'">{{ career.ubicacion }}</h4>
+                                    </div>
+
+                                    <div class="col-6 text-right">
+                                        <h5>{{ career.area }}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hey-linkedin></hey-linkedin>

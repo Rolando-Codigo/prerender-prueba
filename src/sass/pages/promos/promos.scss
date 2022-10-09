@@ -1,0 +1,512 @@
+hey-promos {
+    .hey-hero-image {
+        height: 520px;
+        background: linear-gradient(#BA9631, #FACB36);
+        background: -webkit-linear-gradient(left, #BA9631, #FACB36);
+        background-image: -moz-linear-gradient(left, #BA9631, #FACB36);
+        background-image: -o-linear-gradient(left, #BA9631, #FACB36);
+        background-image: linear-gradient(to left, #BA9631, #FACB36);
+        
+        .img-back {
+            color: white !important;
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-boleto-dorado.png)no-repeat;
+            background-position: 100% 30%;
+            background-size: 37% auto;
+            height: 600px;
+            h1 {
+                color: white;
+                margin-bottom: 16px;
+                margin-top: 8px;
+            }
+            p {
+                margin-top: 16px;
+                color: white;
+            }
+            .col-lg-5 {
+                height: 400px;
+            }
+        }
+        h1 {
+            @extend %sneak-48;
+        }
+        p {
+            margin-bottom: 40px;
+            margin-top: 12px;
+        }
+        .col-lg-5 {
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+    .hey-promos {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        .row {
+            height: 620px;
+            vertical-align: middle;
+        }
+    }
+    .hey-cta {
+        img+h2 {
+            margin-top: 24px;
+        }
+        p {
+            &.legal {
+                @extend %lato-10;
+            }
+        }
+        .media {
+            img {
+                height: auto;
+                width: 20px;
+            }
+            p {
+                @extend %lato-18;
+                color: $color-black-4B;
+                font-family: inherit;
+            }
+        }
+        .container-promos {
+            img {
+                width: 35%;
+            }
+            h2 {
+                margin-bottom: 16px;
+            }
+            .items-shop {
+                img {
+                    width: 70%;
+                }
+                margin-bottom: 64px;
+            }
+        }
+        .background-promos {
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            margin-bottom: 16px;
+            img {
+                width: 90%;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+    }
+    .hey-promos {
+        padding-bottom: 120px;
+        padding-top: 120px;
+        background-color: $color-blue;
+        h2 {
+            @extend %sneak-48;
+            margin-bottom: 80px;
+        }
+        h3 {
+            @extend %sneak-36;
+            margin-bottom: 8px;
+        }
+        h4 {
+            @extend %lato-18;
+            margin-bottom: 28px;
+        }
+        p {
+            @extend %lato-18;
+            margin-bottom: 0;
+            a {
+                color: $color-green;
+                text-decoration: underline;
+            }
+            &.legal {
+                @extend %lato-14;
+                color: #888787;
+                margin-bottom: 24px;
+                margin-top: 16px;
+            }
+        }
+        .btn-primary {
+            margin-right: 0;
+            margin-top: 0;
+        }
+        .btn-link {
+            margin-left: 32px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .hey-promos-color {
+        padding-bottom: 100px;
+        padding-top: 85px;
+        img {
+            height: auto;
+            width: 100%;
+        }
+        h2 {
+            @extend %sneak-48;
+            margin-bottom: 8px;
+        }
+        p {
+            margin-bottom: 24px;
+        }
+        .col-lg-6:nth-of-type(2) {
+            height: 538px;
+            img {
+                height: 24px;
+                width: auto;
+                position: absolute;
+                right: 16px;
+                top: 16px;
+            }
+            h2 {
+                @extend %sneak-36;
+                margin-bottom: 4px;
+                margin-top: 30px;
+                text-align: left;
+            }
+            p.legal {
+                @extend %lato-14;
+                color: $color-gray-99;
+                margin-bottom: 44px;
+                text-align: left;
+            }
+        }
+        /*p {
+            @extend %lato-18;
+            margin-bottom: 0;
+        }*/
+        .btn-primary {
+            margin-right: 32px;
+        }
+        &.bg-yellow {
+            h2 {
+                margin-bottom: 16px;
+            }
+        }
+    }
+    .hey-banner {
+        padding-bottom: 72px;
+        padding-top: 70px;
+        h2 {
+            @extend %sneak-48;
+            margin-bottom: 8px;
+        }
+        h3 {
+            @extend %sneak-36;
+            margin-bottom: 4px;
+        }
+        p {
+            @extend %lato-18;
+            margin-bottom: 32px;
+        }
+        .btn-primary {
+            margin-right: 42px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .hey-comercios {
+        padding-bottom: 54px;
+        padding-top: 121px;
+        h2 {
+            @extend %sneak-48;
+            margin-bottom: 10px;
+        }
+        h3 {
+            @extend %sneak-36;
+            margin-bottom: 84px;
+        }
+        p {
+            @extend %lato-16;
+            margin-bottom: 0;
+            &.legal {
+                @extend %lato-14;
+                color: $color-gray-99;
+                margin-bottom: 30px;
+                margin-top: 6px;
+            }
+        }
+        .responsive {
+            width: 40%;
+            height: auto;
+        }
+        .centrado {
+            display: block;
+            margin: auto;
+        }
+        .visa {
+            height: auto;
+            margin-bottom: 54px;
+            width: 530px;
+        }
+        .btn-primary {
+            margin-right: 32px;
+        }
+        .col-lg-4 {
+            margin-bottom: 80px;
+            img {
+                width: 100%;
+            }
+            h3 {
+                margin-bottom: 17px;
+                margin-top: 40px;
+            }
+        }
+    }
+    .hey-visa {
+        padding-bottom: 120px;
+        padding-top: 120px;
+        img {
+            height: auto;
+            width: 100%;
+        }
+        h2 {
+            @extend %sneak-48;
+            margin-bottom: 8px;
+        }
+        p {
+            @extend %lato-18;
+            margin-bottom: 42px;
+        }
+        .btn-primary {
+            margin-right: 32px;
+        }
+        .media {
+            margin-bottom: -10px;
+            .txtbullets {
+                @extend %lato-16;
+            }
+            img {
+                margin-right: 8px;
+                width: 24px;
+            }
+            a {
+                color: #212529;
+                text-decoration: underline;
+            }
+        }
+    }
+    .modal {
+        img {
+            margin-bottom: 16px;
+            width: 115px;
+        }
+        p {
+            @extend %lato-16;
+            margin-bottom: 0;
+            a {
+                color: $color-pink;
+                text-decoration: underline;
+            }
+        }
+    }
+    .modal-header {
+        border-bottom: none;
+    }
+    .modal-footer {
+        border-top: none;
+    }
+    .buen-fin-image {
+        background-color: #FD0360;
+        color: white;
+        .responsive-cuentas-hero {
+            margin-bottom: -40px;
+        }
+    }
+}
+
+ //Pantallas Medianas
+ @media (max-width: 1400px) {
+    hey-promos {
+        .hey-hero-image {
+            height: 430px;
+            .col-lg-5 {
+                height: 330px !important;
+            }
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    hey-promos {
+        .hey-hero-image {
+            //background-size: 322px auto;
+            height: 400px;
+            .col-lg-7 {
+                height: 400px;
+            }
+            .col-lg-5 {
+                height: 320px !important;
+            }
+            .img-back {
+                background-position: bottom right !important;
+                background-size: 50% auto !important;
+                height: 350px !important;
+            }
+        }
+        .hey-comercios {
+            padding-bottom: 0;
+            padding-top: 121px;
+            p {
+                &.legal {
+                    margin-bottom: 22px;
+                    margin-top: 9px;
+                }
+            }
+            .visa {
+                height: auto;
+                margin-bottom: 40px;
+                width: 100%;
+            }
+            .col-lg-4 {
+                margin-bottom: 170px;
+                h3 {
+                    margin-bottom: 10px;
+                    margin-top: 20px;
+                }
+            }
+        }
+        .buen-fin-image {
+            height: 520px !important;
+            .vertical-center {
+                img {
+                    margin-top: 80px;
+                }
+            }
+            .responsive-cuentas-hero {
+                margin-bottom: -120px;
+            }
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    hey-promos {
+        .hey-hero-image {
+            background-position: bottom center;
+            //background-size: 60% auto;
+            height: 580px;
+            min-height: 580px;
+            .col-lg-5 {
+                height: 280px !important;
+            }
+            .col-lg-6 {
+                height: 280px;
+            }
+            img {
+                margin-top: 16px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 8px;
+            }
+            .img-back {
+                background-position: bottom right !important;
+                background-size: 85% auto !important;
+                height: 500px !important;
+            }
+        }
+        #giveaway {
+            img {
+                margin-top: 0;
+            }
+        }
+        .hey-comercios {
+            padding-bottom: 40px;
+            padding-top: 102px;
+            h2 {
+                margin-bottom: 9px;
+            }
+            h3 {
+                margin-bottom: 76px;
+            }
+            .responsive {
+                width: 120%;
+                height: auto;
+            }
+            p {
+                &.legal {
+                    margin-bottom: 30px;
+                    margin-top: 8px;
+                }
+            }
+            .col-lg-4 {
+                margin-bottom: 100px;
+                h3 {
+                    font-size: 36px;
+                    line-height: 40px;
+                    margin-bottom: 17px;
+                    margin-top: 37px;
+                }
+            }
+        }
+        .hey-promos {
+            padding-bottom: 80px;
+            padding-top: 83px;
+            h2 {
+                margin-bottom: 40px;
+            }
+            h3 {
+                font-weight: bold;
+            }
+            img {
+                margin-bottom: 40px;
+            }
+        }
+        .hey-promos-color,
+        .hey-visa {
+            padding-bottom: 80px;
+            padding-top: 83px;
+            img {
+                margin-bottom: 40px;
+            }
+        }
+        .hey-promos {
+            .container {
+                padding-left: 0px !important;
+                padding-right: 0xp !important;
+                img {
+                    width: 30%;
+                }
+            }
+            .row {
+                height: 620px;
+                vertical-align: middle;
+            }
+            .background-orange {
+                padding: 32px;
+                img {
+                    width: 50%;
+                }
+            }
+        }
+        .hey-cta {
+            .align-middle {
+                margin: 26px;
+            }
+            .row {
+                height: auto;
+            }
+        }
+    }
+    .buen-fin-image {
+        height: 740px !important;
+        min-height: 740px !important;
+        padding-top: 24px;
+        .col-lg-5 {
+            img {
+                height: auto;
+                width: 80% !important;
+                margin-bottom: -590px;
+            }
+        }
+    }
+}
+
+.modal-content {
+    margin-top: 35% !important;
+}

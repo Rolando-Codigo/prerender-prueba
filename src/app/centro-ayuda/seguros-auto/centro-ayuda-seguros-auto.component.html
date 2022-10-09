@@ -1,0 +1,334 @@
+<section class="bgimage-seguros">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Sobre Seguro de Auto</h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form class="card">
+                    <div class="row align-items-center">
+
+                        <div class="col">
+                            <input class="form-control form-control-borderless" type="search" id="search" [formControl]="searchForm" placeholder="¿Cómo podemos ayudarte?" />
+                        </div>
+
+                        <div class="col-auto">
+                            <button class="btn btn-light" role="button" [disabled]="!isValidSearchForm" (click)="submitSearch()">Buscar</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <a routerLink="/reportes">
+                    <p class="txtSmall"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+          </svg> Contacta a nuestro Centro de Servicio para reportes y aclaraciones</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p class="titlehomeblack"><img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-20-CAD-division.svg'" alt="Tu banco digital">&nbsp;&nbsp;&nbsp;&nbsp;Busca por producto&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Tu banco digital" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-20-CAD-division.svg'"></p>
+            </div>
+        </div>
+
+        <div class="container d-none d-sm-none d-md-block d-lg-block">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-xl-12">
+                    <div class="row">
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/centro-ayuda-app']" role="button">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-2-CAD-ic-app.svg'" alt="centro de ayuda app">
+                                <p class="bodyhomeblack">App </p>
+                            </a>
+                        </div>
+
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/centro-ayuda-cuenta']" role="button">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-3-CAD-ic-cuenta.svg'" alt="centro de ayuda cuenta">
+
+                                <p class="bodyhomeblack">Cuenta </p>
+                            </a>
+                        </div>
+
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/centro-ayuda-inversion']" role="button">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-4-CAD-ic-inversion.svg'" alt="centro de ayuda inversion">
+                                <br>
+                                <p class="bodyhomeblack">Inversión</p>
+
+                            </a>
+                        </div>
+
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/centro-ayuda-tarjeta-credito']" role="button">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-5-CAD-ic-tarjeta-credito.svg'" alt="centro de ayuda tarjeta de credito">
+                                <br>
+                                <p class="bodyhomeblack">Tarjeta de Crédito</p>
+
+                            </a>
+                        </div>
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/centro-ayuda-ahorro']" role="button">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/app/P320-7-CAD-ic-ahorro.svg'" alt="centro de ayuda ahorro">
+                                <br>
+                                <p class="bodyhomeblack">Ahorro</p>
+
+                            </a>
+                        </div>
+
+                        <div class="col text-center">
+                            <a class="btn btn-link" [routerLink]="['/centro-ayuda-seguros']" role="button">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/seguros/P390-1-CAD-ic-seguros.svg'" alt="centro de ayuda seguros">
+                                <br>
+                                <p class="bodyhomeblackActive">Seguros</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="hey-benefits-cad bg-02">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+                <h2>Temas más populares </h2>
+
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="benefit-cad">
+                            <div class="benefit-cad-box">
+                                <a onclick="dataLayer.push({'event':'evPageLink'});" href="/centro-ayuda/seguro-plataformas-digitales">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/seguros-auto/P3100-2-CAD-ic-hey-asegura-mi-auto.svg'" alt="¿Puedo asegurar mi auto si trabajo con UBER, DiDi o plataformas similares?">
+                                    <br>
+                                    <h3>¿Puedo asegurar mi auto si trabajo con UBER, DiDi o plataformas similares?</h3>
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-24-CAD-ic-ver-mas.svg'" alt="¿Puedo asegurar mi auto si trabajo con UBER, DiDi o plataformas similares?">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="benefit-cad">
+                            <div class="benefit-cad-box">
+                                <a onclick="dataLayer.push({'event':'evPageLink'});" href="/centro-ayuda/seguro-moto">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/seguros-auto/P3100-7-CAD-ic-seguro-moto.svg'" alt="¿Puedo asegurar una motocicleta?">
+                                    <br>
+                                    <h3>¿Puedo asegurar una motocicleta?</h3>
+                                    <br> <br>
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-24-CAD-ic-ver-mas.svg'" alt="¿Puedo asegurar una motocicleta?">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="benefit-cad">
+                            <div class="benefit-cad-box">
+                                <a onclick="dataLayer.push({'event':'evPageLink'});" href="/centro-ayuda/version-auto">
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/seguros-auto/P3100-3-CAD-ic-consultar-poliza.svg'" alt="¿Dónde puedo consultar la versión de mi auto?">
+                                    <br>
+                                    <h3>¿Dónde puedo consultar la versión de mi auto?</h3>
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-24-CAD-ic-ver-mas.svg'" alt="¿Dónde puedo consultar la versión de mi auto?">
+                                    <br><br>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-cta">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-10 col-md-5 offset-md-1 col-lg-5 offset-lg-1">
+                <h2>¿Cómo reporto un accidente de auto?</h2>
+                <a class="btn btn-primary" role="button" onclick="dataLayer.push({'event':'evPageLink'});" href="/centro-ayuda/reporte-accidente-auto">
+          Conoce más
+        </a>
+            </div>
+
+            <div class="col-9 col-md-5 offset-md-0 col-lg-4 offset-lg-1">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/seguros-auto/P3100-4-CAD-img-reportar-accidente.png'" alt="¿Qué pasa cuándo completo una meta de ahorro?">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hey-cta hey-ayuda bg-green-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-5 offset-md-1 col-lg-5 offset-lg-1">
+                <h2>¿Dónde consultar la versión de tu auto?</h2>
+                <p class="txtBanner">Te contamos cuales son las opciones de seguros.</p>
+                <a class="btn btn-primary" role="button" onclick="dataLayer.push({'event':'evPageLink'});" href="/centro-ayuda/version-auto">
+          Conoce más</a>
+            </div>
+
+            <div class="col-9 col-md-5 offset-md-0 col-lg-4 offset-lg-1">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/seguros-auto/P3100-6-donde-consultar-version-de-auto.png'" alt="¿Dónde consultar la versión de tu auto?">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-faq">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-10 offset-0 col-md-5 offset-md-1 col-lg-3 offset-lg-1 order-2 order-md-1 order-lg-1">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/centro-ayuda/home/P310-20-CAD-img-faq.png'" alt="Preguntas frecuentes">
+            </div>
+
+            <div class="col-md-5 col-lg-7 order-1 order-md-2 order-lg-2">
+                <h2>Preguntas frecuentes</h2>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ¿Qué datos necesito para cotizar el Seguro de Auto Hey?<img loading="lazy" alt="Tu banco digital" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Año del vehículo, categoría del vehículo, marca, modelo, versión, código postal de tu residencia, correo electrónico.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ¿Puedo asegurar mi auto si trabajo con Uber, Didi o plataformas similares?<img loading="lazy" alt="Tu banco digital" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                No por el momento, solo aseguramos autos de uso particular.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ¿Puedo asegurar una motocicleta?<img loading="lazy" alt="Tu banco digital" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                No por el momento, solo aseguramos autos de uso particular.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                  ¿Dónde puedo consultar la versión de mi auto?<img loading="lazy" alt="Tu banco digital" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                La descripción está en la tarjeta de circulación o factura de tu vehículo.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                  ¿Cómo consulto la información de mi póliza del Seguro de Auto Hey?<img loading="lazy" alt="Tu banco digital" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Cuando termines tu proceso de contratación te llegará un correo con la información de tu póliza, el documento vendrá protegido y la clave es tu RFC.<br> En este documento podrás revisar:
+                                <ul>
+                                    <li>Datos personales.</li>
+                                    <li>Vigencia de tu seguro.</li>
+                                    <li>Datos de contacto de la aseguradora en caso de accidente.</li>
+                                    <li>Condiciones generales, éstas también están disponibles a través de nuestro sitio web: <a routerLink="/seguros-auto-persona" target="_blank">https://www.heybanco.com/seguros-auto-persona</a></li>
+                                </ul>
+                                <br>Te recomendamos guardar el pdf de la póliza en tu teléfono.
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-ayuda bg-02">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 text-center">
+                <h2>Encuentra información<br> sobre más temas</h2>
+            </div>
+        </div>
+        <br><br>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form class="card">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <input class="form-control form-control-borderless" type="search" id="search" [formControl]="searchForm" placeholder="¿Cómo podemos ayudarte?" />
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light" role="button" [disabled]="!isValidSearchForm" (click)="submitSearch()">Buscar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 text-center">
+                <p class="txtSmall">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+          </svg> Contacta a nuestro Centro de Servicio para reportes y aclaraciones
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>

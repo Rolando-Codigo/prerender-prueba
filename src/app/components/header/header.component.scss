@@ -1,0 +1,132 @@
+hey-header {
+    .menu-collapse {
+        z-index: 99999;
+    }
+    .mat-menu-panel {
+        min-width: 60%;
+        border-radius: 16px;
+    }
+    p {
+        margin-bottom: 0px !important;
+    }
+    .btn-web {
+        font-size: 16px;
+        width: 142px;
+        color: white;
+        margin-left: 16px;
+        text-align: center;
+        border: 1px white;
+    }
+    .btn-web:hover {
+        background: #989AA5;
+    }
+    .btn:hover {
+        color: white;
+    }
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+    .btn-ingresar {
+        width: 102px;
+        font-size: 13px;
+        height: 30px;
+        text-align: center;
+    }
+    .font-ingresar {
+        font-size: 13pt;
+    }
+    .btn-quiero {
+        width: 172px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .menu-active {
+        position: absolute;
+        z-index: 999;
+        .container {
+            width: 558px;
+        }
+    }
+    .menu-banca {
+        position: absolute;
+        z-index: 999;
+        height: 180px !important;
+        .container {
+            width: 320px !important;
+            background-color: #333333;
+            color: white;
+        }
+    }
+    .close-banca {
+        margin-top: -10px;
+        margin-left: -20px;
+    }
+    .font-weight-900 {
+        font-weight: 900;
+    }
+    .font-size-9 {
+        font-size: 8px;
+    }
+    .font-size-12 {
+        font-family: 'Sneak-Regular';
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .cursor-pointer:hover,
+    .font-size-12:hover {
+        color: #989AA5;
+    }
+    .bg-divider {
+        background: rgba(236, 236, 236, 0.4);
+    }
+    .w-two {
+        width: 390px !important;
+    }
+    .w-three {
+        width: 558px !important;
+    }
+    .pink-hey-bg {
+        background: #FD86F4;
+    }
+    .navbar {
+        .show-toggler {
+            display: none !important;
+        }
+    }
+    .border {
+        border: 1px solid white !important;
+    }
+    .a {
+        color: black;
+    }
+    .logoHeader {
+        color: white;
+    }
+    @media (max-width: 991.98px) {
+        .navbar {
+            .navbar-toggler {
+                display: inline-block !important;
+            }
+            .navbar-collapse {
+                display: none !important;
+            }
+            .show-toggler {
+                display: flex !important;
+            }
+        }
+    }
+    @media (max-width: 767.98px) {
+        .navbar {
+            .navbar-toggler {
+                display: inline-block !important;
+            }
+            .navbar-collapse {
+                display: none !important;
+            }
+            .show-toggler {
+                display: flex !important;
+            }
+        }
+    }
+}

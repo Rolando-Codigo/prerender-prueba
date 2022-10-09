@@ -1,0 +1,109 @@
+<section class="hey-ivr-form bg-01">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-1 col-lg-8 offset-lg-2">
+                <h1>Cambio de domicilio, tarjeta o correo</h1>
+
+                <p>
+                    Si tus datos personales han cambiado regístralo llenando los siguientes campos.<br><br> Una vez que nos llegue tu información actualizada estarás recibiendo un correo con la estatus de tu cambio.
+                </p>
+
+                <form>
+                    <h2>Selecciona una opción:</h2>
+
+                    <div class="row">
+                        <div class="col-md-8 col-lg-6">
+                            <mat-form-field>
+                                <mat-label></mat-label>
+
+                                <mat-select>
+                                    <mat-option></mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-8 col-lg-6">
+                            <mat-form-field>
+                                <mat-label></mat-label>
+
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-8 col-lg-6">
+                            <mat-form-field>
+                                <mat-label></mat-label>
+
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <h2>¿Qué deseas cambiar?</h2>
+
+                    <div class="row">
+                        <div class="col-md-8 col-lg-6">
+                            <mat-form-field>
+                                <mat-label></mat-label>
+
+                                <mat-select>
+                                    <mat-option></mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <h2>Sube evidencia</h2>
+
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3">
+                            <div class="card text-center">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/ivr-camara.png'">
+
+                                <p class="card-text">INE FRENTE</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3">
+                            <div class="card text-center">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/ivr-camara.png'">
+
+                                <p class="card-text">INE REVERSO</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3">
+                            <div class="card text-center">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/ivr-camara.png'">
+
+                                <p class="card-text">SELFIE</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3">
+                            <div class="card text-center">
+                                <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/ivr-camara.png'">
+
+                                <p class="card-text">CURP/RFC</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>¿Tienes algo que contarnos?</h2>
+
+                    <textarea></textarea>
+
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <a class="btn btn-outline-primary" role="button" [routerLink]="['/reportes']">Cancelar</a>
+                        </div>
+
+                        <div class="col-6 col-md-6 col-lg-6 text-right">
+                            <button class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

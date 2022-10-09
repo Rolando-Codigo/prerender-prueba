@@ -1,0 +1,143 @@
+<!--<section class="hey-job-form bg-01">
+  <form [formGroup]="captchaForm">
+    <ngx-invisible-recaptcha #captchaElem siteKey="6LfWEOUZAAAAAM8qZL8f39_yUAU02Yv1064GvIIn" (reset)="handleReset()" (load)="handleLoad()" (success)="handleSuccess($event)" (expire)="handleExpire()" (error)="handleError()" formControlName="envioRecaptcha"></ngx-invisible-recaptcha>
+  </form>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+        <h1>Coviértete en Digital Banker</h1>
+
+        <p></p>
+
+        <hr>
+      </div>
+    </div>
+
+    <form [formGroup]="careerForm" (ngSubmit)="onSubmit(careerForm.value)">
+      <div class="row align-items-center">
+        <div class="col-md-6 offset-md-1 col-lg-5 offset-lg-1">
+          <h3>Paso 1</h3>
+
+          <h2>Curriculum vitae (opcional)</h2>
+
+          <p>Compártenos tu CV</p>
+        </div>
+
+        <div class="col-md-6 offset-md-1 col-lg-5 offset-lg-0">
+          <button class="btn btn-primary" type="button" (click)="nombreDocumento.click()">Adjuntar</button>
+
+          <input class="btn btn-primary" type="file" placeholder="Adjuntar" formControlName="nombreDocumento" #nombreDocumento (change)="trasnformarArchivo(nombreDocumento.files)" hidden>
+
+          <div *ngIf="careersModel.nombreDocumento">
+            ¡Gracias! Hemos recibido tu CV.
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+          <hr>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 offset-md-1 col-lg-5 offset-lg-1">
+          <h3>Paso 2</h3>
+
+          <h2>Información de contacto (obligatorio)</h2>
+
+          <p>Por favor incluir tu información de contacto completa.</p>
+        </div>
+
+        <div class="col-md-6 offset-md-1 col-lg-5 offset-lg-0">
+          <mat-form-field class="name">
+            <mat-label>Nombre completo</mat-label>
+
+            <input type="text" matInput formControlName="nombre">
+
+            <mat-error *ngIf="nameInvalid">Ingresa tu Nombre completo</mat-error>
+          </mat-form-field>
+
+          <mat-form-field class="mail">
+            <mat-label>Correo electrónico</mat-label>
+
+            <input type="email" matInput formControlName="correo">
+
+            <mat-error *ngIf="mailInvalid">Ingresa tu Correo electrónico</mat-error>
+          </mat-form-field>
+
+          <mat-form-field class="phone">
+            <mat-label>Número de contacto</mat-label>
+
+            <input type="tel" matInput formControlName="telefono">
+
+            <mat-error *ngIf="phoneInvalid">Ingresa tu Número de contacto</mat-error>
+          </mat-form-field>
+
+          <mat-form-field class="location">
+            <mat-label>Ubicación</mat-label>
+
+            <input type="text" matInput formControlName="ubicacion">
+
+            <mat-error *ngIf="locationInvalid">Ingresa tu Ubicación</mat-error>
+          </mat-form-field>
+
+          <mat-form-field class="skills">
+            <mat-label>Áreas de experiencia</mat-label>
+
+            <input type="text" matInput formControlName="areasExperiencia">
+
+            <mat-error *ngIf="skillsInvalid">Ingresa tus Áreas de experiencia</mat-error>
+          </mat-form-field>
+
+          <mat-form-field class="studies">
+            <mat-label>Nivel de estudios</mat-label>
+
+            <input type="text" matInput formControlName="nivelEstudios">
+
+            <mat-error *ngIf="studiesInvalid">Ingresa tu Nivel de Estudios</mat-error>
+          </mat-form-field>
+
+          <h4>Disponibilidad de cambio de residencia</h4>
+
+          <mat-radio-group class="row" formControlName="cambioResidencia">
+            <div class="col-12">
+              <mat-radio-button [value]="true">Si tengo posibilidad de cambiar de residencia</mat-radio-button>
+            </div>
+
+            <div class="col-12">
+              <mat-radio-button [value]="false">No puedo cambiar de residencia</mat-radio-button>
+            </div>
+          </mat-radio-group>
+
+          <mat-checkbox formControlName="check" class="legal">
+            Consulta nuestro <a href="https://heybanco.s3.amazonaws.com/assets/legales/Aviso-privacidad-empleados-prospectos.pdf" target="_blank">Aviso de Privacidad</a>.
+          </mat-checkbox>
+
+          <button class="btn btn-primary" type="submit" (click)="onSubmit()" [disabled]="!careerForm.valid">Enviar aplicación</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="hey-linkedin bg-01">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+        <p>Si deseas puedes subir tu información para futuras vacantes o síguenos en: <a href="https://www.linkedin.com/company/hey-banco/" target="_blank"><img loading="lazy" [src]="environment.assetsUrl + 'img/linkedin-logo.svg"></a></p>
+
+        <hr>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-1">
+        <p>
+          En Hey Banco no discriminamos por motivos de raza, religión, color, origen nacional, sexo (incluido el embarazo, parto, decisiones de salud reproductiva o afecciones médicas relacionadas), orientación sexual, identidad de género, expresión de género, edad, individuo con una discapacidad, información genética, opiniones políticas o actividad u otras características legalmente protegidas aplicables.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>-->

@@ -1,0 +1,194 @@
+.hey-legal-title {
+    padding-bottom: 135px;
+    padding-top: 138px;
+
+    h1 {
+        @extend %sneak-56;
+        color: $color-black-20;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        @extend %sneak-14;
+        margin-bottom: 24px;
+    }
+    h3 {
+        @extend %sneak-56;
+        color: $color-black-20;
+        margin-bottom: 0;
+        margin-left: 15px
+    }
+    h4 {
+        @extend %sneak-56;
+        color: $color-black-20;
+        margin-bottom: 0;
+        margin-left: 15px;
+    }
+    p {
+        @extend %lato-22;
+        color: $color-black-4B;
+        margin-bottom: 0;
+        margin-top: 17px;
+    }
+    .txt-small {
+        @extend %sneak-14;
+        color: $color-black-A5;
+    }
+
+    p + .btn {
+        margin-top: 24px;
+    }
+
+    .table {
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 1rem;
+    }
+    table th, .table td {
+        padding: 1rem;
+        vertical-align: top;
+        border-top: 1px solid #dee2e6;
+        border-bottom: 1px solid #dee2e6;
+    }
+    .arrow-left{
+        width: 20px;
+    }
+    .back{
+        width: 20px;
+        margin-top: 15%;
+        margin-left: 80%;
+    }
+    .sidebartxt {
+        @extend %sneak-20;
+        color: $color-black-4B;
+    }
+    .sidebartxt2 {
+        @extend %sneak-20;
+        color: $color-black-A5;
+    }
+    .espacio {
+        margin-top: 30px;
+    }
+    a {
+        @extend %sneak-20;
+        color: $color-black-22;
+        text-decoration: none;
+        background-color: transparent;
+    }
+}
+
+.hey-legal-body {
+    padding-bottom: 120px;
+    padding-top: 33px;
+
+    h2 {
+        @extend %sneak-22;
+        color: $color-black-20;
+        margin-bottom: 8px;
+        margin-top: 64px;
+    }
+
+    h3 {
+        @extend %lato-16;
+        color: $color-purple;
+        margin-bottom: 16px;
+    }
+
+    p {
+        @extend %lato-16;
+        color: $color-black-4B;
+        margin-bottom: 0;
+        text-align: justify;
+        word-break: keep-all;
+
+        &.small {
+            font-size: 12px;
+            line-height: 17px;
+        }
+    }
+
+    a {
+        color: $color-green;
+        text-decoration: underline;
+    }
+
+    .btn-primary {
+        margin-top: 16px;
+        text-decoration: none;
+    }
+
+    .col-lg-6 {
+        margin-bottom: 47px;
+    }
+
+    p + h3 {
+        margin-top: 43px;
+    }
+
+    p + .row {
+        margin-top: 36px;
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    .hey-legal-title {
+        padding-bottom: 94px;
+        padding-top: 77px;
+
+        h3 {
+            margin-bottom: 0;
+            margin-left: 15px;
+    }
+        p {
+            font-size: 18px;
+            line-height: 26px;
+            margin-top: 14px;
+        }
+    }
+
+    .hey-legal-body {
+        padding-bottom: 80px;
+        padding-top: 7px;
+
+        h2 {
+            margin-top: 64px;
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    .hey-legal-title {
+        padding-bottom: 78px;
+        padding-top: 60px;
+
+        h3 {
+            margin-bottom: 0;
+            font-size: 26px;
+           
+    }
+    h4 {
+        font-size: 26px;
+        margin-left: 15px;
+        margin-top: -20px !important;
+    }
+    .back{
+        
+        margin-top: 15%;
+        margin-left: 0%;
+    }
+    a {
+        font-size: 18px;
+    }
+
+    .hey-legal-body {
+        padding-bottom: 130px;
+        padding-top: 33px;
+
+        h2 {
+            margin-top: 48px;
+        }
+    }
+}
+}

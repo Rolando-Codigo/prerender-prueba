@@ -1,0 +1,198 @@
+<section class="hey-hero-image hey-generales">
+    <div class="container">
+        <div class="row ">
+            <div class="col-sm-6 offset-sm-1 col-md-6 offset-md-1 col-lg-6 offset-lg-1 order-2 order-lg-1 order-md-1">
+                <div class="vertical-center">
+                    <h2 class="col-12 col-lg-12 col-md-12">Al tener tu Protección Hey activa, participas en un Giveaway</h2>
+                    <br>
+                    <p class="col-12 col-lg-12 col-md-12">
+                        Hey Banco te premia por protegerte contra robo, fraude y muerte accidental
+                    </p>
+                </div>
+            </div>
+            <div class="col-10 offset-1 col-md-5 offset-md-0 col-lg-5 offset-lg-0 order-1 order-lg-2 order-md-2 ">
+                <div class="vertical-center">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P810-Giveaways/p810-89-img.png'" alt="Tu banco digital, Tu banco 100% digital, ¿Cómo ahorrar el doble con Hey banco?">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-cta bg-participacion">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-10 col-md-11 text-md-center offset-1 offset-md-1 col-lg-6 offset-lg-1 order-2 order-lg-1 order-md-2 row">
+                <h2 class="col-12 offset-0 offset-lg-0 offset-md-1 text-md-justify text-left mb-20">Llévate una suscripción anual para una persona a todos estos servicios: </h2>
+
+                <div class="row text-left col-12 col-lg-6 col-md-5 offset-md-1 offset-0 offset-lg-0">
+                    <img loading="lazy" class="item-img " [src]="environment.assetsUrl + 'img/P810-Giveaways/P810-6-ic-arrow-right-circle.svg'" alt="Tu banco digital, Tu banco 100% digital">
+                    <p class=" col-10 ">
+                        Amazon Prime
+                    </p>
+                </div>
+                <div class="row text-left col-12 col-lg-6 col-md-5 offset-md-1 offset-0 offset-lg-0">
+                    <img loading="lazy" class="item-img" [src]="environment.assetsUrl + 'img/P810-Giveaways/P810-6-ic-arrow-right-circle.svg'" alt="Tu banco digital, Tu banco 100% digital">
+                    <p class=" col-10 ">
+                        Youtube Premium
+                    </p>
+                </div>
+                <div class="row text-left col-12 col-lg-6 col-md-5 offset-md-1 offset-0 offset-lg-0">
+                    <img loading="lazy" class="item-img " [src]="environment.assetsUrl + 'img/P810-Giveaways/P810-6-ic-arrow-right-circle.svg'" alt="Tu banco digital, Tu banco 100% digital">
+                    <p class=" col-10 ">
+                        Netflix
+                    </p>
+                </div>
+                <div class="row text-left col-12 col-lg-6 col-md-5 offset-md-1 offset-0 offset-lg-0">
+                    <img loading="lazy" class="item-img " [src]="environment.assetsUrl + 'img/P810-Giveaways/P810-6-ic-arrow-right-circle.svg'" alt="Tu banco digital, Tu banco 100% digital">
+                    <p class=" col-10 ">
+                        Spotify
+                    </p>
+                </div>
+                <div class="row text-left col-12 col-lg-6 col-md-5 offset-md-1 offset-0 offset-lg-0 mb-20">
+                    <img loading="lazy" class="item-img " [src]="environment.assetsUrl + 'img/P810-Giveaways/P810-6-ic-arrow-right-circle.svg'" alt="Tu banco digital, Tu banco 100% digital">
+                    <p class=" col-10 ">
+                        Rappi Prime
+                    </p>
+                </div>
+                <br>
+                <br>
+                <p class="offset-0 offset-md-1 offset-lg-0">Recibirás un correo de confirmación con tu folio. El ganador se anuciará en nuestras redes sociales, así que mantente atento.</p>
+
+                <br>
+                <div class="text-lg-left text-md-center col-12">
+                    <button class="btn btn-primary " role="button" type="button" (click)="submitRequest()" [disabled]="busy">Participar</button>
+                </div>
+
+            </div>
+
+            <div class="col-10 offset-1 col-md-6 offset-md-3 col-lg-4 offset-lg-1 text-center order-1 order-lg-2 order-md-1 mb-32">
+                <div class="container-counter">
+                    <h4 class="title-counter"> {{contador}} </h4>
+                    <p>Registros al día de hoy</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<re-captcha size="invisible" *ngIf="RECAPTCHA_KEY" [siteKey]="RECAPTCHA_KEY" (resolved)="participar(type, $event)"></re-captcha>
+
+<section class="hey-faq bg-01">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="d-md-none d-block d-lg-block col-10 offset-0 col-md-5 offset-md-1 col-lg-3 offset-lg-1 order-2 order-md-1 order-lg-1">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-8-img-faq.png'" alt="¿Dónde puedo resolver mis dudas sobre la Cuenta Hey?">
+            </div>
+
+            <div class="col-md-12 col-lg-7 order-1 order-md-2 order-lg-2">
+                <h2>Preguntas frecuentes</h2>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingOne">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ¿Qué es el Giveaway de Seguros?
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Giveaway donde participan clientes que contraten seguro de Protección Hey integral, el cual incluye las 3 coberturas (muerte accidental, robo y fraude).
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingTwo">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿Cuál es el incentivo de Giveaway Seguros?
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                El cliente participara en un Giveaway para obtener una suscripción anual de cada uno de los siguientes servicios: Amazon Prime, Netflix, Rappi Prime, Youtube Premium, Spotify
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingThree">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Cómo participo?
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ul>
+                                    <li>
+                                        El seguro deberá estar activo y pagado por lo menos por un periodo de 2 meses, es decir, se deben de contar con el pago de los recibos de noviembre y diciembre.
+                                    </li>
+                                    <li>
+                                        El seguro deberá de ser contratado en el mes de noviembre, aplica para clientes nuevos y clientes activos.
+                                    </li>
+                                    <li>
+                                        Las plataformas que se estarán dando en el giveaway serán en la versión individual, básica o la que sea para una sola persona.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingFour">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    ¿Cuando seleccionan al ganador?
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                El ganador se va a seleccionar del 3 al 7 de enero.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingFive">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                    Ya le di clic al botón de registro y no me aparece mi folio de registro digital ¿Que hago?
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                El correo electrónico con tu folio de Registro Digital puede tardar aproximadamente una hora en llegar.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hey-cta-app bgWhite="true"></hey-cta-app>
+
+<hey-slider-productos bg2="true"></hey-slider-productos>

@@ -1,0 +1,48 @@
+<section class="hey-legal-title bg-01">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+                <h4>Somos Hey Banco</h4>
+
+                <h2>{{ career.puesto }},<br>{{ career.area }}</h2>
+
+                <h3>{{ career.ubicacion }}</h3>
+
+                <a class="btn btn-primary" href="mailto:talento@heybanco.com">Aplicar</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-job-detail">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+                <a class="btn btn-link" role="button" [routerLink]="['/careers/jobs']"><img loading="lazy" [src]="environment.assetsUrl + 'img/icons/prev-icon.svg'">Volver a las Vacantes</a>
+
+                <h2>Requisitos</h2>
+
+                <p>{{ career.requisitos }}</p>
+
+                <h2>Conocimientos</h2>
+
+                <p>{{ career.conocimientos }}</p>
+
+                <h2>Funciones</h2>
+
+                <p>{{ career.funciones }}</p>
+
+                <h2>Contrato</h2>
+
+                <p>{{ career.contrato }}</p>
+
+                <h2>Prestaciones</h2>
+
+                <p>{{ career.prestaciones }}</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<hey-linkedin></hey-linkedin>

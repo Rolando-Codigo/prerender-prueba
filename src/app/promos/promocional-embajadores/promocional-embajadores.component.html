@@ -1,0 +1,183 @@
+<section class="hey-hero-image ">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-sm-6 offset-sm-1 col-md-5 offset-md-1 col-lg-6 offset-lg-1">
+                <div class="vertical-center">
+                    <h1>¡Invita a tus amigos a Hey Banco y gana!</h1>
+                    <br>
+
+                    <p class="mb-15">
+                        Como usuario Hey Pro, puedes convertirte en Embajador Hey, invitar a tus amigos y obtén recompensas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-5 offset-lg-0 text-center  ">
+                <img loading="lazy" class="responsive-cuentas-hero" [src]="environment.assetsUrl + 'img/P810-Giveaways/p810-95-img.png'" alt="¿Cómo puedo abrir una Cuenta Hey? Tu banco digital">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-cta bg-gradient-green">
+    <div class="container">
+        <div class="row ">
+            <div class="col-sm-6 offset-sm-1 col-md-5 offset-md-1 col-lg-6 offset-lg-1">
+                <h2 class="col-12">¡Hey!</h2>
+                <br>
+                <p class="col-12">
+                    Refiere a tus amig@s a abrir una Cuenta Hey y por cada referido que aperture su cuenta exitosamente obtienes $250 pesos*
+                </p>
+                <p class="legales col-12">
+                    *Tu referido deberá abrir su cuenta Hey en el mismo mes que lo invitaste, demás deberá depositar y mantener al menos $500 pesos en su cuenta hasta que dicho mes termine.
+                    <br><br> Espera tu correo de confirmación Hey Pro para poder referir a tus amigos.
+                </p>
+            </div>
+            <div class="col-10 col-md-6 col-lg-5">
+                <div class="col-12">
+                    <p class="mb-10">Tu correo electrónico registrado en Hey</p>
+                    <div [formGroup]="form">
+                        <mat-form-field class="website">
+                            <input matInput formControlName="correoEmbajador">
+                        </mat-form-field>
+                    </div>
+                    <p class="mb-10">Nombre y apellido de tu referido</p>
+                    <div [formGroup]="form">
+                        <mat-form-field class="website">
+                            <input matInput formControlName="nombreReferido">
+                        </mat-form-field>
+                    </div>
+                    <p class="mb-10">Correo electrónico de tu referido</p>
+                    <div [formGroup]="form">
+                        <mat-form-field class="website">
+                            <input matInput formControlName="correoReferido">
+                        </mat-form-field>
+                    </div>
+                    <div [formGroup]="form">
+                        <mat-checkbox color="accent" formControlName="aceptoTerminos"> He leído y acepto el aviso de privacidad </mat-checkbox>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <button class="btn btn-primary" role="button" type="button" (click)="submitRequest()" [disabled]="!form.valid || busy" data-toggle="modal" data-target="#exampleModal">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<re-captcha size="invisible" *ngIf="RECAPTCHA_KEY" [siteKey]="RECAPTCHA_KEY" (resolved)="participar(type, $event)"></re-captcha>
+
+
+<section class="hey-faq bg-01">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-10 offset-0 col-md-5 offset-md-1 col-lg-3 offset-lg-1 order-2 order-md-1 order-lg-1">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-8-img-faq.png'" alt="¿Dónde puedo resolver mis dudas sobre la Cuenta Hey?">
+            </div>
+
+            <div class="col-md-5 col-lg-7 order-1 order-md-2 order-lg-2">
+                <h2>Preguntas frecuentes</h2>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingOne">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ¿Cómo puedo referir a mis amig@s?
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ul>
+                                    <li>
+                                        Registra aquí a tus referidos para invitarlos a abrir una cuenta Hey
+                                    </li>
+                                    <li>
+                                        Asegurate que cada referido deposite al menos $500 pesos en su cuenta en el mismo mes que aceptaron la invitación.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingTwo">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿Cuándo se deposita los referidos del mes?
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                El monto acumulado por referidos que completen el proceso se depositará en tu Cuenta Hey al inicio de cada mes.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingThree">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Cuánto se deposita por referido?
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Por cada amig@ referido, serás acreedor a $250 pesos
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingFour">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    ¿Quiénes pueden ser Embajadores? 
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Todos los clientes Hey Pro
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingFive">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="headingFive">
+                                    ¿Cómo puedo ser cliente Hey Pro?
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Consulta más información <a routerLink="/parami/hey-pro"> aquí </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hey-cta-app></hey-cta-app>
+
+<hey-slider-productos [bg1]="true"></hey-slider-productos>

@@ -1,0 +1,11 @@
+<div>
+    <h1 class="modal-title" *ngIf="config.title"> {{ config.title }}</h1>
+    <div>
+        <p *ngIf="config.message" [innerHTML]="config.message"> </p>
+    </div>
+    <div class="modal-footer" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="16px">
+        <button type="button" *ngIf="!config.hiddenCancel !== undefined && config.hiddenCancel !== true" class="btn btn-outline-primary" data-dismiss="modal" (click)="dialogRef.close(false)">Cancelar</button>
+
+        <button type="button" class="btn btn-primary" (click)="dialogRef.close(true)">Aceptar</button>
+    </div>
+</div>

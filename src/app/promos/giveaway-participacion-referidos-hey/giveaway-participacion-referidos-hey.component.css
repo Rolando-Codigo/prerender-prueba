@@ -1,0 +1,21 @@
+.pb-30{
+    padding-bottom: 30px;
+}
+
+.ajuste{
+    margin-left: 150px;
+}
+
+/*Tablet*/
+@media (max-width: 991.98px) {
+    .ajuste{
+        margin-left: 150px;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 767.98px) {
+    .ajuste{
+        margin-left: 0px;
+    }
+}

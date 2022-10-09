@@ -1,0 +1,82 @@
+hey-inicio {
+    section {
+        background-color: $color-background-01;
+        padding-top: 50px;
+        .container-fluid {
+            overflow: hidden;
+        }
+        .logo {
+            margin-bottom: 32px;
+            width: 90%;
+        }
+        #persona,
+        #negocio {
+            height: 505px;
+            .row {
+                padding-top: 133px;
+                img {
+                    width: 200px;
+                }
+                h2 {
+                    @extend %sneak-36;
+                    margin-top: 16px;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+        #persona {
+            background: url(https://heybanco.s3.amazonaws.com/img/inicio/inicio-persona.png)no-repeat bottom left;
+            background-size: contain;
+        }
+        #negocio {
+            background: url(https://heybanco.s3.amazonaws.com/img/inicio/inicio-negocio.png)no-repeat bottom right;
+            background-size: contain;
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    hey-inicio {
+        section {
+            padding-top: 78px;
+            .logo {
+                margin-bottom: 0;
+                width: 100%;
+            }
+            #persona,
+            #negocio {
+                height: 717px;
+                .row {
+                    padding-top: 84px;
+                }
+            }
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    hey-inicio {
+        section {
+            padding-top: 57px;
+            .logo {
+                width: 68%;
+            }
+            #persona,
+            #negocio {
+                height: 487px;
+                .row {
+                    padding-top: 66px;
+                    img {
+                        width: 130px;
+                    }
+                    h2 {
+                        margin-top: 8px;
+                        margin-bottom: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

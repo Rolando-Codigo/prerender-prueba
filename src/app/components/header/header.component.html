@@ -1,0 +1,133 @@
+<header class="bg-03" [ngClass]="{'sticky-top': galleta !== '0' }">
+    <div class="container" *ngIf="router.url !== '/inicio' && router.url !== '/home-negocio' && router.url !== '/heypay/go' && router.url !== '/seguros-negocio' && router.url !== '/seguros-auto-negocio' && router.url !== '/seguros-drsam-negocio'">
+        <nav class="navbar navbar-light navbar-expand-lg">
+            <a class="navbar-brand" style="color: white" [routerLink]="['/']">
+                <img [src]="environment.assetsUrl + 'img/hey-banco-logo-white.svg'" alt="Hey, banco" loading="lazy" width="187.44" height="40">
+            </a>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-5" *ngIf="router.url !== '/inicio'">
+                </ul>
+                <div fxLayout="row" fxLayoutAlign="end center" style="width: 100%; padding: 0 36px;" *ngIf="!hiddenBtnCliente">
+                    <hey-btn-crear-cuenta [classStyle]="'btn btn-primary-gray-variant'" [title]="'Hazte cliente'"></hey-btn-crear-cuenta>
+                    <a id="btnId" class="btn btn-web border" role="button" onclick="dataLayer.push({'event':'evPageLink'});" (click)="showBancaF($event)"> Banca web </a>
+                </div>
+            </div>
+
+            <button class="navbar-toggler" type="button" (click)="showMenu = true">
+                <span class="navbar-toggler-icon" *ngIf="router.url !== '/inicio'"></span>
+            </button>
+        </nav>
+    </div>
+    <div class="container">
+        <div *ngIf="showBanca" class="menu-banca mt-8" [style.left.px]="xPoint" #accesoBanca>
+            <div class="container mat-elevation-z4 border-radius-12 p-16 text-center">
+                <div fxLayout="row" fxLayoutAlign="space-around center">
+
+                    <div *ngIf="ajuste === true" (mouseenter)="hoverPersonas = true" (mouseleave)="hoverPersonas = false" class="cursor-pointer" (click)="extarnalUrl('https://personas.hey.inc/#/login')" fxLayout="column" fxLayoutAlign="center center">
+                        <img loading="lazy" *ngIf="!hoverPersonas" class="icon mb-12" src="https://heybanco.s3.amazonaws.com/assets/img/P100-Home/p810-89-img.svg" alt="">
+                        <img loading="lazy" *ngIf="hoverPersonas" class="icon mb-12" src="https://heybanco.s3.amazonaws.com/assets/img/P100-Home/p810-89-img-hover.svg" alt="">
+                        <p class="font-size-12">Banca Personas</p>
+                    </div>
+                    <mat-divider [vertical]="true" class="ml-4 mr-4 h-60 bg-divider"></mat-divider>
+                    <div *ngIf="ajuste === true" (mouseenter)="hoverBanca = true" (mouseleave)="hoverBanca = false" class="cursor-pointer" (click)="extarnalUrl('https://minegocio.hey.inc/#/login')" fxLayout="column" fxLayoutAlign="center center">
+                        <img loading="lazy" *ngIf="!hoverBanca" class="icon mb-12" src="https://heybanco.s3.amazonaws.com/assets/img/P100-Home/p810-88-img.svg" alt="">
+                        <img loading="lazy" *ngIf="hoverBanca" class="icon mb-12" src="https://heybanco.s3.amazonaws.com/assets/img/P100-Home/p810-88-img-hover.svg" alt="">
+                        <p class="font-size-12">Banca Negocios</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="menu-collapse bg-03 fixed-top-v2" *ngIf="showMenu">
+    <div class="container">
+        <div class="row">
+            <div class="col-10 col-md-9"></div>
+            <div class="col-2 col-md-2 col-lg-2 order-2 order-sm-2 order-md-2 order-lg-1">
+                <button class="navbar-toggler" type="button" (click)="showMenu = false">
+                   <img [src]="environment.assetsUrl + 'img/close.svg'" alt="Hey, banco"  loading="lazy" width="30" height="30">
+                </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-lg-2 order-1 order-sm-1 order-md-1 order-lg-1 logo">
+                <img [src]="environment.assetsUrl + 'img/hey-banco-logo-white.svg'" alt="Hey, banco" loading="lazy" width="140.58" height="30">
+            </div>
+
+        </div>
+
+        <br><br>
+        <div class="row">
+            <div class="col-12 col-xs-12 col-sm-6 col-md-12 col-lg-6">
+                <ul class="botones-mobile">
+                    <li>
+                        <a *ngIf="ajuste === false" class="btn btn-primary-gray-variant d-none d-sm-none d-md-none col-lg-block d-xl-block" type="button" target="_blank" href="https://personas.heybanco.com/#/login">Banca Personas</a>
+                        <a *ngIf="ajuste === true" class="btn btn-primary-gray-variant d-none d-sm-none d-md-none col-lg-block d-xl-block" type="button" target="_blank" href="https://personas.hey.inc/#/login">Banca Personas</a>
+                    </li><br>
+                    <li>
+                        <a *ngIf="ajuste === false" class="btn btn-primary-gray-variant d-block d-sm-block d-md-block d-lg-block d-xl-block" type="button" target="_blank" href="https://minegocio.heybanco.com/#/login">Banca Negocios</a>
+                        <a *ngIf="ajuste === true" class="btn btn-primary-gray-variant d-block d-sm-block d-md-block d-lg-block d-xl-block" type="button" target="_blank" href="https://minegocio.hey.inc/#/login">Banca Negocios</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a class="txt1" [routerLink]="['centro-ayuda']" onclick="dataLayer.push({'event':'evFotterLinks'});">
+                            Centro de ayuda
+                        </a>
+                    </li>
+                    <br>
+                </ul>
+            </div>
+            <!-- <div class="col-12 col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                <ul class="botones-mobile">
+                    <li>
+                        <hey-videollamada></hey-videollamada>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+
+        <div class="row" style="margin-top: 40%;"></div>
+
+        <div class="row">
+            <div class="col-12 col-lg-12 botones-mobile">
+                <ul>
+                    <li>
+                        <a class="txt2" [routerLink]="['/servicios-legales']" target="_self">Servicios legales</a>
+                    </li>
+                    <li>
+                        <a class="txt2" [routerLink]="['/terminos-condiciones']" target="_self">Términos y condiciones</a>
+                    </li>
+                    <li>
+                        <a class="txt2" [routerLink]="['/folletos-informativos']" target="_self">Folletos Informativos</a>
+                    </li>
+
+                    <li>
+                        <a class="txt2" [routerLink]="['/contratos-productos']" target="_self">Contratos de productos Hey</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 30%;"></div>
+
+        <div class="row">
+            <div class="col-sm-3 col-md-10 col-lg-4 botones-mobile">
+                <p class="txt4">Nuestras marcas </p>
+            </div>
+            <div class="col-sm-3 col-md-10 col-lg-8 botones-mobile">
+                <a class="txt3" href="https://pago.hey.inc/" target="_blank">Hey Pago</a>
+                <span style="color: white;"> | </span> <a class="txt3" href="https://shop.hey.inc/" target="_blank">Hey Shop</a>
+                <span style="color: white;"> | </span> <a class="txt3" href="https://media.hey.inc" target="_blank">Hey Media</a>
+            </div>
+
+        </div>
+
+
+
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<section>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-7 col-lg-5 text-center">
+                <img loading="lazy" class="logo" [src]="environment.assetsUrl + 'img/hey-banco-logo.svg'" alt=" Hey, banco ">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-6" id="persona">
+                <div class="row">
+                    <div class="col-11 offset-1 col-md-11 offset-md-1 col-lg-4 offset-lg-7">
+                        <img loading="lazy" [src]="environment.assetsUrl + 'img/tarjetas/hey-cuenta.png '" alt="Para mi">
+
+                        <h2 class="text-dark">Para mi</h2>
+
+                        <a class="btn btn-primary" role="button" [routerLink]="['/']" onclick="dataLayer.push({'event ':'evHeyProducts '});">Entrar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6" id="negocio">
+                <div class="row">
+                    <div class="col-11 offset-1 col-md-11 offset-md-1 col-lg-5 offset-lg-1">
+                        <img loading="lazy" [src]="environment.assetsUrl + 'img/tarjetas/hey-cuenta-negocio.png '" alt="Para mi negocio">
+
+                        <h2 class="text-dark">Para mi negocio</h2>
+
+                        <a class="btn btn-primary" role="button" [routerLink]="['/home-negocio ']" onclick="dataLayer.push({'event ':'evHeyProducts '});">Entrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

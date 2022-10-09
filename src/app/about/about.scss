@@ -1,0 +1,151 @@
+@import "src/sass/components/colors.scss";
+@import "src/sass/components/font-styles.scss";
+hey-about {
+    .header {
+        font-size: 4rem;
+    }
+    .hey-hero-image-nosotros {
+        width: 100%;
+        height: 500px;
+        background: url(https://heybanco.s3.amazonaws.com/assets/img/P700-Compania/P710-Nosotros/P710-1-Home-Hero-Image-Nosotros.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        text-align: center;
+        margin: 0px auto;
+    }
+    .hey-hero-image-nosotros h1 {
+        color: white;
+        @extend %sneak-64;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15%;
+        margin-bottom: 2%;
+    }
+    .textohome {
+        color: white;
+        @extend %sneak-22;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8%;
+        margin-bottom: 2%;
+        line-height: 40px;
+    }
+    .contenido {
+        float: left;
+        margin-top: 4%;
+    }
+    .social-media {
+        width: 60px !important;
+    }
+    .hey-cta .btn-primary {
+        margin-top: 0px !important;
+    }
+    .hey-cta {
+        img {
+            height: auto;
+            width: 100%;
+        }
+        &.no-padding {
+            padding-bottom: 200px;
+            padding-top: 174px;
+            .col-lg-4,
+            .col-lg-5 {
+                height: auto;
+            }
+            .col-lg-7 {
+                height: 570px;
+            }
+            &.bg-01 {
+                background: #EFF4F7 url(https://heybanco.s3.amazonaws.com/assets/img/cta/cta-about-02.png) no-repeat center left;
+                background-size: 570px auto;
+                padding-bottom: 0;
+                padding-top: 0;
+            }
+        }
+        &.bg-purple {
+            padding-bottom: 202px;
+            padding-top: 214px;
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    hey-about {
+        .hey-hero-image {
+            height: 490px;
+            .col-lg-6,
+            .col-lg-8 {
+                height: 490px;
+            }
+        }
+        .hey-cta {
+            &.no-padding {
+                padding-bottom: 142px;
+                padding-top: 141px;
+                &.bg-01 {
+                    background-size: 340px auto;
+                }
+                .col-lg-7 {
+                    height: 540px;
+                }
+            }
+            &.bg-purple {
+                padding-bottom: 122px;
+                padding-top: 100px;
+            }
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    hey-about {
+        .hey-hero-image-nosotros {
+            width: 100%;
+            height: 500px;
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P700-Compania/P710-Nosotros/P710-1-Home-Hero-Image-Nosotros.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+            text-align: center;
+            margin: 0px auto;
+        }
+    }
+    hey-about {
+        .hey-hero-image {
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/cta/cta-about-02.png);
+            background-size: cover;
+            height: 640px;
+        }
+        .hey-cta {
+            &.no-padding {
+                background: $color-blue!important;
+                padding-bottom: 60px;
+                padding-top: 35px;
+                h2 {
+                    margin-bottom: 32px;
+                    margin-top: 32px;
+                }
+                .col-lg-7 {
+                    height: auto;
+                }
+                &.bg-01 {
+                    background: $color-background-01!important;
+                    padding-bottom: 70px;
+                    h2 {
+                        margin-bottom: 24px;
+                        margin-top: 64px;
+                    }
+                }
+            }
+        }
+    }
+}

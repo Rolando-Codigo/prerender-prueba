@@ -1,0 +1,25 @@
+<section class="hey-error404 bg-01">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-10 offset-md-1 col-lg-5 offset-lg-1">
+                <h1>Lo sentimos, no encontramos la página que buscas.</h1>
+
+                <p>Si deseas más información sobre Hey Banco da clic en el siguiente botón.</p>
+
+                <a class="btn btn-primary" role="button" [routerLink]="['/']">Conocer más</a>
+
+                <p>Si necesitas asesoría o tienes dudas sobre alguno de nuestros productos o funcionalidades de Hey Banco, puedes visitar nuestro <a [routerLink]="['/centro-ayuda']">Centro de ayuda</a>.</p>
+            </div>
+
+            <div class="col-md-6 offset-md-1 col-lg-5 offset-lg-1 text-center">
+                <video loop autoplay muted playsinline oncanplay="this.play()" onloadedmetadata="this.muted = true">
+          <source [src]="environment.assetsUrl + 'img/error404/404.ogv'" type="video/ogv">
+
+          <source [src]="environment.assetsUrl + 'img/error404/404.mp4'" type="video/mp4">
+
+          <source [src]="environment.assetsUrl + 'img/error404/404.webm'" type="video/webm">
+        </video>
+            </div>
+        </div>
+    </div>
+</section>

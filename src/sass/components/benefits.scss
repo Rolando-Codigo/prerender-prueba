@@ -1,0 +1,227 @@
+.hey-benefits {
+    padding-bottom: 96px;
+    padding-top: 120px;
+    
+    h2 {
+        @extend %sneak-48;
+        color: $color-black;
+        margin-bottom: 40px;
+    }
+
+    h4 {
+        @extend %sneak-22;
+        color: $color-black;
+        margin-top: 8px;
+        margin-bottom: 40px;
+    }
+
+    h5 {
+        @extend %sneak-28;
+        color: $color-black;
+        line-height: normal;
+    }
+
+
+    .benefit {
+        margin-bottom: 56px;
+        position: relative;
+        width: 100%;
+        
+        .benefit-box {
+            background: $color-white;
+            border-radius: 10px;
+            box-shadow: 8px 4px 12px 0 rgba(0,0,0,0.11);
+            padding: 24px;
+            position: relative;
+            z-index: 1;
+            
+            h3 {
+                @extend %sneak-22;
+                color: $color-black-21;
+                margin-bottom: 8px;
+            }
+            
+            p {
+                @extend %lato-16;
+                color: $color-black-4B;
+                margin-bottom: 0;
+            }
+            .responsive {
+                width: 30%;
+                height: auto;
+              }
+            
+        }
+        
+        .benefit-box-shadow {
+            border-radius: 10px;
+            height: 96%;
+            left: 24px;
+            padding-left: 16px;
+            position: absolute;
+            top: 38px;
+            width: 100%;
+            z-index: 0;
+            
+            .benefit-box-shadow-detail {
+                background: rgba(255,255,255,0.40);
+                border-radius: 100px;
+                bottom: 24px;
+                height: 12px;
+                position: absolute;
+                width: 70%;
+                
+                &:nth-child(2) {
+                    bottom: 8px;
+                    width: 40%;
+                }
+            }
+            
+            &.bg-01 {
+                .benefit-box-shadow-detail {
+                    background: rgba(255,255,255,0.70);
+                }
+            }
+        }
+    }
+
+    &.no-color {
+        .benefit {
+            margin-bottom: 0;
+        }
+    }
+    
+    .col-lg-4 {
+        img {
+            width: 100%;
+        }
+    }
+
+    .btn-primary {
+        margin-right: 40px;
+    }
+}
+
+hey-para-mi {
+    .hey-benefits {
+        padding-bottom: 120px;
+        padding-top: 132px;
+
+        h1 {
+            @extend %sneak-48;
+            color: $color-black;
+            margin-bottom: 16px;
+        }
+
+        .media {
+            margin-bottom: 32px;
+            
+            img {
+                height: auto;
+                margin-right: 16px;
+                width: 32px;
+            }
+    
+            h3 {
+                @extend %sneak-22;
+                margin-bottom: 6px;
+            }
+    
+            p {
+                @extend %lato-16;
+                margin-bottom: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    .hey-benefits {
+        padding-bottom: 120px;
+
+        .col-lg-4 {
+            img {
+                margin-top: 16px;
+            }
+        }
+    }
+
+    hey-para-mi {
+        .hey-benefits {
+            padding-bottom: 130px;
+            padding-top: 176px;
+
+            .col-lg-4 {
+                img {
+                    margin-top: 64px;
+                }
+            }
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    .hey-benefits-cad {
+        padding-bottom: 80px;
+        padding-top: 83px;
+        
+        h1,
+        h2 {
+            margin-bottom: 24px;
+        }
+        
+        .benefit {
+            margin-bottom: 55px;
+            width: 89%;
+            
+            .benefit-box {
+                padding: 16px;
+                
+                h3 {
+                    margin-bottom: 4px;
+                }
+                
+                p {
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+            }
+            
+            .benefit-box-shadow {
+                height: 100%;
+                top: 31px;
+                
+                .benefit-box-shadow-detail {
+                    width: 60%;
+                    
+                    &:nth-child(2) {
+                        width: 26%;
+                    }
+                }
+            }
+        }
+
+        .h-100 {
+            height: auto!important;
+        }
+
+        &.no-color {
+            .benefit {
+                margin-bottom: 24px;
+            }
+        }
+
+        .btn-primary {
+            margin-bottom: 16px;
+        }
+    }
+    
+}
+
+

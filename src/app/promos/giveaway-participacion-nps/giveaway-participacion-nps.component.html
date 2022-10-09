@@ -1,0 +1,178 @@
+<section class="hey-hero-image hey-generales">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-12 col-md-5 offset-md-1 col-lg-6 offset-lg-1 order-2 order-lg-1 order-md-1">
+                <br>
+                <div class="logo">
+                    <img loading="lazy" src="https://heybanco.s3.amazonaws.com/assets/img/hey-banco-logo.svg" alt="">
+                </div>
+                <div class="vertical-center">
+                    <h1 class="col-9 col-lg-12 col-md-12">Se acreedor a un iPhone 13</h1>
+                    <br><br>
+                    <p class="col-12 col-lg-12 col-md-12">
+                        Por haber visitado un Punto Hey y contarnos tu opinión
+                    </p>
+                </div>
+            </div>
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-5 offset-lg-0 text-center order-1 order-lg-2 order-md-2">
+                <img loading="lazy" src="https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-88-img.png" alt="¿Cómo ahorrar el doble con Hey banco?">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-cta bg-participacion">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-10 col-md-7 offset-1 offset-md-1 col-lg-5 offset-lg-1 order-2 order-lg-1 order-md-1">
+                <h2>¿Cómo obtengo mi código? </h2>
+                <br>
+
+                <div class="row text-left ">
+                    <img loading="lazy" class="item-img " [src]="environment.assetsUrl + 'img/P810-Giveaways/P810-6-ic-arrow-right-circle.svg'" alt="Tu banco digital, Tu banco 100% digital">
+                    <p class=" col-10 ">
+                        Hablaste con un asesor en un Punto Hey
+                    </p>
+                </div>
+                <div class="row text-left">
+                    <img loading="lazy" class="item-img" [src]="environment.assetsUrl + 'img/P810-Giveaways/P810-6-ic-arrow-right-circle.svg'" alt="Tu banco digital, Tu banco 100% digital">
+                    <p class=" col-10 ">
+                        Tomaste el Reality Check
+                    </p>
+                </div>
+                <div class="row text-left ">
+                    <img loading="lazy" class="item-img " [src]="environment.assetsUrl + 'img/P810-Giveaways/P810-6-ic-arrow-right-circle.svg'" alt="Tu banco digital, Tu banco 100% digital">
+                    <p class=" col-10 ">
+                        Respondiste a la encuesta sobre tu experiencia
+                    </p>
+                </div>
+                <div class="row text-left ">
+                    <img loading="lazy" class="item-img " [src]="environment.assetsUrl + 'img/P810-Giveaways/P810-6-ic-arrow-right-circle.svg'" alt="Tu banco digital, Tu banco 100% digital">
+                    <p class=" col-10 ">
+                        Canjeaste tu código de participación
+                    </p>
+                </div>
+
+                <br>
+                <button class="btn btn-primary" role="button" type="button" (click)="submitRequest()" [disabled]="busy">Participar</button>
+
+            </div>
+
+            <div class="col-12 col-md-4 offset-md-0 col-lg-4 offset-lg-1 text-center  order-1 order-lg-2 order-md-2">
+                <div class="container-counter">
+                    <h4 class="title-counter"> {{contador}} </h4>
+                    <p>Registros al día de hoy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<re-captcha size="invisible" *ngIf="RECAPTCHA_KEY" [siteKey]="RECAPTCHA_KEY" (resolved)="participar(type, $event)"></re-captcha>
+
+<section class="hey-faq bg-01">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-10 offset-0 col-md-5 offset-md-1 col-lg-3 offset-lg-1 order-2 order-md-1 order-lg-1">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-8-img-faq.png'" alt="¿Dónde puedo resolver mis dudas sobre la Cuenta Hey?">
+            </div>
+
+            <div class="col-md-5 col-lg-7 order-1 order-md-2 order-lg-2">
+                <h2>Preguntas frecuentes</h2>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingOne">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ¿Que es el Giveaway Puntos Hey?
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Es un giveaway donde participan todos los clientes que aperturaron su cuenta en un Puntos Hey móvil y contestaron la encuesta NPS.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingTwo">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿Cómo participo?
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                El cliente deberá registrarse en la cloud page para generar el folio y poder participar.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingThree">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Cuando se anunciará el seleccionado?
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                La semana del 19 de agosto a través de instagram y por correo electrónico.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingFour">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    ¿Cuál es el incentivo?
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                El cliente será acreedor a un iphone 13.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingFive">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                    ¿Ya le di clic al botón de registro en el Giveaway Puntos Hey y no me aparece mi folio de registro digital ¿Que hago?
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                El correo electrónico con tu folio de Registro Digital puede tardar aproximadamente una hora en llegar.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hey-cta-app [bgWhite]="true"></hey-cta-app>
+
+<hey-slider-productos [bg1]="true"></hey-slider-productos>

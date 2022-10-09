@@ -1,0 +1,11 @@
+<hey-cookies *ngIf="galleta === '0'"></hey-cookies>
+
+
+<hey-header *ngIf="router.url !== '/bienvenida-hey-banco' && router.url !== '/negocios/bienvenida/hey-banco'"></hey-header>
+
+<main>
+    <router-outlet></router-outlet>
+</main>
+
+<hey-footer *ngIf="router.url !== '/bienvenida-hey-banco' && router.url !== '/negocios/bienvenida/hey-banco'"></hey-footer>
+<div [ngClass]="{'bloqueo': galleta === '0' }"></div>

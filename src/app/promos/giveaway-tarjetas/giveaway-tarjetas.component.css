@@ -1,0 +1,107 @@
+.fondo{
+    background-color: #CCFF00;
+}
+
+.button{
+    background-color: #FFFFFF;
+    color: #202020 !important;
+    border-color: #FFFFFF !important;
+}
+
+.leyenda{
+    color: #707070;
+}
+
+label {
+	width: 60vw;
+	max-width: 300px;
+	background-color: #B0AFFF;
+	border-radius: 2px;
+	font-size: 1em;
+	line-height: 2.5em;
+	text-align: center;
+}
+
+.archivoD {
+	border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px; 
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.archivo{
+    color: #FFFFFF;
+}
+
+.fondo_2{
+    background-color: #B0AFFF;
+}
+
+.texto_participacion{
+    color: #FFFFFF;
+}
+
+.espaciado{
+    padding-bottom: 50px;
+}
+
+.separacion{
+    padding-bottom: 30px !important;
+}
+
+a{
+    color: #707070 !important;
+}
+
+/*.hey-hero-image .col-lg-6 {
+    height: 400px;
+}*/
+
+/*.ajuste{
+    margin-right: 20px;
+}*/
+
+.visualArchivo{
+    margin-top: 20px;
+    border-style: solid;
+    border-color: #CCCCCC;
+    border-radius: 20px;
+}
+
+.textoArchivo{
+    margin-bottom: 20px;
+}
+
+.eliminar{
+    color: red;
+}
+
+/*.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: #B0AFFF !important;
+}*/
+
+/*@media (max-width: 991.98px) {
+    .hey-hero-image {
+        height: 450px !important;
+    }
+    .hey-hero-image .col-lg-6 {
+        height: 350px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hey-hero-image {
+        height: 700px !important;
+    }
+    .hey-hero-image .col-lg-6 {
+        height: 350px;
+    }
+    .responsive-cuentas-hero {
+        margin-top: 10px;
+    }
+    
+}*/

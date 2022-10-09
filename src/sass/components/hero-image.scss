@@ -1,0 +1,365 @@
+hey-para-mi {
+    .hey-hero-image {
+        position: relative;
+        .col-lg-5,
+        .col-lg-8 {
+            z-index: 2;
+        }
+        h1 {
+            margin-bottom: 22px;
+        }
+        .btn-light {
+            color: $color-white;
+            margin-top: 42px;
+            img {
+                height: 10px;
+                margin-left: 0;
+                margin-right: 8px;
+                width: auto;
+            }
+        }
+        .container {
+            position: relative;
+            z-index: 10;
+            .bg-white {
+                box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+                height: 104px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                z-index: 11;
+                .col {
+                    border-right: 1px solid #E6E6E6;
+                    padding-bottom: 13px;
+                    padding-top: 13px;
+                    &:last-child {
+                        border-right: none;
+                    }
+                }
+                .btn-link {
+                    img {
+                        height: 32px;
+                        margin-bottom: 8px;
+                        margin-left: 0;
+                        width: auto;
+                    }
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+        }
+        video {
+            height: 100%;
+            left: 0;
+            object-fit: cover;
+            opacity: 1;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 0;
+        }
+        hey-stores {
+            a {
+                margin-right: 8px;
+                img {
+                    height: 40px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+#videoModal {
+    .modal-dialog {
+        max-width: 800px;
+        button.close {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.hey-hero-image {
+    background-color: $color-background-01;
+    height: 480px;
+    .filter {
+        background-color: rgba(0, 0, 0, .50);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    h1 {
+        @extend %sneak-64;
+        color: $color-black-21;
+        margin-bottom: 0;
+        b {
+            font-family: 'Sneak-Bold';
+        }
+        span {
+            @extend %sneak-30;
+        }
+    }
+    h1+p {
+        margin-top: 8px;
+    }
+    h1+.btn-primary {
+        margin-top: 16px;
+    }
+    h2 {
+        @extend %sneak-48;
+        color: $color-black-20;
+        margin-bottom: 8px;
+    }
+    h3 {
+        @extend %sneak-36;
+        margin-bottom: 0;
+    }
+    p {
+        @extend %lato-22;
+        color: $color-black;
+        margin-bottom: 16px;
+        &.legales {
+            @extend %lato-12;
+            color: $color-black-77;
+            margin-bottom: 0;
+            margin-top: 24px;
+        }
+        &.small {
+            @extend %sneak-18;
+            color: $color-black-4B;
+            margin-bottom: 10px;
+        }
+    }
+    .texto {
+        @extend %lato-16;
+        color: $color-black;
+        margin-bottom: 0;
+        margin-top: 16px;
+        line-height: 22px;
+    }
+    .col-lg-6 {
+        height: 480px;
+    }
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5 {
+        img {
+            width: 100%;
+        }
+        .play-icon {
+            bottom: 0;
+            height: auto;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 85px;
+        }
+    }
+    .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 60%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: calc(100% - 30px);
+    }
+}
+
+hey-para-mi,
+hey-para-mi-negocio {
+    .hey-hero-image {
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: calc(100vh - 89px - 52px);
+        min-height: 600px;
+        .col-lg-8 {
+            height: calc(100vh - 89px - 104px);
+            min-height: 480px;
+            h1,
+            p {
+                color: $color-white;
+            }
+            .btn-light {
+                &:hover,
+                &:focus {
+                    border-radius: 100px!important;
+                }
+            }
+        }
+        p {
+            @extend %sneak-16;
+            margin-top: 24px;
+        }
+    }
+}
+
+hey-para-mi-negocio {
+    .hey-hero-image {
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+hey-paygo {
+    .hey-hero-image {
+        p {
+            @extend %lato-18;
+        }
+    }
+}
+
+hey-stories {
+    .hey-hero-image {
+        .col-lg-5 {
+            height: 480px;
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    .hey-hero-image {
+        height: 402px;
+        h1+.btn-primary {
+            margin-top: 24px;
+        }
+        h1 {
+            margin-top: -35%;
+        }
+        h2 {
+            font-size: 42px;
+            line-height: 50px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 24px;
+        }
+        .responsive-cuentas-hero {
+            margin-top: 0px;
+        }
+        .col-lg-6 {
+            height: 400px;
+        }
+    }
+    hey-para-mi,
+    hey-para-mi-negocio {
+        .hey-hero-image {
+            height: 400px;
+            min-height: 400px;
+            p {
+                margin-top: 16px;
+            }
+            .col-lg-8 {
+                height: 339px;
+                min-height: 339px;
+            }
+            hey-stores {
+                a {
+                    margin-right: 8px;
+                    img {
+                        height: 24px!important;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+    hey-paygo {
+        .hey-hero-image {
+            height: 685px;
+            .col-lg-6 {
+                height: 685px;
+            }
+        }
+    }
+    hey-para-mi {
+        .hey-hero-image {
+            .container {
+                .bg-white {
+                    height: 122px;
+                }
+            }
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    .hey-hero-image {
+        height: 430px;
+        .responsive-cuentas-hero {
+            margin-top: -130px;
+        }
+        .col-lg-6 {
+            height: 310px;
+        }
+        .col-lg-5 {
+            img {
+                height: 250px;
+                width: auto;
+            }
+        }
+    }
+    hey-para-mi,
+    hey-para-mi-negocio {
+        .hey-hero-image {
+            background: url(https://heybanco.s3.amazonaws.com/img/P100-Home/P100-0-hero-video.png) no-repeat center bottom;
+            background-color: $color-background-01;
+            background-size: contain;
+            height: 640px;
+            min-height: 640px;
+            p {
+                margin-top: 16px;
+            }
+            .col-lg-8 {
+                height: 335px;
+                min-height: 335px;
+            }
+            h1,
+            p {
+                color: $color-black-21!important;
+            }
+            .btn-light {
+                background-color: $color-black-21;
+                border-color: $color-black-21;
+                color: $color-white!important;
+            }
+            video,
+            .filter {
+                opacity: 0;
+            }
+            .badge-img {
+                position: absolute;
+                left: 0px;
+                bottom: -165%;
+                width: 25% !important;
+            }
+        }
+    }
+    hey-cta,
+    p {
+        margin-top: 5px !important;
+        margin-bottom: 30px;
+    }
+    hey-paygo {
+        .hey-hero-image {
+            height: 872px;
+            .col-lg-6 {
+                height: 574px;
+            }
+            .col-lg-4 {
+                img {
+                    height: 250px;
+                    margin-top: 48px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}

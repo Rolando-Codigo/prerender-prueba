@@ -1,0 +1,205 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "cli": {
+        "analytics": false
+    },
+    "version": 1,
+    "newProjectRoot": "projects",
+    "projects": {
+        "heybanco": {
+            "projectType": "application",
+            "schematics": {
+                "@schematics/angular:component": {
+                    "style": "scss"
+                },
+                "@schematics/angular:application": {
+                    "strict": true
+                }
+            },
+            "root": "",
+            "sourceRoot": "src",
+            "prefix": "hey",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:browser",
+                    "options": {
+                        "outputPath": "dist/heybanco/browser",
+                        "index": "src/index.html",
+                        "main": "src/main.ts",
+                        "polyfills": "src/polyfills.ts",
+                        "tsConfig": "tsconfig.app.json",
+                        "inlineStyleLanguage": "scss",
+                        "assets": [
+                            "src/favicon.ico",
+                            "src/assets",
+                            "src/google2c4562d35a78bdbe.html",
+                            "src/yandex_4c9b258bd666bab4.html",
+                            "src/yandex_3dcf5b8aa1f73fad.html",
+                            "src/yandex_e4effa8b123a8e4d.html",
+                            "src/robots.txt",
+                            "src/sitemap.xml"
+                        ],
+                        "styles": [
+                            "node_modules/bootstrap/dist/css/bootstrap.min.css",
+                            "src/sass/main.scss"
+                        ],
+                        "scripts": [
+                            "node_modules/jquery/dist/jquery.min.js",
+                            "node_modules/bootstrap/dist/js/bootstrap.min.js"
+                        ]
+                    },
+                    "configurations": {
+                        "production": {
+                            "budgets": [{
+                                    "type": "initial",
+                                    "maximumWarning": "4mb",
+                                    "maximumError": "5mb"
+                                },
+                                {
+                                    "type": "anyComponentStyle",
+                                    "maximumWarning": "4mb",
+                                    "maximumError": "5mb"
+                                }
+                            ],
+                            "optimization": {
+                                "scripts": true,
+                                "styles": {
+                                    "minify": true,
+                                    "inlineCritical": false
+                                },
+                                "fonts": true
+                            },
+                            "sourceMap": false,
+                            "namedChunks": false,
+                            "extractLicenses": true,
+                            "vendorChunk": false,
+                            "buildOptimizer": true,
+                            "serviceWorker": false,
+                            "fileReplacements": [{
+                                "replace": "src/environments/environment.ts",
+                                "with": "src/environments/environment.prod.ts"
+                            }],
+                            "outputHashing": "all"
+                        },
+                        "development": {
+                            "buildOptimizer": false,
+                            "optimization": false,
+                            "vendorChunk": true,
+                            "extractLicenses": false,
+                            "sourceMap": true,
+                            "namedChunks": true
+                        }
+                    },
+                    "defaultConfiguration": "production"
+                },
+                "serve": {
+                    "builder": "@angular-devkit/build-angular:dev-server",
+                    "configurations": {
+                        "production": {
+                            "browserTarget": "heybanco:build:production"
+                        },
+                        "development": {
+                            "browserTarget": "heybanco:build:development"
+                        }
+                    },
+                    "defaultConfiguration": "development"
+                },
+                "extract-i18n": {
+                    "builder": "@angular-devkit/build-angular:extract-i18n",
+                    "options": {
+                        "browserTarget": "heybanco:build"
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "src/test.ts",
+                        "polyfills": "src/polyfills.ts",
+                        "tsConfig": "tsconfig.spec.json",
+                        "karmaConfig": "karma.conf.js",
+                        "inlineStyleLanguage": "scss",
+                        "assets": [
+                            "src/favicon.ico",
+                            "src/assets"
+                        ],
+                        "styles": [
+                            "src/styles.scss"
+                        ],
+                        "scripts": []
+                    }
+                },
+                "server": {
+                    "builder": "@angular-devkit/build-angular:server",
+                    "options": {
+                        "optimization": true,
+                        "outputPath": "dist/heybanco/server",
+                        "main": "server.ts",
+                        "tsConfig": "tsconfig.server.json",
+                        "inlineStyleLanguage": "scss"
+                    },
+                    "configurations": {
+                        "production": {
+                            "outputHashing": "media",
+                            "fileReplacements": [{
+                                "replace": "src/environments/environment.ts",
+                                "with": "src/environments/environment.prod.ts"
+                            }],
+                            "optimization": true,
+                            "sourceMap": false,
+                            "extractLicenses": true
+                        },
+                        "development": {
+                            "optimization": false,
+                            "sourceMap": true,
+                            "extractLicenses": false
+                        }
+                    },
+                    "defaultConfiguration": "production"
+                },
+                "serve-ssr": {
+                    "builder": "@nguniversal/builders:ssr-dev-server",
+                    "configurations": {
+                        "development": {
+                            "browserTarget": "heybanco:build:development",
+                            "serverTarget": "heybanco:server:development"
+                        },
+                        "production": {
+                            "browserTarget": "heybanco:build:production",
+                            "serverTarget": "heybanco:server:production"
+                        }
+                    },
+                    "defaultConfiguration": "development"
+                },
+                "prerender": {
+                    "builder": "@nguniversal/builders:prerender",
+                    "options": {
+                        "routes": [
+                            "/"
+                        ]
+                    },
+                    "configurations": {
+                        "production": {
+                            "browserTarget": "heybanco:build:production",
+                            "serverTarget": "heybanco:server:production"
+                        },
+                        "development": {
+                            "browserTarget": "heybanco:build:development",
+                            "serverTarget": "heybanco:server:development"
+                        }
+                    },
+                    "defaultConfiguration": "production"
+                },
+                "lint": {
+                    "builder": "@angular-eslint/builder:lint",
+                    "options": {
+                        "lintFilePatterns": [
+                            "src/**/*.ts",
+                            "src/**/*.html"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "defaultProject": "heybanco"
+}

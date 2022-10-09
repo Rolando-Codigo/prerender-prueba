@@ -1,0 +1,102 @@
+<div class="container mt-20 mb-20 ">
+    <section class="title-blog">
+        <div class="container no-padding-left">
+            <h1 class="p-title">Hey Media</h1>
+            <p class="sub-title">Encuentra tu libertad financiera</p>
+        </div>
+    </section>
+    <section class="bloque-categorias">
+        <nav class="categorias text-left">
+            <ul>
+                <li><a [class.selected]="categoria === undefined" routerLink="/hey-media">Todos los artículos</a></li>
+                <li *ngFor="let item of categorias"> <a routerLinkActive="selected" [routerLink]="'/hey-media/'+item.categoria">{{ item.categoria }}</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+        <div *ngFor="let articulo of articulos; let i = index">
+            <div class="mb-20" *ngIf="articulo.length === 1">
+                <a [routerLink]="['/hey-media/articulo', articulo[0].id ]" style="text-decoration: none;">
+                    <div class="row f-image">
+                        <div class=" col-12 col-sm-12 col-md-12 col-lg-6 block-properties-left height-img" [style]="'background-image: url(' + articulo[0].imagen[0].url + ');'"></div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 block-properties">
+                            <h5 class="cat-title"> {{ articulo[0].categoria?.categoria | uppercase }}</h5>
+                            <h4 class="cat-subtitle">{{ articulo[0].titulo }}</h4>
+
+                            <markdown ngPreserveWhitespaces>
+                                <p class="article-text  container">
+                                    {{ articulo[0].resumen | slice:0:150 }}{{ articulo[0].resumen !== null ? articulo[0].resumen.length > 150 ? '...' : '' : ''}}
+                                </p>
+                            </markdown>
+                            <p class="autor-date"> {{ articulo[0].autor?.username }} <br>{{ articulo[0].fecha | date:'MMMM d' | titlecase}} de {{articulo[0].fecha | date:'yyyy'}}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="row mb-20" *ngIf="articulo.length === 3">
+                <div class="contenedores espaciado-contenedores outer-line-tres pointer" (click)="verArticulo(articulo[0].id)">
+                    <div class="img-tres" [style]="'background-image: url(' + articulo[0].imagen[0].url + ')'"></div>
+                    <h5 class="cat-title">{{ articulo[0].categoria?.categoria | uppercase }}</h5>
+                    <h4 class="cat-subtitle-tres">{{ articulo[0].titulo }}</h4>
+                    <p class="article-text">
+                        <markdown ngPreserveWhitespaces>
+                            {{ articulo[0].resumen | slice:0:150 }}{{ articulo[0].resumen !== null ? articulo[0].resumen.length > 150 ? '...' : '' : ''}}
+                        </markdown>
+                    </p>
+                    <p class="autor-date"> {{ articulo[0].autor?.username }} <br> <span style="font-size: 14px;"> {{ articulo[0].fecha | date:'MMMM d' | titlecase}} de {{articulo[0].fecha | date:'yyyy'}} </span></p>
+                </div>
+                <div class="contenedores espaciado-contenedores outer-line-tres espaciado-contenedores-no pointer" (click)="verArticulo(articulo[1].id)">
+                    <div class="img-tres" [style]="'background-image: url(' + articulo[1].imagen[0].url + ')'"></div>
+                    <h5 class="cat-title">{{ articulo[1].categoria?.categoria | uppercase }}</h5>
+                    <h4 class="cat-subtitle-tres"> {{ articulo[1].titulo }} </h4>
+                    <p class="article-text">
+                        <markdown ngPreserveWhitespaces>
+                            {{ articulo[1].resumen | slice:0:150 }}{{ articulo[1].resumen !== null ? articulo[1].resumen.length > 150 ? '...' : '' : ''}}
+                        </markdown>
+                    </p>
+                    <p class="autor-date"> {{ articulo[1].autor?.username }} <br> <span style="font-size: 14px;"> {{ articulo[1].fecha | date:'MMMM d' | titlecase}} de {{articulo[1].fecha | date:'yyyy'}}</span></p>
+                </div>
+                <div class="contenedores contenedores-tablet outer-line-tres pointer" (click)="verArticulo(articulo[2].id)">
+                    <div class="img-tres" [style]="'background-image: url(' + articulo[2].imagen[0].url + ')'"></div>
+                    <h5 class="cat-title">{{ articulo[2].categoria?.categoria | uppercase}}</h5>
+                    <h4 class="cat-subtitle-tres">{{ articulo[2].titulo }}</h4>
+                    <p class="article-text">
+                        <markdown ngPreserveWhitespaces>
+                            {{ articulo[2].resumen | slice:0:150 }}{{ articulo[2].resumen !== null ? articulo[2].resumen.length > 150 ? '...' : '' : ''}}
+                        </markdown>
+                    </p>
+
+                    <p class="autor-date"> {{ articulo[2].autor?.username }} <br> <span style="font-size: 14px;"> {{ articulo[2].fecha | date:'MMMM d' | titlecase}} de {{articulo[2].fecha | date:'yyyy'}} </span></p>
+                </div>
+            </div>
+
+            <div class="row mb-20" *ngIf="articulo.length === 2">
+                <div class="articulo-doble outer-line-tres espacio-entre-articulos pointer" (click)="verArticulo(articulo[0].id)">
+                    <div class="img-doble" [style]="'background-image: url(' + articulo[0].imagen[0].url + ')'"></div>
+                    <h5 class="cat-title">{{ articulo[0].categoria?.categoria | uppercase}}</h5>
+                    <h4 class="cat-subtitle-tres">{{ articulo[0].titulo }}</h4>
+                    <markdown ngPreserveWhitespaces>
+                        <p class="article-text">{{ articulo[0].resumen | slice:0:150 }}{{ articulo[0].resumen !== null ? articulo[0].resumen.length > 150 ? '...' : '' : ''}}</p>
+                    </markdown>
+                    <p class="autor-date"> {{ articulo[0].autor?.username }} <br><span style="font-size: 14px;"> {{ articulo[0].fecha | date:'MMMM d' | titlecase}} de {{articulo[0].fecha | date:'yyyy'}} </span></p>
+                </div>
+                <div class="articulo-doble outer-line-tres pointer" (click)="verArticulo(articulo[1].id)">
+                    <div class="img-doble" [style]="'background-image: url(' + articulo[1].imagen[0].url + ')'"></div>
+                    <h5 class="cat-title">{{ articulo[1].categoria?.categoria | uppercase}}</h5>
+                    <h4 class="cat-subtitle-tres">{{ articulo[1].titulo }}</h4>
+                    <p class="article-text">
+                        <markdown ngPreserveWhitespaces>
+                            {{ articulo[1].resumen | slice:0:150 }}{{ articulo[1].resumen !== null ? articulo[1].resumen.length > 150 ? '...' : '' : ''}}
+                        </markdown>
+                    </p>
+                    <p class="autor-date"> {{ articulo[1].autor?.username }} <br> <span style="font-size: 14px;"> {{ articulo[1].fecha | date:'MMMM d' | titlecase}} de {{articulo[1].fecha | date:'yyyy'}} </span></p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+</div>

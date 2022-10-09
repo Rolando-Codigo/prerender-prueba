@@ -1,0 +1,440 @@
+hey-giveaway-catar-interes {
+    span {
+        vertical-align: text-top;
+        font-size: 12px;
+    }
+    .hey-hero-image {
+        height: 565px;
+        .img-back {
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-108-img.png) no-repeat;
+            background-position: 100% 100%;
+            background-size: 100% auto;
+            height: 565px;
+            h2 {
+                font-family: 'Sneak-Regular';
+                font-size: 64px;
+                line-height: 72px;
+                color: #FFFFFF;
+            }
+            p {
+                font-size: 34px;
+                line-height: 42px;
+                color: #FFFFFF;
+            }
+            .visa-icon {
+                height: 120px;
+            }
+        }
+    }
+    .hey-informacion {
+        height: 500px;
+        /* background: rgb(51, 51, 51);
+        background: linear-gradient(90deg, #333333 0%, #333333 50%, #FFFFFF 50%);*/
+        .titulo{
+            h2{
+                font-size: 50px;
+                line-height: 60px;
+                margin-top: 40px;
+                margin-bottom: 65px;
+            }
+        }
+        .seccionUno {
+            /*height: 500px;
+            background-color: #333333;*/
+            .seccion-uno {
+                color: #00E07B;
+                font-size: 50px;
+                line-height: 60px;
+                padding-top: 72px;
+                margin-bottom: 50px;
+            }
+            .row {
+                margin-top: 20px;
+                .item-img {
+                    width: 24px !important;
+                    height: 25px;
+                    margin-left: 15px;
+                }
+                p {
+                    color: #333333;
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+            }
+            .img-sec1 {
+                padding-top: 90px;
+            }
+        }
+        .seccionDos {
+            padding-top: 0px;
+            .seccion-dos {
+                font-family: 'Sneak-Regular';
+                color: #333333;
+                font-size: 44px;
+                line-height: 58px;
+            }
+            .row {
+                margin-top: 20px;
+                .item-img {
+                    width: 24px;
+                    height: 25px;
+                    margin-left: 15px;
+                }
+                p {
+                    font-family: 'Sneak-Regular';
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+            }
+            .col-lg-10 {
+                p {
+                    font-family: 'Sneak-Regular';
+                    font-size: 24px;
+                    line-height: 32px;
+                    margin-top: 30px;
+                    span {
+                        color: #333333;
+                        text-decoration: underline;
+                    }
+                }
+                .conoce {
+                    color: #00E07B;
+                    a {
+                        color: #000;
+                    }
+                }
+            }
+            .img-sec2 {
+                padding-left: 90px;
+            }
+        }
+    }
+    .hey-registro {
+        height: auto !important;
+        .img-back {
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-108-img.png) no-repeat;
+            background-position: 100% 100%;
+            background-size: 100% auto;
+            height: auto !important;
+        }
+        h2 {
+            font-size: 50px;
+            line-height: 60px;
+            color: #FFFFFF;
+        }
+        p {
+            color: #FFFFFF;
+        }
+        .container {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        .btn.btn-primary {
+            height: 40px;
+            border-radius: 10px;
+            color: #38383A;
+            padding-top: 10px;
+        }
+        .col-lg-10 {
+            h2 {
+                color: #FFFFFF;
+            }
+        }
+        .col-lg-9 {
+            p {
+                font-family: 'Sneak-Regular';
+                color: #FFFFFF;
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+        .col-lg-4 {
+            padding-top: 30px;
+        }
+    }
+    .hey-redes {
+        height: auto !important;
+        background: #333333;
+        .container {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        h2 {
+            font-family: 'Sneak-Regular';
+            font-size: 40px;
+            line-height: 50px;
+            color: #00E07B;
+        }
+        p {
+            font-family: 'Sneak-Regular';
+            font-size: 20px;
+            line-height: 32px;
+            color: #FFFFFF;
+            margin-top: 30px;
+        }
+        span {
+            font-family: 'Sneak-Regular';
+            font-size: 12px;
+            line-height: 24px;
+            color: #FFFFFF;
+            margin-top: 30px;
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    hey-giveaway-catar-interes {
+        .hey-hero-image {
+            height: 360px;
+            padding-top: 0%;
+            .img-back {
+                height: 360px;
+                .col-lg-6 {
+                    height: 300px;
+                }
+                h2 {
+                    font-size: 50px;
+                    line-height: 58px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+            .visa-icon {
+                height: 90px !important;
+            }
+        }
+        .hey-informacion {
+            .titulo{
+                h2{
+                    font-size: 50px;
+                    line-height: 58px;
+                }
+            }
+            .seccionUno {
+                /*height: 924px;
+                background-color: #333333;*/
+                .seccion-uno {
+                    font-size: 25px;
+                    line-height: 38px;
+                }
+                .row {
+                    p {
+                        font-size: 18px;
+                        line-height: 26px;
+                    }
+                }
+                .img-sec1 {
+                    img {
+                        width: 250px;
+                    }
+                }
+            }
+            .seccionDos {
+                .seccion-dos {
+                    font-size: 25px;
+                    line-height: 33px;
+                }
+                .row {
+                    p {
+                        font-size: 18px;
+                        line-height: 29px;
+                    }
+                }
+                .col-lg-10 {
+                    p {
+                        font-size: 18px;
+                        line-height: 26px;
+                    }
+                }
+                .img-sec2 {
+                    padding-top: 50px;
+                    padding-left: 40px;
+                }
+            }
+        }
+        .hey-registro {
+            h2 {
+                font-size: 25px;
+                line-height: 33px;
+                color: #FFFFFF;
+            }
+            p {
+                font-size: 25px;
+                line-height: 33px;
+                color: #FFFFFF;
+            }
+        }
+        .hey-redes {
+            h2 {
+                font-size: 25px;
+                line-height: 33px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 26px;
+                margin-top: 30px;
+            }
+            span {
+                font-size: 10px;
+                line-height: 16px;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    hey-giveaway-catar-interes {
+        .hey-hero-image {
+            height: 565px;
+            .img-back {
+                background-size: 300% auto;
+                height: 565px;
+                h2 {
+                    font-size: 30px;
+                    line-height: 38px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+            .visa-icon {
+                height: 80px;
+            }
+        }
+        .hey-informacion {
+            height: auto;
+            background: #FFFFFF;
+            .titulo{
+                h2{
+                    font-size: 30px;
+                    line-height: 38px;
+                    margin-bottom: 30px;
+                }
+            }
+            .seccionUno {
+                .seccion-uno {
+                    font-size: 25px;
+                    line-height: 38px;
+                    padding-top: 70px;
+                }
+                .row {
+                    margin-top: 20px;
+                    .item-img {
+                        width: 24px;
+                        height: 25px;
+                        margin-left: 15px;
+                    }
+                    p {
+                        font-size: 18px;
+                        line-height: 26px;
+                    }
+                }
+                .img-sec1 {
+                    padding-top: 90px;
+                }
+            }
+            .seccionDos {
+                h2 {
+                    padding-top: 90px;
+                }
+                .seccion-dos {
+                    font-size: 25px;
+                    line-height: 33px;
+                }
+                .row {
+                    margin-top: 20px;
+                    .item-img {
+                        width: 24px;
+                        height: 25px;
+                        margin-left: 15px;
+                    }
+                    p {
+                        font-size: 18px;
+                        line-height: 26px;
+                    }
+                }
+                .col-lg-10 {
+                    p {
+                        font-size: 18px;
+                        line-height: 26px;
+                        margin-top: 30px;
+                    }
+                }
+                .img-sec2 {
+                    padding-left: 45px;
+                }
+            }
+        }
+        .hey-registro {
+            height: auto;
+            .img-back {
+                background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-108-img.png) no-repeat;
+                background-position: 100% 100%;
+                background-size: 100% 100%;
+                padding-bottom: 16px;
+                height: auto;
+            }
+            h2 {
+                font-size: 50px;
+                line-height: 60px;
+                color: #FFFFFF;
+            }
+            .btn.btn-primary {
+                height: 40px;
+                border-radius: 10px;
+                color: #38383A;
+                padding-top: 10px;
+            }
+            .col-lg-10 {
+                h2 {
+                    padding-top: 70px;
+                    color: #FFFFFF;
+                }
+            }
+            .col-lg-9 {
+                p {
+                    font-family: 'Sneak-Regular';
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #FFFFFF;
+                }
+            }
+            .col-lg-4 {
+                padding-top: 30px;
+            }
+        }
+        .hey-redes {
+            height: auto;
+            background: #333333;
+            .redes {
+                margin-top: 60px;
+            }
+            h2 {
+                font-family: 'Sneak-Regular';
+                font-size: 40px;
+                line-height: 50px;
+                color: #00E07B;
+            }
+            p {
+                font-family: 'Sneak-Regular';
+                font-size: 20px;
+                line-height: 32px;
+                color: #FFFFFF;
+                margin-top: 30px;
+            }
+            span {
+                font-family: 'Sneak-Regular';
+                font-size: 12px;
+                line-height: 24px;
+                color: #FFFFFF;
+                margin-top: 30px;
+            }
+        }
+    }
+}

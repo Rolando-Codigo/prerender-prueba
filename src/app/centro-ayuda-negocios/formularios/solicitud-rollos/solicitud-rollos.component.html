@@ -1,0 +1,169 @@
+<section class="hey-ivr-form bg-01">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-1 col-lg-8 offset-lg-2">
+                <h1>Solicitud de rollos</h1>
+
+                <p>Recibe rollos para el uso de tu TPV compartiendo los datos solicitados a continuación.</p>
+                <p>Una vez recibida tu información, te enviaremos un correo con el número de folio para el seguimiento a tu solicitud.</p><br>
+
+                <hey-datos-afiliacion [datosAfiliacionForm]="datosAfiliacionForm" (form)="updateAfiliadosForm($event)"></hey-datos-afiliacion>
+
+                <hey-domicilio-afiliacion [domicilioAfiliacionForm] (form)="updateDomicilioAfiliadosForm($event)"></hey-domicilio-afiliacion>
+
+                <hey-info-entrega [infoEntregaAfiliacionForm]="infoEntregaAfiliacionForm" (form)="updateInfoEntregaAfiliadosForm($event)"></hey-info-entrega>
+
+                <div class="form" [formGroup]="rollosForm">
+                    <h2>Información de la solicitud</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            <mat-form-field appearance="fill" class="mb-10">
+                                <mat-label>Número de equipos</mat-label>
+                                <mat-select formControlName="noEquipos" [multiple]="true">
+                                    <mat-option value="1">1</mat-option>
+                                    <mat-option value="2">2</mat-option>
+                                    <mat-option value="3">3</mat-option>
+                                    <mat-option value="4">4</mat-option>
+                                    <mat-option value="5">5</mat-option>
+                                    <mat-option value="6">6</mat-option>
+                                    <mat-option value="7">7</mat-option>
+                                    <mat-option value="8">8</mat-option>
+                                    <mat-option value="9">9</mat-option>
+                                    <mat-option value="10">10</mat-option>
+                                </mat-select>
+                                <mat-error *ngIf="rollosForm.get('noEquipos').hasError('required')" class="mt-v8">
+                                    Campo requerido
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-6 col-lg-6">
+                            <mat-form-field appearance="fill" class="mb-10">
+                                <mat-label>Cantidad de rollos</mat-label>
+                                <mat-select formControlName="cantidad" (ngModelChange)="changeCantidad()">
+                                    <mat-option value="10">10</mat-option>
+                                    <mat-option value="20">20</mat-option>
+                                    <mat-option value="30">30</mat-option>
+                                    <mat-option value="40">40</mat-option>
+                                    <mat-option value="50">50</mat-option>
+                                    <mat-option value="Otros">Otros</mat-option>
+                                </mat-select>
+                                <mat-error *ngIf="rollosForm.get('cantidad').hasError('required')" class="mt-v8">
+                                    Campo requerido
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+
+
+                        <div class="col-md-6 col-lg-6"></div>
+                        <div class="col-md-6 col-lg-6" *ngIf="otherVisible">
+                            <mat-form-field appearance="fill" class="mb-10">
+                                <mat-label>Otra cantidad</mat-label>
+                                <input type="number" matInput formControlName="cantidadOther">
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <a class="btn btn-outline-primary" role="button" [routerLink]="['/ayuda-negocios']">Cancelar</a>
+                        </div>
+
+                        <div class="col-6 col-md-6 col-lg-6 text-right">
+                            <button class="btn btn-primary" type="button" [disabled]="rollosForm.invalid || datosAfiliacionForm.invalid || domicilioAfiliacionForm.invalid || infoEntregaAfiliacionForm.invalid  || busy" (click)="submitForm()">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="loader" *ngIf="busy">
+    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/loader.gif'">
+</div>
+
+<div id="ivr-modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" *ngIf="modalType === STATIC.MODAL_TYPE_EMAIL">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+
+            <div class="modal-body">
+                <h5 class="modal-title">¡Hey, sigamos en contacto!</h5>
+
+                <p>Ingresa tu correo para seguir atendiéndote.</p> <br>
+
+                <div class="row">
+                    <div class="col-lg-5">
+                        <mat-form-field>
+                            <mat-label>Nombre</mat-label>
+
+                            <input matInput [formControl]="nameForm" [name]="MODEL.NAME">
+
+                            <mat-error *ngIf="nameForm.invalid && (nameForm.dirty || nameForm.touched)" class="mt-v8">Ingresa un nombre válido</mat-error>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <mat-form-field>
+                            <mat-label>Correo electrónico</mat-label>
+
+                            <input matInput [formControl]="emailForm" [name]="MODEL.EMAIL">
+
+                            <mat-error *ngIf="emailForm.invalid && (emailForm.dirty || emailForm.touched)" class="mt-v8">Ingresa un correo electrónico válido</mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancelar</button>
+
+                <button type="button" class="btn btn-primary" (click)="submitForm()" [disabled]="!rollosForm.valid || busy">Enviar</button>
+            </div>
+        </div>
+
+        <div class="modal-content" *ngIf="modalType === STATIC.MODAL_TYPE_SUCCESS">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+
+            <div class="modal-body">
+                <h5 class="modal-title">¡Excelente, tu información ha sido enviada!</h5>
+
+                <p>En breve uno de nuestros agentes Hey te contactará para darle seguimiento a tu caso.</p> <br>
+
+                <p>Te recomendamos consultar nuestro <a target="_blank" [routerLink]="['/aviso-privacidad']">Aviso de Privacidad</a></p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Entendido</button>
+            </div>
+        </div>
+
+        <div class="modal-content" *ngIf="modalType === STATIC.MODAL_TYPE_ERROR">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+
+            <div class="modal-body">
+                <h5 class="modal-title">¡Ocurrió un error!</h5>
+
+                <p>Al parecer no pudimos enviar tu información.</p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Entendido</button>
+            </div>
+        </div>
+    </div>
+</div>

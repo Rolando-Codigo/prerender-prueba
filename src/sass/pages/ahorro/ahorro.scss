@@ -1,0 +1,97 @@
+    .hey-ahorro-generales {
+        .mi-fast {
+            width: 80%;
+            max-width: 111px !important;
+            margin-top: 16px;
+        }
+    }
+    
+    //mobiles
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        .hey-ahorro-generales {
+            .responsive-hero-ahorro {
+                margin-top: -26%;
+            }
+            .responsive-tasas {
+                margin-top: 15% !important;
+            }
+        }
+    }
+    /* TABLET Portrait and Landscape */
+    
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        .ocultar {
+            display: none;
+        }
+    }
+    /* ----------- iPad Pro ----------- */
+    /* Portrait and Landscape */
+    
+    @media only screen and (min-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+        .ocultar {
+            display: block;
+        }
+    }
+    
+    hey-ahorro {
+        .hey-cta {
+            &.no-padding {
+                .hey-ahorro {
+                    height: 550px;
+                    .col-lg-4,
+                    .col-lg-5 {
+                        height: auto;
+                        width: auto;
+                    }
+                    .vertical-full {
+                        img {
+                            width: auto;
+                            height: 550px;
+                            margin-left: -20%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 1019px) {
+        .hey-cta {
+            &.no-padding {
+                .hey-ahorro {
+                    .vertical-full {
+                        text-align: center;
+                        margin-bottom: 16px;
+                        img {
+                            position: absolute;
+                            height: 300px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 767.98px) {
+        .hey-cta {
+            &.no-padding {
+                padding-top: 0px !important;
+                .hey-ahorro {
+                    .vertical-full {
+                        text-align: center;
+                        margin-bottom: 16px;
+                        img {
+                            position: absolute;
+                            height: 240px !important;
+                            margin-left: -30%;
+                        }
+                    }
+                }
+                .vertical-center {
+                    position: absolute;
+                    bottom: 16px;
+                    left: 16px;
+                }
+            }
+        }
+    }

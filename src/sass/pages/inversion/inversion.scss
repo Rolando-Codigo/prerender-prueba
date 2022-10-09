@@ -1,0 +1,201 @@
+    hey-inversion{
+        .hey-hero-image{
+            height: 437px;
+            .col-lg-4{
+                img{
+                    width: 100%;
+                }
+            }
+            
+        }
+        .hey-cta{
+            padding-bottom: 20px;
+            padding-top: 40px;
+        }
+    }
+    .hey-inversion-generales {
+        h2 {
+            @extend %sneak-48;
+            color: $color-black-4B;
+        }
+        .texto-pill {
+            @extend %sneak-22;
+            color: $color-black-4B;
+        }
+        .pill {
+            width: 35%;
+            display: inline-block;
+            box-sizing: border-box;
+            padding-top: 0px;
+            padding-bottom: 15px;
+            border-radius: 999em;
+            text-decoration: none;
+            vertical-align: bottom;
+            margin: 40px 15px;
+        }
+        .responsive-inversion-img {
+            margin-top: 5%;
+            margin-bottom: 4%;
+        }
+    }
+    
+    .hey-ipab {
+        .ipab-img-responsive {
+            height: auto;
+            width: 100% !important;
+        }
+    }
+    
+    //mobiles
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        hey-inversion {
+            .hey-hero-image {
+                height: 595px;
+                padding-top: 0px;
+                h1 {
+                    margin-top: -30%
+                }
+                .col-lg-4{
+                    img{
+                        width: 120%;
+                        height: 120%;
+                    }
+                }
+                .responsive-inversion-gif {
+                    margin-top: -10% !important;
+                }
+            }
+            .hey-inversion-generales {
+                h2 {
+                    font-size: 30px !important;
+                }
+                .texto-pill {
+                    font-size: 18px;
+                }
+                .pill {
+                    width: 80%;
+                    height: 8%;
+                    display: inline-block;
+                    box-sizing: border-box;
+                    border-radius: 999em;
+                    text-decoration: none;
+                    vertical-align: bottom;
+                    margin: 20px 15px;
+                }
+                .responsive-inversion-img {
+                    margin-top: 1%;
+                    margin-bottom: 2%;
+                    width: 80%;
+                }
+            }
+            .responsive-celular-inversion {
+                margin-top: 0% !important;
+                width: 150% !important;
+                margin-left: -100px;
+            }
+            .hey-cta{
+                padding-top: 70px;
+            }
+            .hey-tu-inversion{
+                padding-top: 40px;
+            }
+        }
+    }
+    /* IPHONE Portrait */
+    
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+    
+    hey-inversion {
+        .hey-hero-image {
+            h1 {
+                margin-top: -30%
+            }
+            .responsive-inversion-gif {
+                margin-top: -120%;
+            }
+        }
+    }
+    
+    .hey-inversion-generales {
+        h2 {
+            font-size: 36px;
+        }
+        .texto-pill {
+            font-size: 18px;
+        }
+        .pill {
+            width: 80%;
+            height: 16%;
+            display: inline-block;
+            box-sizing: border-box;
+            border-radius: 999em;
+            text-decoration: none;
+            vertical-align: bottom;
+            margin: 20px 15px;
+        }
+        .responsive-inversion-img {
+            margin-top: 1%;
+            margin-bottom: 2%;
+            width: 30%;
+        }
+    }
+    
+    .responsive-celular-inversion {
+        margin-top: 0% !important;
+        width: 150% !important;
+        margin-bottom: 22px;
+    }
+    /* TABLET Portrait and Landscape */
+    
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        hey-inversion {
+            .hey-hero-image {
+                h1 {
+                    margin-top: -10%
+                }
+                .responsive-inversion-gif {
+                    margin-top: -37%;
+                }
+            }
+            .hey-inversion-generales {
+                h2 {
+                    font-size: 36px;
+                }
+                .texto-pill {
+                    font-size: 18px;
+                }
+                .pill {
+                    width: 40%;
+                    height: 18%;
+                    display: inline-block;
+                    box-sizing: border-box;
+                    border-radius: 999em;
+                    text-decoration: none;
+                    vertical-align: bottom;
+                    margin: 20px 15px;
+                }
+                .responsive-inversion-img {
+                    margin-top: 2%;
+                    margin-bottom: 3%;
+                    width: 30%;
+                }
+            }
+            .responsive-celular-inversion {
+                margin-top: 20% !important;
+            }
+            .ipab-img-responsive {
+                height: auto;
+                width: 50% !important;
+                margin-bottom: 10%;
+            }
+        }
+    }
+    /* ----------- iPad Pro ----------- */
+    /* Portrait and Landscape */
+    
+    @media only screen and (min-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+        .ipab-img-responsive {
+            height: auto;
+            width: 100% !important;
+        }
+    }

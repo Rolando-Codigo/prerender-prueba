@@ -1,0 +1,662 @@
+<section class="hey-hero-image hey-inversion-generales">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-sm-6 offset-sm-1 col-md-6 offset-md-1 col-lg-6 offset-lg-1">
+                <div class="vertical-center">
+                    <h1>Durante tu primer mes como usuario Hey Banco,</h1>
+                    <p>tu Inversión Hey te da <b>9.00%</b>
+                    </p>
+
+                    <hey-btn-crear-cuenta title="Quiero una Cuenta Hey"> </hey-btn-crear-cuenta>
+                </div>
+            </div>
+
+            <div class="col-8 offset-2 col-md-5 offset-md-0 col-lg-4 offset-lg-1 text-center">
+                <img loading="lazy" class="responsive-inversion-gif" [src]="environment.assetsUrl + 'img/P240-Inversion/P240-inversion.webp'" alt="Tu banco digital">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-caracteristicas">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 offset-md-1 col-lg-5 offset-lg-1">
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P240-Inversion/P240-2-ic-contratacion-simple.svg'" class="align-self-start" alt="Transferencias 24/7, Tu banco digital">
+
+                    <div class="media-body">
+                        <h2>Contratación simple</h2>
+
+                        <p>Elige el monto y contrata tu pagaré en minutos desde tu App Hey.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P240-Inversion/P240-3-ic-calendario.svg'" class="align-self-start" alt="Tu banco digital">
+
+                    <div class="media-body">
+                        <h2>Tú tienes el control</h2>
+
+                        <p>Personaliza tu pagaré único, elige desde $1,000 a 3 millones de pesos para invertir.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 offset-md-0 col-lg-5 offset-lg-0">
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P240-Inversion/P240-4-ic-dinero-siempre-seguro.svg'" class="align-self-start" alt="Tu dinero siempre seguro en hey banco, Tu banco digital">
+
+                    <div class="media-body">
+                        <h2>Tu dinero siempre seguro</h2>
+
+                        <p>Recuerda que todas las inversiones y cuentas en Hey Banco están protegidas por el <a href="https://www.gob.mx/ipab" target="_blank">IPAB</a>.</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P240-Inversion/P240-5-ic-tasas-siempre-altas.svg'" class="align-self-start" alt="Tu dinero siempre seguro en hey banco, Tu banco digital">
+
+                    <div class="media-body">
+                        <h2>Tasas siempre altas</h2>
+
+                        <p>Continuamos con el compromiso de trabajar para ofrecerte siempre las mejores tasas del mercado.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-cta hey-inversion-generales bg-01">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-8 text-center">
+                <div class="pill bg-white">
+                    <p class="texto-pill">Valida tu cuenta <img loading="lazy" [src]="environment.assetsUrl + 'img/P240-Inversion/P240-6-ic-check.svg'">
+                    </p>
+                </div>
+
+                
+                    <h2>y usa tus Tarjetas Hey, <br>para tener una tasa de</h2>
+                
+                
+                <img loading="lazy" class="responsive-inversion-img" [src]="environment.assetsUrl + 'img/P240-Inversion/P240-inversion-semanas.webp'" alt="Tu banco digital, tarjetas de colección hey banco">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-cta hey-tu-inversion">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6 offset-md-0 col-lg-5 offset-lg-1 order-1 order-md-1 order-lg-1">
+                <h2>Tu inversión desde tu celular</h2>
+
+                <p>Contrata, invierte, administra tu pagaré único desde tu celular y disfruta siempre de altos rendimientos y nuevos beneficios.</p>
+
+                <hey-btn-crear-cuenta title="Abre tu cuenta"> </hey-btn-crear-cuenta>
+            </div>
+            <div class="col-9 col-md-4 col-lg-4 order-1 order-md-2 order-lg-1">
+                <img loading="lazy" class="responsive-celular-inversion" [src]="environment.assetsUrl + 'img/P240-Inversion/P240-inversion-celular.webp'" alt="Tu inversión desde tu celular, Tu banco digital">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-simulador bg-01">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 offset-sm-1 col-lg-7 offset-lg-1">
+                <h2>Calcula tu inversión</h2>
+
+                <p>Contrata, invierte y administra tu pagaré único desde tu celular y disfruta siempre de altos rendimientos y nuevos beneficios.</p>
+            </div>
+        </div>
+
+        <form [formGroup]="inversionForm">
+            <div class="row align-items-center">
+                <div class="col-sm-7 offset-sm-1 col-lg-4 offset-lg-1">
+                    <mat-form-field class="meta">
+                        <mat-label>¿Cuál es tu monto a invertir?</mat-label>
+
+                        <input matInput formControlName="inversionMeta" type="number" min="5000" max="3000000">
+
+                        <mat-error *ngIf="metaInvalid">El monto mínimo de inversión es $5,000.00</mat-error>
+                    </mat-form-field>
+
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <p>Tasa</p>
+
+                            <h6>9.00%</h6>
+                        </div>
+
+                        <div class="col-6 text-center">
+                            <p>Plazo</p>
+
+                            <h6>7 días</h6>
+                        </div>
+                    </div>
+
+                    <div class="d-block d-sm-block d-lg-none grafica">
+                        <h4>Rendimiento de Inversión Hey respecto a otros bancos</h4>
+
+                        <div class="row text-center justify-content-center">
+                            <div class="col-3">
+                                <h5>Hey Banco</h5>
+
+                                <p>9.00<span>%</span></p>
+
+                                <div class="pill">
+                                    <p>{{ calculaRendimiento() | currency:'MXN':'symbol-narrow' }} </p>
+                                </div>
+
+                                <div class="graph"></div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="space"></div>
+
+                                <h5>Otros bancos</h5>
+
+                                <p>0.06<span>%</span></p>
+
+                                <div class="pill">
+                                    <p>{{ calculaRendimientoOtrobanco() | currency:'MXN':'symbol-narrow' }} </p>
+                                </div>
+
+                                <div class="graph"></div>
+                            </div>
+
+                            <div class="col-12">
+                                <hr>
+                            </div>
+                        </div>
+
+                        <p class="legal">
+                            El cálculo en el interés es aproximado.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3 *ngIf="inversionPlazo === 0">Total al vencimiento: {{ calculaInversion() | currency:'MXN':'symbol-narrow' }}
+                        </h3>
+
+                        <h3 *ngIf="inversionPlazo === 6">Total al vencimiento: <u>{{ calculaReinversion6() |
+                            currency:'MXN':'symbol-narrow' }}</u></h3>
+
+                        <h3 *ngIf="inversionPlazo === 12">Total al vencimiento: <u>{{ calculaReinversion12() |
+                            currency:'MXN':'symbol-narrow' }}</u></h3>
+
+                        <p *ngIf="inversionPlazo === 0">En 7 días obtendrás <b>{{ calculaRendimiento() |
+                            currency:'MXN':'symbol-narrow' }}</b> de intereses.</p>
+
+                        <p *ngIf="inversionPlazo === 6">En 6 meses obtendrás <b>{{ calculaRendimiento6() |
+                            currency:'MXN':'symbol-narrow' }}</b> de intereses.</p>
+
+                        <p *ngIf="inversionPlazo === 12">En 12 meses obtendrás <b>{{ calculaRendimiento12() |
+                            currency:'MXN':'symbol-narrow' }}</b> de intereses.</p>
+
+                        <mat-radio-group class="row" formControlName="inversionPlazo">
+                            <div class="col-12">
+                                <p>¿Qué pasa si lo reinviertes?</p>
+                            </div>
+
+                            <div class="col-6 col-md-6 col-lg-6">
+                                <mat-radio-button [value]="6">Por 6 meses</mat-radio-button>
+                            </div>
+
+                            <div class="col-6 col-md-6 col-lg-6">
+                                <mat-radio-button [value]="12">Por 12 meses</mat-radio-button>
+                            </div>
+                        </mat-radio-group>
+                    </div>
+                </div>
+
+                <div class="col-sm-7 offset-sm-1 col-lg-5 offset-lg-1">
+                    <div class="d-none d-sm-none d-lg-block grafica">
+                        <h4>Rendimiento de Inversión Hey respecto a otros bancos</h4>
+
+                        <div class="row text-center justify-content-center">
+                            <div class="col-3">
+                                <h5>Hey Banco</h5>
+
+                                <p>9.00%<span></span></p>
+
+                                <div class="pill">
+                                    <p>{{ calculaRendimiento() | currency:'MXN':'symbol-narrow' }} </p>
+                                </div>
+
+                                <div class="graph"></div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="space"></div>
+
+                                <h5>Otros bancos</h5>
+
+                                <p>0.06<span>%</span></p>
+
+                                <div class="pill">
+                                    <p>{{calculaRendimientoOtrobanco() | currency:'MXN':'symbol-narrow'}}</p>
+                                </div>
+
+                                <div class="graph"></div>
+                            </div>
+
+                            <div class="col-12">
+                                <hr>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col-sm-7 offset-sm-1 col-lg-10 offset-lg-1">
+                    <p class="legal">
+                        *Tasa exclusiva para clientes Hey Pro
+                        <br>
+                        <b>Inversión Hey (Sobretasa) Ganancia Anual Total: GAT nominal 9.41% / GAT real 4.47%</b> antes
+                        de impuestos para un rango de
+                        $1,000 a $3,000,000 de pesos, donde su plazo de inversión es de 7 días. Tasa de Rendimiento
+                        Anual Fija <b>9.00%</b> antes de impuestos. La GAT real es el rendimiento que obtendría después
+                        de
+                        descontar la inflación estimada. Cálculo realizado el 23 de agosto de 2022, para fines
+                        informativos y comparativos. Vigencia del cálculo de la GAT al 23 de febrero de 2023 . La GAT
+                        varía en función al monto de la inversión y el periodo de la misma.
+                    </p>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="hey-ipab">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <h2>Invierte y ahorra con tranquilidad</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-9 col-lg-3 offset-lg-1 order-2 order-1 order-lg-1">
+                <img loading="lazy" class="ipab-img-responsive" [src]="environment.assetsUrl + 'img/P240-Inversion/P240-11-img-ipab.png'" alt="Invierte y ahorra con tranquilidad en hey banco, Tu banco digital">
+
+            </div>
+
+            <div class="col-lg-7 offset-lg-1 order-1 order-md-2 order-lg-2">
+                <p>
+                    Con Hey Banco, tu ahorro y tu inversión están protegidos por el Instituto para la Protección al Ahorro Bancario.
+                    <br><br> El IPAB te respalda por hasta 400 mil unidades de inversión (UDI) o $2,648,804.40 pesos, estimado al 13 de enero 2021.
+                </p>
+
+                <a class="btn btn-primary" href="https://www.gob.mx/ipab/que-hacemos" target="_blank">Conoce más sobre
+          el
+          IPAB</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-benefits bg-02">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 offset-md-1 col-lg-10 offset-lg-1">
+                <h2>Invierte tu dinero en minutos</h2>
+
+                <div class="row">
+                    <div class="col-12 col-md-10 col-lg-4">
+                        <div class="benefit">
+                            <div class="benefit-box">
+                                <h3>1. Abre tu Cuenta</h3>
+
+                                <p>Descarga tu App Hey Banco y abre tu cuenta en 5 minutos.</p>
+                            </div>
+
+                            <div class="benefit-box-shadow bg-purple">
+                                <div class="benefit-box-shadow-detail"></div>
+                                <div class="benefit-box-shadow-detail"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-10 col-lg-4">
+                        <div class="benefit">
+                            <div class="benefit-box">
+                                <h3>2. Contrata</h3>
+
+                                <p>En la pantalla principal selecciona “Contratar Inversión”.</p>
+                            </div>
+
+                            <div class="benefit-box-shadow bg-purple">
+                                <div class="benefit-box-shadow-detail"></div>
+                                <div class="benefit-box-shadow-detail"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-10 col-lg-4">
+                        <div class="benefit">
+                            <div class="benefit-box">
+                                <h3>3. Define tu inversión</h3>
+
+                                <p>Sigue los pasos, define el monto, confirma la fecha de vencimiento y ¡Listo!</p>
+                            </div>
+
+                            <div class="benefit-box-shadow bg-purple">
+                                <div class="benefit-box-shadow-detail"></div>
+                                <div class="benefit-box-shadow-detail"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hey-btn-crear-cuenta title="Abre tu cuenta"> </hey-btn-crear-cuenta>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-requisitos">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 offset-md-1 col-lg-4 offset-lg-1">
+                <h2>Características</h2>
+
+                <div class="media">
+                    <img loading="lazy"
+                        [src]="environment.assetsUrl + 'img/P240-Inversion/P240-14-arrow-right-circle-green.svg'"
+                        class="align-self-start" alt="Tu banco digital">
+                    <div class="media-body">
+                        <p>Plazo a 7 días.</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P240-Inversion/P240-14-arrow-right-circle-green.svg'" class="align-self-start" alt="Tu banco digital">
+                    <div class="media-body">
+                        <p>Tasa de Rendimiento Anual Fija de <b>9.00%</b>.</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P240-Inversion/P240-14-arrow-right-circle-green.svg'" class="align-self-start" alt="Tu banco digital">
+
+                    <div class="media-body">
+                        <p>Inversión a partir de $1,000.00 pesos.</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P240-Inversion/P240-14-arrow-right-circle-green.svg'" class="align-self-start" alt="Tu banco digital">
+
+                    <div class="media-body">
+                        <p>Invierte hasta 3 millones de pesos.</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P240-Inversion/P240-14-arrow-right-circle-green.svg'" class="align-self-start" alt="Tu banco digital">
+
+                    <div class="media-body">
+                        <p>Cobertura nacional.</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P240-Inversion/P240-14-arrow-right-circle-green.svg'" class="align-self-start" alt="Tu banco digital">
+
+                    <div class="media-body">
+                        <p>Contratación, consultas y movimientos desde tu App Hey.</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P240-Inversion/P240-14-arrow-right-circle-green.svg'" class="align-self-start" alt="Tu banco digital">
+
+                    <div class="media-body">
+                        <p>Rendimiento garantizado que podrás retirar o reinvertir al vencimiento.</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <img loading="lazy" [src]="environment.assetsUrl + 'img/P240-Inversion/P240-14-arrow-right-circle-green.svg'" class="align-self-start" alt="Tu banco digital">
+
+                    <div class="media-body">
+                        <p>Producto sin cobro de comisiones.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 offset-md-1 col-lg-5 offset-lg-1">
+                <h2>Requisitos</h2>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="media">
+                            <img loading="lazy" [src]="environment.assetsUrl + 'img/P240-Inversion/P240-14-arrow-right-circle-green.svg'" class="align-self-start" alt="Tu banco digital">
+
+                            <div class="media-body">
+                                <p>Tener una Cuenta Hey activa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+                <div class="row">
+                    <div class="col-12">
+                        <p>
+                            <b class="title">Inversión Hey</b><br> *1 Inversión Hey Ganancia Anual Total: GAT nominal <b
+                                class="num">5.12%</b> / GAT real <b class="num">0.58%</b>antes de impuestos para un
+                            rango de <b>$1,000 a $3,000,000 de pesos,</b>
+                            donde su plazo de inversión es a 7 días. Tasa de Rendimiento Anual Fija <b
+                                class="num">5.00%</b> antes de impuestos. La GAT real es el rendimiento que obtendría
+                            después de descontar la inflación estimada. Cálculo realizado
+                            el 27 de abril de 2022, para fines informativos y comparativos. Vigencia del cálculo de la
+                            GAT al 27 de octubre de 2022. La GAT varía en función al monto de la inversión y el periodo
+                            de la misma.
+
+                            <br> *2 Inversión Hey (Sobretasa) Ganancia Anual Total: GAT nominal <b class="num">9.41%</b>
+                            / GAT real <b class="num">4.47%</b>antes de impuestos para un rango de $1,000 a $3,000,000
+                            de pesos, donde su plazo de inversión es
+                            a 7 días. Tasa de Rendimiento Anual Fija<b>9.00%</b> antes de impuestos. La GAT real es el
+                            rendimiento que obtendría después de descontar la inflación estimada. Cálculo realizado el
+                            23 de agosto de 2022, para fines informativos
+                            y comparativos. Vigencia del cálculo de la GAT al 23 de febrero de 2023. La GAT varía en
+                            función al monto de la inversión y el periodo de la misma.
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3 col-lg-1">
+                        <a href="https://www.gob.mx/ipab" target="_blank">
+                            <img loading="lazy" class="ipab" [src]="environment.assetsUrl + 'img/P240-Inversion/P240-11-img-ipab.png'" alt="Instituto para la Protección al Ahorro Bancario, Tu banco digital">
+                        </a>
+                    </div>
+
+                    <div class="col-9 col-lg-11">
+                        <p>
+                            El instituto para la Protección al Ahorro Bancario (IPAB) garantiza las operaciones establecidas en el Artículo 46 fracciones I y II, de la Ley de Instituciones de Crédito, hasta por 400 mil unidades de inversión (UDI) por persona física o moral, y por
+                            banco, visita <a href="https://www.gob.mx/ipab" target="_blank">http://www.gob.mx/ipab</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-faq bg-02">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-10 offset-0 col-md-5 offset-md-1 col-lg-3 offset-lg-1 order-2 order-md-1 order-lg-1">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/P210-Cuentas/P210-22-img-faq.png'"
+                    alt="¿Dónde puedo resolver mis dudas sobre la Cuenta Hey?, Tu banco digital">
+            </div>
+
+
+            <div class="col-md-12 col-lg-7 order-1 order-md-2 order-lg-2">
+                <h2>Preguntas frecuentes</h2>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingOne">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    ¿Qué es una inversión?<img loading="lazy"
+                                        [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'"
+                                        alt="Tu banco digital">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Es una opción para aumentar tu dinero a determinado plazo obteniendo rendimientos que
+                                pueden ser reinvertidos al terminar su vigencia.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingTwo">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    ¿Qué es el rendimiento?<img loading="lazy"
+                                        [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'"
+                                        alt="Tu banco digital">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                El rendimiento es un cálculo que se realiza tomando la cantidad invertida y la utilidad
+                                generada luego de un cierto periodo.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingThree">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    ¿Diferencias entre el ahorro Hey Plus y la Inversión Hey?<img alt="Tu banco digital"
+                                        [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <b>Hey Plus</b> es una herramienta de ahorro con un rendimiento anual de <b>4.00%</b>
+                                que no tiene plazo forzoso mientras que la <b>Inversión Hey</b> tiene un rendimiento
+                                anual de <b>9.00%</b> y un riguroso plazo a 7 días
+                                en el cual no puedes disponer de tu dinero hasta la fecha de vencimiento.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingFour">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
+                                    aria-controls="collapseFour">
+                                    ¿Cuándo obtengo el rendimiento de mi Inversión Hey?<img
+                                        [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'"
+                                        alt="Tu banco digital">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Aunque el cálculo del rendimiento es anual, el depósito es mensual.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingFive">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    ¿Cómo puedo abrir mi Inversión Hey?<img loading="lazy"
+                                        [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'"
+                                        alt="Tu banco digital">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                La Inversión Hey puedes abrirla directamente desde tu app, solo tienes que seguir los
+                                siguientes pasos:
+                                <b>Login</b> > desliza hasta la Inversión > botón <b>Comenzar a invertir</b> > define un
+                                monto e instrucciones para al vencimiento > botón <b>Comenzar Inversión</b>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingSix">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                                    aria-controls="collapseSix">
+                                    ¿Qué pasa al vencimiento de la inversión?<img
+                                        [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'"
+                                        alt="Tu banco digital">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                El día del vencimiento tu inversión seguirá las instrucciones que le des al momento de
+                                crearla, puedes ser: Renovar solo cantidad invertida, Renovar la cantidad invertida +
+                                los intereses o No renovar.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hey-slider-beneficios></hey-slider-beneficios>
+
+<hey-cta-app></hey-cta-app>

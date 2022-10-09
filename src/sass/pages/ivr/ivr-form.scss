@@ -1,0 +1,219 @@
+.loader {
+    background: rgba(0,0,0,.32);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1050;
+
+    img {
+        bottom: 0;
+        height: auto;
+        left: 0;
+        margin: auto;
+        right: 0;
+        top: 0;
+        position: absolute;
+        width: 100px;
+    }
+}
+
+.hey-ivr-form {
+    padding-bottom: 80px;
+    padding-top: 80px;
+
+    h1 {
+        @extend %sneak-48;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        @extend %sneak-24;
+        margin-bottom: 22px;
+
+        &.evidence {
+            margin-top: 16px;
+        }
+    }
+
+    p {
+        @extend %lato-16;
+        margin-bottom: 0;
+    }
+
+    p + .form {
+        margin-top: 44px;
+    }
+
+    p + .mat-radio-group {
+        margin-top: 8px;
+    }
+
+    .row + .row {
+        margin-top: 38px;
+    }
+
+    .form {
+        .col-12 {
+            .mat-radio-group {
+                margin-bottom: 22px;
+            }
+        }
+    }
+
+    .mat-error {
+        color: $color-red;
+    }
+
+    .mat-hint {
+        color: $color-black-4B;
+    }
+
+    .mat-hint,
+    .mat-error {
+        @extend %lato-12;
+        margin-top: 4px;
+    }
+
+    .card {
+        border: none;
+        border-radius: 4px;
+        height: 160px;
+        overflow: hidden;
+
+        .card-text {
+            @extend %lato-14;
+        }
+
+        .icon {
+            display: block;
+            height: auto;
+            margin: 57px auto 8px;
+            width: 16px;
+        }
+
+        .preview {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: auto;
+            width: 100%;
+        }
+
+        input {
+            cursor: pointer;
+        }
+
+        .btn-link {
+            position: absolute;
+            right: 16px;
+            top: 16px;
+            z-index: 10;
+
+            img {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .mat-checkbox,
+    .mat-radio-button {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+    }
+
+    .mat-checkbox-label,
+    .mat-radio-label {
+        @extend %lato-14;
+    }
+
+    textarea {
+        @extend %lato-14;
+        background: $color-white;
+        border: none;
+        border-radius: 4px;
+        color: $color-black-4B;
+        height: 260px;
+        margin-bottom: 0;
+        outline: none;
+        padding: 16px;
+        resize: none;
+        width: 100%;
+    }
+}
+
+hey-ivr-fallas,
+hey-ivr-producto,
+hey-ivr-sugerencia {
+    .modal-dialog {
+        max-width: 934px;
+    }
+
+    .modal-content {
+        border: none;
+    }
+
+    .modal-header {
+        border-bottom: none;
+        padding: 38px 32px 0;
+    }
+
+    .modal-title {
+        @extend %sneak-24;
+        margin-bottom: 4px;
+    }
+
+    .modal-body {
+        padding: 24px 32px 45px;
+
+        p {
+            @extend %lato-14;
+            color: $color-black-4B;
+            margin-bottom: 0;
+        }
+
+        p + .row {
+            margin-top: 32px;
+        }
+    }
+    
+    .modal-footer {
+        border-top: none;
+        padding: 0 32px 50px;
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    .hey-ivr-form {
+        padding-top: 54px;
+
+        .col-md-4 {
+            margin-bottom: 22px;
+
+            &:nth-of-type(3),
+            &:nth-of-type(4) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    .hey-ivr-form {
+        padding-bottom: 64px;
+        padding-top: 60px;
+
+        .mat-radio-group {
+            margin-bottom: 22px;
+        }
+    }
+}

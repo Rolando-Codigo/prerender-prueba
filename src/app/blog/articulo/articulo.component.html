@@ -1,0 +1,90 @@
+<div class="container mb-20 ">
+    <div *ngIf="articulo">
+        <section class="title-blog">
+            <div class="container" style="position: relative;">
+                <p class="cat cat-mobile">{{articulo.categoria?.categoria ?? 'NA' | uppercase}}</p>
+                <h1 class="p-title p-title-table"> {{ articulo.titulo }}</h1>
+                <h3 class="cat"> {{ articulo.autor?.username }}</h3>
+                <a href="/hey-media"> <img loading="lazy" class="flecha-back" [src]="environment.assetsUrl + 'img/blog/back-arrow.png'" alt="flecha de regresar"></a>
+            </div>
+        </section>
+
+        <section class="bloque-author">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="inside-author"></p>
+                        <p class="public-date">{{ articulo.fecha | date:'MMMM d' | titlecase}} de {{articulo.fecha | date:'yyyy'}} </p>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <p class="inside-author">Compartir en
+                            <span>
+
+                                <button class="button-share" shareButton="facebook" > 
+                                    <img loading="lazy" class="ico-redes-f" [src]="environment.assetsUrl + 'img/blog/facebook.png'" alt="icono de facebook">
+                                </button>
+                            </span>
+                            <span>
+                                <button class="button-share" shareButton="twitter" > 
+                                    <img loading="lazy" class="ico-redes-t" [src]="environment.assetsUrl + 'img/blog/twi.png'" alt="icono de twitter">
+                                </button>
+                            </span>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="bloque-categorias">
+            <div class="no-pad-img">
+                <div class="col-md-12 no-pad-img no-padding-r-l">
+                    <img loading="lazy" class="f-image-no-padding" [src]=" articulo.imagen[0].url" alt="Hombre pensando en su libertad financiera">
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="bloque-articulos-hey">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <markdown ngPreserveWhitespaces>
+                            {{ articulo.contenido }}
+                        </markdown>
+                    </div>
+
+                    <div class="col-md-12 text-center">
+                        <h4 class="by-hey">By Hey</h4>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="container" style="border: solid 1px #EEF4F7;"></div>
+
+
+        <section class="bloque-articulos">
+            <div class="mb-32">
+                <div class="row">
+                    <div class="col-md-12 left-p">
+                        <h4 class="art-sub-t2 no-padding-left">Artículos relacionados</h4>
+                    </div>
+                    <div class="contenedores outer-line-tres pointer" *ngFor="let articulo of articulos; let i = index" [ngClass]="{'espaciado-contenedores-no': i === 1, 'espaciado-contenedores': i !== 2}" (click)="verArticulo(articulo.id)">
+
+                        <div class="img-tres" [style]="'background-image: url(' + articulo.imagen[0].url + ')'"></div>
+                        <h5 class="cat-title">{{articulo.categoria?.categoria}}</h5>
+                        <h4 class="cat-subtitle-tres">{{ articulo.titulo }}</h4>
+                        <p class="article-text">{{ articulo.resumen | slice:0:150 }}{{ articulo.resumen !== null ? articulo.resumen.length > 150 ? '...' : '' : ''}}</p>
+                        <p class="autor-date"> {{ articulo.autor?.username }} <br> <span style="font-size: 14px;">{{ articulo.fecha | date:'MMMM d' | titlecase}} de {{articulo.fecha | date:'yyyy'}}  </span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

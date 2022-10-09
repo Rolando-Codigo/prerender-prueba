@@ -1,0 +1,118 @@
+<section class="hey-hero-image fondo">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-sm-6 offset-sm-1 col-md-5 offset-md-1 col-lg-6 offset-lg-1">
+                <span class="rallado"> </span>
+                <div class="vertical-center">
+                    <h2 class="web">¡Diseña la nueva Tarjeta Hey y gana $100 mil!
+                    </h2>
+
+                    <br>
+                    <p class="mb-15 sub">
+                        Si lo tuyo es el arte y la ilustración, participa en nuestro nuevo concurso diseñando la proxima Tarjeta Hey Banco.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-5 offset-lg-0 text-center">
+                <img loading="lazy" class="responsive-cuentas-hero" [src]="environment.assetsUrl + 'img/mailings/tarjeta_mobile.svg'" alt="¿Cómo puedo abrir una Cuenta Hey? Tu banco digital">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hey-cta text-center fondo_2">
+    <div class="container">
+        <div class="col-md-7 offset-md-3 col-lg-6 offset-lg-3">
+            <h3 class="texto_participacion espaciado titulo">Para participar:</h3><br>
+        </div>
+        <div class="col-lg-10 text-center separacion">
+            <div class="row">
+                <div class="col-md-3 offset-md-1 col-lg-2 offset-lg-2">
+                    <img loading="lazy" class="responsive-cuentas-hero" [src]="environment.assetsUrl + 'img/mailings/1_mobile.svg'" alt="¿Cómo puedo abrir una Cuenta Hey? Tu banco digital">
+                    <p class="texto_participacion">Llena tus datos</p>
+                </div>
+                <div class="col-md-3 offset-md-1 col-lg-2 offset-lg-2">
+                    <img loading="lazy" class="responsive-cuentas-hero" [src]="environment.assetsUrl + 'img/mailings/2_mobile.svg'" alt="¿Cómo puedo abrir una Cuenta Hey? Tu banco digital">
+                    <p class="texto_participacion">Sube el diseño de tu plástico</p>
+                </div>
+                <div class="col-md-2 offset-md-1 col-lg-2 offset-lg-2">
+                    <img loading="lazy" class="responsive-cuentas-hero" [src]="environment.assetsUrl + 'img/mailings/3_mobile.svg'" alt="¿Cómo puedo abrir una Cuenta Hey? Tu banco digital">
+                    <p class="texto_participacion">¡Listo!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+            <p class="texto_participacion">Un jurado de expertos seleccionará a 10 finalistas.</p>
+            <p class="texto_participacion">El ganador será acreedor a $100 mil pesos y su diseño aparecerá en las nuevas tarjetas Hey Banco.</p>
+        </div>
+    </div>
+</section>
+
+<section class="hey-cta bg-01">
+    <div class="container">
+        <div class="row ">
+            <div [formGroup]="form" class="col-10 offset-1 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                <mat-form-field class="website">
+                    <mat-label>Correo electrónico</mat-label>
+                    <input matInput formControlName="correoParticipante">
+                </mat-form-field>
+            </div>
+            <div [formGroup]="form" class="col-10 offset-1 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                <mat-form-field class="website">
+                    <mat-label>Nombre completo</mat-label>
+                    <input matInput formControlName="nombreCompleto">
+                </mat-form-field>
+            </div>
+
+            <div class="col-10 offset-1 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                <label for="apply" class="archivo redondeo">+ Adjuntar archivo
+                    <input class="archivoD" type="file" name="" id="apply" accept=".jpg, .png, .pdf"
+                        (change)="onChange($event)">
+                </label>
+                <br>
+                <span *ngIf="estatusPesoArchivo">{{error_mensaje}}</span>
+                <p class="formato">JPG/PNG/PDF</p>
+                <p class="leyenda">Solo aplica un diseño por cliente</p>
+            </div>
+            <div class="col-10 offset-1 col-md-10 offset-md-1 col-lg-8 offset-lg-2 visualArchivo" *ngIf="estatusArchivo!==false">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <mat-icon>attach_file</mat-icon>
+                        <span class="textoArchivo">
+                            {{archivoTarjeta.nombreArchivo}}.{{extension}}
+                        </span>
+                    </div>
+                    <div class="col-lg-1 offset-lg-2">
+                        <span class="eliminar" (click)="onDelete()">eliminar</span>
+                    </div>
+                </div>
+            </div>
+            <div [formGroup]="form" class="col-md-6 offset-1 col-md-6 offset-md-1 col-lg-4 offset-lg-2 espacio">
+                <mat-checkbox formControlName="estatusTC"> <a href="https://heybanco.s3.amazonaws.com/assets/legales/terminos-y-condiciones-giveaway-tarjetas.pdf" target="_blank ">
+                        He leído y acepto los Términos y Condiciones </a></mat-checkbox>
+            </div>
+            <div class="col-1 offset-7 col-md-1 offset-md-2 col-lg-1 offset-lg-3">
+                <button class="btn btn-primary button boton" id="enviar" role="button" type="button" [disabled]="!form.valid || file === null" (click)="submitRequest()">Enviar</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<re-captcha size="invisible" *ngIf="RECAPTCHA_KEY" [siteKey]="RECAPTCHA_KEY" (resolved)="participar($event)"></re-captcha>
+
+
+
+<section class="hey-cta text-center bg-white">
+    <div class="container">
+        <div class="offset-0 offset-lg-1">
+            <h3 class="texto">Tienes hasta el <strong>9 de mayo</strong> de 2022 para participar.</h3><br> <br>
+            <h3 class="texto">¡Aprovecha la oportunidad! Tu diseño puede ser la próxima gran tarjeta Hey<span class="text-min"></span></h3>
+        </div>
+    </div>
+</section>
+
+<div class="loader" *ngIf="busy">
+    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/loader.gif'">
+</div>

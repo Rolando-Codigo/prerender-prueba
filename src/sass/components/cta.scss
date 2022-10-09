@@ -1,0 +1,243 @@
+.hey-cta {
+    padding-bottom: 80px;
+    padding-top: 90px;
+    h2 {
+        @extend %sneak-48;
+        color: $color-black;
+        margin-bottom: 0;
+    }
+    h3 {
+        @extend %sneak-36;
+        color: $color-black-20;
+        margin-bottom: 16px;
+        margin-top: 24px;
+        line-height: 140%;
+    }
+    .txtsmall {
+        @extend %sneak-12;
+        color: $color-black-4B;
+        margin-bottom: 16px;
+        margin-top: 24px;
+    }
+    .mobile-coleccion {
+        width: 150%;
+        margin-left: -27%;
+    }
+    p {
+        @extend %lato-18;
+        color: $color-black-4B;
+        margin-bottom: 0;
+        margin-top: 16px;
+        &.legales {
+            @extend %lato-12;
+        }
+    }
+    .alineacionfull {
+        margin-left: -150px;
+    }
+    .media {
+        margin-top: 24px;
+        img {
+            margin-right: 8px;
+            width: 32px;
+        }
+        p {
+            @extend %sneak-22;
+            color: $color-black-20;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+    }
+    .btn-primary {
+        margin-top: 16px;
+    }
+    .btn-outline-primary {
+        margin-top: 24px;
+    }
+    .col-lg-1 {
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6 {
+        img {
+            width: 100%;
+        }
+    }
+    hey-stores,
+    .hey-stores {
+        margin-top: 24px;
+    }
+    .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .horizontal-bottom {
+        margin: 0;
+        position: absolute;
+        bottom: 0%;
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+    &.color {
+        padding-bottom: 110px;
+        h2 {
+            @extend %sneak-56;
+        }
+        p {
+            @extend %sneak-22;
+            margin-bottom: 0;
+            margin-top: 8px;
+        }
+        .btn-primary {
+            margin-top: 24px;
+        }
+    }
+    &.no-padding {
+        padding-bottom: 0;
+        padding-top: 0;
+        .col-lg-4,
+        .col-lg-5 {
+            height: 450px;
+        }
+    }
+}
+
+.hey-cta-apple-pay {
+    padding-top: 120px;
+    padding-bottom: 0px;
+    h2 {
+        @extend %sneak-48;
+        color: $color-black;
+        margin-bottom: 0;
+    }
+    h3 {
+        @extend %sneak-36;
+        color: $color-black-20;
+        margin-bottom: 16px;
+        margin-top: 24px;
+    }
+    .txtsmall {
+        @extend %sneak-12;
+        color: $color-black-4B;
+        margin-bottom: 16px;
+        margin-top: 24px;
+    }
+    p {
+        @extend %lato-18;
+        color: $color-black-4B;
+        margin-bottom: 0;
+        margin-top: 16px;
+        &.legales {
+            @extend %lato-12;
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    .hey-cta {
+        padding-bottom: 108px;
+        .alineacionfull {
+            margin-left: -50px;
+        }
+        .tarjeta {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+
+/* Portrait*/
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .hey-cta {
+        padding-bottom: 108px;
+        .alineacionfull {
+            margin-left: -50px;
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    .hey-cta {
+        padding-bottom: 80px;
+        padding-top: 83px;
+        h2 {
+            font-size: 36px !important;
+            font-family: Sneak-Regular;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        p {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .ocultar {
+            display: none;
+        }
+        .alineacionfull {
+            margin-left: -80px;
+            margin-top: -60px;
+        }
+        .media {
+            img {
+                margin-top: 0!important;
+            }
+        }
+        .col-lg-3,
+        .col-lg-4,
+        .col-lg-5 {
+            img {
+                margin-top: 0px;
+            }
+        }
+        .col-11 {
+            img {
+                margin-bottom: 24px;
+                margin-top: 0;
+            }
+        }
+        hey-stores {
+            margin-top: 32px;
+        }
+        .vertical-center,
+        .horizontal-bottom {
+            position: relative;
+            top: 0;
+            -ms-transform: translateY(0);
+            transform: translateY(0);
+        }
+        &.color {
+            padding-bottom: 80px;
+            padding-top: 80px;
+            h2 {
+                font-size: 2.25rem;
+                line-height: 2.5rem;
+            }
+            p {
+                font-size: 1rem;
+                line-height: 1.37rem;
+            }
+        }
+        &.no-padding {
+            padding-top: 80px;
+            .col-lg-4,
+            .col-lg-5 {
+                height: auto;
+            }
+        }
+        .mobile-coleccion {
+            width: 100% !important;
+            margin-left: 0% !important;
+        }
+    }
+}

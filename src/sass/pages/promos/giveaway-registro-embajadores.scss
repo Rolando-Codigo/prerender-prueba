@@ -1,0 +1,269 @@
+hey-registro-embajadores{
+    .hey-hero-image{
+        background-color: #B1AFFF;
+        height: 552px;
+        color: #333333;
+        text-align: left;
+        .img-back {
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-122-img.svg)no-repeat;
+            background-position: 90% 90%;
+            background-size: 30% auto;
+            height: 552px;
+            .vertical-center {
+                top: 50%;
+            }
+            h2{
+                font-weight: 400;
+                font-size: 64px;
+                line-height: 72px;
+            }
+            p{
+                font-weight: 400;
+                font-size: 34px;
+                line-height: 42px;
+            }
+        }
+        
+    }
+
+    .hey-invitacion{
+        background-color: #D4F910;
+        height: 571px;
+        color: #333333;
+        .img-back {
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-123-img.svg)no-repeat;
+            background-position: 20% 45%;
+            background-size: 25% auto;
+            height: 571px;
+            h2{
+                font-weight: 400;
+                font-size: 50px;
+                line-height: 60px;
+                margin-top: 90px;
+            }
+            p{
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+    }
+
+    .hey-registro{
+        height: 571px;
+
+        .registro{
+            margin-top: 110px;
+
+            .website {
+                .mat-form-field-flex {
+                    border-radius: 16px;
+                    height: 55px;
+                    background-repeat: no-repeat;
+                    padding-left: 32px;
+                    border-width: 0px !important;
+                    background-position: 14px 15px;
+                    background-color: #F1F2F8;
+                    .mat-form-field-infix{
+                        margin-top: -10px;
+                        font-size: 18px;
+                    }
+                }
+                .mat-form-field-underline {
+                    display: none;
+                }
+            }
+
+            .col-lg-5{
+                .mat-checkbox{
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-top: 30px;
+                    margin-left: -10px;
+                }
+            }
+            button{
+                margin-top: 10px;
+                margin-left: -1000px;
+            }
+        }
+
+        .col-lg-1{
+            button{
+                margin-left: -10px;
+                margin-top: 20px;
+            }
+        }
+        .col-lg-6{
+            p{
+                margin-top: 20px;
+                margin-left: -80px;
+            }
+        }
+        
+    }
+}
+
+//Pantallas Medianas
+@media (max-width: 1400px) {
+    hey-registro-embajadores{
+        .hey-hero-image{
+            .img-back {
+                background-position: 95% 100%;
+            }
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    hey-registro-embajadores{
+        .hey-hero-image{
+            height: 387px;
+            .img-back {
+                background-position: 95% 90%;
+                background-size: 45% auto;
+                height: 387px;
+                .vertical-center {
+                    top: 60%;
+                }
+                h2{
+                    font-size: 50px;
+                    line-height: 58px;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+        }
+
+        .hey-invitacion{
+            height: 452px;
+            .img-back {
+                background-size: 30% auto;
+                height: 452px;
+                h2{
+                    font-size: 25px;
+                    line-height: 33px;
+                    margin-top: 90px;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+        }
+    
+        .hey-registro{
+            height: 571px;
+            .registro{
+                margin-top: 140px;
+                .website {
+                    .mat-form-field-flex {
+                        .mat-form-field-infix{
+                            margin-top: -5px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .col-lg-5{
+                    .mat-checkbox{
+                        font-size: 16px;
+                        line-height: 24px;
+                        margin-left: 10px;
+                    }
+                }
+                .col-lg-12{
+                    button{
+                        margin-left: -10px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .col-lg-6{
+                p{
+                    margin-left: -40px;
+                }
+            }
+        }
+    }  
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    hey-registro-embajadores{
+        .hey-hero-image{
+            height: 557px;
+            .img-back {
+                background-position: 50% 95%;
+                background-size: 70% auto;
+                height: 557px;
+                .vertical-center {
+                    top: 55%;
+                }
+                h2{
+                    font-size: 30px;
+                    line-height: 38px;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+        }
+
+        .hey-invitacion{
+            height: 736px;
+            .img-back {
+                background-position: 50% 75%;
+                background-size: 65% auto;
+                height: 736px;
+                h2{
+                    font-size: 25px;
+                    line-height: 33px;
+                    margin-top: 90px;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+        }
+    
+        .hey-registro{
+            height: 571px;
+            .registro{
+                margin-top: 80px;
+                .website {
+                    .mat-form-field-flex {
+                        .mat-form-field-infix{
+                            margin-top: 0px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .col-lg-5{
+                    .mat-checkbox{
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin-left: 10px;
+                    }
+                }
+                .col-lg-12{
+                    button{
+                        margin-left: -240px;
+                        margin-top: 20px;
+                        text-align: left;
+                    }
+                }
+            }
+            .col-lg-6{
+                p{
+                    text-align: left;
+                    margin-left: -40px;
+                }
+            }
+        }
+    }
+}

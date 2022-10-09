@@ -1,0 +1,788 @@
+.hey-ayuda-busqueda {
+    padding-bottom: 0px;
+    padding-top: 70px;
+}
+
+.hey-ayuda-busqueda-resultados {
+    padding-bottom: 0px;
+    padding-top: 20px;
+    h2 {
+        @extend %sneak-36;
+        color: $color-black-77;
+    }
+    h3 {
+        @extend %sneak-36;
+        color: $color-black;
+    }
+    h4 {
+        @extend %sneak-22;
+        color: $color-black;
+        margin-top: 8px;
+    }
+}
+
+.hey-ayuda-opciones {
+    margin-top: 3%;
+    padding-bottom: 3%;
+    h6 {
+        @extend %sneak-48;
+        color: $color-black;
+    }
+}
+
+.hey-ayuda {
+    padding-bottom: 100px;
+    padding-top: 50px;
+    h2 {
+        @extend %sneak-48;
+    }
+    .textConsulta {
+        @extend %sneak-16;
+        color: #0FADC8;
+    }
+    .txtBanner {
+        @extend %lato-18;
+        color: $color-black-20;
+        margin-bottom: 0;
+        margin-top: 16px;
+    }
+    .card {
+        border-color: $color-black-B2;
+        margin-bottom: 40px;
+        position: relative;
+        text-align: left;
+        margin: 0px auto;
+        margin-bottom: 2%;
+        .card-header {
+            background-color: transparent;
+            border-bottom: 1px solid $color-black-B2;
+            padding: 24px 0;
+            margin: 0 24px 16px;
+            h3 {
+                @extend %sneak-22;
+                margin-bottom: 4px;
+            }
+            p {
+                @extend %lato-14;
+                color: $color-black-4B;
+                margin-bottom: 0;
+            }
+        }
+        .list-group {
+            border: none;
+            padding-bottom: 32px;
+            .list-group-item {
+                @extend %sneak-16;
+                border: none;
+                padding: 8px 24px;
+                a {
+                    color: $color-black-20;
+                    img {
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hey-ayuda-sin-resultado {
+    padding-bottom: 10px;
+    h5 {
+        @extend %sneak-36;
+        color: $color-black;
+    }
+    .textoayuda {
+        @extend %lato-18;
+        color: $color-black-20;
+        margin-bottom: 0;
+        margin-top: 16px;
+    }
+    .bodyayudablack {
+        @extend %sneak-16;
+        color: $color-black-20;
+        margin-top: 15px;
+        padding-left: 15px;
+    }
+    .bodyayudablack2 {
+        @extend %sneak-16;
+        color: $color-black-20;
+        margin-top: 15px;
+        padding-left: 22px;
+    }
+    .borde {
+        border: #e9e9e9 1px solid;
+        width: 800px;
+    }
+}
+
+.bgimage-negocios {
+    width: 100%;
+    height: 500px;
+    background: url(https://heybanco.s3.amazonaws.com/assets/img/centro-ayuda-negocios/home/N610-1-Home-Hero-Image-CAD.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.bgimage-negocios h1 {
+    color: white;
+    @extend %sneak-64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.bgimage-negocios input#search {
+    color: #000;
+    @extend %sneak-16;
+    vertical-align: middle;
+    border-radius: 8px 8px 0px 0px;
+    border-top: 0px;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid #fff;
+    background-color: #fff;
+    text-align: left;
+}
+
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover,
+.form-control-borderless:active,
+.form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.card {
+    margin-top: 2%;
+}
+
+// p {
+//   font-size: 180px;
+//     color: #EA8DED;
+//     margin-top: 1%;
+// }
+.subtitle {
+    @extend %sneak-16;
+    color: $color-black-4B;
+}
+
+.titleTxt {
+    @extend %sneak-18;
+    color: $color-black-4B;
+}
+
+.txtSmall {
+    @extend %sneak-14;
+    color: $color-black-4B;
+    margin-top: 1%;
+}
+
+.txtSmallWhite {
+    @extend %sneak-14;
+    color: $color-white;
+    margin-top: 1%;
+}
+
+.space {
+    padding-bottom: 10%
+}
+
+.space-top {
+    padding-top: 3%
+}
+
+.titlehome {
+    @extend %sneak-18;
+    color: $color-white;
+    padding-top: 6%;
+    padding-bottom: 2%;
+    text-decoration: none;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.bodyhome {
+    @extend %sneak-16;
+    color: $color-white;
+    margin-top: 15px;
+}
+
+.bodyhome:hover {
+    @extend %sneak-16;
+    color: $color-purple;
+    margin-top: 15px;
+}
+
+.bgimage-negocios-seccion2 {
+    width: 100%;
+    height: 500px;
+    background: url(https://heybanco.s3.amazonaws.com/assets/img/centro-ayuda-negocios/home/N310-1-Home-Hero-Image-CAD-Negocios.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.bgimage-negocios-seccion2 h2 {
+    color: white;
+    @extend %sneak-56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+@media (max-width: 991.98px) {
+    .hey-ayuda {
+        padding-bottom: 40px;
+        padding-top: 48px;
+    }
+}
+
+// @media (max-width: 767.98px) {
+//     line-height: 20px;
+// }
+// ------ app ----
+.bgimage-negocios-app {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(#43D181, #BBB9FF);
+    background: -webkit-linear-gradient(left, #43D181, #BBB9FF);
+    background-image: -moz-linear-gradient(left, #43D181, #BBB9FF);
+    /* Firefox versiones relativamente modernas*/
+    background-image: -o-linear-gradient(left, #43D181, #BBB9FF);
+    /* Opera versiones relativamente modernas*/
+    background-image: linear-gradient(to left, #43D181, #BBB9FF);
+    /* Chrome, Firefox, IE, Opera versiones*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.bgimage-negocios-app h1 {
+    color: $color-black-20;
+    @extend %sneak-64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.bgimage-negocios-app input#search {
+    color: #000;
+    @extend %sneak-16;
+    vertical-align: middle;
+    border-radius: 8px 8px 0px 0px;
+    border-top: 0px;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid #fff;
+    background-color: #fff;
+    text-align: left;
+}
+
+.titlehomeblack {
+    @extend %sneak-18;
+    color: $color-black-20;
+    padding-top: 6%;
+    padding-bottom: 2%;
+    text-decoration: none;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.bodyhomeblack {
+    @extend %sneak-16;
+    color: $color-black-20;
+    margin-top: 15px;
+}
+
+.bodyhomeblack:hover {
+    @extend %sneak-16;
+    color: $color-black-20;
+    margin-top: 15px;
+    opacity: 0.6;
+}
+
+.bodyhomeblackActive {
+    @extend %sneak-16;
+    color: $color-black-77;
+    margin-top: 15px;
+}
+
+.txtSmallblack {
+    @extend %sneak-14;
+    color: $color-black-20;
+    margin-top: 1%;
+}
+
+// ------ cuenta ----
+.bgimage-negocios-cuenta {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(#EA8DED, #F5E345);
+    background: -webkit-linear-gradient(left, #EA8DED, #F5E345);
+    background-image: -moz-linear-gradient(left, #EA8DED, #F5E345);
+    /* Firefox versiones relativamente modernas*/
+    background-image: -o-linear-gradient(left, #EA8DED#F5E345);
+    /* Opera versiones relativamente modernas*/
+    background-image: linear-gradient(to left, #EA8DED, #F5E345);
+    /* Chrome, Firefox, IE, Opera versiones*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.bgimage-negocios-cuenta h1 {
+    color: $color-black-20;
+    @extend %sneak-64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.bgimage-negocios-cuenta input#search {
+    color: #000;
+    @extend %sneak-16;
+    vertical-align: middle;
+    border-radius: 8px 8px 0px 0px;
+    border-top: 0px;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid #fff;
+    background-color: #fff;
+    text-align: left;
+}
+
+.bgimage-negocios-seccion3 {
+    width: 100%;
+    height: 500px;
+    background: url(https://heybanco.s3.amazonaws.com/img/centro-ayuda/cuenta/P330-5-Home-Hero-Image-CAD.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.bgimage-negocios-seccion3 h2 {
+    color: white;
+    @extend %sneak-56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+// ------ inversión ----
+.bgimage-negocios-inversion {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(#BBB9FF, #F1C4A1);
+    background: -webkit-linear-gradient(right, #BBB9FF, #F1C4A1);
+    background-image: -moz-linear-gradient(right, #BBB9FF, #F1C4A1);
+    /* Firefox versiones relativamente modernas*/
+    background-image: -o-linear-gradient(right, #BBB9FF, #F1C4A1);
+    /* Opera versiones relativamente modernas*/
+    background-image: linear-gradient(to right, #BBB9FF, #F1C4A1);
+    /* Chrome, Firefox, IE, Opera versiones*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.bgimage-negocios-inversion h1 {
+    color: $color-black-20;
+    @extend %sneak-64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.bgimage-negocios-cuenta input#search {
+    color: #000;
+    @extend %sneak-16;
+    vertical-align: middle;
+    border-radius: 8px 8px 0px 0px;
+    border-top: 0px;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid #fff;
+    background-color: #fff;
+    text-align: left;
+}
+
+.bgimage-negocios-seccion4 {
+    width: 100%;
+    height: 500px;
+    background: url(https://heybanco.s3.amazonaws.com/assets/img/centro-ayuda/inversion/P340-6-Home-Hero-Image-CAD.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.bgimage-negocios-seccion4 h2 {
+    color: white;
+    @extend %sneak-56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+// ------ tarjeta de crédito ----
+.bgimage-negocios-tarjeta-credito {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(#70E7FE, #F5E345);
+    background: -webkit-linear-gradient(right, #70E7FE, #F5E345);
+    background-image: -moz-linear-gradient(right, #70E7FE, #F5E345);
+    /* Firefox versiones relativamente modernas*/
+    background-image: -o-linear-gradient(right, #70E7FE, #F5E345);
+    /* Opera versiones relativamente modernas*/
+    background-image: linear-gradient(to right, #70E7FE, #F5E345);
+    /* Chrome, Firefox, IE, Opera versiones*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.bgimage-negocios-tarjeta-credito h1 {
+    color: $color-black-20;
+    @extend %sneak-64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.bgimage-negocios-cuenta input#search {
+    color: #000;
+    @extend %sneak-16;
+    vertical-align: middle;
+    border-radius: 8px 8px 0px 0px;
+    border-top: 0px;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid #fff;
+    background-color: #fff;
+    text-align: left;
+}
+
+.bgimage-negocios-seccion5 {
+    width: 100%;
+    height: 500px;
+    background: url(https://heybanco.s3.amazonaws.com/img/centro-ayuda/tarjeta-credito/P350-5-Home-Hero-Image-CAD.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.bgimage-negocios-seccion5 h2 {
+    color: white;
+    @extend %sneak-56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+// ------ créditos ----
+.bgimage-negocios-creditos {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(#F3C988, #43D181);
+    background: -webkit-linear-gradient(right, #F3C988, #43D181);
+    background-image: -moz-linear-gradient(right, #F3C988, #43D181);
+    /* Firefox versiones relativamente modernas*/
+    background-image: -o-linear-gradient(right, #F3C988, #43D181);
+    /* Opera versiones relativamente modernas*/
+    background-image: linear-gradient(to right, #F3C988, #43D181);
+    /* Chrome, Firefox, IE, Opera versiones*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.bgimage-negocios-creditos h1 {
+    color: $color-black-20;
+    @extend %sneak-64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.bgimage-negocios-cuenta input#search {
+    color: #000;
+    @extend %sneak-16;
+    vertical-align: middle;
+    border-radius: 8px 8px 0px 0px;
+    border-top: 0px;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid #fff;
+    background-color: #fff;
+    text-align: left;
+}
+
+.bgimage-negocios-seccion5 {
+    width: 100%;
+    height: 500px;
+    background: url(https://heybanco.s3.amazonaws.com/img/centro-ayuda/tarjeta-credito/P350-5-Home-Hero-Image-CAD.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.bgimage-negocios-seccion5 h2 {
+    color: white;
+    @extend %sneak-56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+// ------ ahorro  ----
+.bgimage-negocios-ahorro {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(#EA8DED, #70E7FE);
+    background: -webkit-linear-gradient(right, #EA8DED, #70E7FE);
+    background-image: -moz-linear-gradient(right, #EA8DED, #70E7FE);
+    /* Firefox versiones relativamente modernas*/
+    background-image: -o-linear-gradient(right, #EA8DED, #70E7FE);
+    /* Opera versiones relativamente modernas*/
+    background-image: linear-gradient(to right, #EA8DED, #70E7FE);
+    /* Chrome, Firefox, IE, Opera versiones*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.bgimage-negocios-ahorro h1 {
+    color: $color-black-20;
+    @extend %sneak-64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.bgimage-negocios-cuenta input#search {
+    color: #000;
+    @extend %sneak-16;
+    vertical-align: middle;
+    border-radius: 8px 8px 0px 0px;
+    border-top: 0px;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid #fff;
+    background-color: #fff;
+    text-align: left;
+}
+
+.bgimage-negocios-seccion5 {
+    width: 100%;
+    height: 500px;
+    background: url(https://heybanco.s3.amazonaws.com/img/centro-ayuda/tarjeta-credito/P350-5-Home-Hero-Image-CAD.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.bgimage-negocios-seccion5 h2 {
+    color: white;
+    @extend %sneak-56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+// ------ seguros  ----
+.bgimage-negocios-seguros {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(#EA8DED, #70E7FE);
+    background: -webkit-linear-gradient(right, #EA8DED, #70E7FE);
+    background-image: -moz-linear-gradient(right, #EA8DED, #70E7FE);
+    /* Firefox versiones relativamente modernas*/
+    background-image: -o-linear-gradient(right, #EA8DED, #70E7FE);
+    /* Opera versiones relativamente modernas*/
+    background-image: linear-gradient(to right, #BDFF40, #BBB9FF);
+    /* Chrome, Firefox, IE, Opera versiones*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.bgimage-negocios-seguros h1 {
+    color: $color-black-20;
+    @extend %sneak-64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.bgimage-negocios-cuenta input#search {
+    color: #000;
+    @extend %sneak-16;
+    vertical-align: middle;
+    border-radius: 8px 8px 0px 0px;
+    border-top: 0px;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid #fff;
+    background-color: #fff;
+    text-align: left;
+}
+
+.bgimage-negocios-seccion5 {
+    width: 100%;
+    height: 500px;
+    background: url(https://heybanco.s3.amazonaws.com/img/centro-ayuda/tarjeta-credito/P350-5-Home-Hero-Image-CAD.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.bgimage-negocios-seccion5 h2 {
+    color: white;
+    @extend %sneak-56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+// ------ seguros auto  ----
+.bgimage-negocios-seccion6 {
+    width: 100%;
+    height: 500px;
+    background: url(https://heybanco.s3.amazonaws.com/img/centro-ayuda/seguros-auto/P3100-5-Home-Hero-Image-CAD.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.bgimage-negocios-seccion6 h2 {
+    color: white;
+    @extend %sneak-56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+// ------ videotutoriales ----
+.bgimage-negocios-videotutoriales {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(#BBB9FF, #70E7FE);
+    background: -webkit-linear-gradient(left, #BBB9FF, #70E7FE);
+    background-image: -moz-linear-gradient(left, #BBB9FF, #70E7FE);
+    /* Firefox versiones relativamente modernas*/
+    background-image: -o-linear-gradient(left, #BBB9FF, #70E7FE);
+    /* Opera versiones relativamente modernas*/
+    background-image: linear-gradient(to left, #BBB9FF, #70E7FE);
+    /* Chrome, Firefox, IE, Opera versiones*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.bgimage-negocios-videotutoriales h1 {
+    color: $color-black-20;
+    @extend %sneak-64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.hey-ayuda-resultado {
+    padding-top: 50px;
+}
+
+.btn.btn-light:hover {
+    background-color: #70E7FE;
+    border-color: #70E7FE;
+    border-radius: 0px !important;
+}

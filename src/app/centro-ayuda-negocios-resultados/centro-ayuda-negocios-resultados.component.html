@@ -1,0 +1,71 @@
+<div class="container hey-ayuda-busqueda">
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+            <form class="card">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <input class="form-control form-control-borderless" type="search" id="search" [formControl]="searchForm" placeholder="¿Cómo podemos ayudarte?" />
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-light" role="button" [disabled]="!isValidSearchForm" (click)="submitSearch()">Buscar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+</div>
+
+
+<div class="container hey-ayuda-busqueda-resultados">
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+            <div innerHTML>
+                <div *ngIf="searchTerm !== ''">
+                    <h2>Resultados de la búsqueda:<br>
+                        <h3>{{ searchTerm }}</h3>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 hey-ayuda-opciones">
+        </div>
+
+        <div class="col-md-8 hey-ayuda">
+            <div class="card" *ngFor="let result of results" (click)="goToArticle(result.knowledge_article_id)">
+                <div class="card-body">
+                    <div innerHTML class="textConsulta">{{ result.title }}</div>
+                </div>
+
+            </div>
+            <div class="row">
+                <button class="btn btn-primary" style="margin-left: 2%;" type="button" *ngIf="more && !busy" (click)="submitNextPage()">Cargar más</button>
+            </div>
+
+            <div class="hey-ayuda-sin-resultado">
+                <div class="row" style="margin-left: 0px;">
+                    <div *ngIf="searchTerm !== '' && results.length < 1">
+                        <h5>No se ha encontrado ningún artículo</h5>
+                    </div>
+                    <div *ngIf="!more && !busy && searchTerm !== ''">
+                        <span class="textoayuda">No hemos encontrado artículos que coincidan.<br>
+              Intenta usar palabras menos específicas y asegúrate de que están escritas correctamente,
+              o echa un vistazo a las categorías a continuación.</span>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        </div>

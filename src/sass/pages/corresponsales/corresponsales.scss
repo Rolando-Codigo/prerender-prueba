@@ -1,0 +1,86 @@
+.hey-corresponsales {
+    h1 {
+        padding-top: 1%;
+    }
+    .responsive-corresponsales-hero {
+        margin-left: 45%;
+        padding-top: 20%;
+    }
+}
+
+//mobiles 
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    hey-corresponsales {
+        .hey-hero-image {
+            height: 600px !important;
+        }
+        .hey-corresponsales {
+            h1 {
+                padding-top: 150%;
+            }
+            .responsive-corresponsales-hero {
+                margin-left: 27%;
+                padding-top: 115%;
+            }
+        }
+    }
+}
+
+
+/* IPHONE Portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    hey-corresponsales {
+        .hey-hero-image {
+            height: 605px !important;
+        }
+        .hey-corresponsales {
+            h1 {
+                padding-top: 135%;
+            }
+            .responsive-corresponsales-hero {
+                margin-left: 26%;
+                padding-top: 102%;
+            }
+        }
+    }
+}
+
+
+/* TABLET Portrait and Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .hey-corresponsales {
+        h1 {
+            padding-top: 90%;
+        }
+        .responsive-corresponsales-hero {
+            margin-left: 63%;
+            padding-top: 5%;
+            width: 43% !important;
+        }
+    }
+    .responsive-empresas {
+        width: 60% !important;
+        padding-bottom: 40px;
+    }
+}
+
+
+/* ----------- iPad Pro ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .hey-corresponsales {
+        h1 {
+            padding-top: 30%;
+        }
+        .responsive-corresponsales-hero {
+            margin-left: 16%;
+            padding-top: 5%;
+            width: 100% !important;
+        }
+    }
+}

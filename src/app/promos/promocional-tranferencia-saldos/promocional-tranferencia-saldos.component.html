@@ -1,0 +1,146 @@
+<section class="hey-hero-image ">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-sm-6 offset-sm-1 col-md-5 offset-md-1 col-lg-6 offset-lg-1 order-2 order-lg-1 order-md-1">
+                <div class="vertical-center">
+                    <h1 class="col-12 col-lg-12 col-md-12">¡Transfiere tu deuda y gana con Hey Banco!</h1>
+                </div>
+            </div>
+            <div class="col-10 offset-0 col-md-6 offset-md-0 col-lg-5 offset-lg-0 text-center order-1 order-lg-2 order-md-2">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/P810-Giveaways/p810-96-img.png'" alt="¿Cómo ahorrar el doble con Hey banco?">
+            </div>
+        </div>
+    </div>
+</section>
+
+<re-captcha size="invisible" *ngIf="RECAPTCHA_KEY" [siteKey]="RECAPTCHA_KEY" (resolved)="participar($event)"></re-captcha>
+
+
+<section class="hey-cta promocional-saldos">
+    <div class="container">
+        <h2>¡Registra tu interés por participar!</h2>
+        <br>
+        <p>
+            Regístrate en nuestro Giveaway para ganar un reembolso de hasta $120,000 pesos de tu saldo transferido.
+            <br><br> Haz clic en el botón para generar tu folio de Registro Digital.
+        </p>
+
+        <a (click)="submitRequest()" class="btn btn-primary" type="button">Participar</a>
+        <br>
+        <p class="legales">
+            <a href="https://heybanco.s3.amazonaws.com/assets/legales/terminos-y-condiciones-giveaway-transferencia-de-saldos.pdf" target="_blank">Consulta términos, condiciones, bases y privacidad</a>,
+        </p>
+
+    </div>
+</section>
+
+<section class="hey-cta insta-hey">
+    <div class="container">
+        <br><br>
+        <div class="row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-10 offset-lg-1 text-center mb-15">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/giveaway/ig-heybanco.svg'" alt="Síguenos" width="45">
+            </div>
+
+            <div class="col-12 col-md-10 offset-md-1 col-lg-10 offset-lg-1 text-center">
+                <h2>Síguenos en Instagram <strong>@heybanco</strong> para conocer más sobre este y otros Giveaways que Hey Banco ofrece para ti</h2>
+                <br><br>
+                <a class="btn btn-accent" role="button" href="https://www.instagram.com/heybanco/?hl=es-la" target="_blank">Síguenos en Instagram</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="hey-faq bg-02">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-10 offset-0 col-md-5 offset-md-1 col-lg-3 offset-lg-1 order-2 order-md-1 order-lg-1">
+                <img loading="lazy" [src]="environment.assetsUrl + 'img/P210/P210-8-img-faq.png'" alt="¿Dónde puedo resolver mis dudas sobre la Cuenta Hey?">
+            </div>
+
+            <div class="col-md-5 col-lg-7 order-1 order-md-2 order-lg-2">
+                <h2>Preguntas frecuentes</h2>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingOne">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ¿En qué consiste el Giveaway Transferencia de Saldos?
+
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Transfiere el saldo de otro banco a tu Tarjeta de Crédito Hey del 03 al 31 de enero del 2022 y participa en un giveaway por un reembolso de hasta $120,000 del saldo que transfieras
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingTwo">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿A cuantos plazos puedo transferir mi deuda?
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Plazos desde 3 hasta 24 meses
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingThree">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Quiénes pueden participar? 
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Todos los clientes con Tarjeta de Crédito Hey, que realicen la transferencia de saldos del 03 al 31 de enero del 2022
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white">
+                        <div class="card-header" id="headingFour">
+                            <h3>
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    ¿Cómo realizo la Transferencia de Saldos?
+                                    <img loading="lazy" [src]="environment.assetsUrl + 'img/icons/contract-icon.svg'">
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div *ngIf="ajuste === false" class="card-body">
+                                Desde la <a href="https://personas.heybanco.com/#/login" target="_blank">Banca Web </a>
+                            </div>
+                            <div *ngIf="ajuste === true" class="card-body">
+                                Desde la <a href="https://personas.hey.inc/#/login" target="_blank">Banca Web </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hey-cta-app></hey-cta-app>
+
+<hey-slider-productos [bg2]="true"></hey-slider-productos>

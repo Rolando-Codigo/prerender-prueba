@@ -1,0 +1,119 @@
+hey-conoce-comercios{
+    .hey-hero-image{
+        background-color: #D4F910;
+        height: 480px;
+        .img-back {
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-107-img.png)no-repeat;
+            background-position: 80% 30%;
+            background-size: 27% auto;
+            
+            .vertical-center{
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: calc(100% - 30px);
+            }
+        }
+    }
+    .hey-busqueda {
+        hr{
+            color: #979797;
+        }
+        h2 {
+            color: #333333;
+            margin-bottom: 30px !important;
+            font-size: 50px;
+            margin-top: 50px;
+        }
+        .website {
+            .mat-form-field-flex {
+                border-radius: 16px;
+                height: 55px;
+                background-repeat: no-repeat;
+                padding-left: 32px;
+                border-width: 0px !important;
+                background-position: 14px 15px;
+                background-color: #F1F2F8;
+            }
+            .mat-form-field-underline {
+                display: none;
+            }
+        }
+        .legales{
+            font-size: .75rem;
+            line-height: .93rem;
+            color: #333333;
+        }
+        h4{
+            font-family: 'Sneak';
+            color: #333333;
+            font-size: 22px;
+        }
+        .listado{
+            font-family: 'Sneak';
+            font-size: 20px;
+            color: #333333;
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    hey-conoce-comercios{
+        .hey-hero-image{
+            height: 402px;
+            .img-back {
+                background-position: 100% 50%;
+                background-size: 47% auto;
+            }
+        }
+        .hey-busqueda {
+            .col-12{
+                padding-bottom: 20px;
+            }
+            h2 {
+                font-size: 30px;
+            }
+            h4{
+                font-size: 20px;
+            }
+            .listado{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+//Movil
+@media (max-width: 767.98px) {
+    hey-conoce-comercios{
+        .hey-hero-image{
+            height: 600px;
+            .img-back {
+                background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-107-img.png)no-repeat;
+                background-position: 50% 90%;
+                background-size: 70% auto;
+                height: 600px;
+                .vertical-center{
+                    top: 65%;
+                }
+            }
+        }
+        .hey-busqueda {
+            .col-12{
+                padding-bottom: 20px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+            h4{
+                font-size: 14px;
+            }
+            .listado{
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

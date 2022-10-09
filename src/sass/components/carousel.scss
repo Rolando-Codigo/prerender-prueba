@@ -1,0 +1,71 @@
+.carousel-indicators {
+    margin-bottom: 0;
+    margin-top: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    li {
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 100%;
+        height: 16px;
+        margin-left: 8px;
+        margin-right: 8px;
+        opacity: 1;
+        width: 16px;
+        span {
+            background-color: $color-black-4B;
+            border-radius: 100%;
+            display: block;
+            height: 4px;
+            margin: 6px;
+            width: 4px;
+        }
+    }
+    .active {
+        border-color: $color-black-4B;
+    }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: relative;
+    opacity: 1;
+    width: 16px;
+}
+
+.carousel-control-next {
+    margin-left: 16px;
+}
+
+.carousel-control-prev {
+    margin-right: 16px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    height: 16px;
+    width: 16px;
+}
+
+.carousel-control-next-icon {
+    background-image: url(https://heybanco.s3.amazonaws.com/assets/img/icons/next-icon.svg);
+}
+
+.carousel-control-prev-icon {
+    background-image: url(https://heybanco.s3.amazonaws.com/assets/img/icons/prev-icon.svg);
+}
+
+//Pantallas pequeñas (móviles en landscape de más de 576px)
+@media (max-width: 575.98px) {
+    .carousel-indicators li {
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 100%;
+        height: 16px;
+        margin-left: 2px;
+        margin-right: 2px;
+        opacity: 1;
+        width: 16px;
+    }
+}

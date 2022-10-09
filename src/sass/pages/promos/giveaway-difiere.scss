@@ -1,0 +1,186 @@
+hey-giveaway-difiere {
+    .hey-hero-image {
+        background-color: #D4F910;
+        height: 480px;
+        .img-back {
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-106-img.png)no-repeat;
+            background-position: 100% 30%;
+            background-size: 37% auto;
+            .vertical-center {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: calc(100% - 30px);
+            }
+        }
+    }
+    .hey-giveaway {
+        h2 {
+            color: #333333;
+            margin-bottom: 24px;
+        }
+        .website {
+            .mat-form-field-flex {
+                border-radius: 16px;
+                height: 55px;
+                background-repeat: no-repeat;
+                padding-left: 32px;
+                border-width: 0px !important;
+                background-position: 14px 15px;
+                background-color: #F1F2F8;
+            }
+            .mat-form-field-underline {
+                display: none;
+            }
+        }
+        .legales {
+            font-size: .75rem;
+            line-height: .93rem;
+            color: #333333;
+        }
+    }
+}
+
+hey-difiere-compras-hey-pro {
+    .mb-25 {
+        margin-bottom: 35px !important;
+    }
+    .hey-hero-image {
+        background-color: #00D561;
+        height: 480px;
+        color: white !important;
+        h2,
+        p {
+            color: white !important;
+        }
+        .img-back {
+            background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/heypro-msi-landing-header.png) no-repeat;
+            background-position: 100% 100%;
+            background-size: 37% auto;
+            .vertical-center {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: calc(100% - 30px);
+            }
+        }
+    }
+    .hey-giveaway {
+        background-color: #D4F910;
+        h2 {
+            color: #333333;
+            margin-bottom: 24px;
+        }
+        .website {
+            .mat-form-field-flex {
+                border-radius: 16px;
+                height: 55px;
+                background-repeat: no-repeat;
+                padding-left: 32px;
+                border-width: 0px !important;
+                background-position: 14px 15px;
+                background-color: #F1F2F8;
+            }
+            .mat-form-field-underline {
+                display: none;
+            }
+        }
+        .legales {
+            font-size: .75rem;
+            line-height: .93rem;
+            color: #333333;
+        }
+        a {
+            text-decoration: underline;
+            margin-left: 20px;
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    hey-giveaway-difiere {
+        .hey-hero-image {
+            height: 402px;
+            .img-back {
+                background-position: 100% 50%;
+                background-size: 47% auto;
+            }
+        }
+        .hey-giveaway {
+            h2 {
+                font-size: 30px;
+                line-height: 38px;
+            }
+            .terminos {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+    hey-difiere-compras-hey-pro {
+        .hey-hero-image {
+            height: 402px;
+            .img-back {
+                background-position: 100% 50%;
+                background-size: 47% auto;
+            }
+        }
+        .hey-giveaway {
+            h2 {
+                font-size: 30px;
+                line-height: 38px;
+            }
+            .terminos {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+//Movil
+@media (max-width: 767.98px) {
+    hey-giveaway-difiere {
+        .hey-hero-image {
+            height: 600px;
+            .img-back {
+                background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-106-img.png)no-repeat;
+                background-position: 100% 90%;
+                background-size: 70% auto;
+                height: 600px;
+                .vertical-center {
+                    top: 65%;
+                }
+            }
+        }
+        .hey-giveaway {
+            h2 {
+                font-size: 22px;
+                line-height: 28px;
+            }
+        }
+    }
+    hey-difiere-compras-hey-pro {
+        .hey-hero-image {
+            height: 600px;
+            .img-back {
+                background: url(https://heybanco.s3.amazonaws.com/assets/img/P810-Giveaways/p810-106-img.png)no-repeat;
+                background-position: 100% 90%;
+                background-size: 70% auto;
+                height: 600px;
+                .vertical-center {
+                    top: 65%;
+                }
+            }
+        }
+        .hey-giveaway {
+            h2 {
+                font-size: 22px;
+                line-height: 28px;
+            }
+        }
+    }
+}

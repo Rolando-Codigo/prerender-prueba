@@ -1,0 +1,72 @@
+hey-stores,
+.hey-stores {
+    display: block;
+
+    a {
+        display: inline-block;
+        margin-right: 10px;
+
+        img {
+            height: 100%;
+            width: auto!important;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.hey-stores {
+    a {
+        img {
+            height: 40px;
+        }
+
+        &:last-child {
+            margin-top: 16px;
+        }
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    hey-cta-app {
+        .hey-cta {
+            .col-lg-5 {
+                img {
+                    margin-top: 0;
+                }
+            }
+            
+            hey-stores {
+                a {
+                    &:last-child {
+                        margin-top: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    hey-stores,
+    .hey-stores {
+        a {
+            margin-right: 8px;
+
+            img {
+                height: 30px;
+                width: auto!important;
+            }
+
+            &:last-child {
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+

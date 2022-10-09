@@ -1,0 +1,333 @@
+.item-img {
+    width: 24px;
+    margin-left: 16px;
+}
+
+hey-giveaway-buen-fin {
+    .bg-buen-fin {
+        background-color: #FD0360;
+        color: white;
+    }
+    .hey-hero-image {
+        background-color: #FD0360;
+        color: white;
+        h1 {
+            color: white;
+            margin-bottom: 16px;
+            margin-top: 8px;
+        }
+        .responsive-cuentas-hero {
+            width: 90% !important;
+        }
+    }
+    .hey-buen-fin {
+        text-align: center;
+        padding: 32px;
+        h4 {
+            color: #FD0360;
+            margin: 24px 0px;
+        }
+        h2 {
+            margin-bottom: 32px;
+        }
+        p {
+            margin-bottom: 32px;
+        }
+    }
+    .text-fin {
+        color: #FD0360;
+    }
+    .mt-24 {
+        margin-top: 24px;
+    }
+    .mb-32 {
+        margin-bottom: 40px;
+    }
+    .mb-24 {
+        margin-bottom: 24px;
+    }
+    .m-8 {
+        padding: 8px;
+    }
+    .item-img {
+        width: 24px;
+        margin-top: 16px;
+    }
+    #divMSI {
+        background: url(https://heybanco.s3.amazonaws.com/img/P810-Giveaways/p810-55-img-5.png)no-repeat;
+        background-position: left;
+        background-size: 420px auto;
+        .media {
+            margin-top: 0;
+            margin-bottom: 40px;
+            img {
+                height: auto;
+                margin-right: 16px;
+                width: 53px;
+            }
+            h3 {
+                @extend %sneak-22;
+                margin-bottom: 8px;
+                margin-top: 12px;
+            }
+            p {
+                @extend %lato-16;
+            }
+            &:first-child {
+                margin-top: 40px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .img-background {
+            display: none;
+        }
+        .table-responsive {
+            margin-top: 24px;
+            border: 1px solid black !important;
+            border-radius: 12px;
+            .table-bordered {
+                margin-bottom: 0px !important;
+            }
+            tr {
+                border: 1px solid black;
+            }
+        }
+    }
+    #participacion {
+        background: url(https://heybanco.s3.amazonaws.com/img/P810-Giveaways/p810-54-img-4.png)no-repeat #FD0360;
+        background-position: right;
+        background-size: 380px auto;
+        height: 520px;
+        h2 {
+            margin-bottom: 8px;
+            margin-top: 12px;
+            color: white !important;
+        }
+        .media {
+            margin-top: 0;
+            margin-bottom: 40px;
+            img {
+                height: auto;
+                margin-right: 16px;
+                width: 53px;
+            }
+            p {
+                @extend %lato-16;
+            }
+            &:first-child {
+                margin-top: 40px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .img-background {
+            display: none;
+        }
+    }
+    #estrenaCoche {
+        background: url(https://heybanco.s3.amazonaws.com/img/P810-Giveaways/p810-57-img-7.png)no-repeat;
+        background-position: right;
+        background-size: 480px auto;
+        height: 520px;
+        h2 {
+            margin-bottom: 8px;
+            margin-top: 12px;
+        }
+        .media {
+            margin-top: 0;
+            margin-bottom: 40px;
+            img {
+                height: auto;
+                margin-right: 16px;
+                width: 53px;
+            }
+            p {
+                @extend %lato-16;
+            }
+            &:first-child {
+                margin-top: 40px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .img-background {
+            display: none;
+        }
+    }
+    .hey-cta {
+        .item-img {
+            width: 24px;
+            margin-left: 16px;
+        }
+    }
+    .item-shop {
+        border-radius: 12px;
+        background: white;
+        padding: 16px;
+        height: 520px;
+        img {
+            width: 90% !important;
+        }
+        .img-shop {
+            height: 250px;
+        }
+        .text-shop {
+            text-align: left;
+            margin-top: 24px;
+            margin-top: 16px;
+            p {
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .tr-selected {
+        text-decoration: line-through;
+        margin-right: 8px;
+    }
+    .hey-productos {
+        padding-top: 20px !important;
+    }
+}
+
+//Tablet
+@media (max-width: 991.98px) {
+    hey-giveaway-buen-fin {
+        #divMSI {
+            background-size: 300px !important;
+            background-position: left;
+            .img-background {
+                display: none;
+            }
+        }
+        #participacion {
+            background-size: 300px !important;
+            background-position: right;
+            .img-background {
+                display: none;
+            }
+        }
+        #estrenaCoche {
+            background-size: 300px !important;
+            background-position: right;
+            .img-background {
+                display: none;
+            }
+            .item-img {
+                width: 24px;
+                margin-left: 16px;
+                margin-top: 0px;
+            }
+        }
+        .hey-productos {
+            .item-shop {
+                height: 460px !important;
+            }
+            .img-shop {
+                height: 180px !important;
+            }
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767.98px) {
+    hey-giveaway-buen-fin {
+        .hey-hero-image {
+            height: 530px !important;
+            h1 {
+                margin-top: -20px;
+            }
+            .responsive-cuentas-hero {
+                margin-top: -30px;
+            }
+            .col-lg-6 {
+                height: 310px;
+            }
+            .col-lg-5 {
+                img {
+                    height: 250px;
+                    width: auto;
+                }
+            }
+        }
+        #divMSI {
+            background: none !important;
+            .img-background {
+                position: absolute;
+                display: block !important;
+                left: -10px;
+                img {
+                    width: 70%;
+                    top: -20px;
+                }
+            }
+            h2 {
+                margin-top: 360px;
+            }
+        }
+        #participacion {
+            background: #FD0360 !important;
+            height: 670px !important;
+            .img-background {
+                position: absolute;
+                display: block !important;
+                top: 0px;
+                right: -20px;
+                width: 100%;
+                text-align: right;
+                img {
+                    width: 80%;
+                }
+            }
+            h2 {
+                margin-top: 190px !important;
+            }
+        }
+        #estrenaCoche {
+            background: none !important;
+            height: 600px !important;
+            .img-background {
+                position: absolute;
+                display: block !important;
+                right: -10px;
+                width: 100%;
+                text-align: right;
+                img {
+                    width: 85%;
+                    margin-right: -10px;
+                }
+            }
+            .item-img {
+                width: 24px;
+                margin-left: 16px;
+            }
+            h2 {
+                margin-top: 260px !important;
+            }
+        }
+        .item-shop {
+            height: 420px !important;
+            text-align: center;
+            .img-shop {
+                height: 250px;
+                img {
+                    width: 65% !important;
+                }
+            }
+            .text-shop {
+                margin-top: 65px;
+            }
+            .mb-15 {
+                text-align: center;
+            }
+        }
+        .hey-cta {
+            padding: 16px;
+        }
+    }
+}
